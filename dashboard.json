@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-06-15T05:55:00+00:00",
+  "generated_at": "2026-06-15T05:58:48+00:00",
   "bridge_mode": "shadow",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
     {
       "date": "2026-01-02",
-      "ema": NaN,
+      "ema": 0,
       "orb": 510.0,
       "combined": 510.0
     },
     {
       "date": "2026-01-07",
-      "ema": NaN,
+      "ema": 0,
       "orb": 389.0,
       "combined": 389.0
     },
     {
       "date": "2026-01-12",
-      "ema": NaN,
+      "ema": 0,
       "orb": 455.0,
       "combined": 455.0
     },
