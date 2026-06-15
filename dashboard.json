@@ -1,0 +1,485 @@
+{
+  "generated_at": "2026-06-15T05:33:35+00:00",
+  "bridge_mode": "shadow",
+  "demo_since": "2026-06-13",
+  "oos_equity_curve": [
+    {
+      "date": "2026-01-02",
+      "ema": NaN,
+      "orb": 510.0,
+      "combined": 510.0
+    },
+    {
+      "date": "2026-01-07",
+      "ema": NaN,
+      "orb": 389.0,
+      "combined": 389.0
+    },
+    {
+      "date": "2026-01-12",
+      "ema": NaN,
+      "orb": 455.0,
+      "combined": 455.0
+    },
+    {
+      "date": "2026-01-15",
+      "ema": 391.0,
+      "orb": 697.0,
+      "combined": 1088.0
+    },
+    {
+      "date": "2026-01-21",
+      "ema": 1589.0,
+      "orb": 697.0,
+      "combined": 2286.0
+    },
+    {
+      "date": "2026-01-22",
+      "ema": 1589.0,
+      "orb": 497.0,
+      "combined": 2086.0
+    },
+    {
+      "date": "2026-01-26",
+      "ema": 1589.0,
+      "orb": 481.0,
+      "combined": 2070.0
+    },
+    {
+      "date": "2026-01-27",
+      "ema": 1589.0,
+      "orb": 518.0,
+      "combined": 2107.0
+    },
+    {
+      "date": "2026-01-29",
+      "ema": 1347.0,
+      "orb": 518.0,
+      "combined": 1864.0
+    },
+    {
+      "date": "2026-02-03",
+      "ema": 2206.0,
+      "orb": 518.0,
+      "combined": 2724.0
+    },
+    {
+      "date": "2026-02-04",
+      "ema": 2206.0,
+      "orb": 816.0,
+      "combined": 3022.0
+    },
+    {
+      "date": "2026-02-05",
+      "ema": 2206.0,
+      "orb": 827.0,
+      "combined": 3033.0
+    },
+    {
+      "date": "2026-02-11",
+      "ema": 1288.0,
+      "orb": 786.0,
+      "combined": 2074.0
+    },
+    {
+      "date": "2026-02-12",
+      "ema": 2065.0,
+      "orb": 1589.0,
+      "combined": 3654.0
+    },
+    {
+      "date": "2026-02-17",
+      "ema": 2238.0,
+      "orb": 889.0,
+      "combined": 3127.0
+    },
+    {
+      "date": "2026-02-18",
+      "ema": 2162.0,
+      "orb": 889.0,
+      "combined": 3051.0
+    },
+    {
+      "date": "2026-02-23",
+      "ema": 2162.0,
+      "orb": 1140.0,
+      "combined": 3302.0
+    },
+    {
+      "date": "2026-02-24",
+      "ema": 1331.0,
+      "orb": 1140.0,
+      "combined": 2471.0
+    },
+    {
+      "date": "2026-03-03",
+      "ema": 330.0,
+      "orb": 1140.0,
+      "combined": 1470.0
+    },
+    {
+      "date": "2026-03-05",
+      "ema": -438.0,
+      "orb": 636.0,
+      "combined": 198.0
+    },
+    {
+      "date": "2026-03-06",
+      "ema": -438.0,
+      "orb": 421.0,
+      "combined": -17.0
+    },
+    {
+      "date": "2026-03-09",
+      "ema": -450.0,
+      "orb": 421.0,
+      "combined": -29.0
+    },
+    {
+      "date": "2026-03-11",
+      "ema": 76.0,
+      "orb": 98.0,
+      "combined": 174.0
+    },
+    {
+      "date": "2026-03-13",
+      "ema": 76.0,
+      "orb": 533.0,
+      "combined": 609.0
+    },
+    {
+      "date": "2026-03-16",
+      "ema": 199.0,
+      "orb": 533.0,
+      "combined": 732.0
+    },
+    {
+      "date": "2026-03-17",
+      "ema": 199.0,
+      "orb": 428.0,
+      "combined": 628.0
+    },
+    {
+      "date": "2026-03-18",
+      "ema": 952.0,
+      "orb": 868.0,
+      "combined": 1820.0
+    },
+    {
+      "date": "2026-03-20",
+      "ema": 952.0,
+      "orb": 1236.0,
+      "combined": 2188.0
+    },
+    {
+      "date": "2026-03-23",
+      "ema": 322.0,
+      "orb": 1236.0,
+      "combined": 1558.0
+    },
+    {
+      "date": "2026-03-25",
+      "ema": 1625.0,
+      "orb": 1180.0,
+      "combined": 2805.0
+    },
+    {
+      "date": "2026-03-26",
+      "ema": 1625.0,
+      "orb": 1698.0,
+      "combined": 3323.0
+    },
+    {
+      "date": "2026-03-27",
+      "ema": 1625.0,
+      "orb": 1946.0,
+      "combined": 3571.0
+    },
+    {
+      "date": "2026-03-30",
+      "ema": 1625.0,
+      "orb": 2211.0,
+      "combined": 3836.0
+    },
+    {
+      "date": "2026-03-31",
+      "ema": 1941.0,
+      "orb": 2211.0,
+      "combined": 4151.0
+    },
+    {
+      "date": "2026-04-02",
+      "ema": 1088.0,
+      "orb": 2211.0,
+      "combined": 3299.0
+    },
+    {
+      "date": "2026-04-06",
+      "ema": 1088.0,
+      "orb": 1975.0,
+      "combined": 3064.0
+    },
+    {
+      "date": "2026-04-07",
+      "ema": 5440.0,
+      "orb": 1528.0,
+      "combined": 6968.0
+    },
+    {
+      "date": "2026-04-13",
+      "ema": 5440.0,
+      "orb": 1945.0,
+      "combined": 7384.0
+    },
+    {
+      "date": "2026-04-14",
+      "ema": 5440.0,
+      "orb": 2373.0,
+      "combined": 7812.0
+    },
+    {
+      "date": "2026-04-15",
+      "ema": 5440.0,
+      "orb": 2952.0,
+      "combined": 8391.0
+    },
+    {
+      "date": "2026-04-16",
+      "ema": 5440.0,
+      "orb": 3002.0,
+      "combined": 8441.0
+    },
+    {
+      "date": "2026-04-17",
+      "ema": 5440.0,
+      "orb": 3141.0,
+      "combined": 8580.0
+    },
+    {
+      "date": "2026-04-21",
+      "ema": 4917.0,
+      "orb": 2883.0,
+      "combined": 7800.0
+    },
+    {
+      "date": "2026-04-22",
+      "ema": 5015.0,
+      "orb": 3239.0,
+      "combined": 8254.0
+    },
+    {
+      "date": "2026-04-23",
+      "ema": 4354.0,
+      "orb": 2935.0,
+      "combined": 7289.0
+    },
+    {
+      "date": "2026-04-24",
+      "ema": 4354.0,
+      "orb": 3273.0,
+      "combined": 7627.0
+    },
+    {
+      "date": "2026-04-27",
+      "ema": 4354.0,
+      "orb": 3280.0,
+      "combined": 7634.0
+    },
+    {
+      "date": "2026-04-28",
+      "ema": 4167.0,
+      "orb": 3280.0,
+      "combined": 7447.0
+    },
+    {
+      "date": "2026-04-29",
+      "ema": 3620.0,
+      "orb": 3395.0,
+      "combined": 7015.0
+    },
+    {
+      "date": "2026-04-30",
+      "ema": 6770.0,
+      "orb": 3395.0,
+      "combined": 10165.0
+    },
+    {
+      "date": "2026-05-01",
+      "ema": 6770.0,
+      "orb": 3286.0,
+      "combined": 10056.0
+    },
+    {
+      "date": "2026-05-04",
+      "ema": 6770.0,
+      "orb": 3041.0,
+      "combined": 9811.0
+    },
+    {
+      "date": "2026-05-05",
+      "ema": 6770.0,
+      "orb": 3020.0,
+      "combined": 9791.0
+    },
+    {
+      "date": "2026-05-06",
+      "ema": 6770.0,
+      "orb": 3391.0,
+      "combined": 10162.0
+    },
+    {
+      "date": "2026-05-07",
+      "ema": 6770.0,
+      "orb": 3155.0,
+      "combined": 9926.0
+    },
+    {
+      "date": "2026-05-08",
+      "ema": 6770.0,
+      "orb": 3537.0,
+      "combined": 10307.0
+    },
+    {
+      "date": "2026-05-13",
+      "ema": 6770.0,
+      "orb": 3899.0,
+      "combined": 10669.0
+    },
+    {
+      "date": "2026-05-14",
+      "ema": 6770.0,
+      "orb": 3916.0,
+      "combined": 10687.0
+    },
+    {
+      "date": "2026-05-15",
+      "ema": 6770.0,
+      "orb": 3757.0,
+      "combined": 10527.0
+    },
+    {
+      "date": "2026-05-19",
+      "ema": 6573.0,
+      "orb": 3757.0,
+      "combined": 10330.0
+    },
+    {
+      "date": "2026-05-20",
+      "ema": 6811.0,
+      "orb": 4051.0,
+      "combined": 10862.0
+    },
+    {
+      "date": "2026-05-21",
+      "ema": 8834.0,
+      "orb": 3703.0,
+      "combined": 12537.0
+    },
+    {
+      "date": "2026-05-26",
+      "ema": 8834.0,
+      "orb": 3830.0,
+      "combined": 12664.0
+    },
+    {
+      "date": "2026-05-28",
+      "ema": 8834.0,
+      "orb": 4145.0,
+      "combined": 12980.0
+    },
+    {
+      "date": "2026-05-29",
+      "ema": 8834.0,
+      "orb": 3790.0,
+      "combined": 12624.0
+    },
+    {
+      "date": "2026-06-02",
+      "ema": 8834.0,
+      "orb": 3965.0,
+      "combined": 12799.0
+    },
+    {
+      "date": "2026-06-04",
+      "ema": 6518.0,
+      "orb": 3965.0,
+      "combined": 10483.0
+    },
+    {
+      "date": "2026-06-08",
+      "ema": 6107.0,
+      "orb": 3965.0,
+      "combined": 10072.0
+    },
+    {
+      "date": "2026-06-09",
+      "ema": 6139.0,
+      "orb": 5104.0,
+      "combined": 11242.0
+    },
+    {
+      "date": "2026-06-11",
+      "ema": 5623.0,
+      "orb": 5104.0,
+      "combined": 10727.0
+    }
+  ],
+  "last_7_days": [],
+  "portfolio_stats": {
+    "pf": 1.75,
+    "sharpe": 2.78,
+    "max_dd_usd": 3683.0,
+    "win_pct": 57.1,
+    "total_pts": 5363.5,
+    "total_usd": 10727.0,
+    "trade_days": 70
+  },
+  "active_positions": [],
+  "net_returns": {
+    "5d_pts": 0,
+    "5d_usd": 0,
+    "5d_pct": 0.0,
+    "ytd_pts": 0,
+    "ytd_usd": 0,
+    "ytd_pct": 0.0
+  },
+  "strategies": {
+    "orb_30m": {
+      "name": "ORB 30m",
+      "status": "active",
+      "in_portfolio": true,
+      "description": "Opening Range Breakout on the first 30 minutes of RTH session",
+      "params": {
+        "Opening Range": "09:30\u201310:00 ET (30 min)",
+        "Entry": "First 5m close beyond the range",
+        "Direction Filter": "trend20 (20-day SMA bias \u2014 trend-aligned only)",
+        "Stop": "Far side of opening range",
+        "Exit": "EOD flat at 15:55 ET",
+        "Max Trades/Day": "1",
+        "Backtest PF (16y)": "1.04",
+        "2026 OOS PF": "2.02",
+        "Sharpe 2026": "4.41",
+        "Universe": "MNQ (Micro E-mini Nasdaq)"
+      }
+    },
+    "ema_cross_5m": {
+      "name": "EMA Cross 5m",
+      "status": "active",
+      "in_portfolio": true,
+      "description": "EMA 9/100 crossover on 5-minute RTH bars with trend and volatility filters",
+      "params": {
+        "Fast EMA": "9",
+        "Slow EMA": "100",
+        "Trend Filter": "EMA 200 (price above EMA200 = long bias)",
+        "Volatility Gate": "ATR14 > 33rd percentile (gate closes in low-vol)",
+        "Timeframe": "5m RTH bars (09:30\u201316:00 ET)",
+        "Entry": "Cross bar close, market order",
+        "Exit": "Reverse cross or EOD flat at 15:55 ET",
+        "Backtest PF (16y)": "1.57",
+        "2026 OOS PF": "1.53",
+        "Sharpe 2026": "2.19",
+        "Universe": "MNQ (Micro E-mini Nasdaq)"
+      }
+    }
+  }
+}
