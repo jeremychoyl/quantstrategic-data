@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T11:30:00+00:00",
+  "generated_at": "2026-06-15T11:34:47+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -521,8 +521,8 @@
       "combo_key": "orb",
       "description": "Opening Range Breakout on the first 30 minutes of RTH session",
       "params": {
-        "Opening Range": "09:30\u201310:00 ET (30 min)",
-        "Entry": "First 5m close beyond the range",
+        "Opening Range": "09:30\u201310:00 ET \u00b7 21:30\u201322:00 SGT (30 min)",
+        "Entry": "First 5m close beyond the range after 10:00 ET (22:00 SGT)",
         "Direction Filter": "trend20 (20-day SMA bias \u2014 trend-aligned only)",
         "Stop": "Far side of opening range",
         "Exit": "EOD flat at 15:55 ET",
