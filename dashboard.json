@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T05:15:00+00:00",
+  "generated_at": "2026-06-16T05:20:00+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -566,13 +566,13 @@
   ],
   "last_7_days": [],
   "portfolio_stats": {
-    "pf": 1.89,
-    "sharpe": 3.17,
-    "max_dd_usd": 3683.0,
-    "win_pct": 58.6,
-    "total_pts": 6118.5,
-    "total_usd": 12237.0,
-    "trade_days": 70
+    "pf": 2.1,
+    "sharpe": 3.9,
+    "max_dd_usd": 3732.0,
+    "win_pct": 59.2,
+    "total_pts": 8318.3,
+    "total_usd": 16637.0,
+    "trade_days": 71
   },
   "active_positions": [],
   "net_returns": {
