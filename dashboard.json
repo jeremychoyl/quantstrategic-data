@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T02:50:00+00:00",
+  "generated_at": "2026-06-16T02:55:01+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -8,6 +8,7 @@
       "ema": 0,
       "orb": 510.0,
       "overnight": 512.0,
+      "dc": null,
       "combined": 510.0
     },
     {
@@ -15,6 +16,7 @@
       "ema": 0,
       "orb": 389.0,
       "overnight": 460.0,
+      "dc": null,
       "combined": 389.0
     },
     {
@@ -22,6 +24,7 @@
       "ema": 0,
       "orb": 455.0,
       "overnight": 138.0,
+      "dc": null,
       "combined": 455.0
     },
     {
@@ -29,6 +32,7 @@
       "ema": 391.0,
       "orb": 697.0,
       "overnight": 677.0,
+      "dc": null,
       "combined": 1088.0
     },
     {
@@ -36,6 +40,7 @@
       "ema": 1589.0,
       "orb": 697.0,
       "overnight": 194.0,
+      "dc": 929.0,
       "combined": 2286.0
     },
     {
@@ -43,6 +48,7 @@
       "ema": 1589.0,
       "orb": 497.0,
       "overnight": 84.0,
+      "dc": 929.0,
       "combined": 2086.0
     },
     {
@@ -50,6 +56,7 @@
       "ema": 1589.0,
       "orb": 481.0,
       "overnight": 381.0,
+      "dc": 929.0,
       "combined": 2070.0
     },
     {
@@ -57,6 +64,7 @@
       "ema": 1589.0,
       "orb": 518.0,
       "overnight": 732.0,
+      "dc": 929.0,
       "combined": 2107.0
     },
     {
@@ -64,6 +72,7 @@
       "ema": 1347.0,
       "orb": 518.0,
       "overnight": 381.0,
+      "dc": 929.0,
       "combined": 1864.0
     },
     {
@@ -71,6 +80,7 @@
       "ema": 2206.0,
       "orb": 518.0,
       "overnight": 144.0,
+      "dc": 929.0,
       "combined": 2724.0
     },
     {
@@ -78,6 +88,7 @@
       "ema": 2206.0,
       "orb": 816.0,
       "overnight": -307.0,
+      "dc": 929.0,
       "combined": 3022.0
     },
     {
@@ -85,6 +96,7 @@
       "ema": 2206.0,
       "orb": 827.0,
       "overnight": -65.0,
+      "dc": 1679.0,
       "combined": 3033.0
     },
     {
@@ -92,6 +104,7 @@
       "ema": 1288.0,
       "orb": 786.0,
       "overnight": 358.0,
+      "dc": 1679.0,
       "combined": 2074.0
     },
     {
@@ -99,6 +112,7 @@
       "ema": 2065.0,
       "orb": 1589.0,
       "overnight": 314.0,
+      "dc": 1679.0,
       "combined": 3654.0
     },
     {
@@ -106,6 +120,7 @@
       "ema": 2238.0,
       "orb": 889.0,
       "overnight": 117.0,
+      "dc": 1679.0,
       "combined": 3127.0
     },
     {
@@ -113,6 +128,7 @@
       "ema": 2162.0,
       "orb": 889.0,
       "overnight": -133.0,
+      "dc": 1679.0,
       "combined": 3051.0
     },
     {
@@ -120,6 +136,7 @@
       "ema": 2162.0,
       "orb": 1140.0,
       "overnight": -550.0,
+      "dc": 1679.0,
       "combined": 3302.0
     },
     {
@@ -127,6 +144,7 @@
       "ema": 1331.0,
       "orb": 1140.0,
       "overnight": -292.0,
+      "dc": 1679.0,
       "combined": 2471.0
     },
     {
@@ -134,6 +152,7 @@
       "ema": 330.0,
       "orb": 1140.0,
       "overnight": -2417.0,
+      "dc": 1679.0,
       "combined": 1470.0
     },
     {
@@ -141,6 +160,7 @@
       "ema": -438.0,
       "orb": 636.0,
       "overnight": -3412.0,
+      "dc": 1679.0,
       "combined": 198.0
     },
     {
@@ -148,6 +168,7 @@
       "ema": -438.0,
       "orb": 421.0,
       "overnight": -3885.0,
+      "dc": 1679.0,
       "combined": -17.0
     },
     {
@@ -155,6 +176,7 @@
       "ema": -450.0,
       "orb": 421.0,
       "overnight": -3890.0,
+      "dc": 1679.0,
       "combined": -29.0
     },
     {
@@ -162,6 +184,7 @@
       "ema": 76.0,
       "orb": 98.0,
       "overnight": -4215.0,
+      "dc": 1679.0,
       "combined": 174.0
     },
     {
@@ -169,6 +192,7 @@
       "ema": 76.0,
       "orb": 533.0,
       "overnight": -3524.0,
+      "dc": 1679.0,
       "combined": 609.0
     },
     {
@@ -176,6 +200,7 @@
       "ema": 199.0,
       "orb": 533.0,
       "overnight": -3300.0,
+      "dc": 1679.0,
       "combined": 732.0
     },
     {
@@ -183,6 +208,7 @@
       "ema": 199.0,
       "orb": 428.0,
       "overnight": -3465.0,
+      "dc": 1679.0,
       "combined": 628.0
     },
     {
@@ -190,6 +216,7 @@
       "ema": 952.0,
       "orb": 868.0,
       "overnight": -3914.0,
+      "dc": 1679.0,
       "combined": 1820.0
     },
     {
@@ -197,6 +224,7 @@
       "ema": 952.0,
       "orb": 1236.0,
       "overnight": -3335.0,
+      "dc": 1679.0,
       "combined": 2188.0
     },
     {
@@ -204,6 +232,7 @@
       "ema": 322.0,
       "orb": 1236.0,
       "overnight": -3626.0,
+      "dc": 2281.0,
       "combined": 1558.0
     },
     {
@@ -211,6 +240,7 @@
       "ema": 1625.0,
       "orb": 1180.0,
       "overnight": -3639.0,
+      "dc": 2281.0,
       "combined": 2805.0
     },
     {
@@ -218,6 +248,7 @@
       "ema": 1625.0,
       "orb": 1698.0,
       "overnight": -3906.0,
+      "dc": 2281.0,
       "combined": 3323.0
     },
     {
@@ -225,6 +256,7 @@
       "ema": 1625.0,
       "orb": 1946.0,
       "overnight": -3509.0,
+      "dc": 2789.0,
       "combined": 3571.0
     },
     {
@@ -232,6 +264,7 @@
       "ema": 1625.0,
       "orb": 2211.0,
       "overnight": -3019.0,
+      "dc": 3588.0,
       "combined": 3836.0
     },
     {
@@ -239,6 +272,7 @@
       "ema": 1941.0,
       "orb": 2211.0,
       "overnight": -2665.0,
+      "dc": 5224.0,
       "combined": 4151.0
     },
     {
@@ -246,6 +280,7 @@
       "ema": 1088.0,
       "orb": 2211.0,
       "overnight": -3456.0,
+      "dc": 5224.0,
       "combined": 3299.0
     },
     {
@@ -253,6 +288,7 @@
       "ema": 1088.0,
       "orb": 1975.0,
       "overnight": -3699.0,
+      "dc": 5224.0,
       "combined": 3064.0
     },
     {
@@ -260,6 +296,7 @@
       "ema": 5440.0,
       "orb": 1528.0,
       "overnight": -2041.0,
+      "dc": 5224.0,
       "combined": 6968.0
     },
     {
@@ -267,6 +304,7 @@
       "ema": 5440.0,
       "orb": 1945.0,
       "overnight": -1818.0,
+      "dc": 5224.0,
       "combined": 7384.0
     },
     {
@@ -274,6 +312,7 @@
       "ema": 5440.0,
       "orb": 2373.0,
       "overnight": -1775.0,
+      "dc": 5224.0,
       "combined": 7812.0
     },
     {
@@ -281,6 +320,7 @@
       "ema": 5440.0,
       "orb": 2952.0,
       "overnight": -1628.0,
+      "dc": 5224.0,
       "combined": 8391.0
     },
     {
@@ -288,6 +328,7 @@
       "ema": 5440.0,
       "orb": 3002.0,
       "overnight": -1215.0,
+      "dc": 5224.0,
       "combined": 8441.0
     },
     {
@@ -295,6 +336,7 @@
       "ema": 5440.0,
       "orb": 3141.0,
       "overnight": -1279.0,
+      "dc": 5224.0,
       "combined": 8580.0
     },
     {
@@ -302,6 +344,7 @@
       "ema": 4917.0,
       "orb": 2883.0,
       "overnight": -681.0,
+      "dc": 5224.0,
       "combined": 7800.0
     },
     {
@@ -309,6 +352,7 @@
       "ema": 5015.0,
       "orb": 3239.0,
       "overnight": -815.0,
+      "dc": 5224.0,
       "combined": 8254.0
     },
     {
@@ -316,6 +360,7 @@
       "ema": 4354.0,
       "orb": 2935.0,
       "overnight": -250.0,
+      "dc": 5224.0,
       "combined": 7289.0
     },
     {
@@ -323,6 +368,7 @@
       "ema": 4354.0,
       "orb": 3273.0,
       "overnight": -299.0,
+      "dc": 5224.0,
       "combined": 7627.0
     },
     {
@@ -330,6 +376,7 @@
       "ema": 4354.0,
       "orb": 3280.0,
       "overnight": -870.0,
+      "dc": 5224.0,
       "combined": 7634.0
     },
     {
@@ -337,6 +384,7 @@
       "ema": 4167.0,
       "orb": 3280.0,
       "overnight": -797.0,
+      "dc": 5224.0,
       "combined": 7447.0
     },
     {
@@ -344,6 +392,7 @@
       "ema": 3620.0,
       "orb": 3395.0,
       "overnight": -492.0,
+      "dc": 5224.0,
       "combined": 7015.0
     },
     {
@@ -351,6 +400,7 @@
       "ema": 6770.0,
       "orb": 3395.0,
       "overnight": -384.0,
+      "dc": 5224.0,
       "combined": 10165.0
     },
     {
@@ -358,6 +408,7 @@
       "ema": 6770.0,
       "orb": 3286.0,
       "overnight": -352.0,
+      "dc": 5224.0,
       "combined": 10056.0
     },
     {
@@ -365,6 +416,7 @@
       "ema": 6770.0,
       "orb": 3041.0,
       "overnight": 62.0,
+      "dc": 5224.0,
       "combined": 9811.0
     },
     {
@@ -372,6 +424,7 @@
       "ema": 6770.0,
       "orb": 3020.0,
       "overnight": 567.0,
+      "dc": 5224.0,
       "combined": 9791.0
     },
     {
@@ -379,6 +432,7 @@
       "ema": 6770.0,
       "orb": 3391.0,
       "overnight": 644.0,
+      "dc": 5224.0,
       "combined": 10162.0
     },
     {
@@ -386,6 +440,7 @@
       "ema": 6770.0,
       "orb": 3155.0,
       "overnight": 1030.0,
+      "dc": 5224.0,
       "combined": 9926.0
     },
     {
@@ -393,6 +448,7 @@
       "ema": 6770.0,
       "orb": 3537.0,
       "overnight": 959.0,
+      "dc": 5224.0,
       "combined": 10307.0
     },
     {
@@ -400,6 +456,7 @@
       "ema": 6770.0,
       "orb": 3899.0,
       "overnight": 744.0,
+      "dc": 5224.0,
       "combined": 10669.0
     },
     {
@@ -407,6 +464,7 @@
       "ema": 6770.0,
       "orb": 3916.0,
       "overnight": -76.0,
+      "dc": 5224.0,
       "combined": 10687.0
     },
     {
@@ -414,6 +472,7 @@
       "ema": 6770.0,
       "orb": 3757.0,
       "overnight": 136.0,
+      "dc": 5224.0,
       "combined": 10527.0
     },
     {
@@ -421,6 +480,7 @@
       "ema": 6573.0,
       "orb": 3757.0,
       "overnight": -68.0,
+      "dc": 5224.0,
       "combined": 10330.0
     },
     {
@@ -428,6 +488,7 @@
       "ema": 6811.0,
       "orb": 4051.0,
       "overnight": -429.0,
+      "dc": 5224.0,
       "combined": 10862.0
     },
     {
@@ -435,6 +496,7 @@
       "ema": 8834.0,
       "orb": 3703.0,
       "overnight": -164.0,
+      "dc": 5224.0,
       "combined": 12537.0
     },
     {
@@ -442,6 +504,7 @@
       "ema": 8834.0,
       "orb": 3830.0,
       "overnight": 700.0,
+      "dc": 5224.0,
       "combined": 12664.0
     },
     {
@@ -449,6 +512,7 @@
       "ema": 8834.0,
       "orb": 4145.0,
       "overnight": 860.0,
+      "dc": 5224.0,
       "combined": 12980.0
     },
     {
@@ -456,6 +520,7 @@
       "ema": 8834.0,
       "orb": 3790.0,
       "overnight": 748.0,
+      "dc": 5224.0,
       "combined": 12624.0
     },
     {
@@ -463,6 +528,7 @@
       "ema": 8834.0,
       "orb": 3965.0,
       "overnight": 810.0,
+      "dc": 5224.0,
       "combined": 12799.0
     },
     {
@@ -470,6 +536,7 @@
       "ema": 6518.0,
       "orb": 3965.0,
       "overnight": -830.0,
+      "dc": 5224.0,
       "combined": 10483.0
     },
     {
@@ -477,6 +544,7 @@
       "ema": 6107.0,
       "orb": 3965.0,
       "overnight": 754.0,
+      "dc": 4400.0,
       "combined": 10072.0
     },
     {
@@ -484,6 +552,7 @@
       "ema": 6139.0,
       "orb": 5104.0,
       "overnight": 227.0,
+      "dc": 4400.0,
       "combined": 11242.0
     },
     {
@@ -491,6 +560,7 @@
       "ema": 7133.0,
       "orb": 5104.0,
       "overnight": 752.0,
+      "dc": 4400.0,
       "combined": 12237.0
     }
   ],
@@ -578,6 +648,29 @@
         "Reason": "Margin cost, correlated drawdown, insufficient edge",
         "Universe": "MNQ (Micro E-mini Nasdaq)"
       }
+    },
+    "dc_exit3": {
+      "name": "DC Mean Reversion",
+      "status": "active",
+      "in_portfolio": true,
+      "combo_key": "dc",
+      "description": "Donchian Channel daily mean reversion \u2014 buy when RTH close < prior 10-day low; exit on first up-close or 5-day time stop. Long only.",
+      "params": {
+        "DC Period": "10",
+        "ATR Period": "14 (EWM sizing)",
+        "Signal": "Daily close < prior 10-day low (DC lower band, shifted)",
+        "Entry": "Next open 09:30\u201309:40 ET \u00b7 21:30\u201321:40 SGT",
+        "Exit (up-close)": "First day where close > signal-day close",
+        "Exit (time stop)": "Day 5 at 15:55 ET \u00b7 03:55 SGT",
+        "Direction": "Long only",
+        "Corr vs ORB": "+0.05 (uncorrelated)",
+        "Corr vs EMA": "-0.01 (uncorrelated)",
+        "Backtest PF (16y)": "2.76",
+        "OOS WF PF": "2.76",
+        "OOS WF Sharpe": "1.14",
+        "Sit-out years": "0 / 14",
+        "Universe": "MNQ (Micro E-mini Nasdaq)"
+      }
     }
   },
   "combo_stats": {
@@ -608,6 +701,15 @@
       "total_usd": 2120.0,
       "trade_days": 115
     },
+    "dc": {
+      "pf": 4.2,
+      "sharpe": 10.45,
+      "max_dd_usd": 824.0,
+      "win_pct": 75.0,
+      "total_pts": 2199.8,
+      "total_usd": 4400.0,
+      "trade_days": 8
+    },
     "ema+orb": {
       "pf": 1.89,
       "sharpe": 3.17,
@@ -616,6 +718,15 @@
       "total_pts": 6118.5,
       "total_usd": 12237.0,
       "trade_days": 70
+    },
+    "ema+orb+dc": {
+      "pf": 2.1,
+      "sharpe": 3.9,
+      "max_dd_usd": 3732.0,
+      "win_pct": 59.2,
+      "total_pts": 8318.3,
+      "total_usd": 16637.0,
+      "trade_days": 71
     },
     "ema+overnight": {
       "pf": 1.41,
