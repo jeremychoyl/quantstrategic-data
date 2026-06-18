@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T19:55:00+00:00",
+  "generated_at": "2026-06-18T20:00:00+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -564,7 +564,13 @@
       "combined": 11518.0
     }
   ],
-  "last_7_days": [],
+  "last_7_days": [
+    {
+      "date": "2026-06-18",
+      "pnl_pts": 111.25,
+      "pnl_usd": 222.5
+    }
+  ],
   "portfolio_stats": {
     "pf": 2.06,
     "sharpe": 3.75,
@@ -574,25 +580,14 @@
     "total_usd": 15917.0,
     "trade_days": 71
   },
-  "active_positions": [
-    {
-      "strategy": "ORB 30m",
-      "size": "1 MNQ",
-      "entry_date": "2026-06-18",
-      "entry_px": 30622.25,
-      "current_px": 30749.0,
-      "pnl_pts": 126.75,
-      "pnl_usd": 253.5,
-      "direction": "Long"
-    }
-  ],
+  "active_positions": [],
   "net_returns": {
-    "5d_pts": 0,
-    "5d_usd": 0,
-    "5d_pct": 0.0,
-    "ytd_pts": 0,
-    "ytd_usd": 0,
-    "ytd_pct": 0.0
+    "5d_pts": 111.25,
+    "5d_usd": 222.5,
+    "5d_pct": 0.89,
+    "ytd_pts": 111.25,
+    "ytd_usd": 222.5,
+    "ytd_pct": 0.89
   },
   "strategies": {
     "orb_30m": {
