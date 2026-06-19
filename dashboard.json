@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T16:45:01+00:00",
+  "generated_at": "2026-06-19T16:50:00+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -586,9 +586,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-06-19",
       "entry_px": 30703.0,
-      "current_px": 30689.0,
-      "pnl_pts": -14.0,
-      "pnl_usd": -28.0,
+      "current_px": 30684.5,
+      "pnl_pts": -18.5,
+      "pnl_usd": -37.0,
       "direction": "Long"
     }
   ],
