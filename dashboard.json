@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T22:10:01+00:00",
+  "generated_at": "2026-06-20T22:15:00+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -562,6 +562,14 @@
       "overnight": 752.0,
       "dc": 4400.0,
       "combined": 12121.0
+    },
+    {
+      "date": "2026-06-19",
+      "ema": 7017.0,
+      "orb": 4995.0,
+      "overnight": 752.0,
+      "dc": 4400.0,
+      "combined": 12012.0
     }
   ],
   "last_7_days": [
@@ -701,13 +709,13 @@
       "trade_days": 33
     },
     "orb": {
-      "pf": 2.02,
-      "sharpe": 4.41,
+      "pf": 1.98,
+      "sharpe": 4.26,
       "max_dd_usd": 1491.0,
-      "win_pct": 60.4,
-      "total_pts": 2551.8,
-      "total_usd": 5104.0,
-      "trade_days": 53
+      "win_pct": 59.3,
+      "total_pts": 2497.4,
+      "total_usd": 4995.0,
+      "trade_days": 54
     },
     "overnight": {
       "pf": 1.2,
@@ -728,22 +736,22 @@
       "trade_days": 8
     },
     "ema+orb": {
-      "pf": 1.88,
-      "sharpe": 3.14,
+      "pf": 1.87,
+      "sharpe": 3.09,
       "max_dd_usd": 3683.0,
-      "win_pct": 58.6,
-      "total_pts": 6060.3,
-      "total_usd": 12121.0,
-      "trade_days": 70
+      "win_pct": 57.7,
+      "total_pts": 6005.9,
+      "total_usd": 12012.0,
+      "trade_days": 71
     },
     "ema+orb+dc": {
-      "pf": 2.1,
-      "sharpe": 3.87,
+      "pf": 2.08,
+      "sharpe": 3.82,
       "max_dd_usd": 3732.0,
-      "win_pct": 59.2,
-      "total_pts": 8260.1,
-      "total_usd": 16520.0,
-      "trade_days": 71
+      "win_pct": 58.3,
+      "total_pts": 8205.7,
+      "total_usd": 16411.0,
+      "trade_days": 72
     },
     "ema+overnight": {
       "pf": 1.46,
@@ -755,22 +763,22 @@
       "trade_days": 119
     },
     "orb+overnight": {
-      "pf": 1.48,
-      "sharpe": 2.38,
+      "pf": 1.47,
+      "sharpe": 2.34,
       "max_dd_usd": 6020.0,
-      "win_pct": 57.1,
-      "total_pts": 4313.0,
-      "total_usd": 8626.0,
-      "trade_days": 119
+      "win_pct": 56.7,
+      "total_pts": 4258.6,
+      "total_usd": 8517.0,
+      "trade_days": 120
     },
     "ema+orb+overnight": {
-      "pf": 1.64,
-      "sharpe": 2.36,
+      "pf": 1.63,
+      "sharpe": 2.34,
       "max_dd_usd": 8009.0,
-      "win_pct": 54.6,
-      "total_pts": 7821.4,
-      "total_usd": 15643.0,
-      "trade_days": 119
+      "win_pct": 54.2,
+      "total_pts": 7767.1,
+      "total_usd": 15534.0,
+      "trade_days": 120
     }
   },
   "strategy_backtest_stats": {
@@ -809,25 +817,25 @@
       "max_consec_losses": 16
     },
     "orb": {
-      "expectancy_pts": 2.27,
-      "expectancy_usd": 4.54,
+      "expectancy_pts": 2.24,
+      "expectancy_usd": 4.48,
       "max_dd_usd": 12682.0,
       "profit_factor": 1.09,
-      "n_trades": 2064,
+      "n_trades": 2065,
       "win_pct": 45.8,
       "sharpe": 0.3,
       "sortino": 0.49,
       "calmar": 0.04,
-      "cagr_pct": 2.3,
-      "monthly_mean_usd": 49,
-      "monthly_std_usd": 527,
+      "cagr_pct": 2.2,
+      "monthly_mean_usd": 48,
+      "monthly_std_usd": 526,
       "monthly_win_rate": 44.3,
       "payoff_ratio": 1.29,
       "max_consec_losses": 9
     },
     "portfolio": {
-      "expectancy_pts": 21.89,
-      "expectancy_usd": 43.78,
+      "expectancy_pts": 21.87,
+      "expectancy_usd": 43.74,
       "max_dd_usd": 6585.0,
       "profit_factor": 1.57,
       "n_trades": 2568,
@@ -2779,15 +2787,15 @@
     },
     "orb": {
       "n_winners": 946,
-      "n_losers": 1118,
+      "n_losers": 1119,
       "n_breakeven": 0,
-      "total_net_usd": 9371,
+      "total_net_usd": 9262,
       "avg_win_usd": 120,
       "avg_loss_usd": -93,
       "largest_win_usd": 1139,
       "largest_loss_usd": -700,
       "gross_profit_usd": 113464,
-      "gross_loss_usd": -104094,
+      "gross_loss_usd": -104202,
       "monthly": [
         {
           "month": "2010-07",
@@ -3746,8 +3754,8 @@
         },
         {
           "month": "2026-06",
-          "pnl": 1314,
-          "equity": 9371
+          "pnl": 1205,
+          "equity": 9262
         }
       ]
     }
