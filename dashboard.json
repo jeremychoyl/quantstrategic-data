@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T14:10:01+00:00",
+  "generated_at": "2026-06-22T14:15:00+00:00",
   "bridge_mode": "demo",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -588,7 +588,18 @@
     "total_usd": 16365.0,
     "trade_days": 72
   },
-  "active_positions": [],
+  "active_positions": [
+    {
+      "strategy": "ORB 30m",
+      "size": "1 MNQ",
+      "entry_date": "2026-06-22",
+      "entry_px": 30952.75,
+      "current_px": 30909.5,
+      "pnl_pts": -43.25,
+      "pnl_usd": -86.5,
+      "direction": "Long"
+    }
+  ],
   "net_returns": {
     "5d_pts": 111.25,
     "5d_usd": 222.5,
