@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T18:50:01+00:00",
+  "generated_at": "2026-06-23T18:55:00+00:00",
   "bridge_mode": "live",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -590,6 +590,11 @@
       "date": "2026-06-22",
       "pnl_pts": -133.25,
       "pnl_usd": -266.5
+    },
+    {
+      "date": "2026-06-23",
+      "pnl_pts": -350.25,
+      "pnl_usd": -700.5
     }
   ],
   "portfolio_stats": {
@@ -603,33 +608,23 @@
   },
   "active_positions": [
     {
-      "strategy": "ORB 30m",
-      "size": "1 MNQ",
-      "entry_date": "2026-06-23",
-      "entry_px": 29977.25,
-      "current_px": 29624.0,
-      "pnl_pts": -353.25,
-      "pnl_usd": -706.5,
-      "direction": "Long"
-    },
-    {
       "strategy": "EMA Cross 5m",
       "size": "1 MNQ",
       "entry_date": "2026-06-23",
       "entry_px": 29855.25,
-      "current_px": 29624.0,
-      "pnl_pts": -231.25,
-      "pnl_usd": -462.5,
+      "current_px": 29605.25,
+      "pnl_pts": -250.0,
+      "pnl_usd": -500.0,
       "direction": "Long"
     }
   ],
   "net_returns": {
-    "5d_pts": -22.0,
-    "5d_usd": -44.0,
-    "5d_pct": -0.176,
-    "ytd_pts": -22.0,
-    "ytd_usd": -44.0,
-    "ytd_pct": -0.176
+    "5d_pts": -372.25,
+    "5d_usd": -744.5,
+    "5d_pct": -2.978,
+    "ytd_pts": -372.25,
+    "ytd_usd": -744.5,
+    "ytd_pct": -2.978
   },
   "strategies": {
     "orb_30m": {
