@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T19:55:01+00:00",
+  "generated_at": "2026-06-23T20:00:00+00:00",
   "bridge_mode": "live",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -593,8 +593,8 @@
     },
     {
       "date": "2026-06-23",
-      "pnl_pts": -350.25,
-      "pnl_usd": -700.5
+      "pnl_pts": -478.5,
+      "pnl_usd": -957.0
     }
   ],
   "portfolio_stats": {
@@ -608,9 +608,9 @@
   },
   "active_positions": [],
   "net_returns": {
-    "5d_pts": -372.25,
-    "5d_usd": -744.5,
-    "5d_pct": -2.978,
+    "5d_pts": -500.5,
+    "5d_usd": -1001.0,
+    "5d_pct": -4.004,
     "ytd_pts": -500.5,
     "ytd_usd": -1001.0,
     "ytd_pct": -4.004
