@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T15:35:00+00:00",
+  "generated_at": "2026-06-23T15:40:00+00:00",
   "bridge_mode": "live",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -607,9 +607,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-06-23",
       "entry_px": 29977.25,
-      "current_px": 29757.75,
-      "pnl_pts": -219.5,
-      "pnl_usd": -439.0,
+      "current_px": 29712.75,
+      "pnl_pts": -264.5,
+      "pnl_usd": -529.0,
       "direction": "Long"
     },
     {
@@ -617,9 +617,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-06-23",
       "entry_px": 29855.25,
-      "current_px": 29757.75,
-      "pnl_pts": -97.5,
-      "pnl_usd": -195.0,
+      "current_px": 29712.75,
+      "pnl_pts": -142.5,
+      "pnl_usd": -285.0,
       "direction": "Long"
     }
   ],
