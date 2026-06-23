@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T10:10:00+00:00",
+  "generated_at": "2026-06-23T10:15:00+00:00",
   "bridge_mode": "live",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -3761,5 +3761,63 @@
         }
       ]
     }
+  },
+  "research": {
+    "total_tested": 0,
+    "total_pass": 0,
+    "total_fail": 0,
+    "total_skip": 0,
+    "pass_rate": 0.0,
+    "recent": [],
+    "queue": [
+      {
+        "id": 1,
+        "status": "rejected",
+        "summary": "Intraday MNQ trades initiated on 5m close above the prior 5-day high-of-highs, f",
+        "source": "arXiv q-fin (API)",
+        "created": "2026-06-23",
+        "verdict": null
+      },
+      {
+        "id": 2,
+        "status": "rejected",
+        "summary": "K-NN derived bear_probability and tail_risk metrics gate entries on 5m EMA cross",
+        "source": "r/algotrading",
+        "created": "2026-06-23",
+        "verdict": null
+      },
+      {
+        "id": 3,
+        "status": "rejected",
+        "summary": "MNQ intraday strategies degrade when forced to survive multi-year backtests due ",
+        "source": "r/algotrading",
+        "created": "2026-06-23",
+        "verdict": null
+      },
+      {
+        "id": 4,
+        "status": "rejected",
+        "summary": "MNQ exhibits exploitable microstructure during the first 60 minutes post-NY open",
+        "source": "r/algotrading",
+        "created": "2026-06-23",
+        "verdict": null
+      },
+      {
+        "id": 5,
+        "status": "pending",
+        "summary": "Layer orderbook imbalance (bid/ask volume ratio) onto existing trend signals to ",
+        "source": "r/algotrading",
+        "created": "2026-06-23",
+        "verdict": null
+      },
+      {
+        "id": 6,
+        "status": "rejected",
+        "summary": "Trade ORB breaks in the direction of overnight gap only when VIX term structure ",
+        "source": "Manual paste",
+        "created": "2026-06-23",
+        "verdict": null
+      }
+    ]
   }
 }
