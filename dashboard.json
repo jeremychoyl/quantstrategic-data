@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T14:00:00+00:00",
+  "generated_at": "2026-06-23T14:05:00+00:00",
   "bridge_mode": "live",
   "demo_since": "2026-06-13",
   "oos_equity_curve": [
@@ -3766,9 +3766,18 @@
     "total_tested": 0,
     "total_pass": 0,
     "total_fail": 0,
-    "total_skip": 0,
+    "total_skip": 1,
     "pass_rate": 0.0,
-    "recent": [],
+    "recent": [
+      {
+        "hyp_id": 7,
+        "at": "2026-06-23T14:01:51.788206+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy shape requires manual backtest implementation",
+        "stats": {},
+        "routing": "custom"
+      }
+    ],
     "queue": [
       {
         "id": 1,
@@ -3817,6 +3826,14 @@
         "source": "Manual paste",
         "created": "2026-06-23",
         "verdict": null
+      },
+      {
+        "id": 7,
+        "status": "skip",
+        "summary": "MNQ intraday entries across different timeframes and logic types exhibit hidden ",
+        "source": "r/algotrading",
+        "created": "2026-06-23",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
       }
     ]
   }
