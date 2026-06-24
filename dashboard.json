@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T22:10:04+00:00",
+  "generated_at": "2026-06-24T22:15:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -583,10 +583,10 @@
     {
       "date": "2026-06-23",
       "ema": 5609.0,
-      "orb": 4459.0,
+      "orb": 3739.0,
       "overnight": 1997.0,
       "dc": 4400.0,
-      "combined": 10068.0
+      "combined": 9349.0
     }
   ],
   "last_7_days": [
@@ -730,12 +730,12 @@
       "trade_days": 33
     },
     "orb": {
-      "pf": 1.79,
-      "sharpe": 3.65,
+      "pf": 1.59,
+      "sharpe": 2.93,
       "max_dd_usd": 1491.0,
-      "win_pct": 58.9,
-      "total_pts": 2229.4,
-      "total_usd": 4459.0,
+      "win_pct": 57.1,
+      "total_pts": 1869.6,
+      "total_usd": 3739.0,
       "trade_days": 56
     },
     "overnight": {
@@ -757,21 +757,21 @@
       "trade_days": 8
     },
     "ema+orb": {
-      "pf": 1.68,
-      "sharpe": 2.55,
+      "pf": 1.6,
+      "sharpe": 2.35,
       "max_dd_usd": 3683.0,
-      "win_pct": 56.2,
-      "total_pts": 5034.2,
-      "total_usd": 10068.0,
+      "win_pct": 54.8,
+      "total_pts": 4674.3,
+      "total_usd": 9349.0,
       "trade_days": 73
     },
     "ema+orb+dc": {
-      "pf": 1.89,
-      "sharpe": 3.31,
-      "max_dd_usd": 3744.0,
-      "win_pct": 56.8,
-      "total_pts": 7234.0,
-      "total_usd": 14468.0,
+      "pf": 1.81,
+      "sharpe": 3.12,
+      "max_dd_usd": 4455.0,
+      "win_pct": 55.4,
+      "total_pts": 6874.1,
+      "total_usd": 13748.0,
       "trade_days": 74
     },
     "ema+overnight": {
@@ -784,21 +784,21 @@
       "trade_days": 121
     },
     "orb+overnight": {
-      "pf": 1.32,
-      "sharpe": 1.61,
+      "pf": 1.27,
+      "sharpe": 1.42,
       "max_dd_usd": 6020.0,
-      "win_pct": 57.4,
-      "total_pts": 3227.9,
-      "total_usd": 6456.0,
+      "win_pct": 56.6,
+      "total_pts": 2868.0,
+      "total_usd": 5736.0,
       "trade_days": 122
     },
     "ema+orb+overnight": {
-      "pf": 1.44,
-      "sharpe": 1.75,
+      "pf": 1.4,
+      "sharpe": 1.64,
       "max_dd_usd": 8009.0,
-      "win_pct": 54.1,
-      "total_pts": 6032.6,
-      "total_usd": 12065.0,
+      "win_pct": 53.3,
+      "total_pts": 5672.7,
+      "total_usd": 11345.0,
       "trade_days": 122
     }
   },
@@ -838,35 +838,35 @@
       "max_consec_losses": 16
     },
     "orb": {
-      "expectancy_pts": 2.11,
-      "expectancy_usd": 4.22,
+      "expectancy_pts": 1.94,
+      "expectancy_usd": 3.88,
       "max_dd_usd": 12682.0,
       "profit_factor": 1.08,
       "n_trades": 2067,
       "win_pct": 45.8,
-      "sharpe": 0.28,
-      "sortino": 0.46,
-      "calmar": 0.04,
-      "cagr_pct": 2.1,
-      "monthly_mean_usd": 45,
-      "monthly_std_usd": 521,
-      "monthly_win_rate": 44.3,
-      "payoff_ratio": 1.28,
+      "sharpe": 0.26,
+      "sortino": 0.41,
+      "calmar": 0.03,
+      "cagr_pct": 2.0,
+      "monthly_mean_usd": 42,
+      "monthly_std_usd": 519,
+      "monthly_win_rate": 43.8,
+      "payoff_ratio": 1.27,
       "max_consec_losses": 9
     },
     "portfolio": {
-      "expectancy_pts": 21.47,
-      "expectancy_usd": 42.94,
+      "expectancy_pts": 21.33,
+      "expectancy_usd": 42.66,
       "max_dd_usd": 6585.0,
       "profit_factor": 1.56,
       "n_trades": 2570,
       "win_pct": 48.8,
-      "sharpe": 1.2,
-      "sortino": 2.49,
-      "calmar": 0.4,
-      "cagr_pct": 11.9,
-      "monthly_mean_usd": 572,
-      "monthly_std_usd": 1769,
+      "sharpe": 1.19,
+      "sortino": 2.47,
+      "calmar": 0.39,
+      "cagr_pct": 11.8,
+      "monthly_mean_usd": 568,
+      "monthly_std_usd": 1773,
       "monthly_win_rate": 60.1,
       "payoff_ratio": 1.63,
       "max_consec_losses": 13
@@ -2807,16 +2807,16 @@
       ]
     },
     "orb": {
-      "n_winners": 947,
-      "n_losers": 1120,
+      "n_winners": 946,
+      "n_losers": 1121,
       "n_breakeven": 0,
-      "total_net_usd": 8726,
+      "total_net_usd": 8006,
       "avg_win_usd": 120,
       "avg_loss_usd": -94,
       "largest_win_usd": 1139,
-      "largest_loss_usd": -700,
-      "gross_profit_usd": 113473,
-      "gross_loss_usd": -104747,
+      "largest_loss_usd": -711,
+      "gross_profit_usd": 113464,
+      "gross_loss_usd": -105458,
       "monthly": [
         {
           "month": "2010-07",
@@ -3775,8 +3775,8 @@
         },
         {
           "month": "2026-06",
-          "pnl": 669,
-          "equity": 8726
+          "pnl": -51,
+          "equity": 8006
         }
       ]
     }
@@ -3796,10 +3796,10 @@
         "exit_type": "stop",
         "actual_pnl_pts": -350.25,
         "actual_pnl_usd": -700.5,
-        "backtest_exp_pts": 2.11,
-        "backtest_exp_usd": 4.22,
-        "vs_expectancy_pts": -352.36,
-        "vs_expectancy_usd": -704.72,
+        "backtest_exp_pts": 1.94,
+        "backtest_exp_usd": 3.88,
+        "vs_expectancy_pts": -352.19,
+        "vs_expectancy_usd": -704.38,
         "week": "W1 (Jun 22)",
         "trade_date": "2026-06-23"
       },
