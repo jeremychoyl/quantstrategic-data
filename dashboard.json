@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T08:45:03+00:00",
+  "generated_at": "2026-06-24T08:50:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3859,9 +3859,17 @@
     "total_tested": 0,
     "total_pass": 0,
     "total_fail": 0,
-    "total_skip": 1,
+    "total_skip": 2,
     "pass_rate": 0.0,
     "recent": [
+      {
+        "hyp_id": 5,
+        "at": "2026-06-24T08:48:25.771269+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires real-time bid/ask volume imbalance (bid_ask_volume_1m) and tick-level orderflow data that are not reliably available in standard backtesting environments; scaled limit order execution with multi-tranche logic and 1m wick confirmation cannot be reliably simulated without live order book reconstruction; VIX same-bar intraday gating is not available without separate real-time feed.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 7,
         "at": "2026-06-23T14:01:51.788206+00:00",
@@ -3906,11 +3914,11 @@
       },
       {
         "id": 5,
-        "status": "pending",
+        "status": "skip",
         "summary": "Layer orderbook imbalance (bid/ask volume ratio) onto existing trend signals to ",
         "source": "r/algotrading",
         "created": "2026-06-23",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time bid/ask volume imbalance (bid_ask_volume_1m) and tick-level orderflow data that are not reliably available in standard backtesting environments; scaled limit order execution with multi-tranche logic and 1m wick confirmation cannot be reliably simulated without live order book reconstruction; VIX same-bar intraday gating is not available without separate real-time feed.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       },
       {
         "id": 6,
