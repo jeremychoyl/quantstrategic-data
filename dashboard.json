@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:30:04+00:00",
+  "generated_at": "2026-06-25T02:35:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3891,9 +3891,33 @@
     "total_tested": 0,
     "total_pass": 0,
     "total_fail": 0,
-    "total_skip": 2,
+    "total_skip": 5,
     "pass_rate": 0.0,
     "recent": [
+      {
+        "hyp_id": 10,
+        "at": "2026-06-25T02:34:42.964961+00:00",
+        "verdict": "SKIP",
+        "reason": "Fractional differentiation (d=0.5) is a custom feature engineering technique not supported by standard backtest infrastructure. The strategy requires real-time computation of a non-standard stationary transform, which introduces implementation risk, data dependency issues, and cannot be reliably validated in standard backtest templates. Additionally, the entry logic mixes fractionally-differentiated price signals with raw price SMA crosses, creating a hybrid signal that lacks clean architectural alignment.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
+      {
+        "hyp_id": 9,
+        "at": "2026-06-25T02:34:01.795289+00:00",
+        "verdict": "SKIP",
+        "reason": "Architecture veto: 'adaptive' detected \u2014 real-time param tuning prohibited by SOP.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
+      {
+        "hyp_id": 8,
+        "at": "2026-06-25T02:33:18.417042+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy shape requires manual backtest implementation",
+        "stats": {},
+        "routing": "custom"
+      },
       {
         "hyp_id": 5,
         "at": "2026-06-24T08:48:25.771269+00:00",
@@ -3967,6 +3991,46 @@
         "source": "r/algotrading",
         "created": "2026-06-23",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
+      },
+      {
+        "id": 8,
+        "status": "skip",
+        "summary": "A point-in-time-correct ATR trailing stop with monotonic ratcheting, applied to ",
+        "source": "OpenAlex (Academic Papers)",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
+      },
+      {
+        "id": 9,
+        "status": "skip",
+        "summary": "Detect market microstructure regime shifts via rolling volatility and order flow",
+        "source": "Ernie Chan Blog",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Architecture veto: 'adaptive' detected \\u2014 real-time param tuning prohibited by SOP.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 10,
+        "status": "skip",
+        "summary": "Fractionally differentiated price series (d=0.5) identifies stationary mean-reve",
+        "source": "Hudson & Thames",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Fractional differentiation (d=0.5) is a custom feature engineering technique not supported by standard backtest infrastructure. The strategy requires real-time computation of a non-standard stationary transform, which introduces implementation risk, data dependency issues, and cannot be reliably validated in standard backtest templates. Additionally, the entry logic mixes fractionally-differentiated price signals with raw price SMA crosses, creating a hybrid signal that lacks clean architectural alignment.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 11,
+        "status": "pending",
+        "summary": "Detect MNQ mean reversion on 5m bars using adaptive rolling volatility to identi",
+        "source": "Hudson & Thames",
+        "created": "2026-06-25",
+        "verdict": null
+      },
+      {
+        "id": 12,
+        "status": "pending",
+        "summary": "Construct a momentum-decay filter using real-time rate-of-change (ROC) to gate s",
+        "source": "Hudson & Thames",
+        "created": "2026-06-25",
+        "verdict": null
       }
     ]
   }
