@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T23:55:04+00:00",
+  "generated_at": "2026-06-25T00:00:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3867,6 +3867,13 @@
         "date": "2026-06-24",
         "day_pnl_pts": -396.25,
         "day_pnl_usd": -792.5,
+        "cum_pts": -874.75,
+        "cum_usd": -1749.5
+      },
+      {
+        "date": "2026-06-25",
+        "day_pnl_pts": 0.0,
+        "day_pnl_usd": 0.0,
         "cum_pts": -874.75,
         "cum_usd": -1749.5
       }
