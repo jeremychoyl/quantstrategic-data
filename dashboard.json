@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:35:04+00:00",
+  "generated_at": "2026-06-25T02:40:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3891,9 +3891,25 @@
     "total_tested": 0,
     "total_pass": 0,
     "total_fail": 0,
-    "total_skip": 5,
+    "total_skip": 7,
     "pass_rate": 0.0,
     "recent": [
+      {
+        "hyp_id": 12,
+        "at": "2026-06-25T02:36:11.407872+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy shape requires manual backtest implementation",
+        "stats": {},
+        "routing": "custom"
+      },
+      {
+        "hyp_id": 11,
+        "at": "2026-06-25T02:35:28.187821+00:00",
+        "verdict": "SKIP",
+        "reason": "Architecture veto: 'adaptive' detected \u2014 real-time param tuning prohibited by SOP.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 10,
         "at": "2026-06-25T02:34:42.964961+00:00",
@@ -4018,19 +4034,19 @@
       },
       {
         "id": 11,
-        "status": "pending",
+        "status": "skip",
         "summary": "Detect MNQ mean reversion on 5m bars using adaptive rolling volatility to identi",
         "source": "Hudson & Thames",
         "created": "2026-06-25",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Architecture veto: 'adaptive' detected \\u2014 real-time param tuning prohibited by SOP.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       },
       {
         "id": 12,
-        "status": "pending",
+        "status": "skip",
         "summary": "Construct a momentum-decay filter using real-time rate-of-change (ROC) to gate s",
         "source": "Hudson & Thames",
         "created": "2026-06-25",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
       }
     ]
   }
