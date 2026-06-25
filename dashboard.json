@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T10:10:04+00:00",
+  "generated_at": "2026-06-25T10:15:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3888,12 +3888,59 @@
     }
   },
   "research": {
-    "total_tested": 0,
+    "total_tested": 4,
     "total_pass": 0,
-    "total_fail": 0,
-    "total_skip": 7,
+    "total_fail": 4,
+    "total_skip": 8,
     "pass_rate": 0.0,
     "recent": [
+      {
+        "hyp_id": 17,
+        "at": "2026-06-25T10:14:56.484353+00:00",
+        "verdict": "FAIL",
+        "reason": "No trades generated \u2014 conditions too restrictive",
+        "stats": {},
+        "routing": "reversion"
+      },
+      {
+        "hyp_id": 16,
+        "at": "2026-06-25T10:14:08.628116+00:00",
+        "verdict": "FAIL",
+        "reason": "Era gate FAIL (2010-2020 PF 0.00 | 2021-2026 PF 0.00); WF 1/1 sit-outs",
+        "stats": {
+          "n": 61,
+          "pf": 0.0,
+          "sharpe": -4.396048165073716e+16,
+          "win_pct": 0.0,
+          "total_usd": -151.0,
+          "max_dd": -149.0
+        },
+        "routing": "reversion"
+      },
+      {
+        "hyp_id": 15,
+        "at": "2026-06-25T10:13:19.535288+00:00",
+        "verdict": "SKIP",
+        "reason": "Adaptive regime-switching stop placement and exit thresholds based on realized volatility percentiles and ADX regimes violate fixed-parameter backtest architecture. Dynamic stop widths (2.5% vs 1.5%), conditional exit logic (volatility spike vs regime decay), and multi-timeframe data dependencies (5m + daily + VIX + rolling 252-day percentile windows) require custom execution engine not supported by standard templates.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
+      {
+        "hyp_id": 14,
+        "at": "2026-06-25T10:12:35.752654+00:00",
+        "verdict": "FAIL",
+        "reason": "No trades generated \u2014 conditions too restrictive",
+        "stats": {},
+        "routing": "reversion"
+      },
+      {
+        "hyp_id": 13,
+        "at": "2026-06-25T10:11:51.465146+00:00",
+        "verdict": "FAIL",
+        "reason": "No trades generated \u2014 conditions too restrictive",
+        "stats": {},
+        "routing": "breakout"
+      },
       {
         "hyp_id": 12,
         "at": "2026-06-25T02:36:11.407872+00:00",
@@ -3929,22 +3976,6 @@
       {
         "hyp_id": 8,
         "at": "2026-06-25T02:33:18.417042+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy shape requires manual backtest implementation",
-        "stats": {},
-        "routing": "custom"
-      },
-      {
-        "hyp_id": 5,
-        "at": "2026-06-24T08:48:25.771269+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires real-time bid/ask volume imbalance (bid_ask_volume_1m) and tick-level orderflow data that are not reliably available in standard backtesting environments; scaled limit order execution with multi-tranche logic and 1m wick confirmation cannot be reliably simulated without live order book reconstruction; VIX same-bar intraday gating is not available without separate real-time feed.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 7,
-        "at": "2026-06-23T14:01:51.788206+00:00",
         "verdict": "SKIP",
         "reason": "Strategy shape requires manual backtest implementation",
         "stats": {},
@@ -4050,9 +4081,49 @@
       },
       {
         "id": 13,
-        "status": "pending",
+        "status": "failed",
         "summary": "Price breakouts above N-bar highs in MNQ exhibit mean-reverting continuation whe",
         "source": "X/timeline",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"No trades generated \\u2014 conditions too restrictive\", \"stats\": {}, \"routing\": \"breakout\"}"
+      },
+      {
+        "id": 14,
+        "status": "failed",
+        "summary": "IBS extremes (close in bottom/top 20% of daily range) identify intraday exhausti",
+        "source": "X/timeline",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"No trades generated \\u2014 conditions too restrictive\", \"stats\": {}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 15,
+        "status": "skip",
+        "summary": "Regime-conditional position sizing and exit thresholds based on realized volatil",
+        "source": "X/bookmarks",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Adaptive regime-switching stop placement and exit thresholds based on realized volatility percentiles and ADX regimes violate fixed-parameter backtest architecture. Dynamic stop widths (2.5% vs 1.5%), conditional exit logic (volatility spike vs regime decay), and multi-timeframe data dependencies (5m + daily + VIX + rolling 252-day percentile windows) require custom execution engine not supported by standard templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 16,
+        "status": "failed",
+        "summary": "MNQ strategies validated via Monte Carlo path simulation of empirical returns su",
+        "source": "X/bookmarks",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"Era gate FAIL (2010-2020 PF 0.00 | 2021-2026 PF 0.00); WF 1/1 sit-outs\", \"stats\": {\"n\": 61, \"pf\": 0.0, \"sharpe\": -4.396048165073716e+16, \"win_pct\": 0.0, \"total_usd\": -151.0, \"max_dd\": -149.0}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 17,
+        "status": "failed",
+        "summary": "Fair Value Gap (FVG) entries on 5m MNQ charts, triggered after a liquidity sweep",
+        "source": "X/bookmarks",
+        "created": "2026-06-25",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"No trades generated \\u2014 conditions too restrictive\", \"stats\": {}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 18,
+        "status": "pending",
+        "summary": "MNQ exhibits discrete state transitions (trending up/down/ranging) detectable vi",
+        "source": "X/bookmarks",
         "created": "2026-06-25",
         "verdict": null
       }
