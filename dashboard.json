@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T10:05:04+00:00",
+  "generated_at": "2026-06-25T10:10:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4047,6 +4047,14 @@
         "source": "Hudson & Thames",
         "created": "2026-06-25",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
+      },
+      {
+        "id": 13,
+        "status": "pending",
+        "summary": "Price breakouts above N-bar highs in MNQ exhibit mean-reverting continuation whe",
+        "source": "X/timeline",
+        "created": "2026-06-25",
+        "verdict": null
       }
     ]
   }
