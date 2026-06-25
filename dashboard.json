@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T14:15:03+00:00",
+  "generated_at": "2026-06-25T14:20:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -620,18 +620,7 @@
     "total_usd": 13214.0,
     "trade_days": 74
   },
-  "active_positions": [
-    {
-      "strategy": "EMA Cross 5m",
-      "size": "1 MNQ",
-      "entry_date": "2026-06-25",
-      "entry_px": 29959.75,
-      "current_px": 29546.5,
-      "pnl_pts": -413.25,
-      "pnl_usd": -826.5,
-      "direction": "Long"
-    }
-  ],
+  "active_positions": [],
   "net_returns": {
     "5d_pts": -896.75,
     "5d_usd": -1793.5,
@@ -3853,12 +3842,32 @@
         "vs_expectancy_usd": -844.68,
         "week": "W1 (Jun 22)",
         "trade_date": "2026-06-24"
+      },
+      {
+        "strategy": "EMA Cross 5m",
+        "strategy_key": "ema",
+        "direction": "Long",
+        "entry_time_sgt": "2026-06-25 21:41",
+        "entry_signal_ref": 29996.5,
+        "entry_fill": 29959.75,
+        "entry_slippage_pts": -36.75,
+        "exit_time_sgt": "2026-06-25 22:16",
+        "exit_fill": 0.0,
+        "exit_type": "time",
+        "actual_pnl_pts": null,
+        "actual_pnl_usd": null,
+        "backtest_exp_pts": 26.09,
+        "backtest_exp_usd": 52.18,
+        "vs_expectancy_pts": null,
+        "vs_expectancy_usd": null,
+        "week": "W1 (Jun 22)",
+        "trade_date": "2026-06-25"
       }
     ],
     "weeks": [
       {
         "week": "W1 (Jun 22)",
-        "trades_count": 3,
+        "trades_count": 4,
         "total_pnl_pts": -874.75,
         "total_pnl_usd": -1749.5
       }
