@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T11:20:03+00:00",
+  "generated_at": "2026-06-26T11:25:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4307,7 +4307,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-26T08:14:03+00:00",
+    "as_of": "2026-06-26T11:24:22+00:00",
     "note": "16-year backtest projection, 1 contract each. Gold/Crude execute on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24/25), isolated from the live MNQ book. EMA is long-only.",
     "n_strategies": 5,
     "per_strategy": [
@@ -4415,7 +4415,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-26T11:20:10+00:00",
+    "as_of": "2026-06-26T11:25:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
