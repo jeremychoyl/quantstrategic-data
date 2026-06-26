@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T15:25:03+00:00",
+  "generated_at": "2026-06-26T15:30:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -621,9 +621,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-06-26",
       "entry_px": 29519.25,
-      "current_px": 29558.0,
-      "pnl_pts": 38.75,
-      "pnl_usd": 77.5,
+      "current_px": 29592.5,
+      "pnl_pts": 73.25,
+      "pnl_usd": 146.5,
       "direction": "Long"
     }
   ],
@@ -11390,7 +11390,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-26T15:25:10+00:00",
+    "as_of": "2026-06-26T15:30:11+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
