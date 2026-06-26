@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:50:04+00:00",
+  "generated_at": "2026-06-26T19:55:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -621,9 +621,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-06-26",
       "entry_px": 29519.25,
-      "current_px": 29518.25,
-      "pnl_pts": -1.0,
-      "pnl_usd": -2.0,
+      "current_px": 29452.5,
+      "pnl_pts": -66.75,
+      "pnl_usd": -133.5,
       "direction": "Long"
     }
   ],
@@ -631,9 +631,9 @@
     "5d_pts": -1008.0,
     "5d_usd": -2016.0,
     "5d_pct": -8.064,
-    "ytd_pts": -896.75,
-    "ytd_usd": -1793.5,
-    "ytd_pct": -7.174
+    "ytd_pts": -963.25,
+    "ytd_usd": -1926.5,
+    "ytd_pct": -7.706
   },
   "strategies": {
     "orb_30m": {
@@ -3914,14 +3914,34 @@
         "vs_expectancy_usd": null,
         "week": "W1 (Jun 22)",
         "trade_date": "2026-06-25"
+      },
+      {
+        "strategy": "EMA Cross 5m",
+        "strategy_key": "ema",
+        "direction": "Long",
+        "entry_time_sgt": "2026-06-26 22:11",
+        "entry_signal_ref": 29571.0,
+        "entry_fill": 29519.25,
+        "entry_slippage_pts": -51.75,
+        "exit_time_sgt": "2026-06-27 03:55",
+        "exit_fill": 29452.75,
+        "exit_type": "eod",
+        "actual_pnl_pts": -66.5,
+        "actual_pnl_usd": -133.0,
+        "backtest_exp_pts": 26.05,
+        "backtest_exp_usd": 52.1,
+        "vs_expectancy_pts": -92.55,
+        "vs_expectancy_usd": -185.1,
+        "week": "W1 (Jun 22)",
+        "trade_date": "2026-06-26"
       }
     ],
     "weeks": [
       {
         "week": "W1 (Jun 22)",
-        "trades_count": 4,
-        "total_pnl_pts": -874.75,
-        "total_pnl_usd": -1749.5
+        "trades_count": 5,
+        "total_pnl_pts": -941.25,
+        "total_pnl_usd": -1882.5
       }
     ],
     "week_list": [
@@ -3951,18 +3971,18 @@
       },
       {
         "date": "2026-06-26",
-        "day_pnl_pts": 0.0,
-        "day_pnl_usd": 0.0,
-        "cum_pts": -874.75,
-        "cum_usd": -1749.5
+        "day_pnl_pts": -66.5,
+        "day_pnl_usd": -133.0,
+        "cum_pts": -941.25,
+        "cum_usd": -1882.5
       }
     ],
     "summary": {
-      "total_trades": 3,
-      "total_pnl_pts": -874.75,
-      "total_pnl_usd": -1749.5,
+      "total_trades": 4,
+      "total_pnl_pts": -941.25,
+      "total_pnl_usd": -1882.5,
       "win_rate": 0.0,
-      "avg_slippage_pts": -18.17,
+      "avg_slippage_pts": -26.56,
       "live_since": "2026-06-23"
     }
   },
@@ -11392,7 +11412,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-26T19:50:11+00:00",
+    "as_of": "2026-06-26T19:55:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
