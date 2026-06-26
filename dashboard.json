@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:45:04+00:00",
+  "generated_at": "2026-06-26T07:50:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3910,12 +3910,28 @@
     }
   },
   "research": {
-    "total_tested": 11,
-    "total_pass": 3,
+    "total_tested": 12,
+    "total_pass": 4,
     "total_fail": 8,
     "total_skip": 10,
-    "pass_rate": 27.3,
+    "pass_rate": 33.3,
     "recent": [
+      {
+        "hyp_id": "25",
+        "at": "2026-06-26T07:45:13.463997+00:00",
+        "verdict": "PASS",
+        "reason": "Era gate PASS | WF 0/16 sit-outs | Calmar 1.30 | PF 3.46 Sharpe 3.96",
+        "stats": {
+          "n": 761,
+          "pf": 3.463,
+          "sharpe": 3.96,
+          "win_pct": 30.2,
+          "total_usd": 44086.0,
+          "max_dd": -2125.0,
+          "calmar": 1.301
+        },
+        "routing": "reversion"
+      },
       {
         "hyp_id": "24",
         "at": "2026-06-26T07:45:10.771026+00:00",
@@ -4039,14 +4055,6 @@
           "max_dd": -2611.0
         },
         "routing": "breakout"
-      },
-      {
-        "hyp_id": 18,
-        "at": "2026-06-25T10:15:42.732727+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy shape requires manual backtest implementation",
-        "stats": {},
-        "routing": "custom"
       }
     ],
     "queue": [
@@ -4248,7 +4256,7 @@
         "summary": "Short Micro Crude Oil (MCL/WTI) when the daily settle makes a new 10-day high \u2014 ",
         "source": "Multi-instrument scan (validated candidate)",
         "created": "2026-06-26",
-        "verdict": "{\"verdict\": \"PASS\", \"reason\": \"Era gate PASS | WF 0/15 sit-outs | Calmar 1.06 | PF 3.47 Sharpe 3.92\", \"stats\": {\"n\": 699, \"pf\": 3.467, \"sharpe\": 3.915, \"win_pct\": 31.2, \"total_usd\": 38324.0, \"max_dd\": -2275.0, \"calmar\": 1.057}, \"routing\": \"reversion\"}"
+        "verdict": "{\"verdict\": \"PASS\", \"reason\": \"Era gate PASS | WF 0/16 sit-outs | Calmar 1.30 | PF 3.46 Sharpe 3.96\", \"stats\": {\"n\": 761, \"pf\": 3.463, \"sharpe\": 3.96, \"win_pct\": 30.2, \"total_usd\": 44086.0, \"max_dd\": -2125.0, \"calmar\": 1.301}, \"routing\": \"reversion\"}"
       }
     ]
   }
