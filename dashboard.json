@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T11:45:04+00:00",
+  "generated_at": "2026-06-26T11:48:40+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4307,7 +4307,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-26T11:24:22+00:00",
+    "as_of": "2026-06-26T11:48:11+00:00",
     "note": "16-year backtest projection, 1 contract each. Gold/Crude execute on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24/25), isolated from the live MNQ book. EMA is long-only.",
     "n_strategies": 5,
     "per_strategy": [
@@ -4412,10 +4412,818 @@
         "Gold": 0.02,
         "Crude": 1.0
       }
+    },
+    "ytd_equity": {
+      "as_of": "2026-06-26T11:48:12+00:00",
+      "since": "2026-01-01",
+      "through": "2026-06-23",
+      "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC) + Gold/Crude demo shorts. Backtest/OOS model \u2014 not realized fills.",
+      "series": [
+        {
+          "date": "2026-01-02",
+          "orb": 510,
+          "ema": 0,
+          "dc": 0,
+          "gold": 0,
+          "crude": 149,
+          "combined": 659
+        },
+        {
+          "date": "2026-01-06",
+          "orb": 510,
+          "ema": 0,
+          "dc": 0,
+          "gold": -34,
+          "crude": 149,
+          "combined": 625
+        },
+        {
+          "date": "2026-01-07",
+          "orb": 389,
+          "ema": 0,
+          "dc": 0,
+          "gold": -34,
+          "crude": 149,
+          "combined": 504
+        },
+        {
+          "date": "2026-01-12",
+          "orb": 455,
+          "ema": 0,
+          "dc": 0,
+          "gold": -34,
+          "crude": 145,
+          "combined": 566
+        },
+        {
+          "date": "2026-01-13",
+          "orb": 455,
+          "ema": 0,
+          "dc": 0,
+          "gold": -34,
+          "crude": 141,
+          "combined": 562
+        },
+        {
+          "date": "2026-01-14",
+          "orb": 455,
+          "ema": 0,
+          "dc": 0,
+          "gold": -300,
+          "crude": 137,
+          "combined": 292
+        },
+        {
+          "date": "2026-01-15",
+          "orb": 697,
+          "ema": 391,
+          "dc": 0,
+          "gold": -300,
+          "crude": 137,
+          "combined": 925
+        },
+        {
+          "date": "2026-01-19",
+          "orb": 697,
+          "ema": 391,
+          "dc": 0,
+          "gold": -963,
+          "crude": 137,
+          "combined": 262
+        },
+        {
+          "date": "2026-01-20",
+          "orb": 697,
+          "ema": 391,
+          "dc": 0,
+          "gold": -966,
+          "crude": 137,
+          "combined": 259
+        },
+        {
+          "date": "2026-01-21",
+          "orb": 697,
+          "ema": 1589,
+          "dc": 929,
+          "gold": -969,
+          "crude": 137,
+          "combined": 2383
+        },
+        {
+          "date": "2026-01-22",
+          "orb": 497,
+          "ema": 1589,
+          "dc": 929,
+          "gold": -972,
+          "crude": 85,
+          "combined": 2128
+        },
+        {
+          "date": "2026-01-23",
+          "orb": 497,
+          "ema": 1589,
+          "dc": 929,
+          "gold": -975,
+          "crude": 85,
+          "combined": 2125
+        },
+        {
+          "date": "2026-01-26",
+          "orb": 481,
+          "ema": 1589,
+          "dc": 929,
+          "gold": -978,
+          "crude": 85,
+          "combined": 2106
+        },
+        {
+          "date": "2026-01-27",
+          "orb": 518,
+          "ema": 1589,
+          "dc": 929,
+          "gold": -981,
+          "crude": 85,
+          "combined": 2140
+        },
+        {
+          "date": "2026-01-28",
+          "orb": 518,
+          "ema": 1589,
+          "dc": 929,
+          "gold": -984,
+          "crude": 81,
+          "combined": 2133
+        },
+        {
+          "date": "2026-01-29",
+          "orb": 518,
+          "ema": 1347,
+          "dc": 929,
+          "gold": -984,
+          "crude": 77,
+          "combined": 1886
+        },
+        {
+          "date": "2026-02-03",
+          "orb": 518,
+          "ema": 2206,
+          "dc": 929,
+          "gold": -984,
+          "crude": 77,
+          "combined": 2745
+        },
+        {
+          "date": "2026-02-04",
+          "orb": 816,
+          "ema": 2206,
+          "dc": 929,
+          "gold": -984,
+          "crude": 77,
+          "combined": 3043
+        },
+        {
+          "date": "2026-02-05",
+          "orb": 827,
+          "ema": 2206,
+          "dc": 1679,
+          "gold": 5847,
+          "crude": 77,
+          "combined": 10636
+        },
+        {
+          "date": "2026-02-06",
+          "orb": 827,
+          "ema": 2206,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 344,
+          "combined": 12056
+        },
+        {
+          "date": "2026-02-11",
+          "orb": 786,
+          "ema": 1288,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 344,
+          "combined": 11097
+        },
+        {
+          "date": "2026-02-12",
+          "orb": 1589,
+          "ema": 2065,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 344,
+          "combined": 12677
+        },
+        {
+          "date": "2026-02-17",
+          "orb": 889,
+          "ema": 2238,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 344,
+          "combined": 12149
+        },
+        {
+          "date": "2026-02-18",
+          "orb": 889,
+          "ema": 2162,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 344,
+          "combined": 12073
+        },
+        {
+          "date": "2026-02-20",
+          "orb": 889,
+          "ema": 2162,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 340,
+          "combined": 12069
+        },
+        {
+          "date": "2026-02-23",
+          "orb": 1140,
+          "ema": 2162,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 340,
+          "combined": 12321
+        },
+        {
+          "date": "2026-02-24",
+          "orb": 1140,
+          "ema": 1331,
+          "dc": 2831,
+          "gold": 5847,
+          "crude": 340,
+          "combined": 11490
+        },
+        {
+          "date": "2026-02-25",
+          "orb": 1140,
+          "ema": 1331,
+          "dc": 2831,
+          "gold": 5506,
+          "crude": 340,
+          "combined": 11149
+        },
+        {
+          "date": "2026-02-27",
+          "orb": 1140,
+          "ema": 1331,
+          "dc": 2831,
+          "gold": 5017,
+          "crude": 259,
+          "combined": 10578
+        },
+        {
+          "date": "2026-03-02",
+          "orb": 1140,
+          "ema": 1331,
+          "dc": 2831,
+          "gold": 5014,
+          "crude": 255,
+          "combined": 10571
+        },
+        {
+          "date": "2026-03-03",
+          "orb": 1140,
+          "ema": 330,
+          "dc": 2831,
+          "gold": 5014,
+          "crude": 251,
+          "combined": 9566
+        },
+        {
+          "date": "2026-03-04",
+          "orb": 1140,
+          "ema": 330,
+          "dc": 2831,
+          "gold": 5014,
+          "crude": 247,
+          "combined": 9562
+        },
+        {
+          "date": "2026-03-05",
+          "orb": 636,
+          "ema": -438,
+          "dc": 2831,
+          "gold": 5014,
+          "crude": 243,
+          "combined": 8286
+        },
+        {
+          "date": "2026-03-06",
+          "orb": 421,
+          "ema": -438,
+          "dc": 2831,
+          "gold": 5014,
+          "crude": 239,
+          "combined": 8067
+        },
+        {
+          "date": "2026-03-09",
+          "orb": 421,
+          "ema": -450,
+          "dc": 2831,
+          "gold": 5014,
+          "crude": 235,
+          "combined": 8051
+        },
+        {
+          "date": "2026-03-10",
+          "orb": 421,
+          "ema": -450,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": 235,
+          "combined": 8090
+        },
+        {
+          "date": "2026-03-11",
+          "orb": 98,
+          "ema": 76,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": 235,
+          "combined": 8293
+        },
+        {
+          "date": "2026-03-12",
+          "orb": 98,
+          "ema": 76,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": -80,
+          "combined": 7978
+        },
+        {
+          "date": "2026-03-13",
+          "orb": 533,
+          "ema": 76,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": -84,
+          "combined": 8408
+        },
+        {
+          "date": "2026-03-16",
+          "orb": 533,
+          "ema": 199,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": -84,
+          "combined": 8532
+        },
+        {
+          "date": "2026-03-17",
+          "orb": 428,
+          "ema": 199,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": -84,
+          "combined": 8428
+        },
+        {
+          "date": "2026-03-18",
+          "orb": 868,
+          "ema": 952,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": -84,
+          "combined": 9620
+        },
+        {
+          "date": "2026-03-20",
+          "orb": 1236,
+          "ema": 952,
+          "dc": 2831,
+          "gold": 5053,
+          "crude": -137,
+          "combined": 9936
+        },
+        {
+          "date": "2026-03-23",
+          "orb": 1236,
+          "ema": 322,
+          "dc": 2281,
+          "gold": 5053,
+          "crude": -137,
+          "combined": 8755
+        },
+        {
+          "date": "2026-03-25",
+          "orb": 1180,
+          "ema": 1625,
+          "dc": 2281,
+          "gold": 5053,
+          "crude": -137,
+          "combined": 10002
+        },
+        {
+          "date": "2026-03-26",
+          "orb": 1698,
+          "ema": 1625,
+          "dc": 2281,
+          "gold": 5053,
+          "crude": -137,
+          "combined": 10520
+        },
+        {
+          "date": "2026-03-27",
+          "orb": 1946,
+          "ema": 1625,
+          "dc": 2789,
+          "gold": 5053,
+          "crude": -833,
+          "combined": 10580
+        },
+        {
+          "date": "2026-03-30",
+          "orb": 2211,
+          "ema": 1625,
+          "dc": 3588,
+          "gold": 5053,
+          "crude": -837,
+          "combined": 11640
+        },
+        {
+          "date": "2026-03-31",
+          "orb": 2211,
+          "ema": 1941,
+          "dc": 5224,
+          "gold": 5053,
+          "crude": -837,
+          "combined": 13592
+        },
+        {
+          "date": "2026-04-02",
+          "orb": 2211,
+          "ema": 1088,
+          "dc": 5224,
+          "gold": 5053,
+          "crude": -1773,
+          "combined": 11803
+        },
+        {
+          "date": "2026-04-06",
+          "orb": 1975,
+          "ema": 1088,
+          "dc": 5224,
+          "gold": 5053,
+          "crude": -1777,
+          "combined": 11563
+        },
+        {
+          "date": "2026-04-07",
+          "orb": 1528,
+          "ema": 5440,
+          "dc": 5224,
+          "gold": 5053,
+          "crude": -1781,
+          "combined": 15463
+        },
+        {
+          "date": "2026-04-13",
+          "orb": 1945,
+          "ema": 5440,
+          "dc": 5224,
+          "gold": 5053,
+          "crude": -1781,
+          "combined": 15880
+        },
+        {
+          "date": "2026-04-14",
+          "orb": 2373,
+          "ema": 5440,
+          "dc": 5224,
+          "gold": 5044,
+          "crude": -1781,
+          "combined": 16299
+        },
+        {
+          "date": "2026-04-15",
+          "orb": 2952,
+          "ema": 5440,
+          "dc": 5224,
+          "gold": 5044,
+          "crude": -1727,
+          "combined": 16932
+        },
+        {
+          "date": "2026-04-16",
+          "orb": 3002,
+          "ema": 5440,
+          "dc": 5224,
+          "gold": 5044,
+          "crude": -1727,
+          "combined": 16982
+        },
+        {
+          "date": "2026-04-17",
+          "orb": 3141,
+          "ema": 5440,
+          "dc": 5224,
+          "gold": 5118,
+          "crude": -1727,
+          "combined": 17195
+        },
+        {
+          "date": "2026-04-21",
+          "orb": 2883,
+          "ema": 4917,
+          "dc": 5224,
+          "gold": 5118,
+          "crude": -1727,
+          "combined": 16415
+        },
+        {
+          "date": "2026-04-22",
+          "orb": 3239,
+          "ema": 5015,
+          "dc": 5224,
+          "gold": 5118,
+          "crude": -1727,
+          "combined": 16869
+        },
+        {
+          "date": "2026-04-23",
+          "orb": 2935,
+          "ema": 4354,
+          "dc": 5224,
+          "gold": 5118,
+          "crude": -1727,
+          "combined": 15903
+        },
+        {
+          "date": "2026-04-24",
+          "orb": 3273,
+          "ema": 4354,
+          "dc": 5224,
+          "gold": 5118,
+          "crude": -1727,
+          "combined": 16242
+        },
+        {
+          "date": "2026-04-27",
+          "orb": 3280,
+          "ema": 4354,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1727,
+          "combined": 17328
+        },
+        {
+          "date": "2026-04-28",
+          "orb": 3280,
+          "ema": 4167,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1727,
+          "combined": 17142
+        },
+        {
+          "date": "2026-04-29",
+          "orb": 3395,
+          "ema": 3620,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1731,
+          "combined": 16706
+        },
+        {
+          "date": "2026-04-30",
+          "orb": 3395,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1731,
+          "combined": 19856
+        },
+        {
+          "date": "2026-05-01",
+          "orb": 3286,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1731,
+          "combined": 19747
+        },
+        {
+          "date": "2026-05-04",
+          "orb": 3041,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1731,
+          "combined": 19502
+        },
+        {
+          "date": "2026-05-05",
+          "orb": 3020,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1731,
+          "combined": 19481
+        },
+        {
+          "date": "2026-05-06",
+          "orb": 3391,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -1731,
+          "combined": 19852
+        },
+        {
+          "date": "2026-05-07",
+          "orb": 3155,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21003
+        },
+        {
+          "date": "2026-05-08",
+          "orb": 3537,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21385
+        },
+        {
+          "date": "2026-05-13",
+          "orb": 3899,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21747
+        },
+        {
+          "date": "2026-05-14",
+          "orb": 3916,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21764
+        },
+        {
+          "date": "2026-05-15",
+          "orb": 3757,
+          "ema": 6770,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21605
+        },
+        {
+          "date": "2026-05-19",
+          "orb": 3757,
+          "ema": 6573,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21408
+        },
+        {
+          "date": "2026-05-20",
+          "orb": 4051,
+          "ema": 6811,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 21939
+        },
+        {
+          "date": "2026-05-21",
+          "orb": 3703,
+          "ema": 8834,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": -344,
+          "combined": 23615
+        },
+        {
+          "date": "2026-05-26",
+          "orb": 3830,
+          "ema": 8834,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 24807
+        },
+        {
+          "date": "2026-05-28",
+          "orb": 4145,
+          "ema": 8834,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 25122
+        },
+        {
+          "date": "2026-05-29",
+          "orb": 3790,
+          "ema": 8834,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 24767
+        },
+        {
+          "date": "2026-06-02",
+          "orb": 3965,
+          "ema": 8834,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 24942
+        },
+        {
+          "date": "2026-06-04",
+          "orb": 3965,
+          "ema": 6518,
+          "dc": 5224,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 22625
+        },
+        {
+          "date": "2026-06-08",
+          "orb": 3965,
+          "ema": 6107,
+          "dc": 4400,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 21390
+        },
+        {
+          "date": "2026-06-09",
+          "orb": 5104,
+          "ema": 6139,
+          "dc": 4400,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 22561
+        },
+        {
+          "date": "2026-06-11",
+          "orb": 5104,
+          "ema": 4977,
+          "dc": 4400,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 21400
+        },
+        {
+          "date": "2026-06-19",
+          "orb": 4836,
+          "ema": 4977,
+          "dc": 4400,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 21132
+        },
+        {
+          "date": "2026-06-22",
+          "orb": 4450,
+          "ema": 4977,
+          "dc": 4400,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 20746
+        },
+        {
+          "date": "2026-06-23",
+          "orb": 3739,
+          "ema": 4977,
+          "dc": 4400,
+          "gold": 6198,
+          "crude": 721,
+          "combined": 20035
+        }
+      ],
+      "end": {
+        "orb": 3739,
+        "ema": 4977,
+        "dc": 4400,
+        "gold": 6198,
+        "crude": 721,
+        "combined": 20035
+      }
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-26T11:45:11+00:00",
+    "as_of": "2026-06-26T11:48:42+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
