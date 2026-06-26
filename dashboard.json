@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T02:10:03+00:00",
+  "generated_at": "2026-06-26T02:15:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3910,12 +3910,35 @@
     }
   },
   "research": {
-    "total_tested": 7,
+    "total_tested": 8,
     "total_pass": 0,
-    "total_fail": 7,
+    "total_fail": 8,
     "total_skip": 10,
     "pass_rate": 0.0,
     "recent": [
+      {
+        "hyp_id": 23,
+        "at": "2026-06-26T02:13:19.746777+00:00",
+        "verdict": "FAIL",
+        "reason": "WF 5/15 sit-outs",
+        "stats": {
+          "n": 192,
+          "pf": 1.27,
+          "sharpe": 1.189,
+          "win_pct": 57.3,
+          "total_usd": 7699.0,
+          "max_dd": -4828.0
+        },
+        "routing": "calendar"
+      },
+      {
+        "hyp_id": 23,
+        "at": "2026-06-26T02:12:52.959733+00:00",
+        "verdict": "ERROR",
+        "reason": "Backtest exception: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'\n   ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/gordongekko/gekko-research/src/auto_backtest.py\", line 695, in _run_calendar\n    entry_dow = int(p.get(\"entry_dow\", 0))\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'\n",
+        "stats": {},
+        "routing": "calendar"
+      },
       {
         "hyp_id": 23,
         "at": "2026-06-26T02:03:47.298563+00:00",
@@ -4007,22 +4030,6 @@
         "reason": "Adaptive regime-switching stop placement and exit thresholds based on realized volatility percentiles and ADX regimes violate fixed-parameter backtest architecture. Dynamic stop widths (2.5% vs 1.5%), conditional exit logic (volatility spike vs regime decay), and multi-timeframe data dependencies (5m + daily + VIX + rolling 252-day percentile windows) require custom execution engine not supported by standard templates.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 14,
-        "at": "2026-06-25T10:12:35.752654+00:00",
-        "verdict": "FAIL",
-        "reason": "No trades generated \u2014 conditions too restrictive",
-        "stats": {},
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": 13,
-        "at": "2026-06-25T10:11:51.465146+00:00",
-        "verdict": "FAIL",
-        "reason": "No trades generated \u2014 conditions too restrictive",
-        "stats": {},
-        "routing": "breakout"
       }
     ],
     "queue": [
@@ -4204,11 +4211,11 @@
       },
       {
         "id": 23,
-        "status": "skip",
+        "status": "failed",
         "summary": "MNQ exhibits positive drift during the first 3 trading days of each calendar mon",
         "source": "Manual paste",
         "created": "2026-06-26",
-        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Calendar-gated entry (day-of-month == 1,2,3) with institutional regime filter (prior close > 20-day SMA) and fixed 3-day holding window. This is a calendar-seasonal strategy, not a price-action template (breakout, reversion, MA cross, or session momentum). The architecture requires dynamic price levels (support/resistance, bands, or session anchors) or time-defined momentum windows; calendar-day gating alone violates the systematic backtest framework because: (1) month-turn rebalancing effect is regime-dependent and not reproducible without live flow data, (2) the 20-day SMA filter introduces look-ahead bias if computed on daily close before 5m entry decision, (3) the 3-day fixed hold conflicts with intraday 2% stop (creates conflicting exits), and (4) the hypothesis relies on unobservable institutional flows rather than market microstructure (volume, volatility, price action). Recommend: backtest separately as a calendar overlay or convert to session_momentum (detect large Asia/pre-US move and ride it) if rebalancing concentrates in a specific UTC window.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"WF 5/15 sit-outs\", \"stats\": {\"n\": 192, \"pf\": 1.27, \"sharpe\": 1.189, \"win_pct\": 57.3, \"total_usd\": 7699.0, \"max_dd\": -4828.0}, \"routing\": \"calendar\"}"
       }
     ]
   }
