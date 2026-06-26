@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T14:15:04+00:00",
+  "generated_at": "2026-06-26T14:18:22+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4318,7 +4318,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-26T14:02:39+00:00",
+    "as_of": "2026-06-26T14:17:40+00:00",
     "note": "16-year backtest projection, 1 contract each. Gold/Crude execute on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24/25), isolated from the live MNQ book. EMA is long-only.",
     "n_strategies": 5,
     "per_strategy": [
@@ -4425,7 +4425,7 @@
       }
     },
     "ytd_equity": {
-      "as_of": "2026-06-26T14:02:40+00:00",
+      "as_of": "2026-06-26T14:17:40+00:00",
       "since": "2026-01-01",
       "through": "2026-06-23",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC) + Gold/Crude demo shorts. Backtest/OOS model \u2014 not realized fills.",
@@ -10113,10 +10113,996 @@
           }
         ]
       }
+    },
+    "book_16y": {
+      "win_rate": 46.8,
+      "avg_win_usd": 288,
+      "avg_loss_usd": -137,
+      "payoff_ratio": 2.1,
+      "profit_factor": 1.85,
+      "expectancy_usd": 62,
+      "sharpe": 2.14,
+      "sortino": 4.79,
+      "calmar": 1.42,
+      "recovery_factor": 22.69,
+      "max_dd_usd": 8452,
+      "max_consec_losses": 12,
+      "concentration_top5_pct": 52,
+      "days_underwater": 87,
+      "n_trades": 3090,
+      "total_usd": 191788,
+      "monthly": [
+        {
+          "month": "2010-06",
+          "pnl": 501,
+          "equity": 501
+        },
+        {
+          "month": "2010-07",
+          "pnl": 2015,
+          "equity": 2517
+        },
+        {
+          "month": "2010-08",
+          "pnl": 704,
+          "equity": 3221
+        },
+        {
+          "month": "2010-09",
+          "pnl": 239,
+          "equity": 3460
+        },
+        {
+          "month": "2010-10",
+          "pnl": 432,
+          "equity": 3893
+        },
+        {
+          "month": "2010-11",
+          "pnl": 1544,
+          "equity": 5436
+        },
+        {
+          "month": "2010-12",
+          "pnl": 252,
+          "equity": 5689
+        },
+        {
+          "month": "2011-01",
+          "pnl": 712,
+          "equity": 6400
+        },
+        {
+          "month": "2011-02",
+          "pnl": -191,
+          "equity": 6209
+        },
+        {
+          "month": "2011-03",
+          "pnl": 1598,
+          "equity": 7806
+        },
+        {
+          "month": "2011-04",
+          "pnl": 212,
+          "equity": 8018
+        },
+        {
+          "month": "2011-05",
+          "pnl": 2138,
+          "equity": 10156
+        },
+        {
+          "month": "2011-06",
+          "pnl": 921,
+          "equity": 11077
+        },
+        {
+          "month": "2011-07",
+          "pnl": -225,
+          "equity": 10853
+        },
+        {
+          "month": "2011-08",
+          "pnl": 223,
+          "equity": 11076
+        },
+        {
+          "month": "2011-09",
+          "pnl": 931,
+          "equity": 12007
+        },
+        {
+          "month": "2011-10",
+          "pnl": -344,
+          "equity": 11664
+        },
+        {
+          "month": "2011-11",
+          "pnl": 287,
+          "equity": 11950
+        },
+        {
+          "month": "2011-12",
+          "pnl": 993,
+          "equity": 12943
+        },
+        {
+          "month": "2012-01",
+          "pnl": -100,
+          "equity": 12843
+        },
+        {
+          "month": "2012-02",
+          "pnl": 192,
+          "equity": 13035
+        },
+        {
+          "month": "2012-03",
+          "pnl": 1492,
+          "equity": 14527
+        },
+        {
+          "month": "2012-04",
+          "pnl": 1198,
+          "equity": 15725
+        },
+        {
+          "month": "2012-05",
+          "pnl": 1953,
+          "equity": 17678
+        },
+        {
+          "month": "2012-06",
+          "pnl": -97,
+          "equity": 17581
+        },
+        {
+          "month": "2012-07",
+          "pnl": -26,
+          "equity": 17556
+        },
+        {
+          "month": "2012-08",
+          "pnl": 188,
+          "equity": 17744
+        },
+        {
+          "month": "2012-09",
+          "pnl": 991,
+          "equity": 18735
+        },
+        {
+          "month": "2012-10",
+          "pnl": 326,
+          "equity": 19060
+        },
+        {
+          "month": "2012-11",
+          "pnl": 1308,
+          "equity": 20368
+        },
+        {
+          "month": "2012-12",
+          "pnl": 576,
+          "equity": 20945
+        },
+        {
+          "month": "2013-01",
+          "pnl": 15,
+          "equity": 20959
+        },
+        {
+          "month": "2013-02",
+          "pnl": 97,
+          "equity": 21057
+        },
+        {
+          "month": "2013-03",
+          "pnl": -177,
+          "equity": 20880
+        },
+        {
+          "month": "2013-04",
+          "pnl": 744,
+          "equity": 21624
+        },
+        {
+          "month": "2013-05",
+          "pnl": 1459,
+          "equity": 23083
+        },
+        {
+          "month": "2013-06",
+          "pnl": 617,
+          "equity": 23700
+        },
+        {
+          "month": "2013-07",
+          "pnl": 107,
+          "equity": 23807
+        },
+        {
+          "month": "2013-08",
+          "pnl": 112,
+          "equity": 23919
+        },
+        {
+          "month": "2013-09",
+          "pnl": 1042,
+          "equity": 24960
+        },
+        {
+          "month": "2013-10",
+          "pnl": 411,
+          "equity": 25372
+        },
+        {
+          "month": "2013-11",
+          "pnl": 326,
+          "equity": 25697
+        },
+        {
+          "month": "2013-12",
+          "pnl": 330,
+          "equity": 26027
+        },
+        {
+          "month": "2014-01",
+          "pnl": 1055,
+          "equity": 27082
+        },
+        {
+          "month": "2014-02",
+          "pnl": -619,
+          "equity": 26463
+        },
+        {
+          "month": "2014-03",
+          "pnl": 1223,
+          "equity": 27687
+        },
+        {
+          "month": "2014-04",
+          "pnl": 626,
+          "equity": 28313
+        },
+        {
+          "month": "2014-05",
+          "pnl": -146,
+          "equity": 28167
+        },
+        {
+          "month": "2014-06",
+          "pnl": -305,
+          "equity": 27862
+        },
+        {
+          "month": "2014-07",
+          "pnl": 1036,
+          "equity": 28898
+        },
+        {
+          "month": "2014-08",
+          "pnl": 166,
+          "equity": 29063
+        },
+        {
+          "month": "2014-09",
+          "pnl": 684,
+          "equity": 29748
+        },
+        {
+          "month": "2014-10",
+          "pnl": 1220,
+          "equity": 30968
+        },
+        {
+          "month": "2014-11",
+          "pnl": -266,
+          "equity": 30701
+        },
+        {
+          "month": "2014-12",
+          "pnl": 801,
+          "equity": 31502
+        },
+        {
+          "month": "2015-01",
+          "pnl": -104,
+          "equity": 31398
+        },
+        {
+          "month": "2015-02",
+          "pnl": 874,
+          "equity": 32272
+        },
+        {
+          "month": "2015-03",
+          "pnl": 412,
+          "equity": 32685
+        },
+        {
+          "month": "2015-04",
+          "pnl": 282,
+          "equity": 32967
+        },
+        {
+          "month": "2015-05",
+          "pnl": 332,
+          "equity": 33299
+        },
+        {
+          "month": "2015-06",
+          "pnl": -83,
+          "equity": 33216
+        },
+        {
+          "month": "2015-07",
+          "pnl": -103,
+          "equity": 33113
+        },
+        {
+          "month": "2015-08",
+          "pnl": 509,
+          "equity": 33622
+        },
+        {
+          "month": "2015-09",
+          "pnl": 1143,
+          "equity": 34765
+        },
+        {
+          "month": "2015-10",
+          "pnl": 948,
+          "equity": 35713
+        },
+        {
+          "month": "2015-11",
+          "pnl": 841,
+          "equity": 36554
+        },
+        {
+          "month": "2015-12",
+          "pnl": 44,
+          "equity": 36597
+        },
+        {
+          "month": "2016-01",
+          "pnl": -198,
+          "equity": 36399
+        },
+        {
+          "month": "2016-02",
+          "pnl": 409,
+          "equity": 36808
+        },
+        {
+          "month": "2016-03",
+          "pnl": 1592,
+          "equity": 38400
+        },
+        {
+          "month": "2016-04",
+          "pnl": 257,
+          "equity": 38657
+        },
+        {
+          "month": "2016-05",
+          "pnl": 400,
+          "equity": 39057
+        },
+        {
+          "month": "2016-06",
+          "pnl": -349,
+          "equity": 38709
+        },
+        {
+          "month": "2016-07",
+          "pnl": 347,
+          "equity": 39056
+        },
+        {
+          "month": "2016-08",
+          "pnl": 35,
+          "equity": 39091
+        },
+        {
+          "month": "2016-09",
+          "pnl": 1333,
+          "equity": 40424
+        },
+        {
+          "month": "2016-10",
+          "pnl": 217,
+          "equity": 40641
+        },
+        {
+          "month": "2016-11",
+          "pnl": 1241,
+          "equity": 41881
+        },
+        {
+          "month": "2016-12",
+          "pnl": -614,
+          "equity": 41267
+        },
+        {
+          "month": "2017-01",
+          "pnl": 201,
+          "equity": 41467
+        },
+        {
+          "month": "2017-02",
+          "pnl": 124,
+          "equity": 41592
+        },
+        {
+          "month": "2017-03",
+          "pnl": 788,
+          "equity": 42380
+        },
+        {
+          "month": "2017-04",
+          "pnl": 466,
+          "equity": 42845
+        },
+        {
+          "month": "2017-05",
+          "pnl": 1119,
+          "equity": 43964
+        },
+        {
+          "month": "2017-06",
+          "pnl": 197,
+          "equity": 44161
+        },
+        {
+          "month": "2017-07",
+          "pnl": 912,
+          "equity": 45073
+        },
+        {
+          "month": "2017-08",
+          "pnl": -480,
+          "equity": 44594
+        },
+        {
+          "month": "2017-09",
+          "pnl": -116,
+          "equity": 44478
+        },
+        {
+          "month": "2017-10",
+          "pnl": 101,
+          "equity": 44579
+        },
+        {
+          "month": "2017-11",
+          "pnl": 832,
+          "equity": 45410
+        },
+        {
+          "month": "2017-12",
+          "pnl": 52,
+          "equity": 45462
+        },
+        {
+          "month": "2018-01",
+          "pnl": 964,
+          "equity": 46426
+        },
+        {
+          "month": "2018-02",
+          "pnl": -202,
+          "equity": 46224
+        },
+        {
+          "month": "2018-03",
+          "pnl": 758,
+          "equity": 46982
+        },
+        {
+          "month": "2018-04",
+          "pnl": 2070,
+          "equity": 49052
+        },
+        {
+          "month": "2018-05",
+          "pnl": 181,
+          "equity": 49233
+        },
+        {
+          "month": "2018-06",
+          "pnl": -408,
+          "equity": 48825
+        },
+        {
+          "month": "2018-07",
+          "pnl": 1203,
+          "equity": 50027
+        },
+        {
+          "month": "2018-08",
+          "pnl": -247,
+          "equity": 49781
+        },
+        {
+          "month": "2018-09",
+          "pnl": -33,
+          "equity": 49748
+        },
+        {
+          "month": "2018-10",
+          "pnl": 796,
+          "equity": 50544
+        },
+        {
+          "month": "2018-11",
+          "pnl": 917,
+          "equity": 51461
+        },
+        {
+          "month": "2018-12",
+          "pnl": -659,
+          "equity": 50802
+        },
+        {
+          "month": "2019-01",
+          "pnl": -1030,
+          "equity": 49772
+        },
+        {
+          "month": "2019-02",
+          "pnl": 841,
+          "equity": 50612
+        },
+        {
+          "month": "2019-03",
+          "pnl": 187,
+          "equity": 50799
+        },
+        {
+          "month": "2019-04",
+          "pnl": -218,
+          "equity": 50581
+        },
+        {
+          "month": "2019-05",
+          "pnl": 1315,
+          "equity": 51896
+        },
+        {
+          "month": "2019-06",
+          "pnl": -845,
+          "equity": 51051
+        },
+        {
+          "month": "2019-07",
+          "pnl": 1399,
+          "equity": 52449
+        },
+        {
+          "month": "2019-08",
+          "pnl": -583,
+          "equity": 51866
+        },
+        {
+          "month": "2019-09",
+          "pnl": 517,
+          "equity": 52383
+        },
+        {
+          "month": "2019-10",
+          "pnl": 457,
+          "equity": 52840
+        },
+        {
+          "month": "2019-11",
+          "pnl": 341,
+          "equity": 53181
+        },
+        {
+          "month": "2019-12",
+          "pnl": 63,
+          "equity": 53244
+        },
+        {
+          "month": "2020-01",
+          "pnl": 2833,
+          "equity": 56076
+        },
+        {
+          "month": "2020-02",
+          "pnl": -1203,
+          "equity": 54873
+        },
+        {
+          "month": "2020-03",
+          "pnl": 1826,
+          "equity": 56699
+        },
+        {
+          "month": "2020-04",
+          "pnl": 3116,
+          "equity": 59815
+        },
+        {
+          "month": "2020-05",
+          "pnl": -2065,
+          "equity": 57750
+        },
+        {
+          "month": "2020-06",
+          "pnl": 404,
+          "equity": 58154
+        },
+        {
+          "month": "2020-07",
+          "pnl": -1455,
+          "equity": 56699
+        },
+        {
+          "month": "2020-08",
+          "pnl": 2514,
+          "equity": 59213
+        },
+        {
+          "month": "2020-09",
+          "pnl": 4811,
+          "equity": 64025
+        },
+        {
+          "month": "2020-10",
+          "pnl": -2090,
+          "equity": 61935
+        },
+        {
+          "month": "2020-11",
+          "pnl": 1674,
+          "equity": 63609
+        },
+        {
+          "month": "2020-12",
+          "pnl": -187,
+          "equity": 63422
+        },
+        {
+          "month": "2021-01",
+          "pnl": 3068,
+          "equity": 66490
+        },
+        {
+          "month": "2021-02",
+          "pnl": -1029,
+          "equity": 65462
+        },
+        {
+          "month": "2021-03",
+          "pnl": 835,
+          "equity": 66297
+        },
+        {
+          "month": "2021-04",
+          "pnl": 400,
+          "equity": 66697
+        },
+        {
+          "month": "2021-05",
+          "pnl": 1332,
+          "equity": 68029
+        },
+        {
+          "month": "2021-06",
+          "pnl": 877,
+          "equity": 68905
+        },
+        {
+          "month": "2021-07",
+          "pnl": 3238,
+          "equity": 72143
+        },
+        {
+          "month": "2021-08",
+          "pnl": 1536,
+          "equity": 73679
+        },
+        {
+          "month": "2021-09",
+          "pnl": -286,
+          "equity": 73394
+        },
+        {
+          "month": "2021-10",
+          "pnl": -124,
+          "equity": 73269
+        },
+        {
+          "month": "2021-11",
+          "pnl": 2123,
+          "equity": 75392
+        },
+        {
+          "month": "2021-12",
+          "pnl": -704,
+          "equity": 74688
+        },
+        {
+          "month": "2022-01",
+          "pnl": 872,
+          "equity": 75560
+        },
+        {
+          "month": "2022-02",
+          "pnl": 2884,
+          "equity": 78443
+        },
+        {
+          "month": "2022-03",
+          "pnl": 5133,
+          "equity": 83577
+        },
+        {
+          "month": "2022-04",
+          "pnl": 8549,
+          "equity": 92126
+        },
+        {
+          "month": "2022-05",
+          "pnl": 920,
+          "equity": 93046
+        },
+        {
+          "month": "2022-06",
+          "pnl": 3216,
+          "equity": 96262
+        },
+        {
+          "month": "2022-07",
+          "pnl": 2135,
+          "equity": 98397
+        },
+        {
+          "month": "2022-08",
+          "pnl": -969,
+          "equity": 97428
+        },
+        {
+          "month": "2022-09",
+          "pnl": -1057,
+          "equity": 96371
+        },
+        {
+          "month": "2022-10",
+          "pnl": 806,
+          "equity": 97177
+        },
+        {
+          "month": "2022-11",
+          "pnl": 387,
+          "equity": 97564
+        },
+        {
+          "month": "2022-12",
+          "pnl": 1265,
+          "equity": 98829
+        },
+        {
+          "month": "2023-01",
+          "pnl": 1737,
+          "equity": 100567
+        },
+        {
+          "month": "2023-02",
+          "pnl": 2640,
+          "equity": 103207
+        },
+        {
+          "month": "2023-03",
+          "pnl": 982,
+          "equity": 104188
+        },
+        {
+          "month": "2023-04",
+          "pnl": 2067,
+          "equity": 106255
+        },
+        {
+          "month": "2023-05",
+          "pnl": 879,
+          "equity": 107134
+        },
+        {
+          "month": "2023-06",
+          "pnl": 279,
+          "equity": 107413
+        },
+        {
+          "month": "2023-07",
+          "pnl": 4853,
+          "equity": 112266
+        },
+        {
+          "month": "2023-08",
+          "pnl": 2996,
+          "equity": 115262
+        },
+        {
+          "month": "2023-09",
+          "pnl": -737,
+          "equity": 114525
+        },
+        {
+          "month": "2023-10",
+          "pnl": 4600,
+          "equity": 119124
+        },
+        {
+          "month": "2023-11",
+          "pnl": 898,
+          "equity": 120022
+        },
+        {
+          "month": "2023-12",
+          "pnl": 551,
+          "equity": 120573
+        },
+        {
+          "month": "2024-01",
+          "pnl": 8637,
+          "equity": 129211
+        },
+        {
+          "month": "2024-02",
+          "pnl": -452,
+          "equity": 128759
+        },
+        {
+          "month": "2024-03",
+          "pnl": 151,
+          "equity": 128909
+        },
+        {
+          "month": "2024-04",
+          "pnl": 2145,
+          "equity": 131055
+        },
+        {
+          "month": "2024-05",
+          "pnl": -1290,
+          "equity": 129764
+        },
+        {
+          "month": "2024-06",
+          "pnl": 3307,
+          "equity": 133071
+        },
+        {
+          "month": "2024-07",
+          "pnl": 4222,
+          "equity": 137293
+        },
+        {
+          "month": "2024-08",
+          "pnl": 8426,
+          "equity": 145719
+        },
+        {
+          "month": "2024-09",
+          "pnl": 1693,
+          "equity": 147412
+        },
+        {
+          "month": "2024-10",
+          "pnl": -1996,
+          "equity": 145417
+        },
+        {
+          "month": "2024-11",
+          "pnl": 2727,
+          "equity": 148144
+        },
+        {
+          "month": "2024-12",
+          "pnl": 5529,
+          "equity": 153673
+        },
+        {
+          "month": "2025-01",
+          "pnl": -3887,
+          "equity": 149786
+        },
+        {
+          "month": "2025-02",
+          "pnl": -3822,
+          "equity": 145963
+        },
+        {
+          "month": "2025-03",
+          "pnl": 4591,
+          "equity": 150554
+        },
+        {
+          "month": "2025-04",
+          "pnl": 12153,
+          "equity": 162707
+        },
+        {
+          "month": "2025-05",
+          "pnl": 2960,
+          "equity": 165667
+        },
+        {
+          "month": "2025-06",
+          "pnl": -83,
+          "equity": 165584
+        },
+        {
+          "month": "2025-07",
+          "pnl": 1044,
+          "equity": 166628
+        },
+        {
+          "month": "2025-08",
+          "pnl": -2052,
+          "equity": 164576
+        },
+        {
+          "month": "2025-09",
+          "pnl": -1160,
+          "equity": 163415
+        },
+        {
+          "month": "2025-10",
+          "pnl": 4802,
+          "equity": 168218
+        },
+        {
+          "month": "2025-11",
+          "pnl": 3546,
+          "equity": 171764
+        },
+        {
+          "month": "2025-12",
+          "pnl": 1180,
+          "equity": 172944
+        },
+        {
+          "month": "2026-01",
+          "pnl": 1025,
+          "equity": 173969
+        },
+        {
+          "month": "2026-02",
+          "pnl": 9193,
+          "equity": 183162
+        },
+        {
+          "month": "2026-03",
+          "pnl": 1867,
+          "equity": 185029
+        },
+        {
+          "month": "2026-04",
+          "pnl": 3213,
+          "equity": 188241
+        },
+        {
+          "month": "2026-05",
+          "pnl": 6109,
+          "equity": 194350
+        },
+        {
+          "month": "2026-06",
+          "pnl": -2562,
+          "equity": 191788
+        }
+      ],
+      "basis": "daily"
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-26T14:15:11+00:00",
+    "as_of": "2026-06-26T14:18:24+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
