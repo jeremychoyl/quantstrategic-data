@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T01:00:03+00:00",
+  "generated_at": "2026-06-26T01:05:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3910,12 +3910,27 @@
     }
   },
   "research": {
-    "total_tested": 4,
+    "total_tested": 5,
     "total_pass": 0,
-    "total_fail": 4,
+    "total_fail": 5,
     "total_skip": 9,
     "pass_rate": 0.0,
     "recent": [
+      {
+        "hyp_id": 19,
+        "at": "2026-06-26T01:04:54.277578+00:00",
+        "verdict": "FAIL",
+        "reason": "Era gate FAIL (2010-2020 PF 0.00 | 2021-2026 PF 0.00); WF 16/16 sit-outs",
+        "stats": {
+          "n": 1054,
+          "pf": 0.0,
+          "sharpe": -8.860854601365141e+16,
+          "win_pct": 0.0,
+          "total_usd": -2614.0,
+          "max_dd": -2611.0
+        },
+        "routing": "breakout"
+      },
       {
         "hyp_id": 18,
         "at": "2026-06-25T10:15:42.732727+00:00",
@@ -3992,14 +4007,6 @@
         "at": "2026-06-25T02:34:42.964961+00:00",
         "verdict": "SKIP",
         "reason": "Fractional differentiation (d=0.5) is a custom feature engineering technique not supported by standard backtest infrastructure. The strategy requires real-time computation of a non-standard stationary transform, which introduces implementation risk, data dependency issues, and cannot be reliably validated in standard backtest templates. Additionally, the entry logic mixes fractionally-differentiated price signals with raw price SMA crosses, creating a hybrid signal that lacks clean architectural alignment.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 9,
-        "at": "2026-06-25T02:34:01.795289+00:00",
-        "verdict": "SKIP",
-        "reason": "Architecture veto: 'adaptive' detected \u2014 real-time param tuning prohibited by SOP.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -4148,6 +4155,22 @@
         "source": "X/bookmarks",
         "created": "2026-06-25",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
+      },
+      {
+        "id": 19,
+        "status": "failed",
+        "summary": "Trade MNQ breakouts at US market open when overnight gap persists beyond first 5",
+        "source": "X/timeline",
+        "created": "2026-06-26",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"Era gate FAIL (2010-2020 PF 0.00 | 2021-2026 PF 0.00); WF 16/16 sit-outs\", \"stats\": {\"n\": 1054, \"pf\": 0.0, \"sharpe\": -8.860854601365141e+16, \"win_pct\": 0.0, \"total_usd\": -2614.0, \"max_dd\": -2611.0}, \"routing\": \"breakout\"}"
+      },
+      {
+        "id": 20,
+        "status": "pending",
+        "summary": "A failed bounce occurs when price rallies to a prior swing high within 5 bars bu",
+        "source": "X/timeline",
+        "created": "2026-06-26",
+        "verdict": null
       }
     ]
   }
