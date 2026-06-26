@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:50:04+00:00",
+  "generated_at": "2026-06-26T07:51:16+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -652,22 +652,23 @@
       "status": "active",
       "in_portfolio": true,
       "combo_key": "ema",
-      "description": "EMA 9/100 crossover on 5-minute RTH bars with trend and volatility filters",
+      "description": "EMA 9/100 crossover on 5-minute RTH bars with trend and volatility filters. Long only \u2014 short crosses exit an open long but do not open shorts.",
       "params": {
         "Fast EMA": "9",
         "Slow EMA": "100",
         "Trend Filter": "EMA 200 (price above EMA200 = long bias)",
         "Volatility Gate": "ATR14 > 33rd percentile (gate closes in low-vol)",
+        "Direction": "Long only (short side disabled \u2014 PF 0.95 pre-2021, fails era gate)",
         "Market Open": "09:30 ET \u00b7 21:30 SGT",
-        "Entry Window": "09:30\u201315:30 ET \u00b7 21:35\u201303:30 SGT (any 5m cross)",
-        "Entry": "Cross bar close, market order",
+        "Entry Window": "09:30\u201315:30 ET \u00b7 21:35\u201303:30 SGT (long crosses only)",
+        "Entry": "Long cross bar close, market order",
         "Last Entry": "15:30 ET \u00b7 03:30 SGT",
         "EOD Flat": "15:55 ET \u00b7 03:55 SGT (5 min before close)",
         "Market Close": "16:00 ET \u00b7 04:00 SGT",
-        "Exit": "Reverse cross or EOD flat (whichever comes first)",
-        "Backtest PF (16y)": "1.57",
+        "Exit": "Short cross exits long (no new short) or EOD flat (whichever first)",
+        "Backtest PF (16y)": "1.99 (long-only)",
+        "Long-only Sharpe": "2.44 (vs 1.86 bilateral)",
         "2026 OOS PF": "1.53",
-        "Sharpe 2026": "2.19",
         "Universe": "MNQ (Micro E-mini Nasdaq)"
       }
     },
@@ -711,6 +712,51 @@
         "OOS WF Sharpe": "1.14",
         "Sit-out years": "0 / 14",
         "Universe": "MNQ (Micro E-mini Nasdaq)"
+      }
+    },
+    "gold_short": {
+      "name": "Gold MeanRev (short)",
+      "status": "validated",
+      "in_portfolio": false,
+      "combo_key": "gold",
+      "description": "Micro Gold (MGC) daily short-reversion \u2014 short when the COMEX settle makes a new 10-day high; commodity strength reverts. Validated candidate (HYP-24), not yet live.",
+      "params": {
+        "Instrument": "MGC (Micro Gold) \u2014 CME",
+        "DC Period": "10 (Donchian high of daily closes)",
+        "Signal": "Daily settle > prior 10-day high \u2192 SHORT next open",
+        "Exit (up-close)": "First daily close back above signal-day close",
+        "Exit (time stop)": "5 trading days",
+        "Hard stop": "None \u2014 tested, hurts mean reversion (BL-002)",
+        "Direction": "Short only",
+        "Corr vs MNQ book": "ORB -0.00 \u00b7 EMA +0.10 \u00b7 DC +0.18 (uncorrelated)",
+        "Backtest PF (16y)": "2.57",
+        "WF Sharpe": "2.24",
+        "WF Calmar": "0.62",
+        "Sit-out years": "0 / 16",
+        "Universe": "MGC (Micro Gold)"
+      }
+    },
+    "crude_short": {
+      "name": "Crude MeanRev (short)",
+      "status": "validated",
+      "in_portfolio": false,
+      "combo_key": "crude",
+      "description": "Micro Crude (MCL/WTI) daily short-reversion \u2014 short when the NYMEX settle makes a new 10-day high. Validated candidate (HYP-25), not yet live. 16y ratio-adjusted data incl. 2020.",
+      "params": {
+        "Instrument": "MCL (Micro Crude Oil) \u2014 CME",
+        "DC Period": "10 (Donchian high of daily closes)",
+        "Signal": "Daily settle > prior 10-day high \u2192 SHORT next open",
+        "Exit (up-close)": "First daily close back above signal-day close",
+        "Exit (time stop)": "5 trading days",
+        "Hard stop": "None \u2014 tested, hurts mean reversion (BL-002)",
+        "Direction": "Short only",
+        "Corr vs MNQ book": "ORB -0.01 \u00b7 EMA +0.10 \u00b7 DC -0.12 (uncorrelated)",
+        "Corr vs Gold short": "+0.03 (independent)",
+        "Backtest PF (16y)": "3.46",
+        "WF Sharpe": "3.96",
+        "WF Calmar": "1.30",
+        "Sit-out years": "0 / 16",
+        "Universe": "MCL (Micro Crude Oil)"
       }
     }
   },
@@ -4259,5 +4305,113 @@
         "verdict": "{\"verdict\": \"PASS\", \"reason\": \"Era gate PASS | WF 0/16 sit-outs | Calmar 1.30 | PF 3.46 Sharpe 3.96\", \"stats\": {\"n\": 761, \"pf\": 3.463, \"sharpe\": 3.96, \"win_pct\": 30.2, \"total_usd\": 44086.0, \"max_dd\": -2125.0, \"calmar\": 1.301}, \"routing\": \"reversion\"}"
       }
     ]
+  },
+  "projections": {
+    "as_of": "2026-06-26T07:49:51+00:00",
+    "note": "16-year backtest projection, 1 contract each. Gold/Crude are validated candidates (HYP-24/25), not yet live. EMA is long-only.",
+    "n_strategies": 5,
+    "per_strategy": [
+      {
+        "name": "ORB",
+        "instrument": "MNQ",
+        "direction": "bilateral",
+        "status": "live",
+        "annual_usd": 345,
+        "total_usd": 5528,
+        "sharpe": 0.12,
+        "max_dd_usd": -18226,
+        "calmar": 0.02
+      },
+      {
+        "name": "EMA",
+        "instrument": "MNQ",
+        "direction": "long-only",
+        "status": "live",
+        "annual_usd": 3445,
+        "total_usd": 53632,
+        "sharpe": 2.44,
+        "max_dd_usd": -4982,
+        "calmar": 0.69
+      },
+      {
+        "name": "DC",
+        "instrument": "MNQ",
+        "direction": "long-only",
+        "status": "live",
+        "annual_usd": 2624,
+        "total_usd": 41829,
+        "sharpe": 4.21,
+        "max_dd_usd": -4250,
+        "calmar": 0.62
+      },
+      {
+        "name": "Gold",
+        "instrument": "MGC",
+        "direction": "short-only",
+        "status": "validated (HYP-24/25, not yet live)",
+        "annual_usd": 2439,
+        "total_usd": 38678,
+        "sharpe": 2.24,
+        "max_dd_usd": -3961,
+        "calmar": 0.62
+      },
+      {
+        "name": "Crude",
+        "instrument": "MCL",
+        "direction": "short-only",
+        "status": "validated (HYP-24/25, not yet live)",
+        "annual_usd": 2765,
+        "total_usd": 44086,
+        "sharpe": 3.96,
+        "max_dd_usd": -2125,
+        "calmar": 1.3
+      }
+    ],
+    "book": {
+      "annual_usd": 11449,
+      "total_usd": 183753,
+      "sharpe": 1.78,
+      "max_dd_usd": -8241,
+      "calmar": 1.39,
+      "capital_estimate_usd": 30000,
+      "return_on_capital_pct": 38.2
+    },
+    "correlation": {
+      "ORB": {
+        "ORB": 1.0,
+        "EMA": 0.03,
+        "DC": 0.05,
+        "Gold": 0.0,
+        "Crude": -0.01
+      },
+      "EMA": {
+        "ORB": 0.03,
+        "EMA": 1.0,
+        "DC": 0.02,
+        "Gold": 0.0,
+        "Crude": -0.01
+      },
+      "DC": {
+        "ORB": 0.05,
+        "EMA": 0.02,
+        "DC": 1.0,
+        "Gold": 0.06,
+        "Crude": -0.0
+      },
+      "Gold": {
+        "ORB": 0.0,
+        "EMA": 0.0,
+        "DC": 0.06,
+        "Gold": 1.0,
+        "Crude": 0.02
+      },
+      "Crude": {
+        "ORB": -0.01,
+        "EMA": -0.01,
+        "DC": -0.0,
+        "Gold": 0.02,
+        "Crude": 1.0
+      }
+    }
   }
 }
