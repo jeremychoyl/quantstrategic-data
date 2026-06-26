@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:55:03+00:00",
+  "generated_at": "2026-06-26T20:00:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -604,6 +604,11 @@
       "date": "2026-06-24",
       "pnl_pts": -396.25,
       "pnl_usd": -792.5
+    },
+    {
+      "date": "2026-06-26",
+      "pnl_pts": -66.5,
+      "pnl_usd": -133.0
     }
   ],
   "portfolio_stats": {
@@ -615,22 +620,11 @@
     "total_usd": 13116.0,
     "trade_days": 74
   },
-  "active_positions": [
-    {
-      "strategy": "EMA Cross 5m",
-      "size": "1 MNQ",
-      "entry_date": "2026-06-26",
-      "entry_px": 29519.25,
-      "current_px": 29452.5,
-      "pnl_pts": -66.75,
-      "pnl_usd": -133.5,
-      "direction": "Long"
-    }
-  ],
+  "active_positions": [],
   "net_returns": {
-    "5d_pts": -1008.0,
-    "5d_usd": -2016.0,
-    "5d_pct": -8.064,
+    "5d_pts": -1074.5,
+    "5d_usd": -2149.0,
+    "5d_pct": -8.596,
     "ytd_pts": -963.25,
     "ytd_usd": -1926.5,
     "ytd_pct": -7.706
@@ -11412,7 +11406,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-26T19:55:10+00:00",
+    "as_of": "2026-06-26T20:00:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
