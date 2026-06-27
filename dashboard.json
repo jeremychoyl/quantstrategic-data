@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T22:25:03+00:00",
+  "generated_at": "2026-06-27T22:30:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4340,7 +4340,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-26T22:30:02+00:00",
+    "as_of": "2026-06-27T22:30:02+00:00",
     "note": "16-year backtest projection, 1 contract each. Gold/Crude execute on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24/25), isolated from the live MNQ book. EMA is long-only.",
     "n_strategies": 5,
     "per_strategy": [
@@ -4349,8 +4349,8 @@
         "instrument": "MNQ",
         "direction": "bilateral",
         "status": "live",
-        "annual_usd": 348,
-        "total_usd": 5584,
+        "annual_usd": 335,
+        "total_usd": 5385,
         "sharpe": 0.12,
         "max_dd_usd": -18226,
         "calmar": 0.02
@@ -4401,15 +4401,15 @@
       }
     ],
     "book": {
-      "annual_usd": 11423,
-      "total_usd": 183359,
-      "sharpe": 1.78,
+      "annual_usd": 11410,
+      "total_usd": 183161,
+      "sharpe": 1.77,
       "max_dd_usd": -8241,
-      "calmar": 1.39,
+      "calmar": 1.38,
       "margin_usd": 7877,
       "dd_buffer_usd": 8241,
       "capital_estimate_usd": 16100,
-      "return_on_capital_pct": 71.0
+      "return_on_capital_pct": 70.9
     },
     "correlation": {
       "ORB": {
@@ -4449,7 +4449,7 @@
       }
     },
     "ytd_equity": {
-      "as_of": "2026-06-26T22:30:02+00:00",
+      "as_of": "2026-06-27T22:30:03+00:00",
       "since": "2026-01-01",
       "through": "2026-06-25",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC) + Gold/Crude demo shorts. Backtest/OOS model \u2014 not realized fills.",
@@ -5249,20 +5249,20 @@
         {
           "date": "2026-06-25",
           "orb": 3739,
-          "ema": 4291,
+          "ema": 4456,
           "dc": 4400,
           "gold": 6198,
           "crude": 721,
-          "combined": 19348
+          "combined": 19514
         }
       ],
       "end": {
         "orb": 3739,
-        "ema": 4291,
+        "ema": 4456,
         "dc": 4400,
         "gold": 6198,
         "crude": 721,
-        "combined": 19348
+        "combined": 19514
       }
     },
     "strategy_16y": {
@@ -6252,17 +6252,17 @@
         "avg_loss_usd": -151,
         "payoff_ratio": 3.4,
         "profit_factor": 1.49,
-        "expectancy_usd": 51,
-        "sharpe": 1.83,
-        "sortino": 4.04,
+        "expectancy_usd": 52,
+        "sharpe": 1.84,
+        "sortino": 4.05,
         "calmar": 0.66,
-        "recovery_factor": 10.21,
+        "recovery_factor": 10.24,
         "max_dd_usd": 5729,
         "max_consec_losses": 16,
         "concentration_top5_pct": 63,
         "days_underwater": 44,
         "n_trades": 1137,
-        "total_usd": 58493,
+        "total_usd": 58659,
         "monthly": [
           {
             "month": "2010-11",
@@ -7201,8 +7201,8 @@
           },
           {
             "month": "2026-06",
-            "pnl": -2374,
-            "equity": 58493
+            "pnl": -2208,
+            "equity": 58659
           }
         ]
       },
@@ -10201,20 +10201,20 @@
       "ema": {
         "win_rate": 33.9,
         "avg_win_usd": 940,
-        "avg_loss_usd": -403,
-        "payoff_ratio": 2.3,
-        "profit_factor": 1.2,
-        "expectancy_usd": 53,
-        "sharpe": 1.1,
-        "sortino": 2.31,
-        "calmar": 1.68,
-        "recovery_factor": 0.74,
-        "max_dd_usd": 4167,
+        "avg_loss_usd": -398,
+        "payoff_ratio": 2.4,
+        "profit_factor": 1.21,
+        "expectancy_usd": 55,
+        "sharpe": 1.16,
+        "sortino": 2.44,
+        "calmar": 1.84,
+        "recovery_factor": 0.82,
+        "max_dd_usd": 4001,
         "max_consec_losses": 9,
         "concentration_top5_pct": 43,
         "days_underwater": 12,
         "n_trades": 59,
-        "total_usd": 3100,
+        "total_usd": 3265,
         "monthly": [
           {
             "month": "2026-01",
@@ -10243,8 +10243,8 @@
           },
           {
             "month": "2026-06",
-            "pnl": -2374,
-            "equity": 3100
+            "pnl": -2208,
+            "equity": 3265
           }
         ]
       },
@@ -10394,13 +10394,13 @@
       "sharpe": 2.13,
       "sortino": 4.77,
       "calmar": 1.41,
-      "recovery_factor": 22.61,
+      "recovery_factor": 22.63,
       "max_dd_usd": 8452,
       "max_consec_losses": 12,
       "concentration_top5_pct": 52,
       "days_underwater": 87,
       "n_trades": 3091,
-      "total_usd": 191101,
+      "total_usd": 191267,
       "monthly": [
         {
           "month": "2010-06",
@@ -11364,8 +11364,8 @@
         },
         {
           "month": "2026-06",
-          "pnl": -3249,
-          "equity": 191101
+          "pnl": -3083,
+          "equity": 191267
         }
       ],
       "basis": "daily"
@@ -11373,20 +11373,20 @@
     "book_ytd": {
       "win_rate": 47.8,
       "avg_win_usd": 879,
-      "avg_loss_usd": -418,
+      "avg_loss_usd": -414,
       "payoff_ratio": 2.1,
-      "profit_factor": 1.92,
-      "expectancy_usd": 202,
-      "sharpe": 2.6,
-      "sortino": 6.67,
-      "calmar": 7.26,
-      "recovery_factor": 3.48,
-      "max_dd_usd": 5217,
+      "profit_factor": 1.94,
+      "expectancy_usd": 204,
+      "sharpe": 2.63,
+      "sortino": 6.74,
+      "calmar": 7.57,
+      "recovery_factor": 3.63,
+      "max_dd_usd": 5051,
       "max_consec_losses": 9,
       "concentration_top5_pct": 49,
       "days_underwater": 22,
       "n_trades": 90,
-      "total_usd": 18158,
+      "total_usd": 18323,
       "monthly": [
         {
           "month": "2026-01",
@@ -11415,15 +11415,15 @@
         },
         {
           "month": "2026-06",
-          "pnl": -3249,
-          "equity": 18158
+          "pnl": -3083,
+          "equity": 18323
         }
       ],
       "basis": "daily"
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-27T22:25:10+00:00",
+    "as_of": "2026-06-27T22:30:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
