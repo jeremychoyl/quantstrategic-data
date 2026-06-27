@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T20:45:03+00:00",
+  "generated_at": "2026-06-27T20:50:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -11423,7 +11423,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-27T20:45:10+00:00",
+    "as_of": "2026-06-27T20:50:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
