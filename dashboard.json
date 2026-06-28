@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T07:05:03+00:00",
+  "generated_at": "2026-06-28T07:10:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4005,12 +4005,44 @@
     }
   },
   "research": {
-    "total_tested": 14,
+    "total_tested": 16,
     "total_pass": 4,
-    "total_fail": 10,
+    "total_fail": 12,
     "total_skip": 11,
-    "pass_rate": 28.6,
+    "pass_rate": 25.0,
     "recent": [
+      {
+        "hyp_id": "25",
+        "at": "2026-06-28T07:09:04.239494+00:00",
+        "verdict": "FAIL",
+        "reason": "WF 7/16 sit-outs; Calmar 0.05 < 0.5 (maxDD $-5,802 too deep vs return \u2014 undeployable)",
+        "stats": {
+          "n": 761,
+          "pf": 1.088,
+          "sharpe": 0.393,
+          "win_pct": 31.3,
+          "total_usd": 4964.0,
+          "max_dd": -5802.0,
+          "calmar": 0.054
+        },
+        "routing": "reversion"
+      },
+      {
+        "hyp_id": "24",
+        "at": "2026-06-28T07:09:01.691769+00:00",
+        "verdict": "FAIL",
+        "reason": "Era gate FAIL (2010-2020 PF 0.86 | 2021-2026 PF 0.92); WF 11/16 sit-outs; Calmar -0.03 < 0.5 (maxDD $-15,763 too deep vs return \u2014 undeployable)",
+        "stats": {
+          "n": 818,
+          "pf": 0.894,
+          "sharpe": -0.413,
+          "win_pct": 33.7,
+          "total_usd": -7779.0,
+          "max_dd": -15763.0,
+          "calmar": -0.031
+        },
+        "routing": "reversion"
+      },
       {
         "hyp_id": "25",
         "at": "2026-06-28T06:50:15.896211+00:00",
@@ -4129,22 +4161,6 @@
           "max_dd": -4828.0
         },
         "routing": "calendar"
-      },
-      {
-        "hyp_id": 23,
-        "at": "2026-06-26T02:12:52.959733+00:00",
-        "verdict": "ERROR",
-        "reason": "Backtest exception: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'\n   ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/gordongekko/gekko-research/src/auto_backtest.py\", line 695, in _run_calendar\n    entry_dow = int(p.get(\"entry_dow\", 0))\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'\n",
-        "stats": {},
-        "routing": "calendar"
-      },
-      {
-        "hyp_id": 23,
-        "at": "2026-06-26T02:03:47.298563+00:00",
-        "verdict": "SKIP",
-        "reason": "Calendar-gated entry (day-of-month == 1,2,3) with institutional regime filter (prior close > 20-day SMA) and fixed 3-day holding window. This is a calendar-seasonal strategy, not a price-action template (breakout, reversion, MA cross, or session momentum). The architecture requires dynamic price levels (support/resistance, bands, or session anchors) or time-defined momentum windows; calendar-day gating alone violates the systematic backtest framework because: (1) month-turn rebalancing effect is regime-dependent and not reproducible without live flow data, (2) the 20-day SMA filter introduces look-ahead bias if computed on daily close before 5m entry decision, (3) the 3-day fixed hold conflicts with intraday 2% stop (creates conflicting exits), and (4) the hypothesis relies on unobservable institutional flows rather than market microstructure (volume, volatility, price action). Recommend: backtest separately as a calendar overlay or convert to session_momentum (detect large Asia/pre-US move and ride it) if rebalancing concentrates in a specific UTC window.",
-        "stats": {},
-        "routing": "pre_reject"
       }
     ],
     "queue": [
@@ -6894,7 +6910,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-28T07:05:10+00:00",
+    "as_of": "2026-06-28T07:10:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
