@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T13:55:03+00:00",
+  "generated_at": "2026-06-28T14:00:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -741,51 +741,6 @@
         "OOS WF Sharpe": "1.14",
         "Sit-out years": "0 / 14",
         "Universe": "MNQ (Micro E-mini Nasdaq)"
-      }
-    },
-    "gold_short": {
-      "name": "Gold MeanRev (short)",
-      "status": "demo",
-      "in_portfolio": false,
-      "combo_key": "gold",
-      "description": "Micro Gold (MGC) daily short-reversion \u2014 short when the COMEX settle makes a new 10-day high; commodity strength reverts. Executing on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24), isolated from the live MNQ book.",
-      "params": {
-        "Instrument": "MGC (Micro Gold) \u2014 CME",
-        "DC Period": "10 (Donchian high of daily closes)",
-        "Signal": "Daily settle > prior 10-day high \u2192 SHORT next open",
-        "Exit (up-close)": "First daily close back above signal-day close",
-        "Exit (time stop)": "5 trading days",
-        "Hard stop": "None \u2014 tested, hurts mean reversion (BL-002)",
-        "Direction": "Short only",
-        "Corr vs MNQ book": "ORB -0.00 \u00b7 EMA +0.10 \u00b7 DC +0.18 (uncorrelated)",
-        "Backtest PF (16y)": "2.57",
-        "WF Sharpe": "2.24",
-        "WF Calmar": "0.62",
-        "Sit-out years": "0 / 16",
-        "Universe": "MGC (Micro Gold)"
-      }
-    },
-    "crude_short": {
-      "name": "Crude MeanRev (short)",
-      "status": "demo",
-      "in_portfolio": false,
-      "combo_key": "crude",
-      "description": "Micro Crude (MCL/WTI) daily short-reversion \u2014 short when the NYMEX settle makes a new 10-day high. Executing on the Tradovate DEMO sandbox since 2026-06-26 (HYP-25), isolated from the live MNQ book. 16y ratio-adjusted data incl. 2020.",
-      "params": {
-        "Instrument": "MCL (Micro Crude Oil) \u2014 CME",
-        "DC Period": "10 (Donchian high of daily closes)",
-        "Signal": "Daily settle > prior 10-day high \u2192 SHORT next open",
-        "Exit (up-close)": "First daily close back above signal-day close",
-        "Exit (time stop)": "5 trading days",
-        "Hard stop": "None \u2014 tested, hurts mean reversion (BL-002)",
-        "Direction": "Short only",
-        "Corr vs MNQ book": "ORB -0.01 \u00b7 EMA +0.10 \u00b7 DC -0.12 (uncorrelated)",
-        "Corr vs Gold short": "+0.03 (independent)",
-        "Backtest PF (16y)": "3.46",
-        "WF Sharpe": "3.96",
-        "WF Calmar": "1.30",
-        "Sit-out years": "0 / 16",
-        "Universe": "MCL (Micro Crude Oil)"
       }
     }
   },
@@ -6951,32 +6906,6 @@
         }
       ],
       "basis": "daily"
-    }
-  },
-  "commodity_demo": {
-    "as_of": "2026-06-28T13:55:10+00:00",
-    "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
-    "per_strategy": {
-      "gold_short": {
-        "name": "Gold (MGC)",
-        "today_usd": 0.0,
-        "week_usd": 0.0,
-        "all_time_usd": 0.0,
-        "n_trades": 0
-      },
-      "crude_short": {
-        "name": "Crude (MCL)",
-        "today_usd": 0.0,
-        "week_usd": 0.0,
-        "all_time_usd": 0.0,
-        "n_trades": 0
-      }
-    },
-    "open_positions": [],
-    "recent_fills": [],
-    "book": {
-      "realized_usd": 0.0,
-      "n_trades": 0
     }
   }
 }
