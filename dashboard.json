@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T17:40:04+00:00",
+  "generated_at": "2026-06-28T17:45:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -8,7 +8,6 @@
       "date": "2026-01-02",
       "ema": 0,
       "orb": 510.0,
-      "overnight": 512.0,
       "dc": null,
       "combined": 510.0
     },
@@ -16,7 +15,6 @@
       "date": "2026-01-07",
       "ema": 0,
       "orb": 389.0,
-      "overnight": 460.0,
       "dc": null,
       "combined": 389.0
     },
@@ -24,7 +22,6 @@
       "date": "2026-01-12",
       "ema": 0,
       "orb": 455.0,
-      "overnight": 138.0,
       "dc": null,
       "combined": 455.0
     },
@@ -32,7 +29,6 @@
       "date": "2026-01-15",
       "ema": -268.0,
       "orb": 697.0,
-      "overnight": 677.0,
       "dc": null,
       "combined": 429.0
     },
@@ -40,7 +36,6 @@
       "date": "2026-01-21",
       "ema": -188.0,
       "orb": 697.0,
-      "overnight": 194.0,
       "dc": 929.0,
       "combined": 509.0
     },
@@ -48,7 +43,6 @@
       "date": "2026-01-22",
       "ema": -188.0,
       "orb": 497.0,
-      "overnight": 84.0,
       "dc": 929.0,
       "combined": 308.0
     },
@@ -56,7 +50,6 @@
       "date": "2026-01-26",
       "ema": -188.0,
       "orb": 481.0,
-      "overnight": 381.0,
       "dc": 929.0,
       "combined": 293.0
     },
@@ -64,7 +57,6 @@
       "date": "2026-01-27",
       "ema": -188.0,
       "orb": 518.0,
-      "overnight": 732.0,
       "dc": 929.0,
       "combined": 329.0
     },
@@ -72,7 +64,6 @@
       "date": "2026-01-30",
       "ema": -544.0,
       "orb": 518.0,
-      "overnight": 112.0,
       "dc": 929.0,
       "combined": -27.0
     },
@@ -80,7 +71,6 @@
       "date": "2026-02-02",
       "ema": -601.0,
       "orb": 518.0,
-      "overnight": 266.0,
       "dc": 929.0,
       "combined": -84.0
     },
@@ -88,7 +78,6 @@
       "date": "2026-02-04",
       "ema": -601.0,
       "orb": 816.0,
-      "overnight": -307.0,
       "dc": 929.0,
       "combined": 214.0
     },
@@ -96,7 +85,6 @@
       "date": "2026-02-05",
       "ema": -601.0,
       "orb": 827.0,
-      "overnight": -65.0,
       "dc": 1679.0,
       "combined": 226.0
     },
@@ -104,7 +92,6 @@
       "date": "2026-02-11",
       "ema": -1043.0,
       "orb": 786.0,
-      "overnight": 358.0,
       "dc": 1679.0,
       "combined": -257.0
     },
@@ -112,7 +99,6 @@
       "date": "2026-02-12",
       "ema": -1043.0,
       "orb": 1589.0,
-      "overnight": 314.0,
       "dc": 1679.0,
       "combined": 546.0
     },
@@ -120,7 +106,6 @@
       "date": "2026-02-17",
       "ema": -1170.0,
       "orb": 889.0,
-      "overnight": 117.0,
       "dc": 1679.0,
       "combined": -281.0
     },
@@ -128,7 +113,6 @@
       "date": "2026-02-23",
       "ema": -1170.0,
       "orb": 1140.0,
-      "overnight": -550.0,
       "dc": 1679.0,
       "combined": -30.0
     },
@@ -136,7 +120,6 @@
       "date": "2026-02-24",
       "ema": -953.0,
       "orb": 1140.0,
-      "overnight": -292.0,
       "dc": 1679.0,
       "combined": 187.0
     },
@@ -144,7 +127,6 @@
       "date": "2026-03-02",
       "ema": -902.0,
       "orb": 1140.0,
-      "overnight": -2607.0,
       "dc": 1679.0,
       "combined": 238.0
     },
@@ -152,7 +134,6 @@
       "date": "2026-03-05",
       "ema": -902.0,
       "orb": 636.0,
-      "overnight": -3412.0,
       "dc": 1679.0,
       "combined": -267.0
     },
@@ -160,7 +141,6 @@
       "date": "2026-03-06",
       "ema": -916.0,
       "orb": 421.0,
-      "overnight": -3885.0,
       "dc": 1679.0,
       "combined": -495.0
     },
@@ -168,7 +148,6 @@
       "date": "2026-03-09",
       "ema": -599.0,
       "orb": 421.0,
-      "overnight": -3890.0,
       "dc": 1679.0,
       "combined": -178.0
     },
@@ -176,7 +155,6 @@
       "date": "2026-03-11",
       "ema": -885.0,
       "orb": 98.0,
-      "overnight": -4215.0,
       "dc": 1679.0,
       "combined": -787.0
     },
@@ -184,7 +162,6 @@
       "date": "2026-03-13",
       "ema": -885.0,
       "orb": 533.0,
-      "overnight": -3524.0,
       "dc": 1679.0,
       "combined": -352.0
     },
@@ -192,7 +169,6 @@
       "date": "2026-03-16",
       "ema": -924.0,
       "orb": 533.0,
-      "overnight": -3300.0,
       "dc": 1679.0,
       "combined": -391.0
     },
@@ -200,7 +176,6 @@
       "date": "2026-03-17",
       "ema": -924.0,
       "orb": 428.0,
-      "overnight": -3465.0,
       "dc": 1679.0,
       "combined": -495.0
     },
@@ -208,7 +183,6 @@
       "date": "2026-03-18",
       "ema": -924.0,
       "orb": 868.0,
-      "overnight": -3914.0,
       "dc": 1679.0,
       "combined": -56.0
     },
@@ -216,7 +190,6 @@
       "date": "2026-03-20",
       "ema": -924.0,
       "orb": 1236.0,
-      "overnight": -3335.0,
       "dc": 1679.0,
       "combined": 312.0
     },
@@ -224,7 +197,6 @@
       "date": "2026-03-23",
       "ema": -1336.0,
       "orb": 1236.0,
-      "overnight": -3626.0,
       "dc": 2281.0,
       "combined": -100.0
     },
@@ -232,7 +204,6 @@
       "date": "2026-03-25",
       "ema": -1638.0,
       "orb": 1180.0,
-      "overnight": -3639.0,
       "dc": 2281.0,
       "combined": -458.0
     },
@@ -240,7 +211,6 @@
       "date": "2026-03-26",
       "ema": -1638.0,
       "orb": 1698.0,
-      "overnight": -3906.0,
       "dc": 2281.0,
       "combined": 60.0
     },
@@ -248,7 +218,6 @@
       "date": "2026-03-27",
       "ema": -1638.0,
       "orb": 1946.0,
-      "overnight": -3509.0,
       "dc": 2789.0,
       "combined": 308.0
     },
@@ -256,7 +225,6 @@
       "date": "2026-03-30",
       "ema": -1638.0,
       "orb": 2211.0,
-      "overnight": -3019.0,
       "dc": 3588.0,
       "combined": 573.0
     },
@@ -264,7 +232,6 @@
       "date": "2026-03-31",
       "ema": -882.0,
       "orb": 2211.0,
-      "overnight": -2665.0,
       "dc": 5224.0,
       "combined": 1329.0
     },
@@ -272,7 +239,6 @@
       "date": "2026-04-02",
       "ema": -759.0,
       "orb": 2211.0,
-      "overnight": -3456.0,
       "dc": 5224.0,
       "combined": 1452.0
     },
@@ -280,7 +246,6 @@
       "date": "2026-04-06",
       "ema": -759.0,
       "orb": 1975.0,
-      "overnight": -3699.0,
       "dc": 5224.0,
       "combined": 1217.0
     },
@@ -288,7 +253,6 @@
       "date": "2026-04-07",
       "ema": -677.0,
       "orb": 1528.0,
-      "overnight": -2041.0,
       "dc": 5224.0,
       "combined": 851.0
     },
@@ -296,7 +260,6 @@
       "date": "2026-04-13",
       "ema": -179.0,
       "orb": 1945.0,
-      "overnight": -1818.0,
       "dc": 5224.0,
       "combined": 1766.0
     },
@@ -304,7 +267,6 @@
       "date": "2026-04-14",
       "ema": -179.0,
       "orb": 2373.0,
-      "overnight": -1775.0,
       "dc": 5224.0,
       "combined": 2194.0
     },
@@ -312,7 +274,6 @@
       "date": "2026-04-15",
       "ema": -179.0,
       "orb": 2952.0,
-      "overnight": -1628.0,
       "dc": 5224.0,
       "combined": 2773.0
     },
@@ -320,7 +281,6 @@
       "date": "2026-04-16",
       "ema": -179.0,
       "orb": 3002.0,
-      "overnight": -1215.0,
       "dc": 5224.0,
       "combined": 2823.0
     },
@@ -328,7 +288,6 @@
       "date": "2026-04-17",
       "ema": -179.0,
       "orb": 3141.0,
-      "overnight": -1279.0,
       "dc": 5224.0,
       "combined": 2962.0
     },
@@ -336,7 +295,6 @@
       "date": "2026-04-20",
       "ema": -170.0,
       "orb": 3141.0,
-      "overnight": -1156.0,
       "dc": 5224.0,
       "combined": 2971.0
     },
@@ -344,7 +302,6 @@
       "date": "2026-04-21",
       "ema": -536.0,
       "orb": 2883.0,
-      "overnight": -681.0,
       "dc": 5224.0,
       "combined": 2348.0
     },
@@ -352,7 +309,6 @@
       "date": "2026-04-22",
       "ema": -38.0,
       "orb": 3239.0,
-      "overnight": -815.0,
       "dc": 5224.0,
       "combined": 3202.0
     },
@@ -360,7 +316,6 @@
       "date": "2026-04-23",
       "ema": -38.0,
       "orb": 2935.0,
-      "overnight": -250.0,
       "dc": 5224.0,
       "combined": 2897.0
     },
@@ -368,7 +323,6 @@
       "date": "2026-04-24",
       "ema": -38.0,
       "orb": 3273.0,
-      "overnight": -299.0,
       "dc": 5224.0,
       "combined": 3236.0
     },
@@ -376,7 +330,6 @@
       "date": "2026-04-27",
       "ema": -38.0,
       "orb": 3280.0,
-      "overnight": -870.0,
       "dc": 5224.0,
       "combined": 3242.0
     },
@@ -384,7 +337,6 @@
       "date": "2026-04-28",
       "ema": -119.0,
       "orb": 3280.0,
-      "overnight": -797.0,
       "dc": 5224.0,
       "combined": 3161.0
     },
@@ -392,7 +344,6 @@
       "date": "2026-04-29",
       "ema": -208.0,
       "orb": 3395.0,
-      "overnight": -492.0,
       "dc": 5224.0,
       "combined": 3187.0
     },
@@ -400,7 +351,6 @@
       "date": "2026-04-30",
       "ema": 424.0,
       "orb": 3395.0,
-      "overnight": -384.0,
       "dc": 5224.0,
       "combined": 3819.0
     },
@@ -408,7 +358,6 @@
       "date": "2026-05-01",
       "ema": 424.0,
       "orb": 3286.0,
-      "overnight": -352.0,
       "dc": 5224.0,
       "combined": 3710.0
     },
@@ -416,7 +365,6 @@
       "date": "2026-05-04",
       "ema": 1037.0,
       "orb": 3041.0,
-      "overnight": 62.0,
       "dc": 5224.0,
       "combined": 4077.0
     },
@@ -424,7 +372,6 @@
       "date": "2026-05-05",
       "ema": 1037.0,
       "orb": 3020.0,
-      "overnight": 567.0,
       "dc": 5224.0,
       "combined": 4057.0
     },
@@ -432,7 +379,6 @@
       "date": "2026-05-06",
       "ema": 1037.0,
       "orb": 3391.0,
-      "overnight": 644.0,
       "dc": 5224.0,
       "combined": 4428.0
     },
@@ -440,7 +386,6 @@
       "date": "2026-05-07",
       "ema": 1018.0,
       "orb": 3155.0,
-      "overnight": 1030.0,
       "dc": 5224.0,
       "combined": 4173.0
     },
@@ -448,7 +393,6 @@
       "date": "2026-05-08",
       "ema": 1018.0,
       "orb": 3537.0,
-      "overnight": 959.0,
       "dc": 5224.0,
       "combined": 4555.0
     },
@@ -456,7 +400,6 @@
       "date": "2026-05-12",
       "ema": 1079.0,
       "orb": 3537.0,
-      "overnight": 746.0,
       "dc": 5224.0,
       "combined": 4616.0
     },
@@ -464,7 +407,6 @@
       "date": "2026-05-13",
       "ema": 1079.0,
       "orb": 3899.0,
-      "overnight": 744.0,
       "dc": 5224.0,
       "combined": 4978.0
     },
@@ -472,7 +414,6 @@
       "date": "2026-05-14",
       "ema": 1079.0,
       "orb": 3916.0,
-      "overnight": -76.0,
       "dc": 5224.0,
       "combined": 4996.0
     },
@@ -480,7 +421,6 @@
       "date": "2026-05-15",
       "ema": 1079.0,
       "orb": 3757.0,
-      "overnight": 136.0,
       "dc": 5224.0,
       "combined": 4836.0
     },
@@ -488,7 +428,6 @@
       "date": "2026-05-20",
       "ema": 1670.0,
       "orb": 4051.0,
-      "overnight": -429.0,
       "dc": 5224.0,
       "combined": 5721.0
     },
@@ -496,7 +435,6 @@
       "date": "2026-05-21",
       "ema": 1875.0,
       "orb": 3703.0,
-      "overnight": -164.0,
       "dc": 5224.0,
       "combined": 5578.0
     },
@@ -504,7 +442,6 @@
       "date": "2026-05-25",
       "ema": 1888.0,
       "orb": 3703.0,
-      "overnight": 487.0,
       "dc": 5224.0,
       "combined": 5591.0
     },
@@ -512,7 +449,6 @@
       "date": "2026-05-26",
       "ema": 1888.0,
       "orb": 3830.0,
-      "overnight": 700.0,
       "dc": 5224.0,
       "combined": 5718.0
     },
@@ -520,7 +456,6 @@
       "date": "2026-05-27",
       "ema": 1981.0,
       "orb": 3830.0,
-      "overnight": 709.0,
       "dc": 5224.0,
       "combined": 5811.0
     },
@@ -528,7 +463,6 @@
       "date": "2026-05-28",
       "ema": 2487.0,
       "orb": 4145.0,
-      "overnight": 860.0,
       "dc": 5224.0,
       "combined": 6633.0
     },
@@ -536,7 +470,6 @@
       "date": "2026-05-29",
       "ema": 2487.0,
       "orb": 3790.0,
-      "overnight": 748.0,
       "dc": 5224.0,
       "combined": 6277.0
     },
@@ -544,7 +477,6 @@
       "date": "2026-06-02",
       "ema": 2487.0,
       "orb": 3965.0,
-      "overnight": 810.0,
       "dc": 5224.0,
       "combined": 6452.0
     },
@@ -552,7 +484,6 @@
       "date": "2026-06-03",
       "ema": 2506.0,
       "orb": 3965.0,
-      "overnight": 72.0,
       "dc": 5224.0,
       "combined": 6471.0
     },
@@ -560,7 +491,6 @@
       "date": "2026-06-04",
       "ema": 2478.0,
       "orb": 3965.0,
-      "overnight": -830.0,
       "dc": 5224.0,
       "combined": 6443.0
     },
@@ -568,7 +498,6 @@
       "date": "2026-06-09",
       "ema": 1769.0,
       "orb": 5104.0,
-      "overnight": 227.0,
       "dc": 5224.0,
       "combined": 6872.0
     },
@@ -576,7 +505,6 @@
       "date": "2026-06-11",
       "ema": 1765.0,
       "orb": 5104.0,
-      "overnight": 752.0,
       "dc": 5224.0,
       "combined": 6869.0
     },
@@ -584,7 +512,6 @@
       "date": "2026-06-18",
       "ema": 2233.0,
       "orb": 5104.0,
-      "overnight": 3522.0,
       "dc": 5224.0,
       "combined": 7336.0
     },
@@ -592,7 +519,6 @@
       "date": "2026-06-19",
       "ema": 2233.0,
       "orb": 4836.0,
-      "overnight": 3871.0,
       "dc": 5224.0,
       "combined": 7069.0
     },
@@ -600,7 +526,6 @@
       "date": "2026-06-22",
       "ema": 2233.0,
       "orb": 4450.0,
-      "overnight": 1997.0,
       "dc": 5224.0,
       "combined": 6683.0
     },
@@ -608,7 +533,6 @@
       "date": "2026-06-23",
       "ema": 2233.0,
       "orb": 3739.0,
-      "overnight": 2116.0,
       "dc": 5224.0,
       "combined": 5972.0
     }
@@ -701,25 +625,6 @@
         "Universe": "MNQ (Micro E-mini Nasdaq)"
       }
     },
-    "overnight": {
-      "name": "Overnight",
-      "status": "shelved",
-      "in_portfolio": false,
-      "combo_key": "overnight",
-      "description": "Overnight NQ long bias \u2014 enter at 19:59 ET, exit at next session open. Shelved June 2026 due to margin cost and correlated macro risk.",
-      "params": {
-        "Entry": "19:59 ET (market close)",
-        "Exit": "Next session open (next_open)",
-        "Direction": "Long bias (NQ overnight drift)",
-        "Backtest PF (16y)": "0.98",
-        "2026 OOS PF": "1.04",
-        "Sharpe 2026": "0.41",
-        "Trade days 2026": "114",
-        "Status": "Shelved \u2014 June 2026",
-        "Reason": "Margin cost, correlated drawdown, insufficient edge",
-        "Universe": "MNQ (Micro E-mini Nasdaq)"
-      }
-    },
     "dc_exit3": {
       "name": "DC Mean Reversion",
       "status": "active",
@@ -763,15 +668,6 @@
       "total_usd": 3739.0,
       "trade_days": 56
     },
-    "overnight": {
-      "pf": 1.13,
-      "sharpe": 0.7,
-      "max_dd_usd": 4947.0,
-      "win_pct": 52.4,
-      "total_pts": 1307.7,
-      "total_usd": 2615.0,
-      "trade_days": 124
-    },
     "dc": {
       "pf": 4.2,
       "sharpe": 10.45,
@@ -798,33 +694,6 @@
       "total_pts": 5185.8,
       "total_usd": 10372.0,
       "trade_days": 78
-    },
-    "ema+overnight": {
-      "pf": 1.22,
-      "sharpe": 1.16,
-      "max_dd_usd": 6152.0,
-      "win_pct": 53.2,
-      "total_pts": 2424.2,
-      "total_usd": 4848.0,
-      "trade_days": 124
-    },
-    "orb+overnight": {
-      "pf": 1.29,
-      "sharpe": 1.51,
-      "max_dd_usd": 6020.0,
-      "win_pct": 56.5,
-      "total_pts": 3177.3,
-      "total_usd": 6355.0,
-      "trade_days": 124
-    },
-    "ema+orb+overnight": {
-      "pf": 1.37,
-      "sharpe": 1.88,
-      "max_dd_usd": 6120.0,
-      "win_pct": 56.5,
-      "total_pts": 4293.7,
-      "total_usd": 8587.0,
-      "trade_days": 124
     }
   },
   "strategy_backtest_stats": {
