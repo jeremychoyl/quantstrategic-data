@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T14:45:03+00:00",
+  "generated_at": "2026-06-28T14:48:37+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4370,6 +4370,44 @@
       {
         "idea": "Market-neutral MNQ+MGC+6J",
         "reason": "Risk-parity Sharpe 0.2 vs the book's 0.87 \u2014 neutrality is risk, not return"
+      }
+    ]
+  },
+  "investor_verdict": {
+    "as_of": "2026-06-28T14:45:02+00:00",
+    "would_invest": false,
+    "stance": "WOULD NOT ALLOCATE \u2014 yet",
+    "verdict": "No allocation today. Four live trades at -0% win rate with -26.56 pts average slippage directly contradicts the backtest's 1.35 Sharpe and 38.2% ROC\u2014that gap suggests either execution/market-regime failure or backtest overfitting, and you need live proof, not promise. The single-market concentration (MNQ only) is the second red flag: a systematic fund claiming \"thorough cross-instrument search found no edge elsewhere\" is either genuinely limited in alpha or hasn't searched hard enough\u2014either way, it's undiversified and fragile.\n\nConcrete next step to earn my check: Run 40\u201350 live trades (2\u20133 months minimum at current velocity) with documented entry/exit timestamps and slippage breakdowns by strategy, then show me which of your three strategies is actually executable in live conditions and why. If slippage remains above 15 pts, you need to prove the backtest adjusts for that friction *before* I see another pitch.",
+    "scorecard": [
+      {
+        "criterion": "Live track record",
+        "target": "100+ trades",
+        "now": "4 trades",
+        "pass": false
+      },
+      {
+        "criterion": "Live P&L positive",
+        "target": "> $0",
+        "now": "$-1,882",
+        "pass": false
+      },
+      {
+        "criterion": "Diversification",
+        "target": "2+ uncorrelated mkts",
+        "now": "1 (MNQ / Nasdaq)",
+        "pass": false
+      },
+      {
+        "criterion": "Scale / capacity",
+        "target": "meaningful AUM",
+        "now": "micro \u00b7 ~$7,500",
+        "pass": false
+      },
+      {
+        "criterion": "Backtest = live",
+        "target": "live tracks backtest",
+        "now": "4 trades \u2014 too early",
+        "pass": false
       }
     ]
   },
