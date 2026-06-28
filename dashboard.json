@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T14:00:04+00:00",
+  "generated_at": "2026-06-28T14:00:16+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4374,7 +4374,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-28T13:45:22+00:00",
+    "as_of": "2026-06-28T14:00:15+00:00",
     "note": "16-year backtest projection, 1 contract each. ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is long-only.",
     "n_strategies": 3,
     "per_strategy": [
@@ -4444,7 +4444,7 @@
       }
     },
     "ytd_equity": {
-      "as_of": "2026-06-28T13:45:23+00:00",
+      "as_of": "2026-06-28T14:00:15+00:00",
       "since": "2026-01-01",
       "through": "2026-06-23",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC). Backtest/OOS model \u2014 not realized fills.",
@@ -4454,8 +4454,6 @@
           "orb": 510,
           "ema": 0,
           "dc": 0,
-          "gold": 0,
-          "crude": 0,
           "combined": 510
         },
         {
@@ -4463,8 +4461,6 @@
           "orb": 389,
           "ema": 0,
           "dc": 0,
-          "gold": 0,
-          "crude": 0,
           "combined": 389
         },
         {
@@ -4472,8 +4468,6 @@
           "orb": 455,
           "ema": 0,
           "dc": 0,
-          "gold": 0,
-          "crude": 0,
           "combined": 455
         },
         {
@@ -4481,8 +4475,6 @@
           "orb": 697,
           "ema": -268,
           "dc": 0,
-          "gold": 0,
-          "crude": 0,
           "combined": 429
         },
         {
@@ -4490,8 +4482,6 @@
           "orb": 697,
           "ema": -188,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 1437
         },
         {
@@ -4499,8 +4489,6 @@
           "orb": 497,
           "ema": -188,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 1237
         },
         {
@@ -4508,8 +4496,6 @@
           "orb": 481,
           "ema": -188,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 1221
         },
         {
@@ -4517,8 +4503,6 @@
           "orb": 518,
           "ema": -188,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 1258
         },
         {
@@ -4526,8 +4510,6 @@
           "orb": 518,
           "ema": -544,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 902
         },
         {
@@ -4535,8 +4517,6 @@
           "orb": 518,
           "ema": -601,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 845
         },
         {
@@ -4544,8 +4524,6 @@
           "orb": 816,
           "ema": -601,
           "dc": 929,
-          "gold": 0,
-          "crude": 0,
           "combined": 1143
         },
         {
@@ -4553,8 +4531,6 @@
           "orb": 827,
           "ema": -601,
           "dc": 1679,
-          "gold": 0,
-          "crude": 0,
           "combined": 1905
         },
         {
@@ -4562,8 +4538,6 @@
           "orb": 827,
           "ema": -601,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 3057
         },
         {
@@ -4571,8 +4545,6 @@
           "orb": 786,
           "ema": -1043,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2574
         },
         {
@@ -4580,8 +4552,6 @@
           "orb": 1589,
           "ema": -1043,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 3377
         },
         {
@@ -4589,8 +4559,6 @@
           "orb": 889,
           "ema": -1170,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2550
         },
         {
@@ -4598,8 +4566,6 @@
           "orb": 1140,
           "ema": -1170,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2801
         },
         {
@@ -4607,8 +4573,6 @@
           "orb": 1140,
           "ema": -953,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 3018
         },
         {
@@ -4616,8 +4580,6 @@
           "orb": 1140,
           "ema": -902,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 3069
         },
         {
@@ -4625,8 +4587,6 @@
           "orb": 636,
           "ema": -902,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2565
         },
         {
@@ -4634,8 +4594,6 @@
           "orb": 421,
           "ema": -916,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2336
         },
         {
@@ -4643,8 +4601,6 @@
           "orb": 421,
           "ema": -599,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2653
         },
         {
@@ -4652,8 +4608,6 @@
           "orb": 98,
           "ema": -885,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2044
         },
         {
@@ -4661,8 +4615,6 @@
           "orb": 533,
           "ema": -885,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2479
         },
         {
@@ -4670,8 +4622,6 @@
           "orb": 533,
           "ema": -924,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2440
         },
         {
@@ -4679,8 +4629,6 @@
           "orb": 428,
           "ema": -924,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2336
         },
         {
@@ -4688,8 +4636,6 @@
           "orb": 868,
           "ema": -924,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 2775
         },
         {
@@ -4697,8 +4643,6 @@
           "orb": 1236,
           "ema": -924,
           "dc": 2831,
-          "gold": 0,
-          "crude": 0,
           "combined": 3143
         },
         {
@@ -4706,8 +4650,6 @@
           "orb": 1236,
           "ema": -1336,
           "dc": 2281,
-          "gold": 0,
-          "crude": 0,
           "combined": 2181
         },
         {
@@ -4715,8 +4657,6 @@
           "orb": 1180,
           "ema": -1638,
           "dc": 2281,
-          "gold": 0,
-          "crude": 0,
           "combined": 1822
         },
         {
@@ -4724,8 +4664,6 @@
           "orb": 1698,
           "ema": -1638,
           "dc": 2281,
-          "gold": 0,
-          "crude": 0,
           "combined": 2341
         },
         {
@@ -4733,8 +4671,6 @@
           "orb": 1946,
           "ema": -1638,
           "dc": 2789,
-          "gold": 0,
-          "crude": 0,
           "combined": 3096
         },
         {
@@ -4742,8 +4678,6 @@
           "orb": 2211,
           "ema": -1638,
           "dc": 3588,
-          "gold": 0,
-          "crude": 0,
           "combined": 4161
         },
         {
@@ -4751,8 +4685,6 @@
           "orb": 2211,
           "ema": -882,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 6552
         },
         {
@@ -4760,8 +4692,6 @@
           "orb": 2211,
           "ema": -759,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 6676
         },
         {
@@ -4769,8 +4699,6 @@
           "orb": 1975,
           "ema": -759,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 6440
         },
         {
@@ -4778,8 +4706,6 @@
           "orb": 1528,
           "ema": -677,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 6075
         },
         {
@@ -4787,8 +4713,6 @@
           "orb": 1945,
           "ema": -179,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 6990
         },
         {
@@ -4796,8 +4720,6 @@
           "orb": 2373,
           "ema": -179,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 7418
         },
         {
@@ -4805,8 +4727,6 @@
           "orb": 2952,
           "ema": -179,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 7997
         },
         {
@@ -4814,8 +4734,6 @@
           "orb": 3002,
           "ema": -179,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8047
         },
         {
@@ -4823,8 +4741,6 @@
           "orb": 3141,
           "ema": -179,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8186
         },
         {
@@ -4832,8 +4748,6 @@
           "orb": 3141,
           "ema": -170,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8194
         },
         {
@@ -4841,8 +4755,6 @@
           "orb": 2883,
           "ema": -536,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 7571
         },
         {
@@ -4850,8 +4762,6 @@
           "orb": 3239,
           "ema": -38,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8425
         },
         {
@@ -4859,8 +4769,6 @@
           "orb": 2935,
           "ema": -38,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8121
         },
         {
@@ -4868,8 +4776,6 @@
           "orb": 3273,
           "ema": -38,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8459
         },
         {
@@ -4877,8 +4783,6 @@
           "orb": 3280,
           "ema": -38,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8466
         },
         {
@@ -4886,8 +4790,6 @@
           "orb": 3280,
           "ema": -119,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8385
         },
         {
@@ -4895,8 +4797,6 @@
           "orb": 3395,
           "ema": -208,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8411
         },
         {
@@ -4904,8 +4804,6 @@
           "orb": 3395,
           "ema": 424,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9042
         },
         {
@@ -4913,8 +4811,6 @@
           "orb": 3286,
           "ema": 424,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 8933
         },
         {
@@ -4922,8 +4818,6 @@
           "orb": 3041,
           "ema": 1037,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9301
         },
         {
@@ -4931,8 +4825,6 @@
           "orb": 3020,
           "ema": 1037,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9281
         },
         {
@@ -4940,8 +4832,6 @@
           "orb": 3391,
           "ema": 1037,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9652
         },
         {
@@ -4949,8 +4839,6 @@
           "orb": 3155,
           "ema": 1018,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9397
         },
         {
@@ -4958,8 +4846,6 @@
           "orb": 3537,
           "ema": 1018,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9779
         },
         {
@@ -4967,8 +4853,6 @@
           "orb": 3537,
           "ema": 1079,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 9840
         },
         {
@@ -4976,8 +4860,6 @@
           "orb": 3899,
           "ema": 1079,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10202
         },
         {
@@ -4985,8 +4867,6 @@
           "orb": 3916,
           "ema": 1079,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10219
         },
         {
@@ -4994,8 +4874,6 @@
           "orb": 3757,
           "ema": 1079,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10060
         },
         {
@@ -5003,8 +4881,6 @@
           "orb": 4051,
           "ema": 1670,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10945
         },
         {
@@ -5012,8 +4888,6 @@
           "orb": 3703,
           "ema": 1875,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10801
         },
         {
@@ -5021,8 +4895,6 @@
           "orb": 3703,
           "ema": 1888,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10814
         },
         {
@@ -5030,8 +4902,6 @@
           "orb": 3830,
           "ema": 1888,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 10941
         },
         {
@@ -5039,8 +4909,6 @@
           "orb": 3830,
           "ema": 1981,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 11035
         },
         {
@@ -5048,8 +4916,6 @@
           "orb": 4145,
           "ema": 2487,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 11856
         },
         {
@@ -5057,8 +4923,6 @@
           "orb": 3790,
           "ema": 2487,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 11501
         },
         {
@@ -5066,8 +4930,6 @@
           "orb": 3965,
           "ema": 2487,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 11676
         },
         {
@@ -5075,8 +4937,6 @@
           "orb": 3965,
           "ema": 2506,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 11694
         },
         {
@@ -5084,8 +4944,6 @@
           "orb": 3965,
           "ema": 2478,
           "dc": 5224,
-          "gold": 0,
-          "crude": 0,
           "combined": 11667
         },
         {
@@ -5093,8 +4951,6 @@
           "orb": 3965,
           "ema": 2478,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 10843
         },
         {
@@ -5102,8 +4958,6 @@
           "orb": 5104,
           "ema": 1769,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 11272
         },
         {
@@ -5111,8 +4965,6 @@
           "orb": 5104,
           "ema": 1765,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 11269
         },
         {
@@ -5120,8 +4972,6 @@
           "orb": 5104,
           "ema": 2233,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 11736
         },
         {
@@ -5129,8 +4979,6 @@
           "orb": 4836,
           "ema": 2233,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 11469
         },
         {
@@ -5138,8 +4986,6 @@
           "orb": 4450,
           "ema": 2233,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 11083
         },
         {
@@ -5147,8 +4993,6 @@
           "orb": 3739,
           "ema": 2233,
           "dc": 4400,
-          "gold": 0,
-          "crude": 0,
           "combined": 10372
         }
       ],
@@ -5156,8 +5000,6 @@
         "orb": 3739,
         "ema": 2233,
         "dc": 4400,
-        "gold": 0,
-        "crude": 0,
         "combined": 10372
       }
     },
