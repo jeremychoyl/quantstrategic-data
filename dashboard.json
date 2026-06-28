@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T01:00:03+00:00",
+  "generated_at": "2026-06-28T01:05:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3992,9 +3992,17 @@
     "total_tested": 12,
     "total_pass": 4,
     "total_fail": 8,
-    "total_skip": 10,
+    "total_skip": 11,
     "pass_rate": 33.3,
     "recent": [
+      {
+        "hyp_id": 26,
+        "at": "2026-06-28T01:04:51.795984+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires real-time ADX(14), +DI(14), -DI(14) indicator state as entry/exit triggers, not price-pattern-only signals. ADX threshold recalibration (20\u219225) is a tuning parameter on an indicator, not a price action rule. Breakout template architecture does not support indicator-gated entries or indicator-collapse exits; it requires price levels (ranges, bands, breakout bars) as primary signals. This strategy is indicator-adaptive and violates the rule that backtest templates work from bar OHLCV alone without live indicator state.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": "25",
         "at": "2026-06-26T07:45:13.463997+00:00",
@@ -4119,21 +4127,6 @@
           "max_dd": -6109.0
         },
         "routing": "session_momentum"
-      },
-      {
-        "hyp_id": 19,
-        "at": "2026-06-26T01:04:54.277578+00:00",
-        "verdict": "FAIL",
-        "reason": "Era gate FAIL (2010-2020 PF 0.00 | 2021-2026 PF 0.00); WF 16/16 sit-outs",
-        "stats": {
-          "n": 1054,
-          "pf": 0.0,
-          "sharpe": -8.860854601365141e+16,
-          "win_pct": 0.0,
-          "total_usd": -2614.0,
-          "max_dd": -2611.0
-        },
-        "routing": "breakout"
       }
     ],
     "queue": [
@@ -4336,6 +4329,14 @@
         "source": "Multi-instrument scan (validated candidate)",
         "created": "2026-06-26",
         "verdict": "{\"verdict\": \"PASS\", \"reason\": \"Era gate PASS | WF 0/16 sit-outs | Calmar 1.30 | PF 3.46 Sharpe 3.96\", \"stats\": {\"n\": 761, \"pf\": 3.463, \"sharpe\": 3.96, \"win_pct\": 30.2, \"total_usd\": 44086.0, \"max_dd\": -2125.0, \"calmar\": 1.301}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 26,
+        "status": "skip",
+        "summary": "ADX threshold recalibration from standard 20 to 25 on 5m bars improves trend con",
+        "source": "X/timeline",
+        "created": "2026-06-28",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time ADX(14), +DI(14), -DI(14) indicator state as entry/exit triggers, not price-pattern-only signals. ADX threshold recalibration (20\\u219225) is a tuning parameter on an indicator, not a price action rule. Breakout template architecture does not support indicator-gated entries or indicator-collapse exits; it requires price levels (ranges, bands, breakout bars) as primary signals. This strategy is indicator-adaptive and violates the rule that backtest templates work from bar OHLCV alone without live indicator state.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
@@ -11423,7 +11424,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-28T01:00:10+00:00",
+    "as_of": "2026-06-28T01:05:10+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
