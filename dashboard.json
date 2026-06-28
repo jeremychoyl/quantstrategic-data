@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T16:45:04+00:00",
+  "generated_at": "2026-06-28T16:50:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4374,10 +4374,10 @@
     ]
   },
   "investor_verdict": {
-    "as_of": "2026-06-28T14:45:02+00:00",
+    "as_of": "2026-06-28T16:50:08+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. Four live trades at -0% win rate with -26.56 pts average slippage directly contradicts the backtest's 1.35 Sharpe and 38.2% ROC\u2014that gap suggests either execution/market-regime failure or backtest overfitting, and you need live proof, not promise. The single-market concentration (MNQ only) is the second red flag: a systematic fund claiming \"thorough cross-instrument search found no edge elsewhere\" is either genuinely limited in alpha or hasn't searched hard enough\u2014either way, it's undiversified and fragile.\n\nConcrete next step to earn my check: Run 40\u201350 live trades (2\u20133 months minimum at current velocity) with documented entry/exit timestamps and slippage breakdowns by strategy, then show me which of your three strategies is actually executable in live conditions and why. If slippage remains above 15 pts, you need to prove the backtest adjusts for that friction *before* I see another pitch.",
+    "verdict": "No allocation today. You have a sharp backtest (Sharpe 1.35, Calmar 0.92) but zero live confirmation\u2014four underwater trades and -26.56 pts average slippage is a red flag that your edge either doesn't survive real execution friction or hasn't yet. Single-market concentration on MNQ is acceptable for a micro fund at this stage, but the live P&L and slippage gap demand resolution before institutional capital arrives.\n\nYour one concrete next step: Run 40\u201350 more live trades (roughly 8\u201312 weeks at your current pace) to reach statistical significance, documenting slippage, fill quality, and win rate in real markets. If you hit 35%+ win rate and <10 pts average slippage by then, you'll have earned serious consideration. Until then, you're still in the lab.",
     "scorecard": [
       {
         "criterion": "Live track record",
