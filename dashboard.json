@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T05:15:03+00:00",
+  "generated_at": "2026-06-28T05:18:01+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4357,20 +4357,20 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-28T05:12:47+00:00",
+    "as_of": "2026-06-28T05:17:34+00:00",
     "note": "16-year backtest projection, 1 contract each. Gold/Crude execute on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24/25), isolated from the live MNQ book. EMA is long-only.",
     "n_strategies": 5,
     "per_strategy": [
       {
         "name": "ORB",
         "instrument": "MNQ",
-        "direction": "bilateral",
+        "direction": "trend20",
         "status": "live",
-        "annual_usd": 335,
-        "total_usd": 5385,
-        "sharpe": 0.12,
-        "max_dd_usd": -18226,
-        "calmar": 0.02
+        "annual_usd": 501,
+        "total_usd": 8006,
+        "sharpe": 0.36,
+        "max_dd_usd": -12682,
+        "calmar": 0.04
       },
       {
         "name": "EMA",
@@ -4418,55 +4418,55 @@
       }
     ],
     "book": {
-      "annual_usd": 8966,
-      "total_usd": 143927,
-      "sharpe": 1.68,
-      "max_dd_usd": -5896,
-      "calmar": 1.52,
+      "annual_usd": 9148,
+      "total_usd": 146548,
+      "sharpe": 2.27,
+      "max_dd_usd": -5501,
+      "calmar": 1.66,
       "margin_usd": 7877,
-      "dd_buffer_usd": 5896,
-      "capital_estimate_usd": 13800,
-      "return_on_capital_pct": 65.0
+      "dd_buffer_usd": 5501,
+      "capital_estimate_usd": 13400,
+      "return_on_capital_pct": 68.3
     },
     "correlation": {
       "ORB": {
         "ORB": 1.0,
-        "EMA": 0.23,
-        "DC": 0.05,
-        "Gold": 0.0,
+        "EMA": 0.01,
+        "DC": -0.03,
+        "Gold": 0.01,
         "Crude": -0.01
       },
       "EMA": {
-        "ORB": 0.23,
+        "ORB": 0.01,
         "EMA": 1.0,
         "DC": 0.02,
-        "Gold": -0.0,
+        "Gold": -0.01,
         "Crude": 0.01
       },
       "DC": {
-        "ORB": 0.05,
+        "ORB": -0.03,
         "EMA": 0.02,
         "DC": 1.0,
         "Gold": 0.06,
-        "Crude": -0.0
+        "Crude": -0.01
       },
       "Gold": {
-        "ORB": 0.0,
-        "EMA": -0.0,
+        "ORB": 0.01,
+        "EMA": -0.01,
         "DC": 0.06,
         "Gold": 1.0,
-        "Crude": 0.02
+        "Crude": 0.01
       },
       "Crude": {
         "ORB": -0.01,
         "EMA": 0.01,
-        "DC": -0.0,
-        "Gold": 0.02,
+        "DC": -0.01,
+        "Gold": 0.01,
         "Crude": 1.0
       }
     },
     "ytd_equity": {
-      "as_of": "2026-06-28T05:12:48+00:00",
+      "as_of": "2026-06-28T05:17:35+00:00",
       "since": "2026-01-01",
       "through": "2026-06-23",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC) + Gold/Crude demo shorts. Backtest/OOS model \u2014 not realized fills.",
@@ -11476,7 +11476,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-28T05:15:10+00:00",
+    "as_of": "2026-06-28T05:18:04+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
