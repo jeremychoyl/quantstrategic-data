@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T13:40:03+00:00",
+  "generated_at": "2026-06-28T13:45:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4374,6 +4374,50 @@
       }
     ]
   },
+  "research_discipline": {
+    "as_of": "2026-06-28",
+    "headline": "Instrument frontier explored \u2014 ORB + EMA + DC is the validated edge set",
+    "book": [
+      "ORB",
+      "EMA",
+      "DC"
+    ],
+    "research_spend_usd": 1430,
+    "tested_rejected": [
+      {
+        "idea": "Order flow / delta (16y NQ tick)",
+        "reason": "No standalone edge; EMA-confirm filter feed-blocked (live footprint reproduces NQ-delta sign only 73%)"
+      },
+      {
+        "idea": "Commodities \u2014 Gold/Crude/Silver/Copper",
+        "reason": "Apparent edges were look-ahead artifacts; retracted + turned off"
+      },
+      {
+        "idea": "Compression breakout (NR7/inside-day)",
+        "reason": "Marginal + redundant with ORB (corr 0.78)"
+      },
+      {
+        "idea": "Metals pairs reversion (Gold/Copper)",
+        "reason": "Genuinely uncorrelated but lumpy drawdown \u2014 fails Calmar/walkforward"
+      },
+      {
+        "idea": "Bitcoin",
+        "reason": "Correlated to NQ (+0.34) + no pre-2018 data"
+      },
+      {
+        "idea": "Euro FX (6E)",
+        "reason": "Uncorrelated + full history but no real edge (high-PF mirage)"
+      },
+      {
+        "idea": "Yen / Treasuries (6J / ZN)",
+        "reason": "Anti-correlated hedge but one shared risk-off axis + edgeless"
+      },
+      {
+        "idea": "Market-neutral MNQ+MGC+6J",
+        "reason": "Risk-parity Sharpe 0.2 vs the book's 0.87 \u2014 neutrality is risk, not return"
+      }
+    ]
+  },
   "projections": {
     "as_of": "2026-06-28T06:52:17+00:00",
     "note": "16-year backtest projection, 1 contract each. ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Gold/Crude execute on the Tradovate DEMO sandbox since 2026-06-26 (HYP-24/25), isolated from the live MNQ book. EMA is long-only.",
@@ -6910,7 +6954,7 @@
     }
   },
   "commodity_demo": {
-    "as_of": "2026-06-28T13:40:10+00:00",
+    "as_of": "2026-06-28T13:45:11+00:00",
     "note": "Gold/Crude demo sandbox (1 micro each) \u2014 isolated from the live MNQ book.",
     "per_strategy": {
       "gold_short": {
