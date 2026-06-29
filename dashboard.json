@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T09:45:04+00:00",
+  "generated_at": "2026-06-29T09:50:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -611,7 +611,7 @@
         "Slow EMA": "100",
         "Trend Filter": "EMA 200 (price above EMA200 = long bias)",
         "Volatility Gate": "ATR14 > 33rd percentile (gate closes in low-vol)",
-        "Direction": "Long only (short side disabled \u2014 PF 0.95 pre-2021, fails era gate)",
+        "Direction": "Long only (short side is a real edge but redundant with ORB \u2014 corr +0.375 fails the <0.3 gate)",
         "Market Open": "09:30 ET \u00b7 21:30 SGT",
         "Entry Window": "09:30\u201315:30 ET \u00b7 21:35\u201303:30 SGT (long crosses only)",
         "Entry": "Long cross bar close, market order",
