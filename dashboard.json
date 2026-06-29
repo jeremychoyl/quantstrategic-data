@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T01:00:04+00:00",
+  "generated_at": "2026-06-29T01:05:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4202,6 +4202,14 @@
         "source": "X/timeline",
         "created": "2026-06-28",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time ADX(14), +DI(14), -DI(14) indicator state as entry/exit triggers, not price-pattern-only signals. ADX threshold recalibration (20\\u219225) is a tuning parameter on an indicator, not a price action rule. Breakout template architecture does not support indicator-gated entries or indicator-collapse exits; it requires price levels (ranges, bands, breakout bars) as primary signals. This strategy is indicator-adaptive and violates the rule that backtest templates work from bar OHLCV alone without live indicator state.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 27,
+        "status": "pending",
+        "summary": "Monday's open level acts as a weekly pivot; trades taken Wednesday-Thursday that",
+        "source": "r/algotrading",
+        "created": "2026-06-29",
+        "verdict": null
       }
     ]
   },
