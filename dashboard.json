@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T16:00:04+00:00",
+  "generated_at": "2026-06-29T16:05:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -557,6 +557,11 @@
       "date": "2026-06-26",
       "pnl_pts": -66.5,
       "pnl_usd": -133.0
+    },
+    {
+      "date": "2026-06-29",
+      "pnl_pts": -299.0,
+      "pnl_usd": -598.0
     }
   ],
   "portfolio_stats": {
@@ -574,16 +579,16 @@
       "size": "1 MNQ",
       "entry_date": "2026-06-29",
       "entry_px": 29432.25,
-      "current_px": 29839.0,
-      "pnl_pts": 406.75,
-      "pnl_usd": 813.5,
+      "current_px": 29868.0,
+      "pnl_pts": 435.75,
+      "pnl_usd": 871.5,
       "direction": "Long"
     }
   ],
   "net_returns": {
-    "5d_pts": -1074.5,
-    "5d_usd": -2149.0,
-    "5d_pct": -8.596,
+    "5d_pts": -1373.5,
+    "5d_usd": -2747.0,
+    "5d_pct": -10.988,
     "ytd_pts": -1262.25,
     "ytd_usd": -2524.5,
     "ytd_pct": -10.098
