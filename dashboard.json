@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T19:55:03+00:00",
+  "generated_at": "2026-06-29T20:00:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -560,8 +560,8 @@
     },
     {
       "date": "2026-06-29",
-      "pnl_pts": -299.0,
-      "pnl_usd": -598.0
+      "pnl_pts": 260.5,
+      "pnl_usd": 521.0
     }
   ],
   "portfolio_stats": {
@@ -575,9 +575,9 @@
   },
   "active_positions": [],
   "net_returns": {
-    "5d_pts": -1373.5,
-    "5d_usd": -2747.0,
-    "5d_pct": -10.988,
+    "5d_pts": -814.0,
+    "5d_usd": -1628.0,
+    "5d_pct": -6.512,
     "ytd_pts": -702.75,
     "ytd_usd": -1405.5,
     "ytd_pct": -5.622
