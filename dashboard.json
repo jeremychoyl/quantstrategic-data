@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T22:25:04+00:00",
+  "generated_at": "2026-06-29T22:30:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4355,7 +4355,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-28T22:30:05+00:00",
+    "as_of": "2026-06-29T22:30:01+00:00",
     "note": "16-year backtest projection, 1 contract each. ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is long-only.",
     "n_strategies": 3,
     "per_strategy": [
@@ -4365,9 +4365,9 @@
         "direction": "trend20",
         "status": "live",
         "gated": true,
-        "annual_usd": 1096,
-        "total_usd": 17503,
-        "sharpe": 1.29,
+        "annual_usd": 1107,
+        "total_usd": 17694,
+        "sharpe": 1.3,
         "max_dd_usd": -3077,
         "calmar": 0.36
       },
@@ -4397,15 +4397,15 @@
       }
     ],
     "book": {
-      "annual_usd": 2868,
-      "total_usd": 45790,
+      "annual_usd": 2877,
+      "total_usd": 45980,
       "sharpe": 1.35,
       "max_dd_usd": -3114,
       "calmar": 0.92,
       "margin_usd": 4434,
       "dd_buffer_usd": 3114,
       "capital_estimate_usd": 7500,
-      "return_on_capital_pct": 38.2
+      "return_on_capital_pct": 38.4
     },
     "correlation": {
       "ORB": {
@@ -4425,9 +4425,9 @@
       }
     },
     "ytd_equity": {
-      "as_of": "2026-06-28T22:30:06+00:00",
+      "as_of": "2026-06-29T22:30:02+00:00",
       "since": "2026-01-01",
-      "through": "2026-06-23",
+      "through": "2026-06-29",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC). Backtest/OOS model \u2014 not realized fills.",
       "series": [
         {
@@ -4975,33 +4975,40 @@
           "ema": 2233,
           "dc": 4400,
           "combined": 10372
+        },
+        {
+          "date": "2026-06-29",
+          "orb": 3930,
+          "ema": 2233,
+          "dc": 4400,
+          "combined": 10562
         }
       ],
       "end": {
-        "orb": 3739,
+        "orb": 3930,
         "ema": 2233,
         "dc": 4400,
-        "combined": 10372
+        "combined": 10562
       }
     },
     "strategy_16y": {
       "orb": {
-        "win_rate": 53.3,
+        "win_rate": 53.4,
         "avg_win_usd": 232,
         "avg_loss_usd": -197,
         "payoff_ratio": 1.2,
         "profit_factor": 1.35,
         "expectancy_usd": 32,
-        "sharpe": 1.29,
-        "sortino": 2.19,
+        "sharpe": 1.3,
+        "sortino": 2.21,
         "calmar": 0.36,
-        "recovery_factor": 5.69,
+        "recovery_factor": 5.75,
         "max_dd_usd": 3077,
         "max_consec_losses": 6,
         "concentration_top5_pct": 28,
         "days_underwater": 107,
-        "n_trades": 546,
-        "total_usd": 17503,
+        "n_trades": 547,
+        "total_usd": 17694,
         "monthly": [
           {
             "month": "2022-01",
@@ -5270,8 +5277,8 @@
           },
           {
             "month": "2026-06",
-            "pnl": -51,
-            "equity": 17503
+            "pnl": 140,
+            "equity": 17694
           }
         ]
       },
@@ -5963,22 +5970,22 @@
     },
     "strategy_ytd": {
       "orb": {
-        "win_rate": 57.1,
-        "avg_win_usd": 316,
+        "win_rate": 57.9,
+        "avg_win_usd": 312,
         "avg_loss_usd": -265,
         "payoff_ratio": 1.2,
-        "profit_factor": 1.59,
-        "expectancy_usd": 67,
-        "sharpe": 1.97,
-        "sortino": 3.38,
-        "calmar": 5.33,
-        "recovery_factor": 2.51,
+        "profit_factor": 1.62,
+        "expectancy_usd": 69,
+        "sharpe": 2.03,
+        "sortino": 3.5,
+        "calmar": 5.41,
+        "recovery_factor": 2.64,
         "max_dd_usd": 1491,
         "max_consec_losses": 3,
         "concentration_top5_pct": 19,
         "days_underwater": 10,
-        "n_trades": 56,
-        "total_usd": 3739,
+        "n_trades": 57,
+        "total_usd": 3930,
         "monthly": [
           {
             "month": "2026-01",
@@ -6007,8 +6014,8 @@
           },
           {
             "month": "2026-06",
-            "pnl": -51,
-            "equity": 3739
+            "pnl": 140,
+            "equity": 3930
           }
         ]
       },
@@ -6121,15 +6128,15 @@
       "profit_factor": 1.6,
       "expectancy_usd": 49,
       "sharpe": 1.35,
-      "sortino": 2.75,
+      "sortino": 2.76,
       "calmar": 0.92,
-      "recovery_factor": 14.7,
+      "recovery_factor": 14.77,
       "max_dd_usd": 3114,
       "max_consec_losses": 9,
       "concentration_top5_pct": 37,
       "days_underwater": 89,
-      "n_trades": 935,
-      "total_usd": 45790,
+      "n_trades": 936,
+      "total_usd": 45980,
       "monthly": [
         {
           "month": "2017-06",
@@ -6673,29 +6680,29 @@
         },
         {
           "month": "2026-06",
-          "pnl": -1129,
-          "equity": 45790
+          "pnl": -939,
+          "equity": 45980
         }
       ],
       "basis": "daily"
     },
     "book_ytd": {
-      "win_rate": 59.0,
-      "avg_win_usd": 443,
+      "win_rate": 59.5,
+      "avg_win_usd": 437,
       "avg_loss_usd": -312,
       "payoff_ratio": 1.4,
-      "profit_factor": 2.04,
-      "expectancy_usd": 133,
+      "profit_factor": 2.06,
+      "expectancy_usd": 134,
       "sharpe": 3.15,
-      "sortino": 6.49,
-      "calmar": 14.16,
-      "recovery_factor": 6.67,
+      "sortino": 6.5,
+      "calmar": 13.94,
+      "recovery_factor": 6.79,
       "max_dd_usd": 1555,
       "max_consec_losses": 3,
-      "concentration_top5_pct": 23,
+      "concentration_top5_pct": 22,
       "days_underwater": 17,
-      "n_trades": 78,
-      "total_usd": 10372,
+      "n_trades": 79,
+      "total_usd": 10562,
       "monthly": [
         {
           "month": "2026-01",
@@ -6724,8 +6731,8 @@
         },
         {
           "month": "2026-06",
-          "pnl": -1129,
-          "equity": 10372
+          "pnl": -939,
+          "equity": 10562
         }
       ],
       "basis": "daily"
