@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T22:25:03+00:00",
+  "generated_at": "2026-06-30T22:30:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4375,7 +4375,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-29T22:30:01+00:00",
+    "as_of": "2026-06-30T22:30:03+00:00",
     "note": "16-year backtest projection, 1 contract each. ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is long-only.",
     "n_strategies": 3,
     "per_strategy": [
@@ -4385,11 +4385,11 @@
         "direction": "trend20",
         "status": "live",
         "gated": true,
-        "annual_usd": 1107,
-        "total_usd": 17694,
-        "sharpe": 1.3,
+        "annual_usd": 1056,
+        "total_usd": 16885,
+        "sharpe": 1.23,
         "max_dd_usd": -3077,
-        "calmar": 0.36
+        "calmar": 0.34
       },
       {
         "name": "EMA",
@@ -4397,9 +4397,9 @@
         "direction": "long-only",
         "status": "live",
         "gated": true,
-        "annual_usd": 918,
-        "total_usd": 14287,
-        "sharpe": 0.8,
+        "annual_usd": 908,
+        "total_usd": 14159,
+        "sharpe": 0.79,
         "max_dd_usd": -2237,
         "calmar": 0.41
       },
@@ -4417,24 +4417,24 @@
       }
     ],
     "book": {
-      "annual_usd": 2877,
-      "total_usd": 45980,
-      "sharpe": 1.35,
+      "annual_usd": 2818,
+      "total_usd": 45043,
+      "sharpe": 1.32,
       "max_dd_usd": -3114,
-      "calmar": 0.92,
+      "calmar": 0.91,
       "margin_usd": 4434,
       "dd_buffer_usd": 3114,
       "capital_estimate_usd": 7500,
-      "return_on_capital_pct": 38.4
+      "return_on_capital_pct": 37.6
     },
     "correlation": {
       "ORB": {
         "ORB": 1.0,
-        "EMA": -0.0,
+        "EMA": 0.0,
         "DC": 0.01
       },
       "EMA": {
-        "ORB": -0.0,
+        "ORB": 0.0,
         "EMA": 1.0,
         "DC": 0.03
       },
@@ -4445,7 +4445,7 @@
       }
     },
     "ytd_equity": {
-      "as_of": "2026-06-29T22:30:02+00:00",
+      "as_of": "2026-06-30T22:30:04+00:00",
       "since": "2026-01-01",
       "through": "2026-06-29",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC). Backtest/OOS model \u2014 not realized fills.",
@@ -4998,37 +4998,37 @@
         },
         {
           "date": "2026-06-29",
-          "orb": 3930,
-          "ema": 2233,
+          "orb": 3121,
+          "ema": 2105,
           "dc": 4400,
-          "combined": 10562
+          "combined": 9625
         }
       ],
       "end": {
-        "orb": 3930,
-        "ema": 2233,
+        "orb": 3121,
+        "ema": 2105,
         "dc": 4400,
-        "combined": 10562
+        "combined": 9625
       }
     },
     "strategy_16y": {
       "orb": {
-        "win_rate": 53.4,
+        "win_rate": 53.2,
         "avg_win_usd": 232,
-        "avg_loss_usd": -197,
+        "avg_loss_usd": -198,
         "payoff_ratio": 1.2,
-        "profit_factor": 1.35,
-        "expectancy_usd": 32,
-        "sharpe": 1.3,
-        "sortino": 2.21,
-        "calmar": 0.36,
-        "recovery_factor": 5.75,
+        "profit_factor": 1.33,
+        "expectancy_usd": 31,
+        "sharpe": 1.23,
+        "sortino": 2.08,
+        "calmar": 0.34,
+        "recovery_factor": 5.49,
         "max_dd_usd": 3077,
         "max_consec_losses": 6,
         "concentration_top5_pct": 28,
         "days_underwater": 107,
         "n_trades": 547,
-        "total_usd": 17694,
+        "total_usd": 16885,
         "monthly": [
           {
             "month": "2022-01",
@@ -5297,28 +5297,28 @@
           },
           {
             "month": "2026-06",
-            "pnl": 140,
-            "equity": 17694
+            "pnl": -669,
+            "equity": 16885
           }
         ]
       },
       "ema": {
         "win_rate": 49.4,
-        "avg_win_usd": 177,
-        "avg_loss_usd": -121,
+        "avg_win_usd": 179,
+        "avg_loss_usd": -123,
         "payoff_ratio": 1.5,
-        "profit_factor": 1.44,
-        "expectancy_usd": 27,
-        "sharpe": 0.8,
-        "sortino": 1.49,
+        "profit_factor": 1.42,
+        "expectancy_usd": 26,
+        "sharpe": 0.79,
+        "sortino": 1.47,
         "calmar": 0.41,
-        "recovery_factor": 6.39,
+        "recovery_factor": 6.33,
         "max_dd_usd": 2237,
         "max_consec_losses": 11,
         "concentration_top5_pct": 37,
         "days_underwater": 83,
-        "n_trades": 536,
-        "total_usd": 14287,
+        "n_trades": 538,
+        "total_usd": 14159,
         "monthly": [
           {
             "month": "2017-06",
@@ -5862,8 +5862,8 @@
           },
           {
             "month": "2026-06",
-            "pnl": -254,
-            "equity": 14287
+            "pnl": -382,
+            "equity": 14159
           }
         ]
       },
@@ -5990,22 +5990,22 @@
     },
     "strategy_ytd": {
       "orb": {
-        "win_rate": 57.9,
-        "avg_win_usd": 312,
-        "avg_loss_usd": -265,
-        "payoff_ratio": 1.2,
-        "profit_factor": 1.62,
-        "expectancy_usd": 69,
-        "sharpe": 2.03,
-        "sortino": 3.5,
-        "calmar": 5.41,
-        "recovery_factor": 2.64,
-        "max_dd_usd": 1491,
-        "max_consec_losses": 3,
+        "win_rate": 56.1,
+        "avg_win_usd": 316,
+        "avg_loss_usd": -279,
+        "payoff_ratio": 1.1,
+        "profit_factor": 1.45,
+        "expectancy_usd": 55,
+        "sharpe": 1.57,
+        "sortino": 2.59,
+        "calmar": 3.23,
+        "recovery_factor": 1.57,
+        "max_dd_usd": 1983,
+        "max_consec_losses": 4,
         "concentration_top5_pct": 19,
         "days_underwater": 10,
         "n_trades": 57,
-        "total_usd": 3930,
+        "total_usd": 3121,
         "monthly": [
           {
             "month": "2026-01",
@@ -6034,28 +6034,28 @@
           },
           {
             "month": "2026-06",
-            "pnl": 140,
-            "equity": 3930
+            "pnl": -669,
+            "equity": 3121
           }
         ]
       },
       "ema": {
-        "win_rate": 52.3,
-        "avg_win_usd": 305,
-        "avg_loss_usd": -227,
+        "win_rate": 52.2,
+        "avg_win_usd": 318,
+        "avg_loss_usd": -252,
         "payoff_ratio": 1.3,
-        "profit_factor": 1.47,
-        "expectancy_usd": 51,
-        "sharpe": 1.62,
-        "sortino": 2.83,
-        "calmar": 3.65,
-        "recovery_factor": 1.54,
+        "profit_factor": 1.38,
+        "expectancy_usd": 46,
+        "sharpe": 1.48,
+        "sortino": 2.58,
+        "calmar": 3.21,
+        "recovery_factor": 1.45,
         "max_dd_usd": 1450,
         "max_consec_losses": 4,
-        "concentration_top5_pct": 22,
+        "concentration_top5_pct": 20,
         "days_underwater": 15,
-        "n_trades": 44,
-        "total_usd": 2233,
+        "n_trades": 46,
+        "total_usd": 2105,
         "monthly": [
           {
             "month": "2026-01",
@@ -6084,8 +6084,8 @@
           },
           {
             "month": "2026-06",
-            "pnl": -254,
-            "equity": 2233
+            "pnl": -382,
+            "equity": 2105
           }
         ]
       },
@@ -6141,22 +6141,22 @@
       }
     },
     "book_16y": {
-      "win_rate": 53.7,
+      "win_rate": 53.6,
       "avg_win_usd": 244,
-      "avg_loss_usd": -177,
+      "avg_loss_usd": -178,
       "payoff_ratio": 1.4,
-      "profit_factor": 1.6,
-      "expectancy_usd": 49,
-      "sharpe": 1.35,
-      "sortino": 2.76,
-      "calmar": 0.92,
-      "recovery_factor": 14.77,
+      "profit_factor": 1.58,
+      "expectancy_usd": 48,
+      "sharpe": 1.32,
+      "sortino": 2.68,
+      "calmar": 0.91,
+      "recovery_factor": 14.47,
       "max_dd_usd": 3114,
       "max_consec_losses": 9,
       "concentration_top5_pct": 37,
       "days_underwater": 89,
       "n_trades": 936,
-      "total_usd": 45980,
+      "total_usd": 45043,
       "monthly": [
         {
           "month": "2017-06",
@@ -6700,29 +6700,29 @@
         },
         {
           "month": "2026-06",
-          "pnl": -939,
-          "equity": 45980
+          "pnl": -1876,
+          "equity": 45043
         }
       ],
       "basis": "daily"
     },
     "book_ytd": {
-      "win_rate": 59.5,
-      "avg_win_usd": 437,
-      "avg_loss_usd": -312,
+      "win_rate": 58.2,
+      "avg_win_usd": 443,
+      "avg_loss_usd": -325,
       "payoff_ratio": 1.4,
-      "profit_factor": 2.06,
-      "expectancy_usd": 134,
-      "sharpe": 3.15,
-      "sortino": 6.5,
-      "calmar": 13.94,
-      "recovery_factor": 6.79,
-      "max_dd_usd": 1555,
-      "max_consec_losses": 3,
-      "concentration_top5_pct": 22,
+      "profit_factor": 1.9,
+      "expectancy_usd": 122,
+      "sharpe": 2.83,
+      "sortino": 5.63,
+      "calmar": 8.85,
+      "recovery_factor": 4.31,
+      "max_dd_usd": 2231,
+      "max_consec_losses": 4,
+      "concentration_top5_pct": 23,
       "days_underwater": 17,
       "n_trades": 79,
-      "total_usd": 10562,
+      "total_usd": 9625,
       "monthly": [
         {
           "month": "2026-01",
@@ -6751,8 +6751,8 @@
         },
         {
           "month": "2026-06",
-          "pnl": -939,
-          "equity": 10562
+          "pnl": -1876,
+          "equity": 9625
         }
       ],
       "basis": "daily"
