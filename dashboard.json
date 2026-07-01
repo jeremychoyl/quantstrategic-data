@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T10:45:04+00:00",
+  "generated_at": "2026-07-01T10:50:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4648,7 +4648,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-07-01T10:26:34+00:00",
+    "as_of": "2026-07-01T10:45:18+00:00",
     "note": "16-year backtest projection, 1-1-1 contracts (orb-ema-dc). ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is long-only.",
     "n_strategies": 3,
     "per_strategy": [
@@ -4722,994 +4722,994 @@
       "basis": "raw ungated 16y backtest daily P&L, MNQ $2/pt (matches /corr)",
       "min_reliable_n": 30,
       "book": {
-        "var95_usd": -262,
-        "var99_usd": -561,
-        "cvar95_usd": -469,
-        "cvar99_usd": -899,
-        "daily_vol_usd": 273,
-        "ann_vol_usd": 4333,
-        "worst_day_usd": -2632,
-        "best_day_usd": 6769,
-        "max_dd_usd": -7069,
+        "var95_usd": -259,
+        "var99_usd": -609,
+        "cvar95_usd": -485,
+        "cvar99_usd": -959,
+        "daily_vol_usd": 268,
+        "ann_vol_usd": 4253,
+        "worst_day_usd": -2363,
+        "best_day_usd": 4687,
+        "max_dd_usd": -6017,
         "gated_max_dd_usd": -3114,
-        "n_days": 4073
+        "n_days": 2614
       },
       "drawdown_curve": [
         {
           "date": "2010-06",
-          "dd_usd": -146,
-          "eq_usd": -131
+          "dd_usd": 0,
+          "eq_usd": 54
         },
         {
           "date": "2010-07",
-          "dd_usd": -74,
-          "eq_usd": 119
+          "dd_usd": -72,
+          "eq_usd": 190
         },
         {
           "date": "2010-08",
-          "dd_usd": -161,
-          "eq_usd": -34
+          "dd_usd": -82,
+          "eq_usd": 142
         },
         {
           "date": "2010-09",
-          "dd_usd": -194,
-          "eq_usd": -39
+          "dd_usd": -93,
+          "eq_usd": 193
         },
         {
           "date": "2010-10",
-          "dd_usd": -296,
-          "eq_usd": -169
+          "dd_usd": -86,
+          "eq_usd": 135
         },
         {
           "date": "2010-11",
-          "dd_usd": -491,
-          "eq_usd": -310
+          "dd_usd": -174,
+          "eq_usd": 134
         },
         {
           "date": "2010-12",
-          "dd_usd": -555,
-          "eq_usd": -428
+          "dd_usd": -121,
+          "eq_usd": 111
         },
         {
           "date": "2011-01",
-          "dd_usd": -608,
-          "eq_usd": -288
+          "dd_usd": -118,
+          "eq_usd": 118
         },
         {
           "date": "2011-02",
-          "dd_usd": -387,
-          "eq_usd": -119
+          "dd_usd": -55,
+          "eq_usd": 316
         },
         {
           "date": "2011-03",
-          "dd_usd": -272,
-          "eq_usd": -103
+          "dd_usd": -174,
+          "eq_usd": 248
         },
         {
           "date": "2011-04",
-          "dd_usd": -465,
-          "eq_usd": -338
+          "dd_usd": -348,
+          "eq_usd": 47
         },
         {
           "date": "2011-05",
-          "dd_usd": -608,
-          "eq_usd": -325
+          "dd_usd": -464,
+          "eq_usd": 60
         },
         {
           "date": "2011-06",
-          "dd_usd": -898,
-          "eq_usd": -426
+          "dd_usd": -733,
+          "eq_usd": -105
         },
         {
           "date": "2011-07",
-          "dd_usd": -689,
-          "eq_usd": -474
+          "dd_usd": -560,
+          "eq_usd": -137
         },
         {
           "date": "2011-08",
-          "dd_usd": -1245,
-          "eq_usd": -1118
+          "dd_usd": -1034,
+          "eq_usd": -600
         },
         {
           "date": "2011-09",
-          "dd_usd": -1727,
-          "eq_usd": -1553
+          "dd_usd": -1475,
+          "eq_usd": -1006
         },
         {
           "date": "2011-10",
-          "dd_usd": -1622,
-          "eq_usd": -1268
+          "dd_usd": -1258,
+          "eq_usd": -710
         },
         {
           "date": "2011-11",
-          "dd_usd": -1748,
-          "eq_usd": -1590
+          "dd_usd": -1329,
+          "eq_usd": -892
         },
         {
           "date": "2011-12",
-          "dd_usd": -1768,
-          "eq_usd": -1623
+          "dd_usd": -1375,
+          "eq_usd": -1002
         },
         {
           "date": "2012-01",
-          "dd_usd": -1924,
-          "eq_usd": -1793
+          "dd_usd": -1398,
+          "eq_usd": -1026
         },
         {
           "date": "2012-02",
-          "dd_usd": -2117,
-          "eq_usd": -1957
+          "dd_usd": -1443,
+          "eq_usd": -1033
         },
         {
           "date": "2012-03",
-          "dd_usd": -2303,
-          "eq_usd": -2143
+          "dd_usd": -1472,
+          "eq_usd": -1051
         },
         {
           "date": "2012-04",
-          "dd_usd": -2245,
-          "eq_usd": -1965
+          "dd_usd": -1398,
+          "eq_usd": -809
         },
         {
           "date": "2012-05",
-          "dd_usd": -2327,
-          "eq_usd": -2200
-        },
-        {
-          "date": "2012-06",
-          "dd_usd": -2302,
-          "eq_usd": -1834
-        },
-        {
-          "date": "2012-07",
-          "dd_usd": -2093,
-          "eq_usd": -1860
-        },
-        {
-          "date": "2012-08",
-          "dd_usd": -2365,
-          "eq_usd": -2238
-        },
-        {
-          "date": "2012-09",
-          "dd_usd": -2415,
-          "eq_usd": -2123
-        },
-        {
-          "date": "2012-10",
-          "dd_usd": -2421,
-          "eq_usd": -2284
-        },
-        {
-          "date": "2012-11",
-          "dd_usd": -2403,
-          "eq_usd": -2155
-        },
-        {
-          "date": "2012-12",
-          "dd_usd": -2460,
-          "eq_usd": -2223
-        },
-        {
-          "date": "2013-01",
-          "dd_usd": -2587,
-          "eq_usd": -2455
-        },
-        {
-          "date": "2013-02",
-          "dd_usd": -2588,
-          "eq_usd": -2430
-        },
-        {
-          "date": "2013-03",
-          "dd_usd": -2730,
-          "eq_usd": -2552
-        },
-        {
-          "date": "2013-04",
-          "dd_usd": -2746,
-          "eq_usd": -2523
-        },
-        {
-          "date": "2013-05",
-          "dd_usd": -2905,
-          "eq_usd": -2778
-        },
-        {
-          "date": "2013-06",
-          "dd_usd": -2972,
-          "eq_usd": -2608
-        },
-        {
-          "date": "2013-07",
-          "dd_usd": -2884,
-          "eq_usd": -2757
-        },
-        {
-          "date": "2013-08",
-          "dd_usd": -3155,
-          "eq_usd": -2893
-        },
-        {
-          "date": "2013-09",
-          "dd_usd": -3335,
-          "eq_usd": -3209
-        },
-        {
-          "date": "2013-10",
-          "dd_usd": -3310,
-          "eq_usd": -2903
-        },
-        {
-          "date": "2013-11",
-          "dd_usd": -3080,
-          "eq_usd": -2789
-        },
-        {
-          "date": "2013-12",
-          "dd_usd": -3039,
-          "eq_usd": -2869
-        },
-        {
-          "date": "2014-01",
-          "dd_usd": -3021,
-          "eq_usd": -2849
-        },
-        {
-          "date": "2014-02",
-          "dd_usd": -3041,
-          "eq_usd": -2914
-        },
-        {
-          "date": "2014-03",
-          "dd_usd": -3135,
-          "eq_usd": -2733
-        },
-        {
-          "date": "2014-04",
-          "dd_usd": -2927,
-          "eq_usd": -2763
-        },
-        {
-          "date": "2014-05",
-          "dd_usd": -3026,
-          "eq_usd": -2851
-        },
-        {
-          "date": "2014-06",
-          "dd_usd": -3274,
-          "eq_usd": -3107
-        },
-        {
-          "date": "2014-07",
-          "dd_usd": -3353,
-          "eq_usd": -3172
-        },
-        {
-          "date": "2014-08",
-          "dd_usd": -3632,
-          "eq_usd": -3506
-        },
-        {
-          "date": "2014-09",
-          "dd_usd": -3830,
-          "eq_usd": -3548
-        },
-        {
-          "date": "2014-10",
-          "dd_usd": -3802,
-          "eq_usd": -3379
-        },
-        {
-          "date": "2014-11",
-          "dd_usd": -3726,
-          "eq_usd": -3525
-        },
-        {
-          "date": "2014-12",
-          "dd_usd": -3811,
-          "eq_usd": -3065
-        },
-        {
-          "date": "2015-01",
-          "dd_usd": -3323,
-          "eq_usd": -3043
-        },
-        {
-          "date": "2015-02",
-          "dd_usd": -3411,
-          "eq_usd": -3196
-        },
-        {
-          "date": "2015-03",
-          "dd_usd": -3501,
-          "eq_usd": -3374
-        },
-        {
-          "date": "2015-04",
-          "dd_usd": -3643,
-          "eq_usd": -3392
-        },
-        {
-          "date": "2015-05",
-          "dd_usd": -3486,
-          "eq_usd": -2930
-        },
-        {
-          "date": "2015-06",
-          "dd_usd": -3260,
-          "eq_usd": -2991
-        },
-        {
-          "date": "2015-07",
-          "dd_usd": -3328,
-          "eq_usd": -3202
-        },
-        {
-          "date": "2015-08",
-          "dd_usd": -3726,
-          "eq_usd": -3395
-        },
-        {
-          "date": "2015-09",
-          "dd_usd": -4167,
-          "eq_usd": -3707
-        },
-        {
-          "date": "2015-10",
-          "dd_usd": -3904,
-          "eq_usd": -3642
-        },
-        {
-          "date": "2015-11",
-          "dd_usd": -3917,
-          "eq_usd": -3261
-        },
-        {
-          "date": "2015-12",
-          "dd_usd": -3435,
-          "eq_usd": -3142
-        },
-        {
-          "date": "2016-01",
-          "dd_usd": -3864,
-          "eq_usd": -3657
-        },
-        {
-          "date": "2016-02",
-          "dd_usd": -3837,
-          "eq_usd": -3548
-        },
-        {
-          "date": "2016-03",
-          "dd_usd": -3863,
-          "eq_usd": -3587
-        },
-        {
-          "date": "2016-04",
-          "dd_usd": -4046,
-          "eq_usd": -3894
-        },
-        {
-          "date": "2016-05",
-          "dd_usd": -4386,
-          "eq_usd": -4113
-        },
-        {
-          "date": "2016-06",
-          "dd_usd": -4813,
-          "eq_usd": -4315
-        },
-        {
-          "date": "2016-07",
-          "dd_usd": -4488,
-          "eq_usd": -4288
-        },
-        {
-          "date": "2016-08",
-          "dd_usd": -4570,
-          "eq_usd": -4443
-        },
-        {
-          "date": "2016-09",
-          "dd_usd": -4749,
-          "eq_usd": -4180
-        },
-        {
-          "date": "2016-10",
-          "dd_usd": -4524,
-          "eq_usd": -4366
-        },
-        {
-          "date": "2016-11",
-          "dd_usd": -4436,
-          "eq_usd": -3245
-        },
-        {
-          "date": "2016-12",
-          "dd_usd": -3394,
-          "eq_usd": -3198
-        },
-        {
-          "date": "2017-01",
-          "dd_usd": -3489,
-          "eq_usd": -3362
-        },
-        {
-          "date": "2017-02",
-          "dd_usd": -3569,
-          "eq_usd": -3291
-        },
-        {
-          "date": "2017-03",
-          "dd_usd": -3662,
-          "eq_usd": -3316
-        },
-        {
-          "date": "2017-04",
-          "dd_usd": -3724,
-          "eq_usd": -3461
-        },
-        {
-          "date": "2017-05",
-          "dd_usd": -3862,
-          "eq_usd": -3369
-        },
-        {
-          "date": "2017-06",
-          "dd_usd": -3654,
-          "eq_usd": -3116
-        },
-        {
-          "date": "2017-07",
-          "dd_usd": -3243,
-          "eq_usd": -3116
-        },
-        {
-          "date": "2017-08",
-          "dd_usd": -3537,
-          "eq_usd": -2607
-        },
-        {
-          "date": "2017-09",
-          "dd_usd": -3164,
-          "eq_usd": -3020
-        },
-        {
-          "date": "2017-10",
-          "dd_usd": -3465,
-          "eq_usd": -3275
-        },
-        {
-          "date": "2017-11",
-          "dd_usd": -3620,
-          "eq_usd": -3190
-        },
-        {
-          "date": "2017-12",
-          "dd_usd": -3443,
-          "eq_usd": -3223
-        },
-        {
-          "date": "2018-01",
-          "dd_usd": -3164,
-          "eq_usd": -2985
-        },
-        {
-          "date": "2018-02",
-          "dd_usd": -3659,
-          "eq_usd": -3383
-        },
-        {
-          "date": "2018-03",
-          "dd_usd": -3796,
-          "eq_usd": -2961
-        },
-        {
-          "date": "2018-04",
-          "dd_usd": -2982,
-          "eq_usd": -1716
-        },
-        {
-          "date": "2018-05",
-          "dd_usd": -2375,
-          "eq_usd": -2249
-        },
-        {
-          "date": "2018-06",
-          "dd_usd": -2390,
-          "eq_usd": -2134
-        },
-        {
-          "date": "2018-07",
-          "dd_usd": -2060,
+          "dd_usd": -1388,
           "eq_usd": -1015
         },
         {
+          "date": "2012-06",
+          "dd_usd": -1376,
+          "eq_usd": -908
+        },
+        {
+          "date": "2012-07",
+          "dd_usd": -1350,
+          "eq_usd": -970
+        },
+        {
+          "date": "2012-08",
+          "dd_usd": -1526,
+          "eq_usd": -1144
+        },
+        {
+          "date": "2012-09",
+          "dd_usd": -1544,
+          "eq_usd": -1118
+        },
+        {
+          "date": "2012-10",
+          "dd_usd": -1552,
+          "eq_usd": -1107
+        },
+        {
+          "date": "2012-11",
+          "dd_usd": -1504,
+          "eq_usd": -889
+        },
+        {
+          "date": "2012-12",
+          "dd_usd": -1476,
+          "eq_usd": -1055
+        },
+        {
+          "date": "2013-01",
+          "dd_usd": -1516,
+          "eq_usd": -1144
+        },
+        {
+          "date": "2013-02",
+          "dd_usd": -1586,
+          "eq_usd": -1213
+        },
+        {
+          "date": "2013-03",
+          "dd_usd": -1619,
+          "eq_usd": -1195
+        },
+        {
+          "date": "2013-04",
+          "dd_usd": -1690,
+          "eq_usd": -1238
+        },
+        {
+          "date": "2013-05",
+          "dd_usd": -1735,
+          "eq_usd": -1362
+        },
+        {
+          "date": "2013-06",
+          "dd_usd": -1773,
+          "eq_usd": -1212
+        },
+        {
+          "date": "2013-07",
+          "dd_usd": -1637,
+          "eq_usd": -1259
+        },
+        {
+          "date": "2013-08",
+          "dd_usd": -1705,
+          "eq_usd": -1242
+        },
+        {
+          "date": "2013-09",
+          "dd_usd": -1775,
+          "eq_usd": -1402
+        },
+        {
+          "date": "2013-10",
+          "dd_usd": -1749,
+          "eq_usd": -1150
+        },
+        {
+          "date": "2013-11",
+          "dd_usd": -1545,
+          "eq_usd": -1125
+        },
+        {
+          "date": "2013-12",
+          "dd_usd": -1589,
+          "eq_usd": -1112
+        },
+        {
+          "date": "2014-01",
+          "dd_usd": -1515,
+          "eq_usd": -1100
+        },
+        {
+          "date": "2014-02",
+          "dd_usd": -1460,
+          "eq_usd": -1018
+        },
+        {
+          "date": "2014-03",
+          "dd_usd": -1430,
+          "eq_usd": -794
+        },
+        {
+          "date": "2014-04",
+          "dd_usd": -1193,
+          "eq_usd": -755
+        },
+        {
+          "date": "2014-05",
+          "dd_usd": -1230,
+          "eq_usd": -748
+        },
+        {
+          "date": "2014-06",
+          "dd_usd": -1268,
+          "eq_usd": -855
+        },
+        {
+          "date": "2014-07",
+          "dd_usd": -1249,
+          "eq_usd": -877
+        },
+        {
+          "date": "2014-08",
+          "dd_usd": -1424,
+          "eq_usd": -1051
+        },
+        {
+          "date": "2014-09",
+          "dd_usd": -1496,
+          "eq_usd": -1098
+        },
+        {
+          "date": "2014-10",
+          "dd_usd": -1471,
+          "eq_usd": -810
+        },
+        {
+          "date": "2014-11",
+          "dd_usd": -1327,
+          "eq_usd": -903
+        },
+        {
+          "date": "2014-12",
+          "dd_usd": -1316,
+          "eq_usd": -489
+        },
+        {
+          "date": "2015-01",
+          "dd_usd": -946,
+          "eq_usd": -484
+        },
+        {
+          "date": "2015-02",
+          "dd_usd": -993,
+          "eq_usd": -433
+        },
+        {
+          "date": "2015-03",
+          "dd_usd": -953,
+          "eq_usd": -580
+        },
+        {
+          "date": "2015-04",
+          "dd_usd": -947,
+          "eq_usd": -446
+        },
+        {
+          "date": "2015-05",
+          "dd_usd": -815,
+          "eq_usd": -146
+        },
+        {
+          "date": "2015-06",
+          "dd_usd": -656,
+          "eq_usd": -217
+        },
+        {
+          "date": "2015-07",
+          "dd_usd": -683,
+          "eq_usd": -255
+        },
+        {
+          "date": "2015-08",
+          "dd_usd": -1184,
+          "eq_usd": -441
+        },
+        {
+          "date": "2015-09",
+          "dd_usd": -1074,
+          "eq_usd": -212
+        },
+        {
+          "date": "2015-10",
+          "dd_usd": -775,
+          "eq_usd": -256
+        },
+        {
+          "date": "2015-11",
+          "dd_usd": -649,
+          "eq_usd": 112
+        },
+        {
+          "date": "2015-12",
+          "dd_usd": -406,
+          "eq_usd": 35
+        },
+        {
+          "date": "2016-01",
+          "dd_usd": -824,
+          "eq_usd": -452
+        },
+        {
+          "date": "2016-02",
+          "dd_usd": -834,
+          "eq_usd": -289
+        },
+        {
+          "date": "2016-03",
+          "dd_usd": -652,
+          "eq_usd": -71
+        },
+        {
+          "date": "2016-04",
+          "dd_usd": -747,
+          "eq_usd": -349
+        },
+        {
+          "date": "2016-05",
+          "dd_usd": -1007,
+          "eq_usd": -451
+        },
+        {
+          "date": "2016-06",
+          "dd_usd": -1119,
+          "eq_usd": -437
+        },
+        {
+          "date": "2016-07",
+          "dd_usd": -813,
+          "eq_usd": -279
+        },
+        {
+          "date": "2016-08",
+          "dd_usd": -803,
+          "eq_usd": -430
+        },
+        {
+          "date": "2016-09",
+          "dd_usd": -875,
+          "eq_usd": -344
+        },
+        {
+          "date": "2016-10",
+          "dd_usd": -859,
+          "eq_usd": -480
+        },
+        {
+          "date": "2016-11",
+          "dd_usd": -795,
+          "eq_usd": 308
+        },
+        {
+          "date": "2016-12",
+          "dd_usd": -259,
+          "eq_usd": 132
+        },
+        {
+          "date": "2017-01",
+          "dd_usd": -197,
+          "eq_usd": 222
+        },
+        {
+          "date": "2017-02",
+          "dd_usd": -237,
+          "eq_usd": 339
+        },
+        {
+          "date": "2017-03",
+          "dd_usd": -211,
+          "eq_usd": 212
+        },
+        {
+          "date": "2017-04",
+          "dd_usd": -397,
+          "eq_usd": 122
+        },
+        {
+          "date": "2017-05",
+          "dd_usd": -304,
+          "eq_usd": 339
+        },
+        {
+          "date": "2017-06",
+          "dd_usd": -100,
+          "eq_usd": 447
+        },
+        {
+          "date": "2017-07",
+          "dd_usd": -169,
+          "eq_usd": 512
+        },
+        {
+          "date": "2017-08",
+          "dd_usd": -390,
+          "eq_usd": 671
+        },
+        {
+          "date": "2017-09",
+          "dd_usd": -261,
+          "eq_usd": 437
+        },
+        {
+          "date": "2017-10",
+          "dd_usd": -520,
+          "eq_usd": 161
+        },
+        {
+          "date": "2017-11",
+          "dd_usd": -557,
+          "eq_usd": 264
+        },
+        {
+          "date": "2017-12",
+          "dd_usd": -544,
+          "eq_usd": 286
+        },
+        {
+          "date": "2018-01",
+          "dd_usd": -277,
+          "eq_usd": 625
+        },
+        {
+          "date": "2018-02",
+          "dd_usd": -846,
+          "eq_usd": 84
+        },
+        {
+          "date": "2018-03",
+          "dd_usd": -1126,
+          "eq_usd": 514
+        },
+        {
+          "date": "2018-04",
+          "dd_usd": -310,
+          "eq_usd": 1096
+        },
+        {
+          "date": "2018-05",
+          "dd_usd": -584,
+          "eq_usd": 847
+        },
+        {
+          "date": "2018-06",
+          "dd_usd": -393,
+          "eq_usd": 1076
+        },
+        {
+          "date": "2018-07",
+          "dd_usd": -149,
+          "eq_usd": 1855
+        },
+        {
           "date": "2018-08",
-          "dd_usd": -1482,
-          "eq_usd": -1292
+          "dd_usd": -408,
+          "eq_usd": 1763
         },
         {
           "date": "2018-09",
-          "dd_usd": -1590,
-          "eq_usd": -1354
+          "dd_usd": -611,
+          "eq_usd": 1518
         },
         {
           "date": "2018-10",
-          "dd_usd": -2505,
-          "eq_usd": -1574
+          "dd_usd": -1555,
+          "eq_usd": 1594
         },
         {
           "date": "2018-11",
-          "dd_usd": -1958,
-          "eq_usd": -984
+          "dd_usd": -1030,
+          "eq_usd": 2094
         },
         {
           "date": "2018-12",
-          "dd_usd": -2691,
-          "eq_usd": -2150
+          "dd_usd": -1430,
+          "eq_usd": 1102
         },
         {
           "date": "2019-01",
-          "dd_usd": -2036,
-          "eq_usd": -1035
+          "dd_usd": -953,
+          "eq_usd": 1792
         },
         {
           "date": "2019-02",
-          "dd_usd": -1360,
-          "eq_usd": -1233
+          "dd_usd": -419,
+          "eq_usd": 1998
         },
         {
           "date": "2019-03",
-          "dd_usd": -1458,
-          "eq_usd": -1331
+          "dd_usd": -425,
+          "eq_usd": 1692
         },
         {
           "date": "2019-04",
-          "dd_usd": -2011,
-          "eq_usd": -1884
+          "dd_usd": -533,
+          "eq_usd": 1654
         },
         {
           "date": "2019-05",
-          "dd_usd": -2375,
-          "eq_usd": -1987
+          "dd_usd": -836,
+          "eq_usd": 1689
         },
         {
           "date": "2019-06",
-          "dd_usd": -1888,
-          "eq_usd": -1224
+          "dd_usd": -412,
+          "eq_usd": 1960
         },
         {
           "date": "2019-07",
-          "dd_usd": -1563,
-          "eq_usd": -1436
+          "dd_usd": -379,
+          "eq_usd": 1882
         },
         {
           "date": "2019-08",
-          "dd_usd": -1844,
-          "eq_usd": -1328
+          "dd_usd": -597,
+          "eq_usd": 1958
         },
         {
           "date": "2019-09",
-          "dd_usd": -1720,
-          "eq_usd": -1330
+          "dd_usd": -1046,
+          "eq_usd": 1632
         },
         {
           "date": "2019-10",
-          "dd_usd": -1291,
-          "eq_usd": -829
+          "dd_usd": -758,
+          "eq_usd": 2090
         },
         {
           "date": "2019-11",
-          "dd_usd": -1430,
-          "eq_usd": -1258
+          "dd_usd": -767,
+          "eq_usd": 1841
         },
         {
           "date": "2019-12",
-          "dd_usd": -1374,
-          "eq_usd": -1225
+          "dd_usd": -709,
+          "eq_usd": 1950
         },
         {
           "date": "2020-01",
-          "dd_usd": -1675,
-          "eq_usd": -971
+          "dd_usd": -739,
+          "eq_usd": 2084
         },
         {
           "date": "2020-02",
-          "dd_usd": -1831,
-          "eq_usd": -1704
+          "dd_usd": -791,
+          "eq_usd": 1772
         },
         {
           "date": "2020-03",
-          "dd_usd": -7069,
-          "eq_usd": -6766
+          "dd_usd": -2898,
+          "eq_usd": -335
         },
         {
           "date": "2020-04",
-          "dd_usd": -7044,
-          "eq_usd": -4696
+          "dd_usd": -3200,
+          "eq_usd": 834
         },
         {
           "date": "2020-05",
-          "dd_usd": -5262,
-          "eq_usd": -5051
+          "dd_usd": -1876,
+          "eq_usd": 887
         },
         {
           "date": "2020-06",
-          "dd_usd": -5206,
-          "eq_usd": -3384
+          "dd_usd": -1704,
+          "eq_usd": 1740
         },
         {
           "date": "2020-07",
-          "dd_usd": -4897,
-          "eq_usd": -3960
+          "dd_usd": -995,
+          "eq_usd": 2117
         },
         {
           "date": "2020-08",
-          "dd_usd": -4341,
-          "eq_usd": -3473
+          "dd_usd": -550,
+          "eq_usd": 3223
         },
         {
           "date": "2020-09",
-          "dd_usd": -4740,
-          "eq_usd": -4232
+          "dd_usd": -588,
+          "eq_usd": 3147
         },
         {
           "date": "2020-10",
-          "dd_usd": -5798,
-          "eq_usd": -4869
+          "dd_usd": -2165,
+          "eq_usd": 2141
         },
         {
           "date": "2020-11",
-          "dd_usd": -5244,
-          "eq_usd": -4746
+          "dd_usd": -1932,
+          "eq_usd": 2201
         },
         {
           "date": "2020-12",
-          "dd_usd": -5338,
-          "eq_usd": -5211
+          "dd_usd": -1713,
+          "eq_usd": 2000
         },
         {
           "date": "2021-01",
-          "dd_usd": -5616,
-          "eq_usd": -5489
+          "dd_usd": -2255,
+          "eq_usd": 1459
         },
         {
           "date": "2021-02",
-          "dd_usd": -5952,
-          "eq_usd": -4487
+          "dd_usd": -2633,
+          "eq_usd": 2086
         },
         {
           "date": "2021-03",
-          "dd_usd": -5045,
-          "eq_usd": -4908
+          "dd_usd": -1638,
+          "eq_usd": 2085
         },
         {
           "date": "2021-04",
-          "dd_usd": -5031,
-          "eq_usd": -4250
+          "dd_usd": -1624,
+          "eq_usd": 2561
         },
         {
           "date": "2021-05",
-          "dd_usd": -4704,
-          "eq_usd": -1523
+          "dd_usd": -1415,
+          "eq_usd": 4846
         },
         {
           "date": "2021-06",
-          "dd_usd": -1719,
-          "eq_usd": -994
+          "dd_usd": -348,
+          "eq_usd": 5467
         },
         {
           "date": "2021-07",
-          "dd_usd": -1353,
-          "eq_usd": -402
+          "dd_usd": -355,
+          "eq_usd": 5670
         },
         {
           "date": "2021-08",
-          "dd_usd": -1389,
-          "eq_usd": 76
+          "dd_usd": -453,
+          "eq_usd": 6495
         },
         {
           "date": "2021-09",
-          "dd_usd": -418,
-          "eq_usd": 1022
+          "dd_usd": -269,
+          "eq_usd": 6831
         },
         {
           "date": "2021-10",
-          "dd_usd": -954,
-          "eq_usd": 1688
+          "dd_usd": -478,
+          "eq_usd": 7831
         },
         {
           "date": "2021-11",
-          "dd_usd": -1466,
-          "eq_usd": 858
+          "dd_usd": -1067,
+          "eq_usd": 7136
         },
         {
           "date": "2021-12",
-          "dd_usd": -1197,
-          "eq_usd": 3242
+          "dd_usd": -989,
+          "eq_usd": 8641
         },
         {
           "date": "2022-01",
-          "dd_usd": -5237,
-          "eq_usd": 357
+          "dd_usd": -4269,
+          "eq_usd": 5571
         },
         {
           "date": "2022-02",
-          "dd_usd": -5768,
-          "eq_usd": 3853
+          "dd_usd": -6017,
+          "eq_usd": 8593
         },
         {
           "date": "2022-03",
-          "dd_usd": -1322,
-          "eq_usd": 6392
+          "dd_usd": -1603,
+          "eq_usd": 12551
         },
         {
           "date": "2022-04",
           "dd_usd": -1246,
-          "eq_usd": 9684
+          "eq_usd": 15274
         },
         {
           "date": "2022-05",
-          "dd_usd": -582,
-          "eq_usd": 11863
+          "dd_usd": -323,
+          "eq_usd": 18824
         },
         {
           "date": "2022-06",
-          "dd_usd": -1022,
-          "eq_usd": 13081
+          "dd_usd": -1034,
+          "eq_usd": 19219
         },
         {
           "date": "2022-07",
-          "dd_usd": -981,
-          "eq_usd": 16606
+          "dd_usd": -1314,
+          "eq_usd": 21595
         },
         {
           "date": "2022-08",
-          "dd_usd": -2307,
-          "eq_usd": 14348
+          "dd_usd": -1819,
+          "eq_usd": 20245
         },
         {
           "date": "2022-09",
-          "dd_usd": -5596,
-          "eq_usd": 11625
+          "dd_usd": -5000,
+          "eq_usd": 17715
         },
         {
           "date": "2022-10",
-          "dd_usd": -3732,
-          "eq_usd": 14679
+          "dd_usd": -3337,
+          "eq_usd": 20106
         },
         {
           "date": "2022-11",
-          "dd_usd": -2967,
-          "eq_usd": 15895
+          "dd_usd": -2900,
+          "eq_usd": 20861
         },
         {
           "date": "2022-12",
-          "dd_usd": -1741,
-          "eq_usd": 16207
+          "dd_usd": -2343,
+          "eq_usd": 20644
         },
         {
           "date": "2023-01",
-          "dd_usd": -779,
-          "eq_usd": 16219
+          "dd_usd": -1538,
+          "eq_usd": 21562
         },
         {
           "date": "2023-02",
-          "dd_usd": -1554,
-          "eq_usd": 15101
+          "dd_usd": -1111,
+          "eq_usd": 21079
         },
         {
           "date": "2023-03",
-          "dd_usd": -1627,
-          "eq_usd": 15355
+          "dd_usd": -1065,
+          "eq_usd": 21910
         },
         {
           "date": "2023-04",
-          "dd_usd": -1630,
-          "eq_usd": 16814
+          "dd_usd": -820,
+          "eq_usd": 23046
         },
         {
           "date": "2023-05",
-          "dd_usd": -632,
-          "eq_usd": 17392
+          "dd_usd": -457,
+          "eq_usd": 23594
         },
         {
           "date": "2023-06",
-          "dd_usd": -714,
-          "eq_usd": 17581
+          "dd_usd": -476,
+          "eq_usd": 23513
         },
         {
           "date": "2023-07",
-          "dd_usd": -1704,
-          "eq_usd": 17512
+          "dd_usd": -1120,
+          "eq_usd": 23003
         },
         {
           "date": "2023-08",
-          "dd_usd": -1688,
-          "eq_usd": 18883
+          "dd_usd": -1643,
+          "eq_usd": 24388
         },
         {
           "date": "2023-09",
-          "dd_usd": -799,
-          "eq_usd": 18748
+          "dd_usd": -857,
+          "eq_usd": 24381
         },
         {
           "date": "2023-10",
-          "dd_usd": -538,
-          "eq_usd": 21195
+          "dd_usd": -599,
+          "eq_usd": 26285
         },
         {
           "date": "2023-11",
-          "dd_usd": -277,
-          "eq_usd": 21764
+          "dd_usd": -179,
+          "eq_usd": 26766
         },
         {
           "date": "2023-12",
-          "dd_usd": -388,
-          "eq_usd": 22148
+          "dd_usd": -201,
+          "eq_usd": 26934
         },
         {
           "date": "2024-01",
-          "dd_usd": -710,
-          "eq_usd": 23576
+          "dd_usd": -145,
+          "eq_usd": 29202
         },
         {
           "date": "2024-02",
-          "dd_usd": -1307,
-          "eq_usd": 23110
+          "dd_usd": -574,
+          "eq_usd": 29319
         },
         {
           "date": "2024-03",
-          "dd_usd": -1277,
-          "eq_usd": 23318
+          "dd_usd": -397,
+          "eq_usd": 29786
         },
         {
           "date": "2024-04",
-          "dd_usd": -1183,
-          "eq_usd": 25986
+          "dd_usd": -525,
+          "eq_usd": 32153
         },
         {
           "date": "2024-05",
-          "dd_usd": -1394,
-          "eq_usd": 25106
+          "dd_usd": -1288,
+          "eq_usd": 31080
         },
         {
           "date": "2024-06",
-          "dd_usd": -1108,
-          "eq_usd": 25775
+          "dd_usd": -1359,
+          "eq_usd": 31631
         },
         {
           "date": "2024-07",
-          "dd_usd": -1380,
-          "eq_usd": 26779
+          "dd_usd": -1069,
+          "eq_usd": 32396
         },
         {
           "date": "2024-08",
-          "dd_usd": -831,
-          "eq_usd": 32115
+          "dd_usd": -1062,
+          "eq_usd": 36542
         },
         {
           "date": "2024-09",
-          "dd_usd": -1564,
-          "eq_usd": 33158
+          "dd_usd": -604,
+          "eq_usd": 38342
         },
         {
           "date": "2024-10",
-          "dd_usd": -2576,
-          "eq_usd": 33615
+          "dd_usd": -1253,
+          "eq_usd": 38209
         },
         {
           "date": "2024-11",
-          "dd_usd": -1035,
-          "eq_usd": 33841
+          "dd_usd": -552,
+          "eq_usd": 38911
         },
         {
           "date": "2024-12",
-          "dd_usd": -1848,
-          "eq_usd": 34222
+          "dd_usd": -1621,
+          "eq_usd": 39154
         },
         {
           "date": "2025-01",
-          "dd_usd": -1419,
-          "eq_usd": 33486
+          "dd_usd": -820,
+          "eq_usd": 39110
         },
         {
           "date": "2025-02",
-          "dd_usd": -3304,
-          "eq_usd": 32935
+          "dd_usd": -3019,
+          "eq_usd": 37999
         },
         {
           "date": "2025-03",
-          "dd_usd": -3021,
-          "eq_usd": 35535
+          "dd_usd": -2560,
+          "eq_usd": 39853
         },
         {
           "date": "2025-04",
-          "dd_usd": -1715,
-          "eq_usd": 50643
+          "dd_usd": -925,
+          "eq_usd": 52399
         },
         {
           "date": "2025-05",
-          "dd_usd": -1819,
-          "eq_usd": 48824
+          "dd_usd": -1754,
+          "eq_usd": 51115
         },
         {
           "date": "2025-06",
-          "dd_usd": -4318,
-          "eq_usd": 46923
+          "dd_usd": -2891,
+          "eq_usd": 50413
         },
         {
           "date": "2025-07",
-          "dd_usd": -4557,
-          "eq_usd": 46670
+          "dd_usd": -2624,
+          "eq_usd": 50245
         },
         {
           "date": "2025-08",
-          "dd_usd": -4125,
-          "eq_usd": 48234
+          "dd_usd": -2547,
+          "eq_usd": 50818
         },
         {
           "date": "2025-09",
-          "dd_usd": -3014,
-          "eq_usd": 47905
+          "dd_usd": -2473,
+          "eq_usd": 50578
         },
         {
           "date": "2025-10",
-          "dd_usd": -2565,
-          "eq_usd": 49402
+          "dd_usd": -2569,
+          "eq_usd": 50512
         },
         {
           "date": "2025-11",
-          "dd_usd": -2124,
-          "eq_usd": 50934
+          "dd_usd": -3114,
+          "eq_usd": 51688
         },
         {
           "date": "2025-12",
-          "dd_usd": -612,
-          "eq_usd": 52432
+          "dd_usd": -1345,
+          "eq_usd": 53403
         },
         {
           "date": "2026-01",
-          "dd_usd": -941,
-          "eq_usd": 52715
+          "dd_usd": -535,
+          "eq_usd": 54304
         },
         {
           "date": "2026-02",
-          "dd_usd": -1592,
-          "eq_usd": 55326
+          "dd_usd": -827,
+          "eq_usd": 56421
         },
         {
           "date": "2026-03",
-          "dd_usd": -1976,
-          "eq_usd": 59661
+          "dd_usd": -1555,
+          "eq_usd": 59955
         },
         {
           "date": "2026-04",
-          "dd_usd": -986,
-          "eq_usd": 61357
+          "dd_usd": -623,
+          "eq_usd": 62445
         },
         {
           "date": "2026-05",
-          "dd_usd": -566,
-          "eq_usd": 62342
+          "dd_usd": -355,
+          "eq_usd": 64904
         },
         {
           "date": "2026-06",
-          "dd_usd": -2942,
-          "eq_usd": 60296
+          "dd_usd": -2231,
+          "eq_usd": 63028
         }
       ],
       "per_strategy": [
         {
           "name": "ORB",
-          "var95_usd": -256,
-          "cvar95_usd": -364,
-          "daily_vol_usd": 178,
-          "worst_day_usd": -835,
-          "max_dd_usd": -18226,
-          "n_days": 4068
+          "var95_usd": -255,
+          "cvar95_usd": -358,
+          "daily_vol_usd": 169,
+          "worst_day_usd": -711,
+          "max_dd_usd": -12682,
+          "n_days": 2068
         },
         {
           "name": "EMA",
@@ -5733,33 +5733,33 @@
       "correlation_coactive": {
         "ORB": {
           "ORB": 1.0,
-          "EMA": 0.43,
-          "DC": 0.18
+          "EMA": 0.05,
+          "DC": -0.13
         },
         "EMA": {
-          "ORB": 0.43,
+          "ORB": 0.05,
           "EMA": 1.0,
           "DC": 0.38
         },
         "DC": {
-          "ORB": 0.18,
+          "ORB": -0.13,
           "EMA": 0.38,
           "DC": 1.0
         }
       },
       "coactive_n": {
         "ORB": {
-          "ORB": 4068,
-          "EMA": 800,
-          "DC": 276
+          "ORB": 2068,
+          "EMA": 386,
+          "DC": 131
         },
         "EMA": {
-          "ORB": 800,
+          "ORB": 386,
           "EMA": 804,
           "DC": 25
         },
         "DC": {
-          "ORB": 276,
+          "ORB": 131,
           "EMA": 25,
           "DC": 277
         }
@@ -5781,7 +5781,7 @@
       "note": "Modeled in the book stats. Two-tier daily limit scales with book size: block new entries at \u2212500 pts ($-1,000), flatten all at \u2212750 pts ($-1,500). In-sample the hard tier is dormant (effect \u2248 $0) \u2014 it's a catastrophe backstop, not a return lever."
     },
     "ytd_equity": {
-      "as_of": "2026-07-01T10:26:35+00:00",
+      "as_of": "2026-07-01T10:45:19+00:00",
       "since": "2026-01-01",
       "through": "2026-06-29",
       "note": "2026 YTD running equity, 1-1-1 contracts (orb-ema-dc), deployed config (trend20 ORB, gated long-only EMA, DC). Backtest/OOS model \u2014 not realized fills.",
