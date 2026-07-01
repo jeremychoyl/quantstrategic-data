@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T01:10:04+00:00",
+  "generated_at": "2026-07-01T01:15:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4377,7 +4377,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-06-30T22:30:03+00:00",
+    "as_of": "2026-07-01T01:10:28+00:00",
     "note": "16-year backtest projection, 1 contract each. ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is long-only.",
     "n_strategies": 3,
     "per_strategy": [
@@ -4446,8 +4446,598 @@
         "DC": 1.0
       }
     },
+    "risk": {
+      "gate": 0.3,
+      "book": {
+        "var95_usd": -355,
+        "var99_usd": -698,
+        "cvar95_usd": -582,
+        "cvar99_usd": -1035,
+        "daily_vol_usd": 363,
+        "ann_vol_usd": 5759,
+        "worst_day_usd": -1855,
+        "best_day_usd": 4687,
+        "max_dd_usd": -3114,
+        "n_days": 936
+      },
+      "drawdown_curve": [
+        {
+          "date": "2017-06",
+          "dd_usd": 0,
+          "eq_usd": 40
+        },
+        {
+          "date": "2017-07",
+          "dd_usd": -83,
+          "eq_usd": 74
+        },
+        {
+          "date": "2017-08",
+          "dd_usd": -304,
+          "eq_usd": 35
+        },
+        {
+          "date": "2017-09",
+          "dd_usd": -313,
+          "eq_usd": -89
+        },
+        {
+          "date": "2017-10",
+          "dd_usd": -284,
+          "eq_usd": -127
+        },
+        {
+          "date": "2017-11",
+          "dd_usd": -308,
+          "eq_usd": 14
+        },
+        {
+          "date": "2017-12",
+          "dd_usd": -162,
+          "eq_usd": 11
+        },
+        {
+          "date": "2018-01",
+          "dd_usd": -220,
+          "eq_usd": 42
+        },
+        {
+          "date": "2018-02",
+          "dd_usd": -487,
+          "eq_usd": -225
+        },
+        {
+          "date": "2018-03",
+          "dd_usd": -494,
+          "eq_usd": -232
+        },
+        {
+          "date": "2018-04",
+          "dd_usd": -637,
+          "eq_usd": 171
+        },
+        {
+          "date": "2018-05",
+          "dd_usd": -332,
+          "eq_usd": 67
+        },
+        {
+          "date": "2018-06",
+          "dd_usd": -155,
+          "eq_usd": 157
+        },
+        {
+          "date": "2018-07",
+          "dd_usd": -44,
+          "eq_usd": 667
+        },
+        {
+          "date": "2018-08",
+          "dd_usd": -77,
+          "eq_usd": 790
+        },
+        {
+          "date": "2018-09",
+          "dd_usd": -140,
+          "eq_usd": 808
+        },
+        {
+          "date": "2018-10",
+          "dd_usd": -301,
+          "eq_usd": 760
+        },
+        {
+          "date": "2018-11",
+          "dd_usd": -90,
+          "eq_usd": 1022
+        },
+        {
+          "date": "2018-12",
+          "dd_usd": -147,
+          "eq_usd": 1095
+        },
+        {
+          "date": "2019-01",
+          "dd_usd": -86,
+          "eq_usd": 1444
+        },
+        {
+          "date": "2019-02",
+          "dd_usd": -20,
+          "eq_usd": 1627
+        },
+        {
+          "date": "2019-03",
+          "dd_usd": -154,
+          "eq_usd": 1477
+        },
+        {
+          "date": "2019-04",
+          "dd_usd": -179,
+          "eq_usd": 1452
+        },
+        {
+          "date": "2019-05",
+          "dd_usd": -160,
+          "eq_usd": 1547
+        },
+        {
+          "date": "2019-06",
+          "dd_usd": -143,
+          "eq_usd": 1576
+        },
+        {
+          "date": "2019-07",
+          "dd_usd": -115,
+          "eq_usd": 1517
+        },
+        {
+          "date": "2019-08",
+          "dd_usd": -362,
+          "eq_usd": 1293
+        },
+        {
+          "date": "2019-09",
+          "dd_usd": -323,
+          "eq_usd": 1308
+        },
+        {
+          "date": "2019-10",
+          "dd_usd": -481,
+          "eq_usd": 1215
+        },
+        {
+          "date": "2020-01",
+          "dd_usd": -421,
+          "eq_usd": 1330
+        },
+        {
+          "date": "2020-02",
+          "dd_usd": -259,
+          "eq_usd": 1422
+        },
+        {
+          "date": "2020-03",
+          "dd_usd": -141,
+          "eq_usd": 2267
+        },
+        {
+          "date": "2020-04",
+          "dd_usd": -291,
+          "eq_usd": 3414
+        },
+        {
+          "date": "2020-05",
+          "dd_usd": -16,
+          "eq_usd": 3511
+        },
+        {
+          "date": "2020-06",
+          "dd_usd": -190,
+          "eq_usd": 3917
+        },
+        {
+          "date": "2020-07",
+          "dd_usd": -283,
+          "eq_usd": 4136
+        },
+        {
+          "date": "2020-08",
+          "dd_usd": -49,
+          "eq_usd": 4597
+        },
+        {
+          "date": "2020-09",
+          "dd_usd": -403,
+          "eq_usd": 4512
+        },
+        {
+          "date": "2020-10",
+          "dd_usd": -585,
+          "eq_usd": 4331
+        },
+        {
+          "date": "2020-11",
+          "dd_usd": -833,
+          "eq_usd": 4317
+        },
+        {
+          "date": "2021-02",
+          "dd_usd": -558,
+          "eq_usd": 4357
+        },
+        {
+          "date": "2021-03",
+          "dd_usd": -650,
+          "eq_usd": 4715
+        },
+        {
+          "date": "2021-05",
+          "dd_usd": -182,
+          "eq_usd": 5263
+        },
+        {
+          "date": "2021-07",
+          "dd_usd": -46,
+          "eq_usd": 5297
+        },
+        {
+          "date": "2021-09",
+          "dd_usd": -146,
+          "eq_usd": 5198
+        },
+        {
+          "date": "2021-10",
+          "dd_usd": -270,
+          "eq_usd": 5583
+        },
+        {
+          "date": "2021-11",
+          "dd_usd": -697,
+          "eq_usd": 5123
+        },
+        {
+          "date": "2021-12",
+          "dd_usd": -938,
+          "eq_usd": 5063
+        },
+        {
+          "date": "2022-01",
+          "dd_usd": -1407,
+          "eq_usd": 4176
+        },
+        {
+          "date": "2022-02",
+          "dd_usd": -1676,
+          "eq_usd": 4324
+        },
+        {
+          "date": "2022-03",
+          "dd_usd": -1402,
+          "eq_usd": 5630
+        },
+        {
+          "date": "2022-04",
+          "dd_usd": -555,
+          "eq_usd": 8599
+        },
+        {
+          "date": "2022-05",
+          "dd_usd": -323,
+          "eq_usd": 11103
+        },
+        {
+          "date": "2022-06",
+          "dd_usd": -1888,
+          "eq_usd": 10142
+        },
+        {
+          "date": "2022-07",
+          "dd_usd": -2349,
+          "eq_usd": 12517
+        },
+        {
+          "date": "2022-08",
+          "dd_usd": -453,
+          "eq_usd": 12974
+        },
+        {
+          "date": "2022-09",
+          "dd_usd": -959,
+          "eq_usd": 12417
+        },
+        {
+          "date": "2022-10",
+          "dd_usd": -666,
+          "eq_usd": 12984
+        },
+        {
+          "date": "2022-11",
+          "dd_usd": -1936,
+          "eq_usd": 12159
+        },
+        {
+          "date": "2022-12",
+          "dd_usd": -1423,
+          "eq_usd": 12951
+        },
+        {
+          "date": "2023-01",
+          "dd_usd": -614,
+          "eq_usd": 13869
+        },
+        {
+          "date": "2023-02",
+          "dd_usd": -634,
+          "eq_usd": 13353
+        },
+        {
+          "date": "2023-03",
+          "dd_usd": -854,
+          "eq_usd": 13324
+        },
+        {
+          "date": "2023-04",
+          "dd_usd": -899,
+          "eq_usd": 13901
+        },
+        {
+          "date": "2023-05",
+          "dd_usd": -457,
+          "eq_usd": 14449
+        },
+        {
+          "date": "2023-06",
+          "dd_usd": -476,
+          "eq_usd": 14368
+        },
+        {
+          "date": "2023-07",
+          "dd_usd": -1120,
+          "eq_usd": 13858
+        },
+        {
+          "date": "2023-08",
+          "dd_usd": -1839,
+          "eq_usd": 13985
+        },
+        {
+          "date": "2023-09",
+          "dd_usd": -1238,
+          "eq_usd": 14035
+        },
+        {
+          "date": "2023-10",
+          "dd_usd": -923,
+          "eq_usd": 15099
+        },
+        {
+          "date": "2023-11",
+          "dd_usd": -179,
+          "eq_usd": 15579
+        },
+        {
+          "date": "2023-12",
+          "dd_usd": -201,
+          "eq_usd": 15748
+        },
+        {
+          "date": "2024-01",
+          "dd_usd": -145,
+          "eq_usd": 16240
+        },
+        {
+          "date": "2024-02",
+          "dd_usd": -574,
+          "eq_usd": 16358
+        },
+        {
+          "date": "2024-03",
+          "dd_usd": -366,
+          "eq_usd": 16854
+        },
+        {
+          "date": "2024-04",
+          "dd_usd": -257,
+          "eq_usd": 18609
+        },
+        {
+          "date": "2024-05",
+          "dd_usd": -1288,
+          "eq_usd": 17535
+        },
+        {
+          "date": "2024-06",
+          "dd_usd": -1359,
+          "eq_usd": 18086
+        },
+        {
+          "date": "2024-07",
+          "dd_usd": -1140,
+          "eq_usd": 18586
+        },
+        {
+          "date": "2024-08",
+          "dd_usd": -1062,
+          "eq_usd": 19759
+        },
+        {
+          "date": "2024-09",
+          "dd_usd": -1354,
+          "eq_usd": 20357
+        },
+        {
+          "date": "2024-10",
+          "dd_usd": -1267,
+          "eq_usd": 20224
+        },
+        {
+          "date": "2024-11",
+          "dd_usd": -566,
+          "eq_usd": 20926
+        },
+        {
+          "date": "2024-12",
+          "dd_usd": -1621,
+          "eq_usd": 21170
+        },
+        {
+          "date": "2025-01",
+          "dd_usd": -820,
+          "eq_usd": 21125
+        },
+        {
+          "date": "2025-02",
+          "dd_usd": -3019,
+          "eq_usd": 20014
+        },
+        {
+          "date": "2025-03",
+          "dd_usd": -2560,
+          "eq_usd": 21868
+        },
+        {
+          "date": "2025-04",
+          "dd_usd": -925,
+          "eq_usd": 34414
+        },
+        {
+          "date": "2025-05",
+          "dd_usd": -1754,
+          "eq_usd": 33130
+        },
+        {
+          "date": "2025-06",
+          "dd_usd": -2891,
+          "eq_usd": 32428
+        },
+        {
+          "date": "2025-07",
+          "dd_usd": -2624,
+          "eq_usd": 32261
+        },
+        {
+          "date": "2025-08",
+          "dd_usd": -2547,
+          "eq_usd": 32834
+        },
+        {
+          "date": "2025-09",
+          "dd_usd": -2473,
+          "eq_usd": 32593
+        },
+        {
+          "date": "2025-10",
+          "dd_usd": -2569,
+          "eq_usd": 32527
+        },
+        {
+          "date": "2025-11",
+          "dd_usd": -3114,
+          "eq_usd": 33703
+        },
+        {
+          "date": "2025-12",
+          "dd_usd": -1345,
+          "eq_usd": 35418
+        },
+        {
+          "date": "2026-01",
+          "dd_usd": -535,
+          "eq_usd": 36320
+        },
+        {
+          "date": "2026-02",
+          "dd_usd": -827,
+          "eq_usd": 38436
+        },
+        {
+          "date": "2026-03",
+          "dd_usd": -1555,
+          "eq_usd": 41970
+        },
+        {
+          "date": "2026-04",
+          "dd_usd": -623,
+          "eq_usd": 44460
+        },
+        {
+          "date": "2026-05",
+          "dd_usd": -355,
+          "eq_usd": 46919
+        },
+        {
+          "date": "2026-06",
+          "dd_usd": -2231,
+          "eq_usd": 45043
+        }
+      ],
+      "per_strategy": [
+        {
+          "name": "ORB",
+          "var95_usd": -352,
+          "cvar95_usd": -461,
+          "daily_vol_usd": 272,
+          "worst_day_usd": -711,
+          "max_dd_usd": -3077,
+          "n_days": 547
+        },
+        {
+          "name": "EMA",
+          "var95_usd": -338,
+          "cvar95_usd": -470,
+          "daily_vol_usd": 266,
+          "worst_day_usd": -1366,
+          "max_dd_usd": -2237,
+          "n_days": 482
+        },
+        {
+          "name": "DC",
+          "var95_usd": -1096,
+          "cvar95_usd": -1577,
+          "daily_vol_usd": 1247,
+          "worst_day_usd": -1989,
+          "max_dd_usd": -3153,
+          "n_days": 25
+        }
+      ],
+      "correlation_coactive": {
+        "ORB": {
+          "ORB": 1.0,
+          "EMA": 0.02,
+          "DC": 0.14
+        },
+        "EMA": {
+          "ORB": 0.02,
+          "EMA": 1.0,
+          "DC": 0.83
+        },
+        "DC": {
+          "ORB": 0.14,
+          "EMA": 0.83,
+          "DC": 1.0
+        }
+      },
+      "coactive_n": {
+        "ORB": {
+          "ORB": 547,
+          "EMA": 105,
+          "DC": 9
+        },
+        "EMA": {
+          "ORB": 105,
+          "EMA": 482,
+          "DC": 4
+        },
+        "DC": {
+          "ORB": 9,
+          "EMA": 4,
+          "DC": 25
+        }
+      }
+    },
     "ytd_equity": {
-      "as_of": "2026-06-30T22:30:04+00:00",
+      "as_of": "2026-07-01T01:10:29+00:00",
       "since": "2026-01-01",
       "through": "2026-06-29",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC). Backtest/OOS model \u2014 not realized fills.",
