@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T00:55:04+00:00",
+  "generated_at": "2026-07-01T01:00:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4339,21 +4339,21 @@
     ]
   },
   "investor_verdict": {
-    "as_of": "2026-06-28T16:50:08+00:00",
+    "as_of": "2026-07-01T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. You have a sharp backtest (Sharpe 1.35, Calmar 0.92) but zero live confirmation\u2014four underwater trades and -26.56 pts average slippage is a red flag that your edge either doesn't survive real execution friction or hasn't yet. Single-market concentration on MNQ is acceptable for a micro fund at this stage, but the live P&L and slippage gap demand resolution before institutional capital arrives.\n\nYour one concrete next step: Run 40\u201350 more live trades (roughly 8\u201312 weeks at your current pace) to reach statistical significance, documenting slippage, fill quality, and win rate in real markets. If you hit 35%+ win rate and <10 pts average slippage by then, you'll have earned serious consideration. Until then, you're still in the lab.",
+    "verdict": "No allocation today. The -$700 live P&L on 7 trades directly contradicts the backtest's 37.6% ROC, and -19.79 pts avg slippage is catastrophic\u2014it's eating the strategy's edge before execution even completes. The single most critical issue: you have zero live proof that your systematic approach survives real market conditions; a two-week, seven-trade sample tells me nothing, and the slippage alone suggests your entry/exit logic or broker/routing choice is fundamentally broken.\n\nNext concrete step to earn the check: Run a brutally honest post-mortem on those 7 trades\u2014show me exact entry/exit times, the slippage per trade, and whether it's venue latency, position sizing, or algo tuning. Then paper-trade for 60\u201390 days with *realistic* slippage baked into your backtest. If live slippage normalizes and you hit breakeven or better on 30+ trades, you'll have earned a real conversation. Right now you're selling me a model, not a business.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "4 trades",
+        "now": "7 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-1,882",
+        "now": "$-700",
         "pass": false
       },
       {
@@ -4371,7 +4371,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "4 trades \u2014 too early",
+        "now": "7 trades \u2014 too early",
         "pass": false
       }
     ]
