@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T05:50:04+00:00",
+  "generated_at": "2026-07-01T05:52:29+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4303,12 +4303,12 @@
       "EMA",
       "DC"
     ],
-    "research_spend_usd": 1460,
+    "research_spend_usd": 1389,
     "spend_ledger": {
       "bars_usd": 196,
-      "ticks_usd": 1264,
-      "total_usd": 1460,
-      "note": "Only ~$24 (NQ 1-min bars) backs the live book; everything else funded research that was rejected \u2014 the cost of knowing. A negative is a deliverable."
+      "ticks_usd": 1193,
+      "total_usd": 1389,
+      "note": "Only ~$24 (NQ 1-min bars) backs the live book; everything else funded research that was rejected \u2014 the cost of knowing. A negative is a deliverable. ($264 paid + $1,125 due 2026-08-05; tick split est., final on the Aug-5 invoice.)"
     },
     "gates": [
       {
@@ -4462,7 +4462,7 @@
         "items": [
           {
             "idea": "Order-flow / delta (5m)",
-            "reason": "All signals (divergence/absorption/thrust/CVD) \u00d7 dir PF<1.0 on 2018-26; raw 5m delta ~0 fwd-return corr (priced-in). Aggressor side only exists 2017+ (no both-era). $1,264 spent.",
+            "reason": "All signals (divergence/absorption/thrust/CVD) \u00d7 dir PF<1.0 on 2018-26; raw 5m delta ~0 fwd-return corr (priced-in). Aggressor side only exists 2017+ (no both-era). ~$1,193 spent.",
             "pattern": "Era-asymmetric"
           },
           {
@@ -4580,7 +4580,7 @@
       },
       {
         "idea": "Order-flow / delta (5m)",
-        "reason": "All signals (divergence/absorption/thrust/CVD) \u00d7 dir PF<1.0 on 2018-26; raw 5m delta ~0 fwd-return corr (priced-in). Aggressor side only exists 2017+ (no both-era). $1,264 spent."
+        "reason": "All signals (divergence/absorption/thrust/CVD) \u00d7 dir PF<1.0 on 2018-26; raw 5m delta ~0 fwd-return corr (priced-in). Aggressor side only exists 2017+ (no both-era). ~$1,193 spent."
       },
       {
         "idea": "Metals pairs reversion (gc/hg RV)",
