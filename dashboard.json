@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:55:03+00:00",
+  "generated_at": "2026-07-01T00:00:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -545,11 +545,6 @@
     }
   ],
   "last_7_days": [
-    {
-      "date": "2026-06-23",
-      "pnl_pts": -478.5,
-      "pnl_usd": -957.0
-    },
     {
       "date": "2026-06-24",
       "pnl_pts": -396.25,
@@ -3900,6 +3895,13 @@
         "date": "2026-06-30",
         "day_pnl_pts": 330.5,
         "day_pnl_usd": 661.0,
+        "cum_pts": -350.25,
+        "cum_usd": -700.5
+      },
+      {
+        "date": "2026-07-01",
+        "day_pnl_pts": 0.0,
+        "day_pnl_usd": 0.0,
         "cum_pts": -350.25,
         "cum_usd": -700.5
       }
