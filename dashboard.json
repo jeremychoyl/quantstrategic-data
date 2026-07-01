@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T05:15:03+00:00",
+  "generated_at": "2026-07-01T05:18:48+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4295,46 +4295,198 @@
     ]
   },
   "research_discipline": {
-    "as_of": "2026-06-28",
-    "headline": "Instrument frontier explored \u2014 ORB + EMA + DC is the validated edge set",
+    "as_of": "2026-06-30",
+    "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC is the validated edge set",
+    "summary": "Every cheaply-accessible alpha lever \u2014 every NQ-OHLCV template, 9 instruments, order flow, calendar/seasonality, rates carry \u2014 has been run to a verdict. 0 new deployable strategies. The next real edge needs a deliberate data buy tied to a specific new thesis, not another template or instrument sweep.",
     "book": [
       "ORB",
       "EMA",
       "DC"
     ],
-    "research_spend_usd": 1430,
+    "research_spend_usd": 1460,
     "tested_rejected": [
       {
         "idea": "Order flow / delta (16y NQ tick)",
-        "reason": "No standalone edge; EMA-confirm filter feed-blocked (live footprint reproduces NQ-delta sign only 73%)"
+        "reason": "~0 forward edge (priced-in); EMA-confirm filter overfits + feed-blocked live"
       },
       {
         "idea": "Commodities \u2014 Gold/Crude/Silver/Copper",
-        "reason": "Apparent edges were look-ahead artifacts; retracted + turned off"
+        "reason": "Apparent edges were fill / look-ahead artifacts; retracted + turned off"
       },
       {
-        "idea": "Compression breakout (NR7/inside-day)",
-        "reason": "Marginal + redundant with ORB (corr 0.78)"
+        "idea": "Price-action templates (7 concepts)",
+        "reason": "0/7 deployable \u2014 edgeless, redundant with the book, or walkforward-killed"
       },
       {
         "idea": "Metals pairs reversion (Gold/Copper)",
-        "reason": "Genuinely uncorrelated but lumpy drawdown \u2014 fails Calmar/walkforward"
+        "reason": "Genuinely uncorrelated but lumpy drawdown \u2014 fails Calmar / walkforward"
       },
       {
-        "idea": "Bitcoin",
-        "reason": "Correlated to NQ (+0.34) + no pre-2018 data"
+        "idea": "Bitcoin / Euro / Yen / T-Note",
+        "reason": "Each is correlated (no diversification) or uncorrelated-but-edgeless"
       },
       {
-        "idea": "Euro FX (6E)",
-        "reason": "Uncorrelated + full history but no real edge (high-PF mirage)"
+        "idea": "Calendar / seasonality (72 configs)",
+        "reason": "Long edge real but redundant with EMA (corr 0.5\u20130.75) + lumpy Calmar/WF"
       },
       {
-        "idea": "Yen / Treasuries (6J / ZN)",
-        "reason": "Anti-correlated hedge but one shared risk-off axis + edgeless"
+        "idea": "US-Treasury rates carry",
+        "reason": "Killed for $0 on free FRED yields \u2014 no premium; era-fragile time-series"
       },
       {
         "idea": "Market-neutral MNQ+MGC+6J",
         "reason": "Risk-parity Sharpe 0.2 vs the book's 0.87 \u2014 neutrality is risk, not return"
+      }
+    ],
+    "spend_ledger": {
+      "bars_usd": 196,
+      "ticks_usd": 1264,
+      "total_usd": 1460,
+      "note": "Only ~$24 (NQ 1-min bars) backs the live book; everything else funded research that was rejected \u2014 the cost of knowing. A negative is a deliverable."
+    },
+    "gates": [
+      {
+        "name": "Both-era",
+        "rule": "PF \u2265 1.0 in BOTH 2010\u20132020 AND 2021\u20132026 \u2014 failing one era rejects it"
+      },
+      {
+        "name": "Bilateral",
+        "rule": "Test long-only, short-only AND bilateral before choosing direction \u2014 numbers decide, not priors"
+      },
+      {
+        "name": "Walkforward",
+        "rule": "3-year train \u2192 1-year OOS, rolling. OOS PF > 1.0 with 0 sit-out years"
+      },
+      {
+        "name": "Correlation",
+        "rule": "|corr| < 0.30 vs each live strategy on daily P&L \u2014 additive, not redundant"
+      },
+      {
+        "name": "Calmar / max DD",
+        "rule": "Calmar \u2265 0.50 \u2014 the drawdown has to be recoverable within ~2 years"
+      },
+      {
+        "name": "Fill-robustness",
+        "rule": "Survive 2\u00d7 transaction cost AND next-bar-open exits \u2014 kills fills-too-good look-ahead"
+      }
+    ],
+    "failure_patterns": [
+      {
+        "name": "Edgeless after cost",
+        "desc": "A real-looking signal whose expectancy is \u2264 the 1.24-pt round-trip cost. Priced-in."
+      },
+      {
+        "name": "Redundant with the book",
+        "desc": "A genuine edge, but corr \u2265 0.30 to ORB/EMA/DC \u2014 it re-harvests a factor we already own."
+      },
+      {
+        "name": "In-sample mirage",
+        "desc": "Gorgeous backtest PF that collapses in walkforward \u2014 overfit to the whole history."
+      },
+      {
+        "name": "Era-asymmetric",
+        "desc": "Carried entirely by one regime (usually post-2021); fails the other era."
+      },
+      {
+        "name": "Fill-fragile",
+        "desc": "Only clears on precise/optimistic fills; dies once exits fill at the next bar's open."
+      }
+    ],
+    "rejected_groups": [
+      {
+        "category": "Instruments (frontier explored)",
+        "items": [
+          {
+            "idea": "Commodities \u2014 Gold / Crude / Silver / Copper",
+            "pattern": "Fill-fragile",
+            "reason": "Apparent edges were exit look-ahead artifacts; retracted + turned off"
+          },
+          {
+            "idea": "Bitcoin (CME futures)",
+            "pattern": "Redundant",
+            "reason": "Correlated to NQ (+0.34, rising) + no pre-2018 data (fails both-era)"
+          },
+          {
+            "idea": "Euro (6E) & Yen (6J)",
+            "pattern": "Edgeless after cost",
+            "reason": "Uncorrelated / anti-correlated but no economic edge \u2014 high-PF-on-trivial-edge mirage"
+          },
+          {
+            "idea": "10-year T-Note (ZN)",
+            "pattern": "Redundant",
+            "reason": "Anti-corr hedge but the same risk-off axis as the Yen + edgeless under our templates"
+          }
+        ]
+      },
+      {
+        "category": "Signal templates (price-action sweep)",
+        "items": [
+          {
+            "idea": "7 concepts \u00d7 9 instruments \u2014 volume/market profile, footprint, supply-demand, market structure, volume, TPO",
+            "pattern": "Mirage / Fill-fragile",
+            "reason": "0 deployable. Supply-demand looked additive (PF 2.08) but is a next-open fill artifact"
+          },
+          {
+            "idea": "Classic indicators \u2014 S/R \u00b7 MA \u00b7 VWAP \u00b7 pivots \u00b7 ATR-channel",
+            "pattern": "Redundant / edgeless",
+            "reason": "0/9 instruments; the one family with an edge (MA cross) is already live as EMA (corr 0.80)"
+          }
+        ]
+      },
+      {
+        "category": "Order flow / delta",
+        "items": [
+          {
+            "idea": "Order flow / delta \u2014 16y NQ tick data ($1,264)",
+            "pattern": "Edgeless after cost",
+            "reason": "~0 forward-return correlation (priced-in); EMA-confirm filter overfits + is feed-blocked live"
+          },
+          {
+            "idea": "Live footprint-delta DT/ST alerts",
+            "pattern": "Small-sample mirage",
+            "reason": "Auto-executing the alert book loses; the lone survivor failed the 16y NQ gate"
+          }
+        ]
+      },
+      {
+        "category": "Portfolio & structure",
+        "items": [
+          {
+            "idea": "Metals pairs reversion (Gold/Copper)",
+            "pattern": "Fails Calmar / WF",
+            "reason": "Genuinely uncorrelated to NQ but structurally lumpy drawdown"
+          },
+          {
+            "idea": "Market-neutral MNQ+MGC+6J risk-parity",
+            "pattern": "Edgeless legs",
+            "reason": "Sharpe 0.2 vs the book's 0.87 \u2014 neutrality is a risk property, not a return source"
+          },
+          {
+            "idea": "EMA short side / bilateral",
+            "pattern": "Redundant",
+            "reason": "A real, era-robust short edge \u2014 but +0.43 corr to ORB (both down-day momentum). Kept EMA long-only"
+          }
+        ]
+      },
+      {
+        "category": "Calendar, carry & timing",
+        "items": [
+          {
+            "idea": "Calendar / seasonality \u2014 72 configs incl. July-long",
+            "pattern": "Redundant",
+            "reason": "Long/turn-of-month edge is real but +0.5\u20130.75 corr to EMA + lumpy Calmar/WF"
+          },
+          {
+            "idea": "US-Treasury rates carry",
+            "pattern": "Era-asymmetric",
+            "reason": "Killed for $0 on free FRED yields \u2014 no cross-sectional premium; time-series carry died post-2021"
+          },
+          {
+            "idea": "Overnight drift",
+            "pattern": "Fails Calmar",
+            "reason": "Real thin edge but Calmar ~0.14 (a single overnight gap can be \u2212$2k, no stop)"
+          }
+        ]
       }
     ]
   },
