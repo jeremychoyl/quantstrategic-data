@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T15:10:03+00:00",
+  "generated_at": "2026-07-01T15:15:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -649,9 +649,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-01",
       "entry_px": 30307.25,
-      "current_px": 30226.0,
-      "pnl_pts": -81.25,
-      "pnl_usd": -162.5,
+      "current_px": 30261.75,
+      "pnl_pts": -45.5,
+      "pnl_usd": -91.0,
       "direction": "Long"
     }
   ],
@@ -4590,6 +4590,11 @@
             "idea": "10y Treasury (ZN) + FRONTIER",
             "reason": "ZN corr \u22120.121 to NQ but +0.488 to 6J (same duration factor). INSTRUMENT FRONTIER CLOSED: every non-equity instrument is correlated, or uncorrelated-but-edgeless.",
             "pattern": "Edgeless"
+          },
+          {
+            "idea": "VIX / volatility futures (VX/VXM)",
+            "reason": "Feed EXISTS in Databento (XCBF.PITCH, Cboe Futures; daily $4.47) but rejected pre-buy on 3 structural strikes: (1) NOT tradeable on Tradovate \u2014 CFE-only; Tradovate = CME Group only (open\u2026",
+            "pattern": "Redundant"
           }
         ]
       },
@@ -4680,7 +4685,7 @@
         "reason": "0/9, cleanly weak (no PF\u22651.9 anywhere \u2192 no fill-trap). MA = redundant w/ deployed EMA (corr 0.80); pivot EMA-correlated/Calmar-fail; S/R overlaps failed supply/demand; VWAP marginal\u2026"
       }
     ],
-    "n_rejected": 35,
+    "n_rejected": 36,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
