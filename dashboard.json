@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T15:35:04+00:00",
+  "generated_at": "2026-07-01T15:40:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -649,9 +649,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-01",
       "entry_px": 30307.25,
-      "current_px": 30317.25,
-      "pnl_pts": 10.0,
-      "pnl_usd": 20.0,
+      "current_px": 30297.0,
+      "pnl_pts": -10.25,
+      "pnl_usd": -20.5,
       "direction": "Long"
     }
   ],
@@ -4657,6 +4657,21 @@
             "pattern": "Redundant"
           }
         ]
+      },
+      {
+        "category": "Smart Money Concepts (SMC) \u2014 the two primitives not covered by rounds 1-4",
+        "items": [
+          {
+            "idea": "Fair Value Gap (FVG / 3-bar imbalance)",
+            "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026",
+            "pattern": "Redundant"
+          },
+          {
+            "idea": "Liquidity sweep / stop-hunt (failed-breakout reversal)",
+            "reason": "0/12 configs, cleanest reject in the sweep \u2014 every config net-losing (best PF 0.898, none clears PF>1). Betting a swing-high/low breakout FAILS and reverses is the direct opposite of the\u2026",
+            "pattern": null
+          }
+        ]
       }
     ],
     "tested_rejected": [
@@ -4683,9 +4698,13 @@
       {
         "idea": "Classic TA (S/R \u00b7 MA \u00b7 VWAP \u00b7 pivots \u00b7 ATR-channel) \u00d7 9 instruments",
         "reason": "0/9, cleanly weak (no PF\u22651.9 anywhere \u2192 no fill-trap). MA = redundant w/ deployed EMA (corr 0.80); pivot EMA-correlated/Calmar-fail; S/R overlaps failed supply/demand; VWAP marginal\u2026"
+      },
+      {
+        "idea": "Fair Value Gap (FVG / 3-bar imbalance)",
+        "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 36,
+    "n_rejected": 38,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
