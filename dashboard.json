@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T09:10:03+00:00",
+  "generated_at": "2026-07-01T09:15:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4641,7 +4641,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-07-01T01:16:36+00:00",
+    "as_of": "2026-07-01T09:13:42+00:00",
     "note": "16-year backtest projection, 1 contract each. ALL legs gated by the live trailing-252-trade-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is long-only.",
     "n_strategies": 3,
     "per_strategy": [
@@ -5758,8 +5758,15 @@
         }
       }
     },
+    "kill_switch": {
+      "mode": "two_tier",
+      "soft_pts": -500,
+      "hard_pts": -750,
+      "effect_usd_16y": 0,
+      "note": "Modeled in the book stats. Two-tier daily limit: block new entries at \u2212500 pts (\u2212$1,000), flatten all at \u2212750 pts (\u2212$1,500). In-sample the hard tier is dormant (effect \u2248 $0) \u2014 it's a catastrophe backstop, not a return lever."
+    },
     "ytd_equity": {
-      "as_of": "2026-07-01T01:16:36+00:00",
+      "as_of": "2026-07-01T09:13:43+00:00",
       "since": "2026-01-01",
       "through": "2026-06-29",
       "note": "2026 YTD running equity, 1 contract each, deployed config (trend20 ORB, gated long-only EMA, DC). Backtest/OOS model \u2014 not realized fills.",
