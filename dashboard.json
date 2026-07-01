@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T05:25:04+00:00",
+  "generated_at": "2026-07-01T05:27:29+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4295,49 +4295,15 @@
     ]
   },
   "research_discipline": {
-    "as_of": "2026-06-30",
-    "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC is the validated edge set",
-    "summary": "Every cheaply-accessible alpha lever \u2014 every NQ-OHLCV template, 9 instruments, order flow, calendar/seasonality, rates carry \u2014 has been run to a verdict. 0 new deployable strategies. The next real edge needs a deliberate data buy tied to a specific new thesis, not another template or instrument sweep.",
+    "as_of": "2026-06-29",
+    "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
+    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. The remaining levers are NOT more template/instrument re-runs \u2014 they are asset-class-SPECIFIC strategies (yield-curve/ carry, ag seasonality) or a decorrelation project, each a real research effort with a new hypothesis, not a re-test of anything above.",
     "book": [
       "ORB",
       "EMA",
       "DC"
     ],
     "research_spend_usd": 1460,
-    "tested_rejected": [
-      {
-        "idea": "Order flow / delta (16y NQ tick)",
-        "reason": "~0 forward edge (priced-in); EMA-confirm filter overfits + feed-blocked live"
-      },
-      {
-        "idea": "Commodities \u2014 Gold/Crude/Silver/Copper",
-        "reason": "Apparent edges were fill / look-ahead artifacts; retracted + turned off"
-      },
-      {
-        "idea": "Price-action templates (7 concepts)",
-        "reason": "0/7 deployable \u2014 edgeless, redundant with the book, or walkforward-killed"
-      },
-      {
-        "idea": "Metals pairs reversion (Gold/Copper)",
-        "reason": "Genuinely uncorrelated but lumpy drawdown \u2014 fails Calmar / walkforward"
-      },
-      {
-        "idea": "Bitcoin / Euro / Yen / T-Note",
-        "reason": "Each is correlated (no diversification) or uncorrelated-but-edgeless"
-      },
-      {
-        "idea": "Calendar / seasonality (72 configs)",
-        "reason": "Long edge real but redundant with EMA (corr 0.5\u20130.75) + lumpy Calmar/WF"
-      },
-      {
-        "idea": "US-Treasury rates carry",
-        "reason": "Killed for $0 on free FRED yields \u2014 no premium; era-fragile time-series"
-      },
-      {
-        "idea": "Market-neutral MNQ+MGC+6J",
-        "reason": "Risk-parity Sharpe 0.2 vs the book's 0.87 \u2014 neutrality is risk, not return"
-      }
-    ],
     "spend_ledger": {
       "bars_usd": 196,
       "ticks_usd": 1264,
@@ -4347,148 +4313,294 @@
     "gates": [
       {
         "name": "Both-era",
-        "rule": "PF \u2265 1.0 in BOTH 2010\u20132020 AND 2021\u20132026 \u2014 failing one era rejects it"
+        "rule": "PF \u2265 1.0 in BOTH 2010-2020 and 2021-2026 (split 2021-01-01)."
       },
       {
         "name": "Bilateral",
-        "rule": "Test long-only, short-only AND bilateral before choosing direction \u2014 numbers decide, not priors"
+        "rule": "tested long / short / bilateral \u2014 numbers decide direction."
       },
       {
         "name": "Walkforward",
-        "rule": "3-year train \u2192 1-year OOS, rolling. OOS PF > 1.0 with 0 sit-out years"
+        "rule": "rolling 3y train \u2192 1y OOS; 0 sit-out years (every OOS year PF > 1.0)."
       },
       {
         "name": "Correlation",
-        "rule": "|corr| < 0.30 vs each live strategy on daily P&L \u2014 additive, not redundant"
+        "rule": "|corr| < 0.30 vs each deployed strategy's daily P&L (redundant = rejected)."
       },
       {
-        "name": "Calmar / max DD",
-        "rule": "Calmar \u2265 0.50 \u2014 the drawdown has to be recoverable within ~2 years"
+        "name": "Calmar",
+        "rule": "annual return / maxDD \u2265 0.50 (drawdown recoverable within ~2 years)."
       },
       {
         "name": "Fill-robustness",
-        "rule": "Survive 2\u00d7 transaction cost AND next-bar-open exits \u2014 kills fills-too-good look-ahead"
+        "rule": "survives 2\u00d7 cost AND (reversion) next-bar-open exits \u2014 catches edges that live only in optimistic precise fills (the \"W71 trap\")."
       }
     ],
     "failure_patterns": [
       {
         "name": "Edgeless after cost",
-        "desc": "A real-looking signal whose expectancy is \u2264 the 1.24-pt round-trip cost. Priced-in."
+        "desc": "Marginal PF (0.8\u20131.2) on lumpy drawdowns \u2192 fails Calmar/WF. Most classic indicators, volume profile, market structure, FX."
       },
       {
-        "name": "Redundant with the book",
-        "desc": "A genuine edge, but corr \u2265 0.30 to ORB/EMA/DC \u2014 it re-harvests a factor we already own."
+        "name": "Redundant with the deployed book",
+        "desc": "A re-expression of a factor ORB/EMA/DC already harvest \u2192 fails the corr<0.30 gate. EMA-short (corr ORB 0.375), compression (0.78)\u2026"
       },
       {
-        "name": "In-sample mirage",
-        "desc": "Gorgeous backtest PF that collapses in walkforward \u2014 overfit to the whole history."
+        "name": "In-sample mirage the walkforward kills",
+        "desc": "Great full-sample PF carried by a few years; loses in scattered OOS years \u2192 sit-outs. Supply/demand on NQ/silver, dry-up volume."
       },
       {
         "name": "Era-asymmetric",
-        "desc": "Carried entirely by one regime (usually post-2021); fails the other era."
+        "desc": "Works post-2021 only (era1 PF<1.0) \u2192 fails both-era. ORB-bilateral, thrust, FX configs."
       },
       {
-        "name": "Fill-fragile",
-        "desc": "Only clears on precise/optimistic fills; dies once exits fill at the next bar's open."
+        "name": "Fill-fragile (the W71 trap)",
+        "desc": "Edge lives in optimistic precise fills; collapses under next-bar-open exits / 2\u00d7 cost. Supply/demand on gold/crude/copper/ZN, TPO va-rotation, the\u2026"
+      },
+      {
+        "name": "Uncorrelated but edgeless instrument",
+        "desc": "Clean diversifier, no edge to monetize \u2192 bleeds. The entire instrument frontier (commodities, FX, rates, crypto)."
+      },
+      {
+        "name": "Look-ahead artifact",
+        "desc": "A bug, not an edge. TPO va-rotation (PF 4.46\u21920.98 once fixed), the reversion exit look-ahead. Caught by re-running with conservative fills."
       }
     ],
     "rejected_groups": [
       {
-        "category": "Instruments (frontier explored)",
+        "category": "Variants on the deployed strategies (NQ/MNQ)",
         "items": [
           {
-            "idea": "Commodities \u2014 Gold / Crude / Silver / Copper",
-            "pattern": "Fill-fragile",
-            "reason": "Apparent edges were exit look-ahead artifacts; retracted + turned off"
+            "idea": "Overnight drift hold",
+            "reason": "Real but thin; Calmar \u22480.14 (maxDD $9.9k vs ~$1.4k/yr) \u2014 undeployable DD. Both eras now pass (reason corrected from stale era-fail).",
+            "pattern": "Fails Calmar"
           },
           {
-            "idea": "Bitcoin (CME futures)",
-            "pattern": "Redundant",
-            "reason": "Correlated to NQ (+0.34, rising) + no pre-2018 data (fails both-era)"
+            "idea": "VWAP stretch reversion",
+            "reason": "Era-gate fail (pre-2021 edge absent).",
+            "pattern": "Era-asymmetric"
           },
           {
-            "idea": "Euro (6E) & Yen (6J)",
-            "pattern": "Edgeless after cost",
-            "reason": "Uncorrelated / anti-correlated but no economic edge \u2014 high-PF-on-trivial-edge mirage"
+            "idea": "Gap fade",
+            "reason": "Era fail: pre-2021 PF <1.0 across all thresholds.",
+            "pattern": "Era-asymmetric"
           },
           {
-            "idea": "10-year T-Note (ZN)",
-            "pattern": "Redundant",
-            "reason": "Anti-corr hedge but the same risk-off axis as the Yen + edgeless under our templates"
-          }
-        ]
-      },
-      {
-        "category": "Signal templates (price-action sweep)",
-        "items": [
-          {
-            "idea": "7 concepts \u00d7 9 instruments \u2014 volume/market profile, footprint, supply-demand, market structure, volume, TPO",
-            "pattern": "Mirage / Fill-fragile",
-            "reason": "0 deployable. Supply-demand looked additive (PF 2.08) but is a next-open fill artifact"
+            "idea": "DC trend20 filter",
+            "reason": "Structural: DC fires below 10d low, trend20 needs price>SMA20 \u2014 incompatible.",
+            "pattern": null
           },
           {
-            "idea": "Classic indicators \u2014 S/R \u00b7 MA \u00b7 VWAP \u00b7 pivots \u00b7 ATR-channel",
-            "pattern": "Redundant / edgeless",
-            "reason": "0/9 instruments; the one family with an edge (MA cross) is already live as EMA (corr 0.80)"
-          }
-        ]
-      },
-      {
-        "category": "Order flow / delta",
-        "items": [
-          {
-            "idea": "Order flow / delta \u2014 16y NQ tick data ($1,264)",
-            "pattern": "Edgeless after cost",
-            "reason": "~0 forward-return correlation (priced-in); EMA-confirm filter overfits + is feed-blocked live"
+            "idea": "DC short side",
+            "reason": "Era fail: 2021-26 PF 0.67 \u2014 NQ breakouts continue, don't revert.",
+            "pattern": "Era-asymmetric"
           },
           {
-            "idea": "Live footprint-delta DT/ST alerts",
-            "pattern": "Small-sample mirage",
-            "reason": "Auto-executing the alert book loses; the lone survivor failed the 16y NQ gate"
-          }
-        ]
-      },
-      {
-        "category": "Portfolio & structure",
-        "items": [
-          {
-            "idea": "Metals pairs reversion (Gold/Copper)",
-            "pattern": "Fails Calmar / WF",
-            "reason": "Genuinely uncorrelated to NQ but structurally lumpy drawdown"
+            "idea": "DC Exit1 (midline)",
+            "reason": "Valid but dominated by Exit3 (PF 1.75 vs 2.66, 4\u00d7 the DD, 100% entry overlap).",
+            "pattern": null
           },
           {
-            "idea": "Market-neutral MNQ+MGC+6J risk-parity",
-            "pattern": "Edgeless legs",
-            "reason": "Sharpe 0.2 vs the book's 0.87 \u2014 neutrality is a risk property, not a return source"
+            "idea": "Vol regime filter",
+            "reason": "No improvement: high-vol-only loses 30% profit, zero DD benefit.",
+            "pattern": null
+          },
+          {
+            "idea": "ORB delta filter upgrade",
+            "reason": "OOS Sharpe 0.85 vs deployed 1.28 \u2014 deployed trend20 wins every metric.",
+            "pattern": null
+          },
+          {
+            "idea": "ORB bilateral (no filter)",
+            "reason": "Pre-2021 PF 0.81 \u2014 the ORB edge is post-2021 only.",
+            "pattern": "Era-asymmetric"
+          },
+          {
+            "idea": "ORB Pine config (delta-confirm + 2:1 target, bilateral)",
+            "reason": "Loses to deployed trend20+EOD on every return metric; WF 4 neg years vs 0. Bar-derived \"delta\" doesn't survive WF.",
+            "pattern": "In-sample mirage"
+          },
+          {
+            "idea": "OR-break-short (live gekko \"C-short\" / DT OR Short alert)",
+            "reason": "The one profitable-looking DT/ST alert setup, validated 16y on NQ: fails 4/5 gates \u2014 both-era (2010-20 PF 0.87 / \u2212$2.1k, post-2021-only), WF (OOS PF 0.95, 10 sit-outs, 3/4 neg yrs), corr\u2026",
+            "pattern": "Fails Calmar"
           },
           {
             "idea": "EMA short side / bilateral",
-            "pattern": "Redundant",
-            "reason": "A real, era-robust short edge \u2014 but +0.43 corr to ORB (both down-day momentum). Kept EMA long-only"
+            "reason": "Short side is a REAL era-robust edge BUT +0.375 corr to ORB (redundant) \u2014 fails corr gate. (The old \"era-fail\" reason was a stale overnight-bug artifact, corrected.) Keep long-only.",
+            "pattern": "Redundant"
+          },
+          {
+            "idea": "EMA-short gated to ORB-flat days (decorrelation attempt)",
+            "reason": "The new-hypothesis fix for the row above \u2014 gate EMA-short to days ORB is flat, to break the +0.375 ORB corr. Structurally self-defeating: ORB trades 98.6% of all RTH days, so \"ORB-flat\"\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "Compression breakout (NR7/NR4/inside-day)",
+            "reason": "Real but marginal AND corr 0.78 to ORB (same post-2021 momentum factor); fails WF + Calmar.",
+            "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "Markov-based signals",
+            "reason": "No edge at n=1.12M (16y portfolio) \u2014 narration/context only.",
+            "pattern": "Edgeless"
+          },
+          {
+            "idea": "Calendar / seasonality (turn-of-month + day-of-week)",
+            "reason": "SWEPT 2026-06-30, 72 configs (TOM pre/exit grid + DOW\u00d7hold) \u00d7 long/short/bilateral through the full gates \u2192 0/72 deployable. The long side is a REAL seasonal edge (TOM long & Friday-hold\u2026",
+            "pattern": "Redundant"
+          },
+          {
+            "idea": "Rates carry (US-Treasury yield-curve carry)",
+            "reason": "VALIDATED ON FREE DATA 2026-06-30 \u2014 killed for $0 before any futures buy (cheap-gate-first). Built the standard carry signals from FRED constant-maturity yields (DGS3MO/2/5/10/30, monthly\u2026",
+            "pattern": "Era-asymmetric"
           }
         ]
       },
       {
-        "category": "Calendar, carry & timing",
+        "category": "Order flow / footprint (tick data)",
         "items": [
           {
-            "idea": "Calendar / seasonality \u2014 72 configs incl. July-long",
-            "pattern": "Redundant",
-            "reason": "Long/turn-of-month edge is real but +0.5\u20130.75 corr to EMA + lumpy Calmar/WF"
+            "idea": "Order-flow / delta (5m)",
+            "reason": "All signals (divergence/absorption/thrust/CVD) \u00d7 dir PF<1.0 on 2018-26; raw 5m delta ~0 fwd-return corr (priced-in). Aggressor side only exists 2017+ (no both-era). $1,264 spent.",
+            "pattern": "Era-asymmetric"
           },
           {
-            "idea": "US-Treasury rates carry",
-            "pattern": "Era-asymmetric",
-            "reason": "Killed for $0 on free FRED yields \u2014 no cross-sectional premium; time-series carry died post-2021"
+            "idea": "Order-flow as EMA filter",
+            "reason": "Improves backtest (PF 1.48\u21921.71) but feed-blocked (live footprint reproduces NQ-delta sign only 73%); flow-gated variants overfit (fail WF).",
+            "pattern": "In-sample mirage"
           },
           {
-            "idea": "Overnight drift",
-            "pattern": "Fails Calmar",
-            "reason": "Real thin edge but Calmar ~0.14 (a single overnight gap can be \u2212$2k, no stop)"
+            "idea": "Footprint / per-bar imbalance",
+            "reason": "Per-5m-bar imbalance adds nothing beyond the rejected aggregate delta; EMA-filter variant overfits (PF 1.45\u21922.08 in-sample, breaks WF, corr 0.91 EMA). Modern-era only.",
+            "pattern": "In-sample mirage"
+          }
+        ]
+      },
+      {
+        "category": "New instruments (the instrument frontier \u2014 declared closed)",
+        "items": [
+          {
+            "idea": "Metals pairs reversion (gc/hg RV)",
+            "reason": "gc/hg uncorrelated to NQ (corr 0.00) + agg PF 1.42 BUT fails WF (4/14) + Calmar (0.10); lumpy DD is structural to pairs. Cointegration made it worse.",
+            "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "Bitcoin as new instrument",
+            "reason": "Disqualified pre-scan: +0.344 corr to NQ (risk-on proxy, no diversification) + no both-era (CME BTC starts Dec-2017).",
+            "pattern": "Redundant"
+          },
+          {
+            "idea": "Euro FX (6E/M6E)",
+            "reason": "Uncorrelated + full history BUT no edge: best EMA PF 3.46 yet Calmar 0.082 / ~$139/yr \u2014 high-PF-on-trivial-edge mirage.",
+            "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "Japanese Yen (6J)",
+            "reason": "Best diversifier (corr \u22120.128) but full scan skipped \u2014 a negative-corr hedge with no edge bleeds. (Later bought + tested, see \u00a75.)",
+            "pattern": "Edgeless"
+          },
+          {
+            "idea": "Market-neutral book (MNQ+MGC+6J risk-parity)",
+            "reason": "Sharpe ~0.2 vs deployed 0.87 \u2014 diversification works but can only diversify edges that exist; edgeless legs \u2192 near-zero blend.",
+            "pattern": "Edgeless"
+          },
+          {
+            "idea": "10y Treasury (ZN) + FRONTIER",
+            "reason": "ZN corr \u22120.121 to NQ but +0.488 to 6J (same duration factor). INSTRUMENT FRONTIER CLOSED: every non-equity instrument is correlated, or uncorrelated-but-edgeless.",
+            "pattern": "Edgeless"
+          }
+        ]
+      },
+      {
+        "category": "New signal templates \u2014 round 1 (7 concepts on NQ)",
+        "items": [
+          {
+            "idea": "Price action",
+            "reason": "EXHAUSTED \u2014 deployed ORB+EMA+DC span the OHLCV pattern space; 28 patterns tested, all non-deployed rejected.",
+            "pattern": null
+          },
+          {
+            "idea": "Volume profile (VA reversion + breakout + POC)",
+            "reason": "All directions PF<1.0 (reversion 0.79/0.92; breakout best 0.982). VA breakouts chase a move ORB captures early.",
+            "pattern": null
+          },
+          {
+            "idea": "Supply & demand zones",
+            "reason": "Real in-sample edge (PF 1.54, Calmar 1.97, clean corr) but fails walkforward on NQ \u2014 and is fill-fragile on commodities (see \u00a75).",
+            "pattern": "Fill-fragile"
+          },
+          {
+            "idea": "Market structure (BOS/CHoCH)",
+            "reason": "BOS edgeless + ORB-redundant (corr 0.41); CHoCH PF\u22641.06 but Calmar ~0.01, WF 8-13 sit-outs, EMA-coupled.",
+            "pattern": "Redundant"
+          },
+          {
+            "idea": "Volume primary (thrust/climax/dry-up)",
+            "reason": "Thrust redundant w/ EMA (+0.78/0.90) & era2-only; climax no-edge; dry-up era2-only overfit.",
+            "pattern": "Redundant"
+          },
+          {
+            "idea": "Market profile / TPO (IB/open-drive/VA-rotation)",
+            "reason": "IB-breakout IS ORB (corr 0.72); VA-rotation PF 4.46 was a look-ahead artifact (fixed \u2192 0.79-0.98).",
+            "pattern": "Look-ahead"
+          }
+        ]
+      },
+      {
+        "category": "New templates \u2014 rounds 2-3 (commodities/FX, then BTC/6J/ZN)",
+        "items": [
+          {
+            "idea": "5 templates \u00d7 MGC/MCL/SIL/MHG/M6E",
+            "reason": "0/6 deployable. Supply/demand posts gorgeous additive numbers (gold PF 2.08/Calmar 3.39) but every WF-passing config is FILL-FRAGILE (collapses under next-open exits \u2014 the W71 trap)\u2026",
+            "pattern": "Fill-fragile"
+          },
+          {
+            "idea": "5 templates \u00d7 BTC/6J/ZN (bought 1m, $53.82)",
+            "reason": "0/3. BTC S/D fails WF (~8y only); Yen completely edgeless (like euro); ZN sd_short_eod gorgeous (PF 1.98/Calmar 2.35) but FILL-FRAGILE (\u21921.36 next-open).",
+            "pattern": "Fill-fragile"
+          }
+        ]
+      },
+      {
+        "category": "New templates \u2014 round 4 (classic indicators \u00d7 all 9 instruments)",
+        "items": [
+          {
+            "idea": "Classic TA (S/R \u00b7 MA \u00b7 VWAP \u00b7 pivots \u00b7 ATR-channel) \u00d7 9 instruments",
+            "reason": "0/9, cleanly weak (no PF\u22651.9 anywhere \u2192 no fill-trap). MA = redundant w/ deployed EMA (corr 0.80); pivot EMA-correlated/Calmar-fail; S/R overlaps failed supply/demand; VWAP marginal\u2026",
+            "pattern": "Redundant"
           }
         ]
       }
-    ]
+    ],
+    "tested_rejected": [
+      {
+        "idea": "Overnight drift hold",
+        "reason": "Real but thin; Calmar \u22480.14 (maxDD $9.9k vs ~$1.4k/yr) \u2014 undeployable DD. Both eras now pass (reason corrected from stale era-fail)."
+      },
+      {
+        "idea": "Order-flow / delta (5m)",
+        "reason": "All signals (divergence/absorption/thrust/CVD) \u00d7 dir PF<1.0 on 2018-26; raw 5m delta ~0 fwd-return corr (priced-in). Aggressor side only exists 2017+ (no both-era). $1,264 spent."
+      },
+      {
+        "idea": "Metals pairs reversion (gc/hg RV)",
+        "reason": "gc/hg uncorrelated to NQ (corr 0.00) + agg PF 1.42 BUT fails WF (4/14) + Calmar (0.10); lumpy DD is structural to pairs. Cointegration made it worse."
+      },
+      {
+        "idea": "Price action",
+        "reason": "EXHAUSTED \u2014 deployed ORB+EMA+DC span the OHLCV pattern space; 28 patterns tested, all non-deployed rejected."
+      },
+      {
+        "idea": "5 templates \u00d7 MGC/MCL/SIL/MHG/M6E",
+        "reason": "0/6 deployable. Supply/demand posts gorgeous additive numbers (gold PF 2.08/Calmar 3.39) but every WF-passing config is FILL-FRAGILE (collapses under next-open exits \u2014 the W71 trap)\u2026"
+      },
+      {
+        "idea": "Classic TA (S/R \u00b7 MA \u00b7 VWAP \u00b7 pivots \u00b7 ATR-channel) \u00d7 9 instruments",
+        "reason": "0/9, cleanly weak (no PF\u22651.9 anywhere \u2192 no fill-trap). MA = redundant w/ deployed EMA (corr 0.80); pivot EMA-correlated/Calmar-fail; S/R overlaps failed supply/demand; VWAP marginal\u2026"
+      }
+    ],
+    "n_rejected": 35,
+    "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
     "as_of": "2026-07-01T01:00:07+00:00",
