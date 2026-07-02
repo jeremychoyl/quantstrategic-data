@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:30:04+00:00",
+  "generated_at": "2026-07-02T02:35:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4342,7 +4342,7 @@
     ]
   },
   "research_discipline": {
-    "as_of": "2026-06-29",
+    "as_of": "2026-07-02",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
     "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. The remaining levers are NOT more template/instrument re-runs \u2014 they are asset-class-SPECIFIC strategies (yield-curve/ carry, ag seasonality) or a decorrelation project, each a real research effort with a new hypothesis, not a re-test of anything above.",
     "book": [
@@ -4491,6 +4491,16 @@
             "idea": "Markov-based signals",
             "reason": "No edge at n=1.12M (16y portfolio) \u2014 narration/context only.",
             "pattern": "Edgeless"
+          },
+          {
+            "idea": "ORB capped stop (tighten far-side on big-ORB days)",
+            "reason": "TESTED 2026-07-02. User: the far-side stop scales with range width, so a big ORB gives a wide stop and the occasional wide-ORB stop-out is a \u2212300pt disaster. Tested stop_dist =\u2026",
+            "pattern": null
+          },
+          {
+            "idea": "ORB risk-based sizing (per-trade, by stop width)",
+            "reason": "\u26a0\ufe0f NOT a rejection \u2014 a VALIDATED book-scale lever, logged here beside the capped-stop reject it replaces. Keep the far-side stop UNCHANGED; size each trade so $-risk-at-stop is ~constant\u2026",
+            "pattern": "Fails Calmar"
           },
           {
             "idea": "Calendar / seasonality (turn-of-month + day-of-week)",
@@ -4670,7 +4680,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 38,
+    "n_rejected": 40,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
