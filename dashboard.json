@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:45:04+00:00",
+  "generated_at": "2026-07-02T02:50:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4493,6 +4493,11 @@
             "pattern": "Edgeless"
           },
           {
+            "idea": "ORB shortened opening range (OR < 30m)",
+            "reason": "TESTED 2026-07-02 (backtest_orb_window.py). User: a shorter opening range = narrower range = tighter far-side stop = smaller big-ORB loss. Correct on the mechanics, but the edge dies. Sweep\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
             "idea": "ORB capped stop (tighten far-side on big-ORB days)",
             "reason": "TESTED 2026-07-02. User: the far-side stop scales with range width, so a big ORB gives a wide stop and the occasional wide-ORB stop-out is a \u2212300pt disaster. Tested stop_dist =\u2026",
             "pattern": null
@@ -4680,7 +4685,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 40,
+    "n_rejected": 41,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
