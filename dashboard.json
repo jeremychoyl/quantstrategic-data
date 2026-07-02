@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:50:03+00:00",
+  "generated_at": "2026-07-02T02:55:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4493,6 +4493,11 @@
             "pattern": "Edgeless"
           },
           {
+            "idea": "ORB risk:reward target (fixed R-multiple profit target)",
+            "reason": "TESTED 2026-07-02 (backtest_orb_rr.py). Far-side stop UNCHANGED (risk R = far-side distance); add a target at {1,1.5,2,3}\u00d7R through the deployed gated config. Two negatives: (1) orthogonal\u2026",
+            "pattern": null
+          },
+          {
             "idea": "ORB shortened opening range (OR < 30m)",
             "reason": "TESTED 2026-07-02 (backtest_orb_window.py). User: a shorter opening range = narrower range = tighter far-side stop = smaller big-ORB loss. Correct on the mechanics, but the edge dies. Sweep\u2026",
             "pattern": "Fails Calmar"
@@ -4685,7 +4690,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 41,
+    "n_rejected": 42,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
