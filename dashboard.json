@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:35:03+00:00",
+  "generated_at": "2026-07-02T02:40:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4499,7 +4499,7 @@
           },
           {
             "idea": "ORB risk-based sizing (per-trade, by stop width)",
-            "reason": "\u26a0\ufe0f NOT a rejection \u2014 a VALIDATED book-scale lever, logged here beside the capped-stop reject it replaces. Keep the far-side stop UNCHANGED; size each trade so $-risk-at-stop is ~constant\u2026",
+            "reason": "\u26a0\ufe0f NOT a rejection \u2014 a book-scale lever now IN SHADOW TEST (not yet deployed), logged beside the capped-stop reject it replaces. Keep the far-side stop UNCHANGED; only re-weight position\u2026",
             "pattern": "Fails Calmar"
           },
           {
