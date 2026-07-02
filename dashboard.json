@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T00:55:04+00:00",
+  "generated_at": "2026-07-02T01:00:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4674,21 +4674,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-01T01:00:07+00:00",
+    "as_of": "2026-07-02T01:00:08+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The -$700 live P&L on 7 trades directly contradicts the backtest's 37.6% ROC, and -19.79 pts avg slippage is catastrophic\u2014it's eating the strategy's edge before execution even completes. The single most critical issue: you have zero live proof that your systematic approach survives real market conditions; a two-week, seven-trade sample tells me nothing, and the slippage alone suggests your entry/exit logic or broker/routing choice is fundamentally broken.\n\nNext concrete step to earn the check: Run a brutally honest post-mortem on those 7 trades\u2014show me exact entry/exit times, the slippage per trade, and whether it's venue latency, position sizing, or algo tuning. Then paper-trade for 60\u201390 days with *realistic* slippage baked into your backtest. If live slippage normalizes and you hit breakeven or better on 30+ trades, you'll have earned a real conversation. Right now you're selling me a model, not a business.",
+    "verdict": "No allocation today. The backtest Sharpe of 1.32 is respectable, but you have eight live trades with a $1,120 loss and -16 pt average slippage that wasn't explicitly modeled in your backtest\u2014that's a material gap and a red flag for execution risk in a one-person operation. More critically, concentrating 100% of three strategies into a single instrument (MNQ) violates basic portfolio construction; even if your micro-scale search was thorough, the absence of any uncorrelated hedge or secondary market means a single tail event in Nasdaq futures vaporizes the fund.\n\nDo this next: Run a genuine 2\u20133 month live track record on the three strategies *separately* (not blended), document your actual slippage distribution and order-fill consistency at micro size, and simultaneously conduct a structured search for at least one secondary market (ES, CL, GC, or rates) where you can layer a small, genuinely uncorrelated signal\u2014even if it contributes only 10\u201315% of capacity. Bring me those two artifacts and we talk again.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "7 trades",
+        "now": "8 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-700",
+        "now": "$-1,120",
         "pass": false
       },
       {
@@ -4706,7 +4706,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "7 trades \u2014 too early",
+        "now": "8 trades \u2014 too early",
         "pass": false
       }
     ]
