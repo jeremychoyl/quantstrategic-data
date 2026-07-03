@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T09:10:04+00:00",
+  "generated_at": "2026-07-03T09:15:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4436,7 +4436,7 @@
   "research_discipline": {
     "as_of": "2026-07-03",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
-    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. Of the once-open levers, US-Treasury carry, the multi-pair RV basket, ag seasonality, and the ML/method frontier have all now been run to rejected verdicts (see their rows). What remains genuinely untested requires serious new commitments: global gov-bond\u2026",
+    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. Every once-open lever \u2014 US-Treasury carry, the multi-pair RV basket, ag seasonality, the ML/method frontier, and global gov-bond carry \u2014 has now been run to a rejected verdict (see their rows). The single remaining untested lever is alt-data with\u2026",
     "book": [
       "ORB",
       "EMA",
@@ -4613,6 +4613,11 @@
             "idea": "HMM regime overlay (walk-forward Baum-Welch latent daily states)",
             "reason": "The Renaissance-inspired probabilistic-states project (2026-07-03), scoped as an OVERLAY on the deployed legs. Distinct from the observed-state Markov row \u2014 latent states, leak-free build\u2026",
             "pattern": "Redundant"
+          },
+          {
+            "idea": "Global gov-bond carry (cross-country, FX-hedged)",
+            "reason": "KILLED 2026-07-03 for $0 \u2014 three independent strikes: (1) VENUE: Eurex/ICE/OSE bond futures not tradeable on Tradovate (CME-only); (2) DATA: Databento Eurex starts 2025-03, ICE 2018-12\u2026",
+            "pattern": "Era-asymmetric"
           },
           {
             "idea": "Rates carry (US-Treasury yield-curve carry)",
@@ -4797,7 +4802,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 45,
+    "n_rejected": 46,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
