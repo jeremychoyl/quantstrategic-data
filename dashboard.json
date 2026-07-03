@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T01:00:04+00:00",
+  "generated_at": "2026-07-03T01:05:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3995,9 +3995,17 @@
     "total_tested": 16,
     "total_pass": 4,
     "total_fail": 12,
-    "total_skip": 11,
+    "total_skip": 12,
     "pass_rate": 25.0,
     "recent": [
+      {
+        "hyp_id": 28,
+        "at": "2026-07-03T01:04:56.487984+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires weekly COT data (external macro dataset with Friday release lag, Tuesday position-date mismatch) merged with 1m price bars\u2014introduces severe look-ahead bias risk and data-alignment complexity incompatible with clean backtest architecture. COT is not a price-derived indicator; it violates the principle of using only OHLCV bars and their derivatives. Adaptive regime filtering on rolling 50th percentile of COT further complicates parameter stability across test periods.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": "25",
         "at": "2026-06-28T07:09:04.239494+00:00",
@@ -4133,21 +4141,6 @@
           "calmar": 0.616
         },
         "routing": "reversion"
-      },
-      {
-        "hyp_id": 23,
-        "at": "2026-06-26T02:13:19.746777+00:00",
-        "verdict": "FAIL",
-        "reason": "WF 5/15 sit-outs",
-        "stats": {
-          "n": 192,
-          "pf": 1.27,
-          "sharpe": 1.189,
-          "win_pct": 57.3,
-          "total_usd": 7699.0,
-          "max_dd": -4828.0
-        },
-        "routing": "calendar"
       }
     ],
     "queue": [
@@ -4366,6 +4359,14 @@
         "source": "r/algotrading",
         "created": "2026-06-29",
         "verdict": null
+      },
+      {
+        "id": 28,
+        "status": "skip",
+        "summary": "Short-term trend signals in MNQ degrade post-2009 due to microstructural factors",
+        "source": "arXiv q-fin (API)",
+        "created": "2026-07-03",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires weekly COT data (external macro dataset with Friday release lag, Tuesday position-date mismatch) merged with 1m price bars\\u2014introduces severe look-ahead bias risk and data-alignment complexity incompatible with clean backtest architecture. COT is not a price-derived indicator; it violates the principle of using only OHLCV bars and their derivatives. Adaptive regime filtering on rolling 50th percentile of COT further complicates parameter stability across test periods.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
