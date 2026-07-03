@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T06:50:03+00:00",
+  "generated_at": "2026-07-03T06:55:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4436,7 +4436,7 @@
   "research_discipline": {
     "as_of": "2026-07-03",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
-    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. The remaining levers are NOT more template/instrument re-runs \u2014 they are asset-class-SPECIFIC strategies (yield-curve/ carry, ag seasonality) or a decorrelation project, each a real research effort with a new hypothesis, not a re-test of anything above.",
+    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. The remaining levers are NOT more template/instrument re-runs \u2014 they are asset-class-SPECIFIC strategies with NEW data (global gov-bond carry cross-country, ag seasonality) or alt-data with genuine forward predictiveness, each a real research effort with\u2026",
     "book": [
       "ORB",
       "EMA",
@@ -4650,6 +4650,11 @@
             "pattern": "Fails Calmar"
           },
           {
+            "idea": "Multi-pair stat-arb basket (10 instruments / 45 pairs, $0 data-in-hand)",
+            "reason": "The \"diversified basket smooths per-pair lumpiness\" rescue of the row above \u2014 breadth makes it WORSE. All-45 basket PF 0.92 / Sharpe \u22120.34; WF top-12 yearly selection PF 0.93, 10/14\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
             "idea": "Bitcoin as new instrument",
             "reason": "Disqualified pre-scan: +0.344 corr to NQ (risk-on proxy, no diversification) + no both-era (CME BTC starts Dec-2017).",
             "pattern": "Redundant"
@@ -4787,7 +4792,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 43,
+    "n_rejected": 44,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
