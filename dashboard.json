@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T00:55:04+00:00",
+  "generated_at": "2026-07-03T01:00:04+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4722,21 +4722,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-02T01:00:08+00:00",
+    "as_of": "2026-07-03T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The backtest Sharpe of 1.32 is respectable, but you have eight live trades with a $1,120 loss and -16 pt average slippage that wasn't explicitly modeled in your backtest\u2014that's a material gap and a red flag for execution risk in a one-person operation. More critically, concentrating 100% of three strategies into a single instrument (MNQ) violates basic portfolio construction; even if your micro-scale search was thorough, the absence of any uncorrelated hedge or secondary market means a single tail event in Nasdaq futures vaporizes the fund.\n\nDo this next: Run a genuine 2\u20133 month live track record on the three strategies *separately* (not blended), document your actual slippage distribution and order-fill consistency at micro size, and simultaneously conduct a structured search for at least one secondary market (ES, CL, GC, or rates) where you can layer a small, genuinely uncorrelated signal\u2014even if it contributes only 10\u201315% of capacity. Bring me those two artifacts and we talk again.",
+    "verdict": "No, do not allocate today. The backtest metrics are respectable (Sharpe 1.32, Calmar 0.91), but nine live trades showing -$365 P&L with -11.94 pts average slippage is noise masquerading as performance\u2014you need a minimum 100\u2013150 live trades to distinguish skill from luck in micro-futures, and the slippage overshoot suggests execution or market-impact issues that didn't surface in backtesting. More critically, the entire $2.8M annual backtest book sits in a single instrument (MNQ); that's concentration risk, not diversification, and one systematic regime break in Nasdaq micro-cap momentum ends the fund.\n\nNext step: Run a proper 12\u201318 month live track record across at least two uncorrelated futures markets (add ES or bonds), hit 150+ live trades minimum, and publish monthly net returns before you pitch again. Right now you have alpha ideas, not capital-ready proof.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "8 trades",
+        "now": "9 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-1,120",
+        "now": "$-365",
         "pass": false
       },
       {
@@ -4754,7 +4754,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "8 trades \u2014 too early",
+        "now": "9 trades \u2014 too early",
         "pass": false
       }
     ]
