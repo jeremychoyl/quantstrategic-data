@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T09:25:03+00:00",
+  "generated_at": "2026-07-03T09:30:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4436,7 +4436,7 @@
   "research_discipline": {
     "as_of": "2026-07-03",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
-    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. Every once-open lever \u2014 US-Treasury carry, the multi-pair RV basket, ag seasonality, the ML/method frontier, and global gov-bond carry \u2014 has now been run to a rejected verdict (see their rows). The single remaining untested lever is alt-data with\u2026",
+    "summary": "The territory is mapped \u2014 and as of 2026-07-03 the frontier is FULLY explored: every lever in the frontier memo (US-Treasury carry, multi-pair RV basket, ag seasonality, the ML/method frontier, global gov-bond carry, and the alt-data free tier) has been run to a pre-committed verdict, almost all for $0-to-pennies. ORB\u2026",
     "book": [
       "ORB",
       "EMA",
@@ -4613,6 +4613,11 @@
             "idea": "HMM regime overlay (walk-forward Baum-Welch latent daily states)",
             "reason": "The Renaissance-inspired probabilistic-states project (2026-07-03), scoped as an OVERLAY on the deployed legs. Distinct from the observed-state Markov row \u2014 latent states, leak-free build\u2026",
             "pattern": "Redundant"
+          },
+          {
+            "idea": "Alt-data free tier (COT \u00b7 NAAIM \u00b7 VIX-TS \u00b7 FOMC)",
+            "reason": "TESTED 2026-07-03, $0 \u2014 the LAST lever. Pulse: COT era-flips (dead); FOMC pre-drift DECAYED to nothing on 126 statements (Lucca-Moench post-publication decay); VIX/VIX3M IC pulse-pass but\u2026",
+            "pattern": "Fails Calmar"
           },
           {
             "idea": "Global gov-bond carry (cross-country, FX-hedged)",
@@ -4802,7 +4807,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 46,
+    "n_rejected": 47,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
