@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T08:30:04+00:00",
+  "generated_at": "2026-07-03T08:35:03+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4436,7 +4436,7 @@
   "research_discipline": {
     "as_of": "2026-07-03",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
-    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. The remaining levers are NOT more template/instrument re-runs \u2014 they are asset-class-SPECIFIC strategies with NEW data (global gov-bond carry cross-country, ag seasonality) or alt-data with genuine forward predictiveness, each a real research effort with\u2026",
+    "summary": "The territory is mapped. ORB + EMA + DC on MNQ is the edge set. Of the once-open levers, US-Treasury carry, the multi-pair RV basket, ag seasonality, and the ML/method frontier have all now been run to rejected verdicts (see their rows). What remains genuinely untested requires serious new commitments: global gov-bond\u2026",
     "book": [
       "ORB",
       "EMA",
@@ -4680,6 +4680,11 @@
             "pattern": "Edgeless"
           },
           {
+            "idea": "Ag seasonality (ZC/ZS/ZW/KE/ZL/ZM/HE/LE calendar trades, $0.63 daily buy)",
+            "reason": "Cheap-gate-first: roll-aware front-month returns, 5 PRE-DECLARED classic seasonals. 4/5 dead at the pulse \u2014 weather-premium long ERA-FLIPPED (e1 +2 \u2192 e2 \u221211bp/day, now over-priced)\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
             "idea": "VIX / volatility futures (VX/VXM)",
             "reason": "Feed EXISTS in Databento (XCBF.PITCH, Cboe Futures; daily $4.47) but rejected pre-buy on 3 structural strikes: (1) NOT tradeable on Tradovate \u2014 CFE-only; Tradovate = CME Group only (open\u2026",
             "pattern": "Redundant"
@@ -4792,7 +4797,7 @@
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
       }
     ],
-    "n_rejected": 44,
+    "n_rejected": 45,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
