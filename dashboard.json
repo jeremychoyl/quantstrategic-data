@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T07:25:06+00:00",
+  "generated_at": "2026-07-04T07:30:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4604,9 +4604,17 @@
     "total_tested": 18,
     "total_pass": 5,
     "total_fail": 13,
-    "total_skip": 12,
+    "total_skip": 13,
     "pass_rate": 27.8,
     "recent": [
+      {
+        "hyp_id": 27,
+        "at": "2026-07-04T07:25:38.987776+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy shape requires manual backtest implementation",
+        "stats": {},
+        "routing": "custom"
+      },
       {
         "hyp_id": 29,
         "at": "2026-07-04T07:19:21.360088+00:00",
@@ -4724,22 +4732,6 @@
           "total_usd": 44086.0,
           "max_dd": -2125.0,
           "calmar": 1.301
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": "24",
-        "at": "2026-06-26T07:45:10.771026+00:00",
-        "verdict": "PASS",
-        "reason": "Era gate PASS | WF 0/16 sit-outs | Calmar 0.62 | PF 2.57 Sharpe 2.24",
-        "stats": {
-          "n": 818,
-          "pf": 2.572,
-          "sharpe": 2.241,
-          "win_pct": 26.2,
-          "total_usd": 38678.0,
-          "max_dd": -3961.0,
-          "calmar": 0.616
         },
         "routing": "reversion"
       }
@@ -4955,11 +4947,11 @@
       },
       {
         "id": 27,
-        "status": "pending",
+        "status": "skip",
         "summary": "Monday's open level acts as a weekly pivot; trades taken Wednesday-Thursday that",
         "source": "r/algotrading",
         "created": "2026-06-29",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy shape requires manual backtest implementation\", \"stats\": {}, \"routing\": \"custom\"}"
       },
       {
         "id": 28,
