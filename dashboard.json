@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T07:15:05+00:00",
+  "generated_at": "2026-07-04T07:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4601,12 +4601,20 @@
     }
   },
   "research": {
-    "total_tested": 17,
+    "total_tested": 18,
     "total_pass": 5,
-    "total_fail": 12,
+    "total_fail": 13,
     "total_skip": 12,
-    "pass_rate": 29.4,
+    "pass_rate": 27.8,
     "recent": [
+      {
+        "hyp_id": 29,
+        "at": "2026-07-04T07:19:21.360088+00:00",
+        "verdict": "FAIL",
+        "reason": "OVERRIDE of the 2026-07-04 01:04 PASS \u2014 engine artifact, not an edge: all 1,005 closed trades exited at 'target' (win 100%, PF inf, maxDD $0); the stop branch never fired for this param set and trades whose target never hit stayed OPEN and were excluded = closed-trade survivorship. Degeneracy guard added to auto_backtest (_is_degenerate) so impossible perfection auto-FAILs before any gate.",
+        "routing": "reversion",
+        "override_of": "2026-07-04T01:04:17"
+      },
       {
         "hyp_id": 29,
         "at": "2026-07-04T01:04:17.069405+00:00",
@@ -4732,22 +4740,6 @@
           "total_usd": 38678.0,
           "max_dd": -3961.0,
           "calmar": 0.616
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": "25",
-        "at": "2026-06-26T07:35:56.919112+00:00",
-        "verdict": "PASS",
-        "reason": "Era gate PASS | WF 0/15 sit-outs | Calmar 1.06 | PF 3.47 Sharpe 3.92",
-        "stats": {
-          "n": 699,
-          "pf": 3.467,
-          "sharpe": 3.915,
-          "win_pct": 31.2,
-          "total_usd": 38324.0,
-          "max_dd": -2275.0,
-          "calmar": 1.057
         },
         "routing": "reversion"
       }
@@ -4979,7 +4971,7 @@
       },
       {
         "id": 29,
-        "status": "passed",
+        "status": "rejected",
         "summary": "MNQ 5m lag-1 return autocorrelation is driven by magnitude shrinkage (not direct",
         "source": "OpenAlex (Academic Papers)",
         "created": "2026-07-04",
