@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T01:00:07+00:00",
+  "generated_at": "2026-07-04T01:05:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4601,12 +4601,28 @@
     }
   },
   "research": {
-    "total_tested": 16,
-    "total_pass": 4,
+    "total_tested": 17,
+    "total_pass": 5,
     "total_fail": 12,
     "total_skip": 12,
-    "pass_rate": 25.0,
+    "pass_rate": 29.4,
     "recent": [
+      {
+        "hyp_id": 29,
+        "at": "2026-07-04T01:04:17.069405+00:00",
+        "verdict": "PASS",
+        "reason": "Era gate PASS | WF 0/16 sit-outs | Calmar inf | PF inf Sharpe 17.62",
+        "stats": {
+          "n": 1005,
+          "pf": 0,
+          "sharpe": 17.62,
+          "win_pct": 100.0,
+          "total_usd": 140171.0,
+          "max_dd": 0.0,
+          "calmar": 0
+        },
+        "routing": "reversion"
+      },
       {
         "hyp_id": 28,
         "at": "2026-07-03T01:04:56.487984+00:00",
@@ -4732,22 +4748,6 @@
           "total_usd": 38324.0,
           "max_dd": -2275.0,
           "calmar": 1.057
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": "24",
-        "at": "2026-06-26T07:35:54.507449+00:00",
-        "verdict": "PASS",
-        "reason": "Era gate PASS | WF 0/16 sit-outs | Calmar 0.62 | PF 2.57 Sharpe 2.24",
-        "stats": {
-          "n": 818,
-          "pf": 2.572,
-          "sharpe": 2.241,
-          "win_pct": 26.2,
-          "total_usd": 38678.0,
-          "max_dd": -3961.0,
-          "calmar": 0.616
         },
         "routing": "reversion"
       }
@@ -4976,6 +4976,14 @@
         "source": "arXiv q-fin (API)",
         "created": "2026-07-03",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires weekly COT data (external macro dataset with Friday release lag, Tuesday position-date mismatch) merged with 1m price bars\\u2014introduces severe look-ahead bias risk and data-alignment complexity incompatible with clean backtest architecture. COT is not a price-derived indicator; it violates the principle of using only OHLCV bars and their derivatives. Adaptive regime filtering on rolling 50th percentile of COT further complicates parameter stability across test periods.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 29,
+        "status": "passed",
+        "summary": "MNQ 5m lag-1 return autocorrelation is driven by magnitude shrinkage (not direct",
+        "source": "OpenAlex (Academic Papers)",
+        "created": "2026-07-04",
+        "verdict": "{\"verdict\": \"PASS\", \"reason\": \"Era gate PASS | WF 0/16 sit-outs | Calmar inf | PF inf Sharpe 17.62\", \"stats\": {\"n\": 1005, \"pf\": Infinity, \"sharpe\": 17.62, \"win_pct\": 100.0, \"total_usd\": 140171.0, \"max_dd\": 0.0, \"calmar\": Infinity}, \"routing\": \"reversion\"}"
       }
     ]
   },
