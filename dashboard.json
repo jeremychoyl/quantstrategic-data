@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T22:15:06+00:00",
+  "generated_at": "2026-07-04T22:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1202,12 +1202,12 @@
   ],
   "portfolio_stats": {
     "pf": 1.37,
-    "sharpe": 1.85,
+    "sharpe": 1.84,
     "max_dd_usd": 4765.0,
-    "win_pct": 56.2,
-    "total_pts": 3165.5,
-    "total_usd": 6331.0,
-    "trade_days": 89
+    "win_pct": 56.7,
+    "total_pts": 3166.1,
+    "total_usd": 6332.0,
+    "trade_days": 90
   },
   "active_positions": [],
   "net_returns": {
