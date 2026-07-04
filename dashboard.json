@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T00:55:06+00:00",
+  "generated_at": "2026-07-04T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5357,10 +5357,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-03T01:00:07+00:00",
+    "as_of": "2026-07-04T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No, do not allocate today. The backtest metrics are respectable (Sharpe 1.32, Calmar 0.91), but nine live trades showing -$365 P&L with -11.94 pts average slippage is noise masquerading as performance\u2014you need a minimum 100\u2013150 live trades to distinguish skill from luck in micro-futures, and the slippage overshoot suggests execution or market-impact issues that didn't surface in backtesting. More critically, the entire $2.8M annual backtest book sits in a single instrument (MNQ); that's concentration risk, not diversification, and one systematic regime break in Nasdaq micro-cap momentum ends the fund.\n\nNext step: Run a proper 12\u201318 month live track record across at least two uncorrelated futures markets (add ES or bonds), hit 150+ live trades minimum, and publish monthly net returns before you pitch again. Right now you have alpha ideas, not capital-ready proof.",
+    "verdict": "No allocation today. Nine live trades with a -$365 loss and -11.94 pt average slippage directly contradict the backtest's clean 37.8% ROC; either the live execution is structurally broken (slippage, commissions, fills) or the backtest is not reflecting real market microstructure. Single-market concentration on MNQ alone is a secondary red flag, but the core issue is that you haven't yet demonstrated the backtest translates to live edge\u2014that's the entire proposition.\n\nOne concrete next step to earn the check: Run 50\u2013100 live micro trades across all three strategies with full transparency on entry/exit fills, commissions, and slippage vs. backtest assumptions, then publish a brutally honest post-mortem explaining the live-vs-backtest gap. If it closes, we talk again; if it widens, we know why and what to fix.",
     "scorecard": [
       {
         "criterion": "Live track record",
@@ -5383,7 +5383,7 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$7,500",
+        "now": "micro \u00b7 ~$10,100",
         "pass": false
       },
       {
