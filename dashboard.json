@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T23:55:06+00:00",
+  "generated_at": "2026-07-04T00:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1144,13 +1144,13 @@
       {
         "date": "2026-07-01",
         "book": 2566.0,
-        "bh_nq": 8772,
+        "bh_nq": 8322,
         "tbill": 397
       },
       {
         "date": "2026-07-02",
         "book": 1931.0,
-        "bh_nq": 8772,
+        "bh_nq": 7236,
         "tbill": 399
       }
     ],
@@ -1158,19 +1158,14 @@
       "book_usd": 1931.0,
       "book_pct": 8.8,
       "book_maxdd_usd": 4766,
-      "bh_usd": 8772,
-      "bh_pct": 39.9,
+      "bh_usd": 7236,
+      "bh_pct": 32.9,
       "bh_maxdd_usd": 6317,
       "tbill_usd": 399,
-      "alpha_vs_bh_usd": -6841
+      "alpha_vs_bh_usd": -5305
     }
   },
   "last_7_days": [
-    {
-      "date": "2026-06-26",
-      "pnl_pts": -66.5,
-      "pnl_usd": -133.0
-    },
     {
       "date": "2026-06-29",
       "pnl_pts": 260.5,
@@ -1203,9 +1198,9 @@
   },
   "active_positions": [],
   "net_returns": {
-    "5d_pts": 692.25,
-    "5d_usd": 1384.5,
-    "5d_pct": 5.538,
+    "5d_pts": 758.75,
+    "5d_usd": 1517.5,
+    "5d_pct": 6.07,
     "ytd_pts": -497.0,
     "ytd_usd": -994.0,
     "ytd_pct": -3.976
