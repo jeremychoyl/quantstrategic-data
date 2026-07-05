@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T00:55:05+00:00",
+  "generated_at": "2026-07-05T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5362,10 +5362,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-04T01:00:06+00:00",
+    "as_of": "2026-07-05T01:00:08+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. Nine live trades with a -$365 loss and -11.94 pt average slippage directly contradict the backtest's clean 37.8% ROC; either the live execution is structurally broken (slippage, commissions, fills) or the backtest is not reflecting real market microstructure. Single-market concentration on MNQ alone is a secondary red flag, but the core issue is that you haven't yet demonstrated the backtest translates to live edge\u2014that's the entire proposition.\n\nOne concrete next step to earn the check: Run 50\u2013100 live micro trades across all three strategies with full transparency on entry/exit fills, commissions, and slippage vs. backtest assumptions, then publish a brutally honest post-mortem explaining the live-vs-backtest gap. If it closes, we talk again; if it widens, we know why and what to fix.",
+    "verdict": "No allocation today. Nine live trades generating a $365 loss against backtest Sharpe of 1.36 is statistically noise, but the combination of single-market concentration (all MNQ), microscopic AUM ($10k), and live slippage nearly 12 points worse than assumptions reveals material unproven risks: execution realism, capacity constraints, and zero decorrelation buffer if Nasdaq mean-reverts. The backtest is solid enough to warrant continued observation, but you need a minimum of 100+ live trades with positive P&L, documented performance across at least two uncorrelated markets, and evidence that slippage converges toward backtest before any serious LP writes a check.\n\nNext concrete step: Run a systematic search for a second market where the same three strategies produce Sharpe >1.0 over 16 years with <0.5 correlation to MNQ. If none exists, pivot to refining execution (live slippage gap) and scaling to $50k+ AUM on MNQ alone before raising. Come back in 6 months with 150 live trades.",
     "scorecard": [
       {
         "criterion": "Live track record",
