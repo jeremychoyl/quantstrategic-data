@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T00:55:06+00:00",
+  "generated_at": "2026-07-06T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5369,10 +5369,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-05T01:00:08+00:00",
+    "as_of": "2026-07-06T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. Nine live trades generating a $365 loss against backtest Sharpe of 1.36 is statistically noise, but the combination of single-market concentration (all MNQ), microscopic AUM ($10k), and live slippage nearly 12 points worse than assumptions reveals material unproven risks: execution realism, capacity constraints, and zero decorrelation buffer if Nasdaq mean-reverts. The backtest is solid enough to warrant continued observation, but you need a minimum of 100+ live trades with positive P&L, documented performance across at least two uncorrelated markets, and evidence that slippage converges toward backtest before any serious LP writes a check.\n\nNext concrete step: Run a systematic search for a second market where the same three strategies produce Sharpe >1.0 over 16 years with <0.5 correlation to MNQ. If none exists, pivot to refining execution (live slippage gap) and scaling to $50k+ AUM on MNQ alone before raising. Come back in 6 months with 150 live trades.",
+    "verdict": "No allocation today. Nine live trades with a -$365 loss and -11.94 pt average slippage is not yet signal\u2014it's noise, and the slippage gap between backtest and live execution is the canary: your models assume frictionless entry; real markets are charging you 12 points per round trip, which will crush a $3.8k/yr gross strategy at scale. The single critical blocker is single-market concentration: you've built three strategies on one instrument (MNQ) and claimed a \"thorough cross-instrument search found no edge\"\u2014that's either insufficient search rigor or a sign the edge is overfitted to one regime.\n\nTo earn the check: Run a honest 6-month live audit on at least two uncorrelated futures (e.g., one rate-sensitive, one commodity) with the same three algos, using the exact execution venue and order type you'll use at scale. Show me 50+ trades per strategy per instrument, cumulative positive P&L net of actual slippage, and a Sharpe above 1.0 live. That's the only path from \"promising backtest, unproven live system\" to \"fundable.\"",
     "scorecard": [
       {
         "criterion": "Live track record",
