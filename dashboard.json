@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T06:40:06+00:00",
+  "generated_at": "2026-07-06T06:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4983,7 +4983,7 @@
       },
       {
         "id": 30,
-        "status": "skip",
+        "status": "rejected",
         "summary": "A 5m trailing-stop momentum strategy that enters on close above the 200 EMA (dai",
         "source": "Manual URL",
         "created": "2026-07-06",
@@ -5333,6 +5333,16 @@
             "pattern": null
           }
         ]
+      },
+      {
+        "category": "Pipeline-sourced ideas (/backtest injections from Telegram)",
+        "items": [
+          {
+            "idea": "Trailing swing-low momentum 5m (HYP-30, \"4H Momentum Ride\" FTMO tweet)",
+            "reason": "Decisive reject \u2014 gross edge negative BEFORE cost. 5m close>prior-high + daily-EMA200 + ADX>20, stop trailed to each confirmed higher fractal low, EOD flat. PF 0.85 (both eras <1.0)\u2026",
+            "pattern": "In-sample mirage"
+          }
+        ]
       }
     ],
     "tested_rejected": [
@@ -5363,9 +5373,13 @@
       {
         "idea": "Fair Value Gap (FVG / 3-bar imbalance)",
         "reason": "0/22 configs. Continuation reading (enter impulse dir on the gap re-fill) best PF 1.069 but post-2021 only (e1 always <1, e1 0.81\u20130.87) + WF 9\u201313/16 sit-outs + Calmar ~0.06 +\u2026"
+      },
+      {
+        "idea": "Trailing swing-low momentum 5m (HYP-30, \"4H Momentum Ride\" FTMO tweet)",
+        "reason": "Decisive reject \u2014 gross edge negative BEFORE cost. 5m close>prior-high + daily-EMA200 + ADX>20, stop trailed to each confirmed higher fractal low, EOD flat. PF 0.85 (both eras <1.0)\u2026"
       }
     ],
-    "n_rejected": 47,
+    "n_rejected": 48,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
