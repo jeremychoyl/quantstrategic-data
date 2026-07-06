@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T06:35:06+00:00",
+  "generated_at": "2026-07-06T06:40:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4624,9 +4624,17 @@
     "total_tested": 18,
     "total_pass": 5,
     "total_fail": 13,
-    "total_skip": 13,
+    "total_skip": 14,
     "pass_rate": 27.8,
     "recent": [
+      {
+        "hyp_id": 30,
+        "at": "2026-07-06T06:38:29.992202+00:00",
+        "verdict": "SKIP",
+        "reason": "Adaptive trailing stop (swing low update logic) violates deterministic backtest architecture; stop price is path-dependent and requires real-time swing detection across 240-bar lookback, not computable from fixed OHLCV bar data alone. VIX real-time dependency also incompatible with standard bar-replay engine.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 27,
         "at": "2026-07-04T07:25:38.987776+00:00",
@@ -4738,22 +4746,6 @@
         "reason": "Strategy requires real-time ADX(14), +DI(14), -DI(14) indicator state as entry/exit triggers, not price-pattern-only signals. ADX threshold recalibration (20\u219225) is a tuning parameter on an indicator, not a price action rule. Breakout template architecture does not support indicator-gated entries or indicator-collapse exits; it requires price levels (ranges, bands, breakout bars) as primary signals. This strategy is indicator-adaptive and violates the rule that backtest templates work from bar OHLCV alone without live indicator state.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": "25",
-        "at": "2026-06-26T07:45:13.463997+00:00",
-        "verdict": "PASS",
-        "reason": "Era gate PASS | WF 0/16 sit-outs | Calmar 1.30 | PF 3.46 Sharpe 3.96",
-        "stats": {
-          "n": 761,
-          "pf": 3.463,
-          "sharpe": 3.96,
-          "win_pct": 30.2,
-          "total_usd": 44086.0,
-          "max_dd": -2125.0,
-          "calmar": 1.301
-        },
-        "routing": "reversion"
       }
     ],
     "queue": [
@@ -4991,11 +4983,11 @@
       },
       {
         "id": 30,
-        "status": "pending",
+        "status": "skip",
         "summary": "A 5m trailing-stop momentum strategy that enters on close above the 200 EMA (dai",
         "source": "Manual URL",
         "created": "2026-07-06",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Adaptive trailing stop (swing low update logic) violates deterministic backtest architecture; stop price is path-dependent and requires real-time swing detection across 240-bar lookback, not computable from fixed OHLCV bar data alone. VIX real-time dependency also incompatible with standard bar-replay engine.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
