@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:00:06+00:00",
+  "generated_at": "2026-07-07T19:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1293,9 +1293,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-07",
       "entry_px": 29477.0,
-      "current_px": 29391.0,
-      "pnl_pts": 86.0,
-      "pnl_usd": 172.0,
+      "current_px": 29376.5,
+      "pnl_pts": 100.5,
+      "pnl_usd": 201.0,
       "direction": "Short"
     }
   ],
@@ -5285,6 +5285,11 @@
             "pattern": null
           },
           {
+            "idea": "ORB retest-limit entry (execution study E3)",
+            "reason": "TESTED 2026-07-08 (src/exec_study.py, pre-registered bars, identical trend20-aligned signal universe n=2,072). Same deployed signal, execution via resting limit at the OR boundary\u2026",
+            "pattern": "Era-asymmetric"
+          },
+          {
             "idea": "ORB shortened opening range (OR < 30m)",
             "reason": "TESTED 2026-07-02 (backtest_orb_window.py). User: a shorter opening range = narrower range = tighter far-side stop = smaller big-ORB loss. Correct on the mechanics, but the edge dies. Sweep\u2026",
             "pattern": "Fails Calmar"
@@ -5555,7 +5560,7 @@
         "reason": "\u26a0\ufe0f The 4 \"STRONG\" candidates alerted 2026-07-06 were a trend20 look-ahead \u2014 the direction gate read the SAME day's 21:00 UTC close (12.5h after the 08:30 entry) and the SMA20 included the\u2026"
       }
     ],
-    "n_rejected": 54,
+    "n_rejected": 55,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
