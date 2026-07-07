@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T00:55:05+00:00",
+  "generated_at": "2026-07-07T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5418,21 +5418,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-06T01:00:06+00:00",
+    "as_of": "2026-07-07T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. Nine live trades with a -$365 loss and -11.94 pt average slippage is not yet signal\u2014it's noise, and the slippage gap between backtest and live execution is the canary: your models assume frictionless entry; real markets are charging you 12 points per round trip, which will crush a $3.8k/yr gross strategy at scale. The single critical blocker is single-market concentration: you've built three strategies on one instrument (MNQ) and claimed a \"thorough cross-instrument search found no edge\"\u2014that's either insufficient search rigor or a sign the edge is overfitted to one regime.\n\nTo earn the check: Run a honest 6-month live audit on at least two uncorrelated futures (e.g., one rate-sensitive, one commodity) with the same three algos, using the exact execution venue and order type you'll use at scale. Show me 50+ trades per strategy per instrument, cumulative positive P&L net of actual slippage, and a Sharpe above 1.0 live. That's the only path from \"promising backtest, unproven live system\" to \"fundable.\"",
+    "verdict": "No allocation today. You have ten live trades showing a $442 loss with massive average slippage (\u201310.9 pts), which either signals execution infrastructure problems or strategy fragility under real conditions that your backtest didn't capture. A 16-year backtest on a single micro-contract with $3.8k annual returns and Sharpe 1.36 is respectable work, but it's a theoretical proof-of-concept, not a fund\u2014and the live-to-backtest gap is already red-flagging reality.\n\nThe core blocker: single-market concentration on MNQ with zero correlation diversification, combined with a live record too small and underwater to differentiate luck from edge. One bad news cycle in Nasdaq, and your three strategies all break in the same direction.\n\nNext step to earn my check: Run live for 100+ trades minimum (6\u20139 months), hit positive cumulative P&L, and *simultaneously* demonstrate genuine uncorrelated edge in at least one other liquid micro product (ES, NQ, YM, or rate futures)\u2014even if it's one of your three strats ported over. Show me slippage converges to backtest norms and you can scale to $50k AUM without blowup. Then we talk.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "9 trades",
+        "now": "10 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-365",
+        "now": "$-442",
         "pass": false
       },
       {
@@ -5450,7 +5450,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "9 trades \u2014 too early",
+        "now": "10 trades \u2014 too early",
         "pass": false
       }
     ]
