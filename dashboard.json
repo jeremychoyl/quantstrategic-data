@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T17:05:05+00:00",
+  "generated_at": "2026-07-07T17:10:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5386,6 +5386,36 @@
             "pattern": "In-sample mirage"
           }
         ]
+      },
+      {
+        "category": "EU/Asia session sweep (748 configs, 5 families \u2014 closed 2026-07-08)",
+        "items": [
+          {
+            "idea": "EU-session ORB (15/30/45/60m range \u00d7 target-R \u00d7 Asia-pattern \u00d7 trend20 \u00d7 ATR-regime, 400 cells)",
+            "reason": "\u26a0\ufe0f The 4 \"STRONG\" candidates alerted 2026-07-06 were a trend20 look-ahead \u2014 the direction gate read the SAME day's 21:00 UTC close (12.5h after the 08:30 entry) and the SMA20 included the\u2026",
+            "pattern": "Look-ahead"
+          },
+          {
+            "idea": "Hour-range fade / continuation (\"magic hour\", 10:00\u201313:00 UTC ranges)",
+            "reason": "Zero era-passes in 96 cells.",
+            "pattern": null
+          },
+          {
+            "idea": "Asia\u2192EU continuation (Asia net move \u2265 N pts \u2192 EU ORB same direction)",
+            "reason": "Zero era-passes in 54 cells.",
+            "pattern": null
+          },
+          {
+            "idea": "Late-EU momentum (12:00\u201313:30 UTC entry, hold into/through US open)",
+            "reason": "Zero era-passes.",
+            "pattern": null
+          },
+          {
+            "idea": "Asia momentum (big first-N-hours move vs ATR \u2192 ride)",
+            "reason": "Zero era-passes.",
+            "pattern": null
+          }
+        ]
       }
     ],
     "tested_rejected": [
@@ -5420,9 +5450,13 @@
       {
         "idea": "Trailing swing-low momentum 5m (HYP-30, \"4H Momentum Ride\" FTMO tweet)",
         "reason": "Decisive reject \u2014 gross edge negative BEFORE cost. 5m close>prior-high + daily-EMA200 + ADX>20, stop trailed to each confirmed higher fractal low, EOD flat. PF 0.85 (both eras <1.0)\u2026"
+      },
+      {
+        "idea": "EU-session ORB (15/30/45/60m range \u00d7 target-R \u00d7 Asia-pattern \u00d7 trend20 \u00d7 ATR-regime, 400 cells)",
+        "reason": "\u26a0\ufe0f The 4 \"STRONG\" candidates alerted 2026-07-06 were a trend20 look-ahead \u2014 the direction gate read the SAME day's 21:00 UTC close (12.5h after the 08:30 entry) and the SMA20 included the\u2026"
       }
     ],
-    "n_rejected": 48,
+    "n_rejected": 53,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
