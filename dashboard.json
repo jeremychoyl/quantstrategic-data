@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T18:40:05+00:00",
+  "generated_at": "2026-07-07T18:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1287,7 +1287,18 @@
     "total_usd": 6546.0,
     "trade_days": 95
   },
-  "active_positions": [],
+  "active_positions": [
+    {
+      "strategy": "EMA Cross 5m",
+      "size": "1 MNQ",
+      "entry_date": "2026-07-07",
+      "entry_px": 29477.0,
+      "current_px": 29472.5,
+      "pnl_pts": 4.5,
+      "pnl_usd": 9.0,
+      "direction": "Short"
+    }
+  ],
   "net_returns": {
     "5d_pts": 459.75,
     "5d_usd": 919.5,
