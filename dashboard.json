@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T18:45:06+00:00",
+  "generated_at": "2026-07-07T18:50:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1293,9 +1293,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-07",
       "entry_px": 29477.0,
-      "current_px": 29472.5,
-      "pnl_pts": 4.5,
-      "pnl_usd": 9.0,
+      "current_px": 29451.0,
+      "pnl_pts": 26.0,
+      "pnl_usd": 52.0,
       "direction": "Short"
     }
   ],
@@ -5393,6 +5393,11 @@
             "idea": "VIX / volatility futures (VX/VXM)",
             "reason": "Feed EXISTS in Databento (XCBF.PITCH, Cboe Futures; daily $4.47) but rejected pre-buy on 3 structural strikes: (1) NOT tradeable on Tradovate \u2014 CFE-only; Tradovate = CME Group only (open\u2026",
             "pattern": "Redundant"
+          },
+          {
+            "idea": "FX cross-sectional carry (6 majors vs USD; the one carry variant the bond kills didn't cover)",
+            "reason": "TESTED + KILLED 2026-07-08, $0 (src/fx_carry_validate.py; FREE FRED spot + OECD 3m rates, monthly 2009-26, publication-lag-shifted signal, CIP futures-return construction; venue \u2713 CME\u2026",
+            "pattern": "Fails Calmar"
           }
         ]
       },
@@ -5550,7 +5555,7 @@
         "reason": "\u26a0\ufe0f The 4 \"STRONG\" candidates alerted 2026-07-06 were a trend20 look-ahead \u2014 the direction gate read the SAME day's 21:00 UTC close (12.5h after the 08:30 entry) and the SMA20 included the\u2026"
       }
     ],
-    "n_rejected": 53,
+    "n_rejected": 54,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
