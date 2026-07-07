@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:10:05+00:00",
+  "generated_at": "2026-07-07T19:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1293,9 +1293,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-07",
       "entry_px": 29477.0,
-      "current_px": 29338.0,
-      "pnl_pts": 139.0,
-      "pnl_usd": 278.0,
+      "current_px": 29334.0,
+      "pnl_pts": 143.0,
+      "pnl_usd": 286.0,
       "direction": "Short"
     }
   ],
@@ -5285,6 +5285,11 @@
             "pattern": null
           },
           {
+            "idea": "Macro-event-day conditioning (skip/size the deployed legs on FOMC/NFP days)",
+            "reason": "TESTED 2026-07-08 (src/event_conditioning_pulse.py, pre-registered \\",
+            "pattern": null
+          },
+          {
             "idea": "ORB retest-limit entry (execution study E3)",
             "reason": "TESTED 2026-07-08 (src/exec_study.py, pre-registered bars, identical trend20-aligned signal universe n=2,072). Same deployed signal, execution via resting limit at the OR boundary\u2026",
             "pattern": "Era-asymmetric"
@@ -5560,7 +5565,7 @@
         "reason": "\u26a0\ufe0f The 4 \"STRONG\" candidates alerted 2026-07-06 were a trend20 look-ahead \u2014 the direction gate read the SAME day's 21:00 UTC close (12.5h after the 08:30 entry) and the SMA20 included the\u2026"
       }
     ],
-    "n_rejected": 55,
+    "n_rejected": 56,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
