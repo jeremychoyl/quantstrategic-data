@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T15:55:06+00:00",
+  "generated_at": "2026-07-07T16:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4659,9 +4659,17 @@
     "total_tested": 18,
     "total_pass": 5,
     "total_fail": 13,
-    "total_skip": 14,
+    "total_skip": 15,
     "pass_rate": 27.8,
     "recent": [
+      {
+        "hyp_id": 31,
+        "at": "2026-07-07T15:59:39.200522+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires tick-level order-flow data (buy/sell tick counts per 5m bar) aggregated from real-time tick feeds, which exceeds stateless template architecture. Entry logic depends on tick imbalance ratio (buy_ticks / total_ticks > 0.58) as a real-time signal; exit depends on RSI(14) mean-reversion state machine (monitoring continuous RSI trajectory to 50\u00b13 band). This is a path-dependent, stateful strategy requiring live tick-disaggregation and multi-indicator state tracking across position lifecycle. The edge hypothesis (order-flow decoupling from momentum in high-velocity regimes) is coherent and potentially valid, but the mechanics cannot be expressed as a deterministic, stateless entry/exit rule set in any of the provided templates.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 30,
         "at": "2026-07-06T06:38:29.992202+00:00",
@@ -4773,14 +4781,6 @@
           "calmar": -0.031
         },
         "routing": "reversion"
-      },
-      {
-        "hyp_id": 26,
-        "at": "2026-06-28T01:04:51.795984+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires real-time ADX(14), +DI(14), -DI(14) indicator state as entry/exit triggers, not price-pattern-only signals. ADX threshold recalibration (20\u219225) is a tuning parameter on an indicator, not a price action rule. Breakout template architecture does not support indicator-gated entries or indicator-collapse exits; it requires price levels (ranges, bands, breakout bars) as primary signals. This strategy is indicator-adaptive and violates the rule that backtest templates work from bar OHLCV alone without live indicator state.",
-        "stats": {},
-        "routing": "pre_reject"
       }
     ],
     "queue": [
@@ -5023,6 +5023,14 @@
         "source": "Manual URL",
         "created": "2026-07-06",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Adaptive trailing stop (swing low update logic) violates deterministic backtest architecture; stop price is path-dependent and requires real-time swing detection across 240-bar lookback, not computable from fixed OHLCV bar data alone. VIX real-time dependency also incompatible with standard bar-replay engine.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 31,
+        "status": "skip",
+        "summary": "Since 2009, microstructural degradation of short-term trends is concentrated in ",
+        "source": "OpenAlex (Academic Papers)",
+        "created": "2026-07-07",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires tick-level order-flow data (buy/sell tick counts per 5m bar) aggregated from real-time tick feeds, which exceeds stateless template architecture. Entry logic depends on tick imbalance ratio (buy_ticks / total_ticks > 0.58) as a real-time signal; exit depends on RSI(14) mean-reversion state machine (monitoring continuous RSI trajectory to 50\\u00b13 band). This is a path-dependent, stateful strategy requiring live tick-disaggregation and multi-indicator state tracking across position lifecycle. The edge hypothesis (order-flow decoupling from momentum in high-velocity regimes) is coherent and potentially valid, but the mechanics cannot be expressed as a deterministic, stateless entry/exit rule set in any of the provided templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
