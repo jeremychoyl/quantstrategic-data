@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T06:25:06+00:00",
+  "generated_at": "2026-07-08T06:30:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5575,6 +5575,16 @@
             "pattern": null
           }
         ]
+      },
+      {
+        "category": "Second venue: US equities (Sharadar PIT pipeline \u2014 opened 2026-07-08)",
+        "items": [
+          {
+            "idea": "XS momentum 12-1 (S&P 500 L/S 10v10 decile, weekly, pre-registered)",
+            "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026",
+            "pattern": "Fails Calmar"
+          }
+        ]
       }
     ],
     "tested_rejected": [
@@ -5613,9 +5623,13 @@
       {
         "idea": "EU-session ORB (15/30/45/60m range \u00d7 target-R \u00d7 Asia-pattern \u00d7 trend20 \u00d7 ATR-regime, 400 cells)",
         "reason": "\u26a0\ufe0f The 4 \"STRONG\" candidates alerted 2026-07-06 were a trend20 look-ahead \u2014 the direction gate read the SAME day's 21:00 UTC close (12.5h after the 08:30 entry) and the SMA20 included the\u2026"
+      },
+      {
+        "idea": "XS momentum 12-1 (S&P 500 L/S 10v10 decile, weekly, pre-registered)",
+        "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 56,
+    "n_rejected": 57,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
