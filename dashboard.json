@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T00:55:06+00:00",
+  "generated_at": "2026-07-08T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5619,21 +5619,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-07T01:00:07+00:00",
+    "as_of": "2026-07-08T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. You have ten live trades showing a $442 loss with massive average slippage (\u201310.9 pts), which either signals execution infrastructure problems or strategy fragility under real conditions that your backtest didn't capture. A 16-year backtest on a single micro-contract with $3.8k annual returns and Sharpe 1.36 is respectable work, but it's a theoretical proof-of-concept, not a fund\u2014and the live-to-backtest gap is already red-flagging reality.\n\nThe core blocker: single-market concentration on MNQ with zero correlation diversification, combined with a live record too small and underwater to differentiate luck from edge. One bad news cycle in Nasdaq, and your three strategies all break in the same direction.\n\nNext step to earn my check: Run live for 100+ trades minimum (6\u20139 months), hit positive cumulative P&L, and *simultaneously* demonstrate genuine uncorrelated edge in at least one other liquid micro product (ES, NQ, YM, or rate futures)\u2014even if it's one of your three strats ported over. Show me slippage converges to backtest norms and you can scale to $50k AUM without blowup. Then we talk.",
+    "verdict": "No allocation today. Eleven live trades with a $233 loss and ten-point average slippage tell me execution is either fighting unfavorable fills or strategy assumptions aren't holding in real market microstructure\u2014and you won't know which until you have 50\u2013100 live trades. The backtest looks reasonable (Sharpe 1.15, Calmar 0.66) but it's already undermined by the single-market concentration and the glaring gap: you've chosen not to diversify because nothing else passed your search, which suggests either your edge is market-regime-specific or your signal design is over-fit to Nasdaq structure.\n\nRun 50+ live trades to at least directional significance (target ~$2\u20133k profit or loss, whichever comes first) while logging every slippage, fill-quality, and regime flag by market condition. If you can show me a live track record of 50+ trades with sub-5-point average slippage, consistent win rate alignment with backtest, and genuine attempts to find one uncorrelated secondary market in the same dataset, we talk again\u2014because then I'm evaluating a real trader, not a backtest overfitted to the last market regime.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "10 trades",
+        "now": "11 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-442",
+        "now": "$-233",
         "pass": false
       },
       {
@@ -5645,13 +5645,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,100",
+        "now": "micro \u00b7 ~$9,900",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "10 trades \u2014 too early",
+        "now": "11 trades \u2014 too early",
         "pass": false
       }
     ]
