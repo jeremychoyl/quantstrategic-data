@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T01:55:05+00:00",
+  "generated_at": "2026-07-09T02:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5673,6 +5673,11 @@
             "idea": "Multi-signal cost-aware combination (\"the RenTech test\": Ridge over rev5/mom/SUE/EAR + turnover control + cost ladder, pre-registered)",
             "reason": "REJECT \u2014 all kills fire: gross Sharpe 0.00 (e1 +0.08/e2 \u22120.14), negative at every cost rung 3\u201315bp. The decomposition IS the finding: turnover control (\u03bb=0.25 partial adjustment) cut\u2026",
             "pattern": null
+          },
+          {
+            "idea": "Equity breadth \u2192 NQ marginal provisionals (f1-tilt \u00b7 f3-dispersion\u00d7ORB \u00b7 f4-sector-rot\u00d7EMA \u2014 the Sharadar data's LAST open question)",
+            "reason": "Graduation of the 3 weak provisionals from the 16-test breadth pulse (the 2 strong ones were adjudicated 2026-07-08: f2\u00d7EMA-bench reject, f2\u00d7DC-size GRADUATED to shadow \u2014 the program's lone\u2026",
+            "pattern": "Fails Calmar"
           }
         ]
       }
@@ -5719,7 +5724,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 61,
+    "n_rejected": 62,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
