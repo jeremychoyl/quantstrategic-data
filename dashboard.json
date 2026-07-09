@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T09:25:05+00:00",
+  "generated_at": "2026-07-09T09:30:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5346,12 +5346,12 @@
           },
           {
             "idea": "DC short side",
-            "reason": "Era fail: 2021-26 PF 0.67 \u2014 NQ breakouts continue, don't revert.",
+            "reason": "Era fail post-2021 \u2014 NQ breakouts continue, don't revert. (Cited PF 0.67 is a pre-overlap-fix absolute; the script carries the 2026-07-08 overlap bug \u2014 verdict stands, re-run before citing\u2026",
             "pattern": "Era-asymmetric"
           },
           {
             "idea": "DC Exit1 (midline)",
-            "reason": "Valid but dominated by Exit3 (PF 1.75 vs 2.66, 4\u00d7 the DD, 100% entry overlap).",
+            "reason": "Valid but dominated by Exit3 (100% entry overlap, worse PF/DD on every cut). (Cited PF 1.75 vs 2.66 are pre-overlap-fix absolutes, both equally phantom-inflated \u2014 dominance verdict stands\u2026",
             "pattern": null
           },
           {
