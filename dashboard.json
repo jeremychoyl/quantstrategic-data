@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T07:10:05+00:00",
+  "generated_at": "2026-07-09T07:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5381,8 +5381,8 @@
           },
           {
             "idea": "EMA short side / bilateral",
-            "reason": "Short side is a REAL era-robust edge BUT +0.375 corr to ORB (redundant) \u2014 fails corr gate. (The old \"era-fail\" reason was a stale overnight-bug artifact, corrected.) Keep long-only.",
-            "pattern": "Redundant"
+            "reason": "NOT a rejection anymore \u2014 full arc: era-fail reason was a stale overnight-bug artifact (corrected) \u2192 rejected on +0.375 corr to raw ORB \u2192 that corr was itself the correlation_monitor bug\u2026",
+            "pattern": "Era-asymmetric"
           },
           {
             "idea": "EMA-short gated to ORB-flat days (decorrelation attempt)",
