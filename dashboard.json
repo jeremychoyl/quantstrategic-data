@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T05:20:05+00:00",
+  "generated_at": "2026-07-09T05:25:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5473,6 +5473,11 @@
             "idea": "Footprint / per-bar imbalance",
             "reason": "Per-5m-bar imbalance adds nothing beyond the rejected aggregate delta; EMA-filter variant overfits (PF 1.45\u21922.08 in-sample, breaks WF, corr 0.91 EMA). Modern-era only.",
             "pattern": "In-sample mirage"
+          },
+          {
+            "idea": "Footprint \u00d7 profile-location interaction (delta/imbalance/CVD at POC/VAH/VAL/HVN/LVN, + CVD divergence)",
+            "reason": "Pre-registered pulse (87421be), 0/5 dead: absorption-at-VA-edge \u22120.64 pts t \u22120.44 (location conditioning SUBTRACTS vs absorb-anywhere +2.83 \u2014 thesis refuted); CVD-div at extremes t \u22120.37\u2026",
+            "pattern": null
           }
         ]
       },
@@ -5724,7 +5729,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 62,
+    "n_rejected": 63,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
