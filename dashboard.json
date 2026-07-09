@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T22:15:06+00:00",
+  "generated_at": "2026-07-09T22:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1318,13 +1318,13 @@
     }
   ],
   "portfolio_stats": {
-    "pf": 1.38,
-    "sharpe": 1.93,
-    "max_dd_usd": 4622.0,
-    "win_pct": 56.7,
-    "total_pts": 3424.7,
-    "total_usd": 6849.0,
-    "trade_days": 97
+    "pf": 1.35,
+    "sharpe": 1.8,
+    "max_dd_usd": 4668.0,
+    "win_pct": 56.1,
+    "total_pts": 3208.7,
+    "total_usd": 6417.0,
+    "trade_days": 98
   },
   "active_positions": [],
   "net_returns": {
@@ -17990,9 +17990,9 @@
     }
   },
   "swing": {
-    "as_of": "2026-07-08",
+    "as_of": "2026-07-09",
     "state": "tdn_eabv_vhigh",
-    "close": 29287.75,
+    "close": 29822.0,
     "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
     "n": 408,
     "horizons": {
@@ -18127,18 +18127,18 @@
       {
         "state": "tup_eabv_vhigh",
         "state_human": "trend20 up \u00b7 above EMA200 \u00b7 vol high",
-        "n": 516,
+        "n": 517,
         "horizons": {
           "3d": {
-            "mfe_p60": 98.0,
-            "mae_p80": 243.75,
-            "fwd_med": 20.0,
-            "fwd_win_pct": 58.3
+            "mfe_p60": 99.65,
+            "mae_p80": 244.95,
+            "fwd_med": 19.25,
+            "fwd_win_pct": 58.2
           },
           "5d": {
             "mfe_p60": 136.0,
-            "mae_p80": 346.25,
-            "fwd_med": 31.12,
+            "mae_p80": 346.65,
+            "fwd_med": 31.25,
             "fwd_win_pct": 60.7
           }
         }
@@ -18220,6 +18220,6 @@
         }
       }
     ],
-    "generated_at": "2026-07-08T22:18:33+00:00"
+    "generated_at": "2026-07-09T22:18:04+00:00"
   }
 }
