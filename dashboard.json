@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T00:55:06+00:00",
+  "generated_at": "2026-07-09T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5723,21 +5723,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-08T01:00:07+00:00",
+    "as_of": "2026-07-09T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. Eleven live trades with a $233 loss and ten-point average slippage tell me execution is either fighting unfavorable fills or strategy assumptions aren't holding in real market microstructure\u2014and you won't know which until you have 50\u2013100 live trades. The backtest looks reasonable (Sharpe 1.15, Calmar 0.66) but it's already undermined by the single-market concentration and the glaring gap: you've chosen not to diversify because nothing else passed your search, which suggests either your edge is market-regime-specific or your signal design is over-fit to Nasdaq structure.\n\nRun 50+ live trades to at least directional significance (target ~$2\u20133k profit or loss, whichever comes first) while logging every slippage, fill-quality, and regime flag by market condition. If you can show me a live track record of 50+ trades with sub-5-point average slippage, consistent win rate alignment with backtest, and genuine attempts to find one uncorrelated secondary market in the same dataset, we talk again\u2014because then I'm evaluating a real trader, not a backtest overfitted to the last market regime.",
+    "verdict": "No allocation today. The live track record is both too brief (14 trades over ~8 months, not a statistically valid sample) and underwater (-$769), which contradicts the robust 16-year backtest\u2014a red flag for overfitting, regime change, or execution gap you haven't yet diagnosed. Single-market concentration on MNQ alone, combined with micro-contract scale and no demonstrated ability to attract or manage outside capital, makes this unfundable until you resolve the live-to-backtest disconnect.\n\nOne concrete next step to earn the check: Run a rigorous post-mortem on those 14 live trades against your 16-year backtest assumptions\u2014specifically slippage modeling (-4.55 pts live vs. backtest assumptions), entry/exit logic, and whether market microstructure in 2024\u20132025 has materially changed your edge. Document *exactly* where live diverged from backtest, then prove you've recalibrated your model. Come back with a clear hypothesis about the gap and evidence it's fixed, with at least 50+ live trades showing positive P&L tracking the backtest Sharpe before I'd even schedule a follow-up.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "11 trades",
+        "now": "14 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-233",
+        "now": "$-769",
         "pass": false
       },
       {
@@ -5755,7 +5755,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "11 trades \u2014 too early",
+        "now": "14 trades \u2014 too early",
         "pass": false
       }
     ]
