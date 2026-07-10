@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T00:55:06+00:00",
+  "generated_at": "2026-07-10T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5761,10 +5761,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-09T01:00:06+00:00",
+    "as_of": "2026-07-10T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live track record is both too brief (14 trades over ~8 months, not a statistically valid sample) and underwater (-$769), which contradicts the robust 16-year backtest\u2014a red flag for overfitting, regime change, or execution gap you haven't yet diagnosed. Single-market concentration on MNQ alone, combined with micro-contract scale and no demonstrated ability to attract or manage outside capital, makes this unfundable until you resolve the live-to-backtest disconnect.\n\nOne concrete next step to earn the check: Run a rigorous post-mortem on those 14 live trades against your 16-year backtest assumptions\u2014specifically slippage modeling (-4.55 pts live vs. backtest assumptions), entry/exit logic, and whether market microstructure in 2024\u20132025 has materially changed your edge. Document *exactly* where live diverged from backtest, then prove you've recalibrated your model. Come back with a clear hypothesis about the gap and evidence it's fixed, with at least 50+ live trades showing positive P&L tracking the backtest Sharpe before I'd even schedule a follow-up.",
+    "verdict": "Verdict: No allocation today.\n\nThe core issue is not the negative live P&L\u2014that's noise at 14 trades\u2014but that you're operating a single-market, single-asset-class fund ($-769 live on MNQ only) with a backtest Sharpe of 1.15 and Calmar of 0.66, both respectable but not exceptional enough to justify concentration risk. The -4.55pt average slippage is a red flag in live execution; that's material drag that wasn't fully modeled. Most critically, you need ~150\u2013200 live trades minimum before any LP writes a check, and you're at 7% of that baseline.\n\nNext step to earn the check: Run a clean 90-day live forward test (target: 80\u2013100 trades) on the three strategies with documented slippage-adjusted position sizing and trade-level accountability, then present live Sharpe and rolling max drawdown vs. backtest. If those metrics stay \u22651.0 Sharpe and \u2264 -$6k max DD, *then* we talk about capital.",
     "scorecard": [
       {
         "criterion": "Live track record",
@@ -5787,7 +5787,7 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$9,900",
+        "now": "micro \u00b7 ~$10,000",
         "pass": false
       },
       {
