@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T22:15:05+00:00",
+  "generated_at": "2026-07-10T22:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1332,11 +1332,11 @@
   ],
   "portfolio_stats": {
     "pf": 1.31,
-    "sharpe": 1.63,
-    "max_dd_usd": 5211.0,
+    "sharpe": 1.61,
+    "max_dd_usd": 5262.0,
     "win_pct": 55.6,
-    "total_pts": 2936.8,
-    "total_usd": 5874.0,
+    "total_pts": 2911.7,
+    "total_usd": 5823.0,
     "trade_days": 99
   },
   "active_positions": [],
@@ -18038,42 +18038,42 @@
     }
   },
   "swing": {
-    "as_of": "2026-07-09",
+    "as_of": "2026-07-10",
     "state": "tdn_eabv_vhigh",
-    "close": 29912.25,
+    "close": 29960.0,
     "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
-    "n": 408,
+    "n": 409,
     "horizons": {
       "3d": {
-        "mfe_p60": 127.75,
-        "mae_p80": 348.3,
-        "fwd_med": 29.62,
-        "fwd_win_pct": 59.3
+        "mfe_p60": 128.5,
+        "mae_p80": 350.1,
+        "fwd_med": 29.5,
+        "fwd_win_pct": 59.2
       },
       "5d": {
-        "mfe_p60": 177.45,
-        "mae_p80": 446.25,
-        "fwd_med": 44.25,
-        "fwd_win_pct": 58.1
+        "mfe_p60": 178.8,
+        "mae_p80": 448.25,
+        "fwd_med": 45.0,
+        "fwd_win_pct": 58.2
       }
     },
     "all_states": [
       {
         "state": "tdn_eabv_vhigh",
         "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
-        "n": 408,
+        "n": 409,
         "horizons": {
           "3d": {
-            "mfe_p60": 127.75,
-            "mae_p80": 348.3,
-            "fwd_med": 29.62,
-            "fwd_win_pct": 59.3
+            "mfe_p60": 128.5,
+            "mae_p80": 350.1,
+            "fwd_med": 29.5,
+            "fwd_win_pct": 59.2
           },
           "5d": {
-            "mfe_p60": 177.45,
-            "mae_p80": 446.25,
-            "fwd_med": 44.25,
-            "fwd_win_pct": 58.1
+            "mfe_p60": 178.8,
+            "mae_p80": 448.25,
+            "fwd_med": 45.0,
+            "fwd_win_pct": 58.2
           }
         }
       },
@@ -18268,6 +18268,6 @@
         }
       }
     ],
-    "generated_at": "2026-07-10T00:19:29+00:00"
+    "generated_at": "2026-07-10T22:18:06+00:00"
   }
 }
