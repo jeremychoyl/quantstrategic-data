@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T00:55:06+00:00",
+  "generated_at": "2026-07-11T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5787,21 +5787,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-10T01:00:06+00:00",
+    "as_of": "2026-07-11T01:00:05+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "Verdict: No allocation today.\n\nThe core issue is not the negative live P&L\u2014that's noise at 14 trades\u2014but that you're operating a single-market, single-asset-class fund ($-769 live on MNQ only) with a backtest Sharpe of 1.15 and Calmar of 0.66, both respectable but not exceptional enough to justify concentration risk. The -4.55pt average slippage is a red flag in live execution; that's material drag that wasn't fully modeled. Most critically, you need ~150\u2013200 live trades minimum before any LP writes a check, and you're at 7% of that baseline.\n\nNext step to earn the check: Run a clean 90-day live forward test (target: 80\u2013100 trades) on the three strategies with documented slippage-adjusted position sizing and trade-level accountability, then present live Sharpe and rolling max drawdown vs. backtest. If those metrics stay \u22651.0 Sharpe and \u2264 -$6k max DD, *then* we talk about capital.",
+    "verdict": "No allocation today. The live P&L is negative despite a 4000% win rate (signaling one or two outsized winners masking consistent small losses), and critically, you have only 15 live trades against 16 years of backtest\u2014nowhere near statistical significance to confirm the edge survives real execution, slippage, and market regime shift. The single largest red flag is that a $3,592/yr backtest across three strategies collapsed to negative live returns in weeks, and you've offered no root-cause analysis of *why*.\n\nConcrete next step to earn a check: Run 500+ live micro-contract trades across your three strategies (expect 6\u201312 months) and publish a monthly tearsheet showing win rate, consecutive loss streaks, slippage vs. backtest assumption, and correlation to market regime; only then will you have the empirical bedrock LPs need. Until then, you have a *hypothesis*, not a track record.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "14 trades",
+        "now": "15 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-769",
+        "now": "$-472",
         "pass": false
       },
       {
@@ -5813,13 +5813,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,000",
+        "now": "micro \u00b7 ~$10,600",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "14 trades \u2014 too early",
+        "now": "15 trades \u2014 too early",
         "pass": false
       }
     ]
