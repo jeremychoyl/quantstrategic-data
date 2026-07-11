@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:10:06+00:00",
+  "generated_at": "2026-07-11T22:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -696,6 +696,13 @@
       "orb": 1127.0,
       "dc": 813.0,
       "combined": 5011.0
+    },
+    {
+      "date": "2026-07-10",
+      "ema": 3884.0,
+      "orb": 691.0,
+      "dc": 813.0,
+      "combined": 4575.0
     }
   ],
   "benchmarks": {
@@ -1295,17 +1302,23 @@
         "book": 5011.0,
         "bh_nq": 8058,
         "tbill": 415
+      },
+      {
+        "date": "2026-07-10",
+        "book": 4575.0,
+        "bh_nq": 8080,
+        "tbill": 417
       }
     ],
     "summary": {
-      "book_usd": 5011.0,
-      "book_pct": 22.8,
-      "book_maxdd_usd": 5261,
-      "bh_usd": 8058,
-      "bh_pct": 36.6,
+      "book_usd": 4575.0,
+      "book_pct": 20.8,
+      "book_maxdd_usd": 5697,
+      "bh_usd": 8080,
+      "bh_pct": 36.7,
       "bh_maxdd_usd": 6317,
-      "tbill_usd": 415,
-      "alpha_vs_bh_usd": -3047
+      "tbill_usd": 417,
+      "alpha_vs_bh_usd": -3505
     }
   },
   "last_7_days": [
@@ -1431,13 +1444,13 @@
       "trade_days": 65
     },
     "orb": {
-      "pf": 1.12,
-      "sharpe": 0.75,
-      "max_dd_usd": 3976.0,
-      "win_pct": 52.4,
-      "total_pts": 563.6,
-      "total_usd": 1127.0,
-      "trade_days": 63
+      "pf": 1.07,
+      "sharpe": 0.45,
+      "max_dd_usd": 4412.0,
+      "win_pct": 51.6,
+      "total_pts": 345.6,
+      "total_usd": 691.0,
+      "trade_days": 64
     },
     "dc": {
       "pf": 1.59,
@@ -1449,22 +1462,22 @@
       "trade_days": 5
     },
     "ema+orb": {
-      "pf": 1.28,
-      "sharpe": 1.44,
-      "max_dd_usd": 5262.0,
-      "win_pct": 55.6,
-      "total_pts": 2505.4,
-      "total_usd": 5011.0,
-      "trade_days": 99
+      "pf": 1.25,
+      "sharpe": 1.3,
+      "max_dd_usd": 5698.0,
+      "win_pct": 55.0,
+      "total_pts": 2287.4,
+      "total_usd": 4575.0,
+      "trade_days": 100
     },
     "ema+orb+dc": {
-      "pf": 1.31,
-      "sharpe": 1.61,
-      "max_dd_usd": 5262.0,
-      "win_pct": 55.6,
-      "total_pts": 2911.7,
-      "total_usd": 5823.0,
-      "trade_days": 99
+      "pf": 1.28,
+      "sharpe": 1.48,
+      "max_dd_usd": 5698.0,
+      "win_pct": 55.0,
+      "total_pts": 2693.7,
+      "total_usd": 5387.0,
+      "trade_days": 100
     }
   },
   "strategy_backtest_stats": {
@@ -3478,15 +3491,15 @@
     },
     "orb": {
       "n_winners": 947,
-      "n_losers": 1127,
+      "n_losers": 1128,
       "n_breakeven": 0,
-      "total_net_usd": 5394,
+      "total_net_usd": 4958,
       "avg_win_usd": 120,
       "avg_loss_usd": -96,
       "largest_win_usd": 1139,
       "largest_loss_usd": -711,
       "gross_profit_usd": 113527,
-      "gross_loss_usd": -108132,
+      "gross_loss_usd": -108568,
       "monthly": [
         {
           "month": "2010-07",
@@ -4450,8 +4463,8 @@
         },
         {
           "month": "2026-07",
-          "pnl": -1993,
-          "equity": 5394
+          "pnl": -2429,
+          "equity": 4958
         }
       ]
     }
