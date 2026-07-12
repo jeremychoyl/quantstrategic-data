@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T22:25:06+00:00",
+  "generated_at": "2026-07-12T22:30:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5838,7 +5838,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-07-11T22:30:03+00:00",
+    "as_of": "2026-07-12T22:30:03+00:00",
     "note": "16-year backtest projection, 1-1-1 contracts (orb-ema-dc). ALL legs gated by the live trailing-252-trading-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is BILATERAL (short side deployed 2026-07-01; passed gates vs deployed ORB).",
     "n_strategies": 3,
     "per_strategy": [
@@ -13544,7 +13544,7 @@
       "note": "Modeled in the book stats. Two-tier daily limit scales with book size: block new entries at \u2212500 pts ($-1,000), flatten all at \u2212750 pts ($-1,500). In-sample the hard tier is dormant (effect \u2248 $0) \u2014 it's a catastrophe backstop, not a return lever."
     },
     "ytd_equity": {
-      "as_of": "2026-07-11T22:30:06+00:00",
+      "as_of": "2026-07-12T22:30:05+00:00",
       "since": "2026-01-01",
       "through": "2026-07-10",
       "note": "2026 YTD running equity, 1-1-1 contracts (orb-ema-dc), deployed config (trend20 ORB, gated bilateral EMA, DC). Backtest/OOS model \u2014 not realized fills.",
