@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T00:55:06+00:00",
+  "generated_at": "2026-07-13T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5807,10 +5807,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-12T01:00:06+00:00",
+    "as_of": "2026-07-13T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No, I would not allocate today. The 15 live trades represent a statistically meaningless sample\u2014you need a minimum 100\u2013150 live fills before any serious LP should commit capital\u2014and the live P&L of -$472 on top of zero track record creates an immediate credibility gap. The backtest metrics are solid (Sharpe 1.13, Calmar 0.59) and the discipline of a single-instrument focus is respectable, but 16 years of MNQ-only backtesting on three correlated strategies screams concentration risk; if MNQ momentum breaks, your entire fund breaks with it.\n\nDo this immediately: trade live for 90 more days (aim for 120+ fills total) with real money, document every trade rationale and slippage delta versus your backtest assumptions, and simultaneously run a genuine diversification audit on 2\u20133 non-Nasdaq micro-futures (ES, RTY, or bonds) to isolate whether your edge is truly MNQ-specific or if you've simply anchored to the market you backtested first. Once you land 120+ live trades with a positive P&L and a credible plan for uncorrelated satellite strategies, you'll have a fundable story.",
+    "verdict": "No allocation today. The live account is underwater after 15 trades with catastrophic average slippage (-4.42 pts on micro contracts is brutal execution), and a single market concentration on MNQ with no demonstrated edge outside it is a structural red flag\u2014the backtest's 1.13 Sharpe and 0.59 Calmar don't survive real market friction. The gap between $3,591 annual backtest returns and -$472 live is the real story: either the models are overfitted to historical patterns, or live trading reveals execution/timing problems the backtest hides.\n\nNext step to earn serious consideration: Run 6\u201312 months of live micro trading (minimum 100+ round-trip trades) while simultaneously backtesting a secondary market (ES, CL, or ZB) with the same three strategies using identical position sizing and slippage assumptions\u2014then show me either genuine profitability in live *and* a credible uncorrelated second sleeve, or a rigorous post-mortem explaining why the slippage delta exists and how you've fixed it. One-market, 15-trade stories don't move capital.",
     "scorecard": [
       {
         "criterion": "Live track record",
