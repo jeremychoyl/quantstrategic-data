@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T01:20:06+00:00",
+  "generated_at": "2026-07-14T01:25:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4959,12 +4959,28 @@
     }
   },
   "research": {
-    "total_tested": 18,
+    "total_tested": 19,
     "total_pass": 5,
-    "total_fail": 13,
+    "total_fail": 14,
     "total_skip": 16,
-    "pass_rate": 27.8,
+    "pass_rate": 26.3,
     "recent": [
+      {
+        "hyp_id": 35,
+        "at": "2026-07-14T01:24:29.328493+00:00",
+        "verdict": "FAIL",
+        "reason": "WF 4/16 sit-outs; Corr vs DC: 0.383 \u2265 0.3; Calmar 0.14 < 0.5 (maxDD $-5,572 too deep vs return \u2014 undeployable)",
+        "stats": {
+          "n": 635,
+          "pf": 1.24,
+          "sharpe": 0.884,
+          "win_pct": 40.3,
+          "total_usd": 12819.0,
+          "max_dd": -5572.0,
+          "calmar": 0.144
+        },
+        "routing": "reversion"
+      },
       {
         "hyp_id": 33,
         "at": "2026-07-14T01:04:59.095075+00:00",
@@ -5058,22 +5074,6 @@
           "total_usd": -7779.0,
           "max_dd": -15763.0,
           "calmar": -0.031
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": "25",
-        "at": "2026-06-28T06:50:15.896211+00:00",
-        "verdict": "FAIL",
-        "reason": "WF 7/16 sit-outs; Calmar 0.05 < 0.5 (maxDD $-5,802 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 761,
-          "pf": 1.088,
-          "sharpe": 0.393,
-          "win_pct": 31.3,
-          "total_usd": 4964.0,
-          "max_dd": -5802.0,
-          "calmar": 0.054
         },
         "routing": "reversion"
       }
@@ -5350,6 +5350,14 @@
         "source": "X/timeline",
         "created": "2026-07-14",
         "verdict": null
+      },
+      {
+        "id": 35,
+        "status": "failed",
+        "summary": "MNQ exhibits mean-reversion on 5m bars when price closes beyond 2-std deviation ",
+        "source": "Manual paste",
+        "created": "2026-07-14",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"WF 4/16 sit-outs; Corr vs DC: 0.383 \\u2265 0.3; Calmar 0.14 < 0.5 (maxDD $-5,572 too deep vs return \\u2014 undeployable)\", \"stats\": {\"n\": 635, \"pf\": 1.24, \"sharpe\": 0.884, \"win_pct\": 40.3, \"total_usd\": 12819.0, \"max_dd\": -5572.0, \"calmar\": 0.144}, \"routing\": \"reversion\"}"
       }
     ]
   },
