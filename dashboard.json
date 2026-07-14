@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T01:00:06+00:00",
+  "generated_at": "2026-07-14T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4962,9 +4962,17 @@
     "total_tested": 18,
     "total_pass": 5,
     "total_fail": 13,
-    "total_skip": 15,
+    "total_skip": 16,
     "pass_rate": 27.8,
     "recent": [
+      {
+        "hyp_id": 33,
+        "at": "2026-07-14T01:04:59.095075+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful, path-dependent logic (calendar day gating, session-reset SMA/RSI, multi-bar prior-state lookback, time-of-day exit coordination) that exceeds stateless template mechanics. Entry conditions depend on prior bar state AND calendar position AND indicator values AND warm-up cutoff time; exit depends on indicator crossover OR overbought trigger OR wall-clock time. This is a coherent, potentially valid strategy but its state-dependent architecture (session reset, calendar gating, time gates, prior-bar memory) cannot be decomposed into a single atomic breakout, reversion, ma_cross, session_momentum, or calendar template without losing the conditional logic.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 31,
         "at": "2026-07-07T15:59:39.200522+00:00",
@@ -5066,22 +5074,6 @@
           "total_usd": 4964.0,
           "max_dd": -5802.0,
           "calmar": 0.054
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": "24",
-        "at": "2026-06-28T06:50:13.299486+00:00",
-        "verdict": "FAIL",
-        "reason": "Era gate FAIL (2010-2020 PF 0.86 | 2021-2026 PF 0.92); WF 11/16 sit-outs; Calmar -0.03 < 0.5 (maxDD $-15,763 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 818,
-          "pf": 0.894,
-          "sharpe": -0.413,
-          "win_pct": 33.7,
-          "total_usd": -7779.0,
-          "max_dd": -15763.0,
-          "calmar": -0.031
         },
         "routing": "reversion"
       }
@@ -5341,6 +5333,22 @@
         "summary": "MNQ 5m ORB breakouts on single-break days exhibit 96.88% occurrence before a ses",
         "source": "X/bookmarks",
         "created": "2026-07-13",
+        "verdict": null
+      },
+      {
+        "id": 33,
+        "status": "skip",
+        "summary": "Institutional month-end cash-management creates predictable mean-reversion setup",
+        "source": "Alpha Architect",
+        "created": "2026-07-14",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful, path-dependent logic (calendar day gating, session-reset SMA/RSI, multi-bar prior-state lookback, time-of-day exit coordination) that exceeds stateless template mechanics. Entry conditions depend on prior bar state AND calendar position AND indicator values AND warm-up cutoff time; exit depends on indicator crossover OR overbought trigger OR wall-clock time. This is a coherent, potentially valid strategy but its state-dependent architecture (session reset, calendar gating, time gates, prior-bar memory) cannot be decomposed into a single atomic breakout, reversion, ma_cross, session_momentum, or calendar template without losing the conditional logic.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 34,
+        "status": "pending",
+        "summary": "MNQ exhibits asymmetric RSI behavior depending on VWAP deviation regime: in rang",
+        "source": "X/timeline",
+        "created": "2026-07-14",
         "verdict": null
       }
     ]
