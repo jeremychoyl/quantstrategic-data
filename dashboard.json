@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T00:55:06+00:00",
+  "generated_at": "2026-07-14T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5830,10 +5830,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-13T01:00:06+00:00",
+    "as_of": "2026-07-14T01:00:05+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live account is underwater after 15 trades with catastrophic average slippage (-4.42 pts on micro contracts is brutal execution), and a single market concentration on MNQ with no demonstrated edge outside it is a structural red flag\u2014the backtest's 1.13 Sharpe and 0.59 Calmar don't survive real market friction. The gap between $3,591 annual backtest returns and -$472 live is the real story: either the models are overfitted to historical patterns, or live trading reveals execution/timing problems the backtest hides.\n\nNext step to earn serious consideration: Run 6\u201312 months of live micro trading (minimum 100+ round-trip trades) while simultaneously backtesting a secondary market (ES, CL, or ZB) with the same three strategies using identical position sizing and slippage assumptions\u2014then show me either genuine profitability in live *and* a credible uncorrelated second sleeve, or a rigorous post-mortem explaining why the slippage delta exists and how you've fixed it. One-market, 15-trade stories don't move capital.",
+    "verdict": "No allocation today. The backtest is respectable in isolation (1.13 Sharpe, 33.8% ROC), but live execution has produced negative P&L across 15 trades with -4.42 pts average slippage\u2014a red flag that suggests either the edge is too thin to survive real market friction, the entry/exit logic breaks under live conditions, or position sizing is miscalibrated. Single-market concentration on MNQ with three correlated strategies sharing the same alpha source compounds this: you have no diversification buffer if that single edge degrades.\n\nConcrete next step to earn the check: Run 200+ live trades (minimum 3\u20136 months) demonstrating consistent positive P&L *after* slippage, and simultaneously backtest and live-trade one genuinely uncorrelated secondary strategy (e.g., rates, FX, or a mean-reversion instrument with opposite market beta) to prove the portfolio can weather Nasdaq drawdowns. Come back when you have both proof of live execution quality and real correlation reduction.",
     "scorecard": [
       {
         "criterion": "Live track record",
