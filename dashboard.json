@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T22:15:06+00:00",
+  "generated_at": "2026-07-15T22:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1370,12 +1370,12 @@
     }
   ],
   "portfolio_stats": {
-    "pf": 1.26,
-    "sharpe": 1.37,
-    "max_dd_usd": 6037.0,
+    "pf": 1.23,
+    "sharpe": 1.25,
+    "max_dd_usd": 6455.0,
     "win_pct": 53.9,
-    "total_pts": 2524.1,
-    "total_usd": 5048.0,
+    "total_pts": 2314.7,
+    "total_usd": 4629.0,
     "trade_days": 102
   },
   "active_positions": [],
@@ -18220,42 +18220,42 @@
     }
   },
   "swing": {
-    "as_of": "2026-07-14",
+    "as_of": "2026-07-15",
     "state": "tdn_eabv_vhigh",
-    "close": 29648.75,
+    "close": 29863.0,
     "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
-    "n": 411,
+    "n": 412,
     "horizons": {
       "3d": {
-        "mfe_p60": 128.75,
-        "mae_p80": 350.75,
-        "fwd_med": 29.5,
-        "fwd_win_pct": 59.1
+        "mfe_p60": 128.9,
+        "mae_p80": 350.65,
+        "fwd_med": 29.0,
+        "fwd_win_pct": 59.2
       },
       "5d": {
-        "mfe_p60": 179.25,
-        "mae_p80": 449.75,
-        "fwd_med": 45.0,
-        "fwd_win_pct": 58.2
+        "mfe_p60": 179.7,
+        "mae_p80": 449.25,
+        "fwd_med": 45.75,
+        "fwd_win_pct": 58.3
       }
     },
     "all_states": [
       {
         "state": "tdn_eabv_vhigh",
         "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
-        "n": 411,
+        "n": 412,
         "horizons": {
           "3d": {
-            "mfe_p60": 128.75,
-            "mae_p80": 350.75,
-            "fwd_med": 29.5,
-            "fwd_win_pct": 59.1
+            "mfe_p60": 128.9,
+            "mae_p80": 350.65,
+            "fwd_med": 29.0,
+            "fwd_win_pct": 59.2
           },
           "5d": {
-            "mfe_p60": 179.25,
-            "mae_p80": 449.75,
-            "fwd_med": 45.0,
-            "fwd_win_pct": 58.2
+            "mfe_p60": 179.7,
+            "mae_p80": 449.25,
+            "fwd_med": 45.75,
+            "fwd_win_pct": 58.3
           }
         }
       },
@@ -18450,6 +18450,6 @@
         }
       }
     ],
-    "generated_at": "2026-07-14T22:18:23+00:00"
+    "generated_at": "2026-07-15T22:17:49+00:00"
   }
 }
