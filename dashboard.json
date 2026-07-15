@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T01:00:06+00:00",
+  "generated_at": "2026-07-15T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -4977,9 +4977,17 @@
     "total_tested": 19,
     "total_pass": 5,
     "total_fail": 14,
-    "total_skip": 16,
+    "total_skip": 17,
     "pass_rate": 26.3,
     "recent": [
+      {
+        "hyp_id": 36,
+        "at": "2026-07-15T01:04:19.716343+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires real-time NASDAQ advance/decline tick data (TRIN calculation) as a live external microstructure feed synchronized with 5m price bars. This stateful, feed-dependent architecture exceeds stateless backtesting templates: TRIN values are not derivable from OHLCV alone, require continuous tick synchronization, and introduce path-dependent state (tick timing relative to bar close). The edge mechanism (breadth confirmation gate) is coherent but mechanics are untestable in a stateless bar-replay environment.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 35,
         "at": "2026-07-14T01:24:29.328493+00:00",
@@ -5073,22 +5081,6 @@
           "total_usd": 4964.0,
           "max_dd": -5802.0,
           "calmar": 0.054
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": "24",
-        "at": "2026-06-28T07:09:01.691769+00:00",
-        "verdict": "FAIL",
-        "reason": "Era gate FAIL (2010-2020 PF 0.86 | 2021-2026 PF 0.92); WF 11/16 sit-outs; Calmar -0.03 < 0.5 (maxDD $-15,763 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 818,
-          "pf": 0.894,
-          "sharpe": -0.413,
-          "win_pct": 33.7,
-          "total_usd": -7779.0,
-          "max_dd": -15763.0,
-          "calmar": -0.031
         },
         "routing": "reversion"
       }
@@ -5373,6 +5365,14 @@
         "source": "Manual paste",
         "created": "2026-07-14",
         "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"WF 4/16 sit-outs; Corr vs DC: 0.383 \\u2265 0.3; Calmar 0.14 < 0.5 (maxDD $-5,572 too deep vs return \\u2014 undeployable)\", \"stats\": {\"n\": 635, \"pf\": 1.24, \"sharpe\": 0.884, \"win_pct\": 40.3, \"total_usd\": 12819.0, \"max_dd\": -5572.0, \"calmar\": 0.144}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 36,
+        "status": "skip",
+        "summary": "TRIN extremes (\u22640.8 for bullish, \u22651.2 for bearish) filter 5m MNQ breakout entrie",
+        "source": "X/timeline",
+        "created": "2026-07-15",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time NASDAQ advance/decline tick data (TRIN calculation) as a live external microstructure feed synchronized with 5m price bars. This stateful, feed-dependent architecture exceeds stateless backtesting templates: TRIN values are not derivable from OHLCV alone, require continuous tick synchronization, and introduce path-dependent state (tick timing relative to bar close). The edge mechanism (breadth confirmation gate) is coherent but mechanics are untestable in a stateless bar-replay environment.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
