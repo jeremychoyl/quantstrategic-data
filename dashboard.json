@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T23:15:06+00:00",
+  "generated_at": "2026-07-16T23:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5622,6 +5622,11 @@
             "pattern": null
           },
           {
+            "idea": "Fourth reversion leg \u2014 RSI2 oversold",
+            "reason": "The cleanest reversion near-miss to date: RSI(2)<15 long, >SMA200 filter, PF 1.68 (e1 1.51 / e2 1.77), clears 3 gates the frontier usually fails \u2014 both-era, corr +0.04 to DC (genuine clean\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
             "idea": "Vol regime filter",
             "reason": "No improvement: high-vol-only loses 30% profit, zero DD benefit.",
             "pattern": null
@@ -5996,7 +6001,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 64,
+    "n_rejected": 65,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
