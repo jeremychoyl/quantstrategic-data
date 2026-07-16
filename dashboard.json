@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T22:10:06+00:00",
+  "generated_at": "2026-07-16T22:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1470,13 +1470,13 @@
       "trade_days": 67
     },
     "orb": {
-      "pf": 0.98,
-      "sharpe": -0.1,
+      "pf": 0.99,
+      "sharpe": -0.04,
       "max_dd_usd": 5259.0,
-      "win_pct": 50.0,
-      "total_pts": -77.6,
-      "total_usd": -155.0,
-      "trade_days": 66
+      "win_pct": 50.7,
+      "total_pts": -29.1,
+      "total_usd": -58.0,
+      "trade_days": 67
     },
     "dc": {
       "pf": 1.59,
@@ -1489,21 +1489,21 @@
     },
     "ema+orb": {
       "pf": 1.2,
-      "sharpe": 1.07,
+      "sharpe": 1.09,
       "max_dd_usd": 6455.0,
-      "win_pct": 53.9,
-      "total_pts": 1908.4,
-      "total_usd": 3817.0,
-      "trade_days": 102
+      "win_pct": 54.4,
+      "total_pts": 1957.0,
+      "total_usd": 3914.0,
+      "trade_days": 103
     },
     "ema+orb+dc": {
       "pf": 1.23,
-      "sharpe": 1.25,
+      "sharpe": 1.27,
       "max_dd_usd": 6455.0,
-      "win_pct": 53.9,
-      "total_pts": 2314.7,
-      "total_usd": 4629.0,
-      "trade_days": 102
+      "win_pct": 54.4,
+      "total_pts": 2363.3,
+      "total_usd": 4727.0,
+      "trade_days": 103
     }
   },
   "strategy_backtest_stats": {
@@ -3516,15 +3516,15 @@
       ]
     },
     "orb": {
-      "n_winners": 947,
+      "n_winners": 948,
       "n_losers": 1130,
       "n_breakeven": 0,
-      "total_net_usd": 4112,
+      "total_net_usd": 4209,
       "avg_win_usd": 120,
       "avg_loss_usd": -97,
       "largest_win_usd": 1139,
       "largest_loss_usd": -711,
-      "gross_profit_usd": 113527,
+      "gross_profit_usd": 113624,
       "gross_loss_usd": -109415,
       "monthly": [
         {
@@ -4489,8 +4489,8 @@
         },
         {
           "month": "2026-07",
-          "pnl": -3276,
-          "equity": 4112
+          "pnl": -3179,
+          "equity": 4209
         }
       ]
     }
