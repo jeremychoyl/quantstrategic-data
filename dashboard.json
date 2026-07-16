@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T17:25:06+00:00",
+  "generated_at": "2026-07-16T17:30:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5981,7 +5981,7 @@
     ]
   },
   "projections": {
-    "as_of": "2026-07-15T22:30:02+00:00",
+    "as_of": "2026-07-16T17:28:27+00:00",
     "note": "16-year backtest projection, 1-1-1 contracts (orb-ema-dc). ALL legs gated by the live trailing-252-trading-day PF rule (pf252>1.0, same as score_engine) and annualized over each leg's full calendar span. Book is ORB+EMA+DC (MNQ); Gold/Crude were retracted + removed 2026-06-28 (look-ahead artifact). EMA is BILATERAL (short side deployed 2026-07-01; passed gates vs deployed ORB).",
     "n_strategies": 3,
     "per_strategy": [
@@ -7102,6 +7102,95 @@
           "DC": 153
         }
       }
+    },
+    "planning_ladder": {
+      "haircut": 0.667,
+      "basis": "gated book, ~15y calendar-annualized, \u2154 selection-bias haircut (SOP rule 8)",
+      "source": "SCALING_LADDER.md",
+      "rungs": [
+        {
+          "step": 0,
+          "label": "0 (now)",
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "size_str": "1-1-1",
+          "min_equity": 22000,
+          "envelope_k": 13.6,
+          "note": "grandfathered @62%",
+          "model_ann": 3912,
+          "plan_ann": 2608,
+          "plan_mo": 217,
+          "model_maxdd": -5262
+        },
+        {
+          "step": 1,
+          "label": "1",
+          "size": [
+            2,
+            2,
+            1
+          ],
+          "size_str": "2-2-1",
+          "min_equity": 35000,
+          "envelope_k": 17.5,
+          "note": "",
+          "model_ann": 7245,
+          "plan_ann": 4830,
+          "plan_mo": 402,
+          "model_maxdd": -10523
+        },
+        {
+          "step": 2,
+          "label": "2",
+          "size": [
+            2,
+            2,
+            2
+          ],
+          "size_str": "2-2-2",
+          "min_equity": 55000,
+          "envelope_k": 27.2,
+          "note": "",
+          "model_ann": 7824,
+          "plan_ann": 5216,
+          "plan_mo": 435,
+          "model_maxdd": -10523
+        },
+        {
+          "step": 3,
+          "label": "3",
+          "size": [
+            2,
+            4,
+            2
+          ],
+          "size_str": "2-4-2",
+          "min_equity": 69000,
+          "envelope_k": 34.4,
+          "note": "orbcap tilt",
+          "model_ann": 12525,
+          "plan_ann": 8350,
+          "plan_mo": 696,
+          "model_maxdd": -13737
+        }
+      ],
+      "unit": {
+        "model_ann": 3912,
+        "plan_ann": 2608,
+        "plan_mo": 217,
+        "model_maxdd": -5262
+      },
+      "target": {
+        "monthly": 5000,
+        "annual": 60000,
+        "plan_mo_unit": 217,
+        "units": 23,
+        "capital_estimate": 500000
+      },
+      "note": "Planning = \u2154 \u00d7 model (haircut). Rungs step only at quarterly reviews when every promotion condition holds; a red or green month is never a reason to move."
     },
     "sizing": {
       "margins": {
@@ -13687,7 +13776,7 @@
       "note": "Modeled in the book stats. Two-tier daily limit scales with book size: block new entries at \u2212500 pts ($-1,000), flatten all at \u2212750 pts ($-1,500). In-sample the hard tier is dormant (effect \u2248 $0) \u2014 it's a catastrophe backstop, not a return lever."
     },
     "ytd_equity": {
-      "as_of": "2026-07-15T22:30:05+00:00",
+      "as_of": "2026-07-16T17:28:29+00:00",
       "since": "2026-01-01",
       "through": "2026-07-14",
       "note": "2026 YTD running equity, 1-1-1 contracts (orb-ema-dc), deployed config (trend20 ORB, gated bilateral EMA, DC). Backtest/OOS model \u2014 not realized fills.",
