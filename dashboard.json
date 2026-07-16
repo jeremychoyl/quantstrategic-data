@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T23:20:06+00:00",
+  "generated_at": "2026-07-16T23:25:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5627,6 +5627,11 @@
             "pattern": "Fails Calmar"
           },
           {
+            "idea": "Fourth momentum leg \u2014 daily Donchian/Turtle breakout",
+            "reason": "The momentum mirror of RSI2. Close>N-day-high long: breaks the momentum-correlation pattern \u2014 corr ~0.01\u20130.03 to BOTH ORB and EMA (every other momentum signal is 0.6\u20130.9), clears era (55d\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
             "idea": "Vol regime filter",
             "reason": "No improvement: high-vol-only loses 30% profit, zero DD benefit.",
             "pattern": null
@@ -6001,7 +6006,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 65,
+    "n_rejected": 66,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
