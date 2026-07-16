@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T20:20:06+00:00",
+  "generated_at": "2026-07-16T20:25:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5553,7 +5553,7 @@
       },
       {
         "name": "Look-ahead artifact",
-        "desc": "A bug, not an edge. TPO va-rotation (PF 4.46\u21920.98 once fixed), the reversion exit look-ahead. Caught by re-running with conservative fills."
+        "desc": "A bug, not an edge. TPO va-rotation (PF 4.46\u21920.98 once fixed), the reversion exit look-ahead, the EU/Asia trend20 leak, and the ORB+EMA agreement\u2026"
       }
     ],
     "rejected_groups": [
