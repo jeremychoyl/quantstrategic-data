@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T00:55:06+00:00",
+  "generated_at": "2026-07-16T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5943,21 +5943,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-15T01:00:05+00:00",
+    "as_of": "2026-07-16T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The backtest metrics are respectable (Sharpe 1.14, Calmar 0.59) but the live book\u201415 trades, -$472 P&L, and -4.42 pts average slippage that wasn't visible in backtest\u2014signals either model decay, execution friction, or both; you need 6\u201312 months of live data (minimum 200+ trades) to distinguish signal from noise at this scale. Single-market concentration on MNQ is a structural risk, not a feature, regardless of the honest search work.\n\nOne thing to earn the check: Run a live walk-forward test on your next 100 trades with real-time slippage/commission capture and a pre-committed stop-loss rule (e.g., if live Sharpe drops below 0.5 over any rolling 50-trade window, pause and audit). When you hit that milestone with positive P&L and <\u20132 pt slippage, we talk again.",
+    "verdict": "No allocation. The live P&L is negative, the sample (18 trades in ~6 months) is statistically meaningless against a 16-year backtest, and the entire edge is warehoused in a single instrument\u2014that's concentration risk, not systematic robustness. The backtest metrics (1.14 Sharpe, 0.59 Calmar) are solid but the gap between $3,600/yr on micro contracts and the capital constraints of a fund structure make the economics uncompelling even if the signal were proven.\n\nMost critical issue: You have zero evidence the live execution and psychology match the backtest. Slippage at -2.12 pts is already eating margin; the $562 loss doesn't prove failure, but it also doesn't prove success\u2014you need *at least 100\u2013150 live trades* to separate skill from noise.\n\nOne concrete deliverable to earn a check: Run live for another 12 months, hit 100+ trades on the three strategies together, achieve Sharpe \u22650.8 and positive cumulative P&L, *and* document a genuine uncorrelated second instrument or market regime (equity, rates, FX tail) that also backtests >1.0 Sharpe with independent edge. Then reapply with proof of diversification *and* durability. You've got the discipline; you don't yet have the data.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "15 trades",
+        "now": "18 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-472",
+        "now": "$-562",
         "pass": false
       },
       {
@@ -5975,7 +5975,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "15 trades \u2014 too early",
+        "now": "18 trades \u2014 too early",
         "pass": false
       }
     ]
