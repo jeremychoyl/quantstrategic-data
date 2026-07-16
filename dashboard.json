@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T23:10:06+00:00",
+  "generated_at": "2026-07-16T23:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5608,8 +5608,13 @@
           },
           {
             "idea": "DC short side",
-            "reason": "Era fail post-2021 \u2014 NQ breakouts continue, don't revert. (Cited PF 0.67 is a pre-overlap-fix absolute; the script carries the 2026-07-08 overlap bug \u2014 verdict stands, re-run before citing\u2026",
+            "reason": "Era fail post-2021 \u2014 NQ breakouts continue, don't revert. Honest post-overlap-fix PF 0.68 (e1 0.89 / e2 0.57), net \u2212$14.3k/16y (tmp/all_bilateral_mnq.py, 2026-07-17; supersedes the old\u2026",
             "pattern": "Era-asymmetric"
+          },
+          {
+            "idea": "All THREE legs bilateral (combined book)",
+            "reason": "STRICTLY WORSE + era-FAIL. All-bilateral book PF 1.15 (e1 0.94 / e2 1.26), Sharpe 0.53, Calmar 0.18, maxDD \u2212$13.8k vs deployed 1.35 / 1.01 / 0.57 / \u2212$6.3k. Not correlation (ORBbi\u2194EMAbi\u2026",
+            "pattern": "Fails Calmar"
           },
           {
             "idea": "DC Exit1 (midline)",
@@ -5991,7 +5996,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 63,
+    "n_rejected": 64,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
