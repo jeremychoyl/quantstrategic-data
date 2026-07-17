@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T23:55:06+00:00",
+  "generated_at": "2026-07-17T00:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1352,13 +1352,13 @@
       {
         "date": "2026-07-15",
         "book": 3670.0,
-        "bh_nq": 7886,
+        "bh_nq": 7562,
         "tbill": 428
       },
       {
         "date": "2026-07-16",
         "book": 3572.0,
-        "bh_nq": 7886,
+        "bh_nq": 7126,
         "tbill": 430
       }
     ],
@@ -1366,11 +1366,11 @@
       "book_usd": 3572.0,
       "book_pct": 16.2,
       "book_maxdd_usd": 6700,
-      "bh_usd": 7886,
-      "bh_pct": 35.8,
+      "bh_usd": 7126,
+      "bh_pct": 32.4,
       "bh_maxdd_usd": 6317,
       "tbill_usd": 430,
-      "alpha_vs_bh_usd": -4314
+      "alpha_vs_bh_usd": -3554
     }
   },
   "last_7_days": [
@@ -5093,6 +5093,13 @@
         "date": "2026-07-16",
         "day_pnl_pts": 37.0,
         "day_pnl_usd": 74.0,
+        "cum_pts": -244.0,
+        "cum_usd": -488.0
+      },
+      {
+        "date": "2026-07-17",
+        "day_pnl_pts": 0.0,
+        "day_pnl_usd": 0.0,
         "cum_pts": -244.0,
         "cum_usd": -488.0
       }
