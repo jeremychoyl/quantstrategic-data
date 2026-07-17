@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:50:06+00:00",
+  "generated_at": "2026-07-17T19:55:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1409,25 +1409,14 @@
     "total_usd": 4385.0,
     "trade_days": 104
   },
-  "active_positions": [
-    {
-      "strategy": "EMA Cross 5m",
-      "size": "1 MNQ",
-      "entry_date": "2026-07-17",
-      "entry_px": 28706.5,
-      "current_px": 28827.5,
-      "pnl_pts": -121.0,
-      "pnl_usd": -242.0,
-      "direction": "Short"
-    }
-  ],
+  "active_positions": [],
   "net_returns": {
     "5d_pts": -45.75,
     "5d_usd": -91.5,
     "5d_pct": -0.366,
-    "ytd_pts": -744.75,
-    "ytd_usd": -1489.5,
-    "ytd_pct": -5.958
+    "ytd_pts": -860.25,
+    "ytd_usd": -1720.5,
+    "ytd_pct": -6.882
   },
   "strategies": {
     "orb_30m": {
@@ -4958,6 +4947,27 @@
         "vs_expectancy_usd": -391.52,
         "week": "W4 (Jul 13)",
         "trade_date": "2026-07-17"
+      },
+      {
+        "strategy": "EMA Cross 5m",
+        "strategy_key": "ema",
+        "direction": "Short",
+        "entry_time_sgt": "2026-07-17 23:25",
+        "entry_signal_ref": 28692.25,
+        "entry_fill": 28706.5,
+        "entry_slippage_pts": -14.25,
+        "exit_time_sgt": "2026-07-18 03:55",
+        "exit_fill": 28822.0,
+        "exit_type": "eod",
+        "contracts": 1,
+        "actual_pnl_pts": -115.5,
+        "actual_pnl_usd": -231.0,
+        "backtest_exp_pts": 9.51,
+        "backtest_exp_usd": 19.02,
+        "vs_expectancy_pts": -125.01,
+        "vs_expectancy_usd": -250.02,
+        "week": "W4 (Jul 13)",
+        "trade_date": "2026-07-17"
       }
     ],
     "weeks": [
@@ -4993,9 +5003,9 @@
       },
       {
         "week": "W4 (Jul 13)",
-        "trades_count": 5,
-        "total_pnl_pts": -194.25,
-        "total_pnl_usd": -388.5
+        "trades_count": 6,
+        "total_pnl_pts": -309.75,
+        "total_pnl_usd": -619.5
       }
     ],
     "week_list": [
@@ -5135,18 +5145,18 @@
       },
       {
         "date": "2026-07-17",
-        "day_pnl_pts": -186.25,
-        "day_pnl_usd": -372.5,
-        "cum_pts": -430.25,
-        "cum_usd": -860.5
+        "day_pnl_pts": -301.75,
+        "day_pnl_usd": -603.5,
+        "cum_pts": -545.75,
+        "cum_usd": -1091.5
       }
     ],
     "summary": {
-      "total_trades": 20,
-      "total_pnl_pts": -430.25,
-      "total_pnl_usd": -860.5,
-      "win_rate": 40.0,
-      "avg_slippage_pts": -0.96,
+      "total_trades": 21,
+      "total_pnl_pts": -545.75,
+      "total_pnl_usd": -1091.5,
+      "win_rate": 38.1,
+      "avg_slippage_pts": -1.6,
       "live_since": "2026-06-23",
       "manual_interventions_excluded": 1
     }
