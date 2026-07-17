@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T14:50:06+00:00",
+  "generated_at": "2026-07-17T14:55:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1410,9 +1410,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-17",
       "entry_px": 28880.75,
-      "current_px": 28789.0,
-      "pnl_pts": -91.75,
-      "pnl_usd": -183.5,
+      "current_px": 28762.0,
+      "pnl_pts": -118.75,
+      "pnl_usd": -237.5,
       "direction": "Long"
     }
   ],
