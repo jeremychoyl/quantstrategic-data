@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T01:00:06+00:00",
+  "generated_at": "2026-07-17T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5118,9 +5118,17 @@
     "total_tested": 19,
     "total_pass": 5,
     "total_fail": 14,
-    "total_skip": 17,
+    "total_skip": 18,
     "pass_rate": 26.3,
     "recent": [
+      {
+        "hyp_id": 37,
+        "at": "2026-07-17T01:04:56.667493+00:00",
+        "verdict": "SKIP",
+        "reason": "Stateful volatility-percentile trailing logic with multi-timeframe state (5m realized vol percentile rank + daily ATR/VIX context) exceeds stateless backtest architecture. Exit trigger (percentile crosses below 40) is path-dependent; position state must track realized vol since entry, not available in event-driven entry-signal framework. Trailing stop (1.8\u00d7 ATR from 5m high since entry) requires continuous position state and historical intra-trade high tracking.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 36,
         "at": "2026-07-15T01:04:19.716343+00:00",
@@ -5208,22 +5216,6 @@
         "reason": "Strategy requires weekly COT data (external macro dataset with Friday release lag, Tuesday position-date mismatch) merged with 1m price bars\u2014introduces severe look-ahead bias risk and data-alignment complexity incompatible with clean backtest architecture. COT is not a price-derived indicator; it violates the principle of using only OHLCV bars and their derivatives. Adaptive regime filtering on rolling 50th percentile of COT further complicates parameter stability across test periods.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": "25",
-        "at": "2026-06-28T07:09:04.239494+00:00",
-        "verdict": "FAIL",
-        "reason": "WF 7/16 sit-outs; Calmar 0.05 < 0.5 (maxDD $-5,802 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 761,
-          "pf": 1.088,
-          "sharpe": 0.393,
-          "win_pct": 31.3,
-          "total_usd": 4964.0,
-          "max_dd": -5802.0,
-          "calmar": 0.054
-        },
-        "routing": "reversion"
       }
     ],
     "queue": [
@@ -5514,6 +5506,14 @@
         "source": "X/timeline",
         "created": "2026-07-15",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time NASDAQ advance/decline tick data (TRIN calculation) as a live external microstructure feed synchronized with 5m price bars. This stateful, feed-dependent architecture exceeds stateless backtesting templates: TRIN values are not derivable from OHLCV alone, require continuous tick synchronization, and introduce path-dependent state (tick timing relative to bar close). The edge mechanism (breadth confirmation gate) is coherent but mechanics are untestable in a stateless bar-replay environment.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 37,
+        "status": "skip",
+        "summary": "Volatility regimes identified via realized volatility percentile rank gate direc",
+        "source": "X/timeline",
+        "created": "2026-07-17",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Stateful volatility-percentile trailing logic with multi-timeframe state (5m realized vol percentile rank + daily ATR/VIX context) exceeds stateless backtest architecture. Exit trigger (percentile crosses below 40) is path-dependent; position state must track realized vol since entry, not available in event-driven entry-signal framework. Trailing stop (1.8\\u00d7 ATR from 5m high since entry) requires continuous position state and historical intra-trade high tracking.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
@@ -6017,21 +6017,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-16T01:00:07+00:00",
+    "as_of": "2026-07-17T01:00:13+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation. The live P&L is negative, the sample (18 trades in ~6 months) is statistically meaningless against a 16-year backtest, and the entire edge is warehoused in a single instrument\u2014that's concentration risk, not systematic robustness. The backtest metrics (1.14 Sharpe, 0.59 Calmar) are solid but the gap between $3,600/yr on micro contracts and the capital constraints of a fund structure make the economics uncompelling even if the signal were proven.\n\nMost critical issue: You have zero evidence the live execution and psychology match the backtest. Slippage at -2.12 pts is already eating margin; the $562 loss doesn't prove failure, but it also doesn't prove success\u2014you need *at least 100\u2013150 live trades* to separate skill from noise.\n\nOne concrete deliverable to earn a check: Run live for another 12 months, hit 100+ trades on the three strategies together, achieve Sharpe \u22650.8 and positive cumulative P&L, *and* document a genuine uncorrelated second instrument or market regime (equity, rates, FX tail) that also backtests >1.0 Sharpe with independent edge. Then reapply with proof of diversification *and* durability. You've got the discipline; you don't yet have the data.",
+    "verdict": "No allocation today. The live track record is statistically meaningless (19 trades, negative P&L, 4210% win rate is a red flag\u2014likely a single outsized win masking poor consistency), and the backtest-to-live gap is too wide: $3,572/yr annualized returns on a $10,800 base don't scale to fundable AUM, the Calmar ratio (0.56) reveals drawdown risk relative to returns, and concentration in a single instrument (MNQ) with no demonstrated edge elsewhere is a single-point-of-failure portfolio. The fundamental problem is you're asking me to commit capital to someone with less than 2 months of live execution, no positive P&L buffer, and no cushion for the inevitable live slippage and behavioral drift that hasnishes backtest assumptions.\n\nNext step to earn the check: Run live for 12 months minimum (aim for 200+ trades), hit cumulative positive P&L of +$2,000 or better, *then* present a credible 3-market or multi-timeframe expansion backtest showing edge holds outside MNQ. That proves repeatability and reduces concentration risk. Only then would I even consider a pre-series A conversation.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "18 trades",
+        "now": "19 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-562",
+        "now": "$-488",
         "pass": false
       },
       {
@@ -6043,13 +6043,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,600",
+        "now": "micro \u00b7 ~$10,800",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "18 trades \u2014 too early",
+        "now": "19 trades \u2014 too early",
         "pass": false
       }
     ]
