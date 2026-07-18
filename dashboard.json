@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T22:15:06+00:00",
+  "generated_at": "2026-07-18T22:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -18451,7 +18451,7 @@
   "swing": {
     "as_of": "2026-07-17",
     "state": "tdn_eabv_vhigh",
-    "close": 28859.0,
+    "close": 28764.25,
     "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
     "n": 414,
     "horizons": {
@@ -18679,6 +18679,6 @@
         }
       }
     ],
-    "generated_at": "2026-07-17T22:17:53+00:00"
+    "generated_at": "2026-07-18T22:18:03+00:00"
   }
 }
