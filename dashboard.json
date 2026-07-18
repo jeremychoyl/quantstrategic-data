@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:00:07+00:00",
+  "generated_at": "2026-07-18T01:05:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5157,12 +5157,20 @@
     }
   },
   "research": {
-    "total_tested": 19,
+    "total_tested": 20,
     "total_pass": 5,
-    "total_fail": 14,
+    "total_fail": 15,
     "total_skip": 18,
-    "pass_rate": 26.3,
+    "pass_rate": 25.0,
     "recent": [
+      {
+        "hyp_id": 38,
+        "at": "2026-07-18T01:04:24.651421+00:00",
+        "verdict": "FAIL",
+        "reason": "No trades generated \u2014 conditions too restrictive",
+        "stats": {},
+        "routing": "reversion"
+      },
       {
         "hyp_id": 37,
         "at": "2026-07-17T01:04:56.667493+00:00",
@@ -5250,14 +5258,6 @@
           "calmar": 0
         },
         "routing": "reversion"
-      },
-      {
-        "hyp_id": 28,
-        "at": "2026-07-03T01:04:56.487984+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires weekly COT data (external macro dataset with Friday release lag, Tuesday position-date mismatch) merged with 1m price bars\u2014introduces severe look-ahead bias risk and data-alignment complexity incompatible with clean backtest architecture. COT is not a price-derived indicator; it violates the principle of using only OHLCV bars and their derivatives. Adaptive regime filtering on rolling 50th percentile of COT further complicates parameter stability across test periods.",
-        "stats": {},
-        "routing": "pre_reject"
       }
     ],
     "queue": [
@@ -5556,6 +5556,14 @@
         "source": "X/timeline",
         "created": "2026-07-17",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Stateful volatility-percentile trailing logic with multi-timeframe state (5m realized vol percentile rank + daily ATR/VIX context) exceeds stateless backtest architecture. Exit trigger (percentile crosses below 40) is path-dependent; position state must track realized vol since entry, not available in event-driven entry-signal framework. Trailing stop (1.8\\u00d7 ATR from 5m high since entry) requires continuous position state and historical intra-trade high tracking.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 38,
+        "status": "failed",
+        "summary": "Price rejection from overnight extremes (prior close \u00b1 1 ATR) combined with intr",
+        "source": "X/timeline",
+        "created": "2026-07-18",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"No trades generated \\u2014 conditions too restrictive\", \"stats\": {}, \"routing\": \"reversion\"}"
       }
     ]
   },
