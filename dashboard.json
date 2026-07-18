@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T00:55:06+00:00",
+  "generated_at": "2026-07-18T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6059,21 +6059,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-17T01:00:13+00:00",
+    "as_of": "2026-07-18T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live track record is statistically meaningless (19 trades, negative P&L, 4210% win rate is a red flag\u2014likely a single outsized win masking poor consistency), and the backtest-to-live gap is too wide: $3,572/yr annualized returns on a $10,800 base don't scale to fundable AUM, the Calmar ratio (0.56) reveals drawdown risk relative to returns, and concentration in a single instrument (MNQ) with no demonstrated edge elsewhere is a single-point-of-failure portfolio. The fundamental problem is you're asking me to commit capital to someone with less than 2 months of live execution, no positive P&L buffer, and no cushion for the inevitable live slippage and behavioral drift that hasnishes backtest assumptions.\n\nNext step to earn the check: Run live for 12 months minimum (aim for 200+ trades), hit cumulative positive P&L of +$2,000 or better, *then* present a credible 3-market or multi-timeframe expansion backtest showing edge holds outside MNQ. That proves repeatability and reduces concentration risk. Only then would I even consider a pre-series A conversation.",
+    "verdict": "No allocation today. The live P&L is underwater at -$1,092 on just 21 trades\u2014statistically meaningless noise, but it breaks the most basic LP confidence signal (live >= backtest profitability); more critically, the entire portfolio is a single-instrument bet (MNQ only), which means you're selling a timing signal, not a diversified systematic edge, and a 1-person shop with zero correlation hedges and $10k capacity has no margin for operational or market regime failure. The backtest Sharpe of 1.14 over 16 years is respectable but unremarkable, and its 0.57 Calmar suggests drawdowns bite hard\u2014live you haven't yet faced one.\n\nOne concrete thing: Run a 90-day live track record on at least two uncorrelated markets (ES, RTY, crude, bonds\u2014whatever your systematic search can defend) with the same risk allocation per contract. If you can show me live wins on a second instrument *and* positive cumulative P&L across both by Q4 2026, I'll revisit. You're not ready for capital until you prove the system survives a regime shift and you're not a one-trick operator.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "19 trades",
+        "now": "21 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-488",
+        "now": "$-1,092",
         "pass": false
       },
       {
@@ -6085,13 +6085,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,800",
+        "now": "micro \u00b7 ~$10,700",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "19 trades \u2014 too early",
+        "now": "21 trades \u2014 too early",
         "pass": false
       }
     ]
