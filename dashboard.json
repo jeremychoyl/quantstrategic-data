@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T00:55:06+00:00",
+  "generated_at": "2026-07-19T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6067,10 +6067,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-18T01:00:07+00:00",
+    "as_of": "2026-07-19T01:00:05+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live P&L is underwater at -$1,092 on just 21 trades\u2014statistically meaningless noise, but it breaks the most basic LP confidence signal (live >= backtest profitability); more critically, the entire portfolio is a single-instrument bet (MNQ only), which means you're selling a timing signal, not a diversified systematic edge, and a 1-person shop with zero correlation hedges and $10k capacity has no margin for operational or market regime failure. The backtest Sharpe of 1.14 over 16 years is respectable but unremarkable, and its 0.57 Calmar suggests drawdowns bite hard\u2014live you haven't yet faced one.\n\nOne concrete thing: Run a 90-day live track record on at least two uncorrelated markets (ES, RTY, crude, bonds\u2014whatever your systematic search can defend) with the same risk allocation per contract. If you can show me live wins on a second instrument *and* positive cumulative P&L across both by Q4 2026, I'll revisit. You're not ready for capital until you prove the system survives a regime shift and you're not a one-trick operator.",
+    "verdict": "No\u2014not yet. The three-week live track record is a $1,092 loss on just 21 trades, which directly contradicts the backtest's 33.7% annualized return; that gap is too wide and too early to distinguish between luck, slippage reality, or genuine model decay. A single-market fund concentrated entirely on MNQ with zero uncorrelated diversification compounds the risk\u2014if Nasdaq mean-reversion or volatility regimes shift, all three strategies suffer together, and there's no portfolio cushion.\n\nYour one concrete next step: Run 6 months of live trading (minimum 200+ trades across normal and stressed market regimes), document exactly where live slippage, fills, and volatility differ from backtest assumptions, and identify *at least one* uncorrelated secondary market or asset class where your edge holds. Only then will I see the operational discipline and true edge necessary to allocate.",
     "scorecard": [
       {
         "criterion": "Live track record",
