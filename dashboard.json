@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T09:15:06+00:00",
+  "generated_at": "2026-07-19T09:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5782,6 +5782,11 @@
             "pattern": "Look-ahead"
           },
           {
+            "idea": "Drawdown-responsive BOOK sizing (de-risk the whole book as its drawdown deepens \u2014 \"equity-curve trading\")",
+            "reason": "TESTED 2026-07-19, the book-level risk-control lever. Pre-registered: f=clip(1\u2212",
+            "pattern": null
+          },
+          {
             "idea": "Calendar / seasonality (turn-of-month + day-of-week)",
             "reason": "SWEPT 2026-06-30, 72 configs (TOM pre/exit grid + DOW\u00d7hold) \u00d7 long/short/bilateral through the full gates \u2192 0/72 deployable. The long side is a REAL seasonal edge (TOM long & Friday-hold\u2026",
             "pattern": "Redundant"
@@ -6081,7 +6086,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 68,
+    "n_rejected": 69,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
