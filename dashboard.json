@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T08:40:05+00:00",
+  "generated_at": "2026-07-19T08:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5772,8 +5772,8 @@
             "pattern": "Fails Calmar"
           },
           {
-            "idea": "Graded-ATR EMA sizing tilt (size EMA up by ATR-rank instead of the binary ATR33p gate)",
-            "reason": "TESTED 2026-07-19, follow-up to the big-EOD-winner characterization (chars *looked* like EMA's risk-adj edge concentrates in high-vol/wide-OR entries). Pre-registered parameter-free\u2026",
+            "idea": "Graded-ATR EMA sizing tilt (size EMA up by ATR-rank instead of the binary ATR33p gate) \u2014 NQ + all 6 held instruments",
+            "reason": "TESTED 2026-07-19, follow-up to the big-EOD-winner characterization then \"test on all other datasets.\" Pre-registered parameter-free ct=clip(1+round(2\u00b7(atr_rank\u22120.33)/(1\u22120.33)),1,3)\u2026",
             "pattern": "Look-ahead"
           },
           {
