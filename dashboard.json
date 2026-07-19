@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T08:55:05+00:00",
+  "generated_at": "2026-07-19T09:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5777,6 +5777,11 @@
             "pattern": "Look-ahead"
           },
           {
+            "idea": "Per-trade volatility-targeting on EMA (size DOWN in high vol to equalize $-risk \u2014 the mirror of graded-ATR)",
+            "reason": "TESTED 2026-07-19, the highest-prior untested sizing lever (risk-control family). Pre-registered w=median(atrpct)/atrpct clipped 0.5\u20132\u00d7, vol proxy = gate-faithful FULL-NY-day ATR14_pct\u2026",
+            "pattern": "Look-ahead"
+          },
+          {
             "idea": "Calendar / seasonality (turn-of-month + day-of-week)",
             "reason": "SWEPT 2026-06-30, 72 configs (TOM pre/exit grid + DOW\u00d7hold) \u00d7 long/short/bilateral through the full gates \u2192 0/72 deployable. The long side is a REAL seasonal edge (TOM long & Friday-hold\u2026",
             "pattern": "Redundant"
@@ -6076,7 +6081,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 67,
+    "n_rejected": 68,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
