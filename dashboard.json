@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T01:00:06+00:00",
+  "generated_at": "2026-07-19T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5160,9 +5160,17 @@
     "total_tested": 20,
     "total_pass": 5,
     "total_fail": 15,
-    "total_skip": 18,
+    "total_skip": 19,
     "pass_rate": 25.0,
     "recent": [
+      {
+        "hyp_id": 39,
+        "at": "2026-07-19T01:04:15.782893+00:00",
+        "verdict": "SKIP",
+        "reason": "Trailing stop mechanics (highest high since entry, path-dependent state) and adaptive RSI/SMA crossover with external VIX gate exceed stateless template architecture. Strategy requires persistent position state, swing-tracking logic, and conditional re-evaluation across bars\u2014not supported by breakout, reversion, ma_cross, session_momentum, or calendar templates.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 38,
         "at": "2026-07-18T01:04:24.651421+00:00",
@@ -5242,22 +5250,6 @@
         "reason": "OVERRIDE of the 2026-07-04 01:04 PASS \u2014 engine artifact, not an edge: all 1,005 closed trades exited at 'target' (win 100%, PF inf, maxDD $0); the stop branch never fired for this param set and trades whose target never hit stayed OPEN and were excluded = closed-trade survivorship. Degeneracy guard added to auto_backtest (_is_degenerate) so impossible perfection auto-FAILs before any gate.",
         "routing": "reversion",
         "override_of": "2026-07-04T01:04:17"
-      },
-      {
-        "hyp_id": 29,
-        "at": "2026-07-04T01:04:17.069405+00:00",
-        "verdict": "PASS",
-        "reason": "Era gate PASS | WF 0/16 sit-outs | Calmar inf | PF inf Sharpe 17.62",
-        "stats": {
-          "n": 1005,
-          "pf": 0,
-          "sharpe": 17.62,
-          "win_pct": 100.0,
-          "total_usd": 140171.0,
-          "max_dd": 0.0,
-          "calmar": 0
-        },
-        "routing": "reversion"
       }
     ],
     "queue": [
@@ -5564,6 +5556,22 @@
         "source": "X/timeline",
         "created": "2026-07-18",
         "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"No trades generated \\u2014 conditions too restrictive\", \"stats\": {}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 39,
+        "status": "skip",
+        "summary": "Fixed profit targets prematurely exit MNQ winners; replacing them with a trailin",
+        "source": "X/timeline",
+        "created": "2026-07-19",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Trailing stop mechanics (highest high since entry, path-dependent state) and adaptive RSI/SMA crossover with external VIX gate exceed stateless template architecture. Strategy requires persistent position state, swing-tracking logic, and conditional re-evaluation across bars\\u2014not supported by breakout, reversion, ma_cross, session_momentum, or calendar templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 40,
+        "status": "approved",
+        "summary": "Dynamic stop-loss placement based on recent volatility structure (ATR multiple v",
+        "source": "r/algotrading",
+        "created": "2026-07-19",
+        "verdict": null
       }
     ]
   },
