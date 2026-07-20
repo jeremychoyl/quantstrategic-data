@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T10:10:06+00:00",
+  "generated_at": "2026-07-20T10:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5987,6 +5987,11 @@
             "idea": "Liquidity sweep / stop-hunt (failed-breakout reversal)",
             "reason": "0/12 configs, cleanest reject in the sweep \u2014 every config net-losing (best PF 0.898, none clears PF>1). Betting a swing-high/low breakout FAILS and reverses is the direct opposite of the\u2026",
             "pattern": null
+          },
+          {
+            "idea": "Inverted FVG (IFVG) \u2014 violated gap flips polarity, enter the retest in the violation direction",
+            "reason": "0/11 configs (pre-registered 2026-07-20), WORSE than plain FVG \u2014 every config net-losing FULL-SAMPLE (PF 0.891\u20130.989, never clears PF>1), e1 always <1 (0.72\u20130.93 = post-2021-only), negative\u2026",
+            "pattern": "Look-ahead"
           }
         ]
       },
@@ -6108,7 +6113,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 72,
+    "n_rejected": 73,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
