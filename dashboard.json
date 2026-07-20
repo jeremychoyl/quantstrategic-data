@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T10:25:06+00:00",
+  "generated_at": "2026-07-20T10:30:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5992,6 +5992,21 @@
             "idea": "Inverted FVG (IFVG) \u2014 violated gap flips polarity, enter the retest in the violation direction",
             "reason": "0/11 configs (pre-registered 2026-07-20), WORSE than plain FVG \u2014 every config net-losing FULL-SAMPLE (PF 0.891\u20130.989, never clears PF>1), e1 always <1 (0.72\u20130.93 = post-2021-only), negative\u2026",
             "pattern": "Look-ahead"
+          },
+          {
+            "idea": "Breaker blocks (order-block inversion \u2014 S/D zone closed-through then retested from the far side)",
+            "reason": "0/10 (pre-registered 2026-07-20). Order-block analog of IFVG; net-losing or era-fail (best long-rr1 PF 1.118 but WF 6 sit-outs + Calmar 0.154), rr styles creep toward the DC corr gate\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "OTE / premium-discount (Fib 62\u201379% retracement continuation off a confirmed swing leg)",
+            "reason": "0/10 \u2014 the batch near-miss. ote_long_rr1 clears 4/5 gates (PF 1.383, era 1.19/1.49, Calmar 1.255, corr clean) but FAILS walkforward (3 sit-outs); every eod/rr2 cut net-losing. OTE\u2026",
+            "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "SMT divergence (ES lower-high while NQ higher-high \u2192 short, and mirror)",
+            "reason": "0/7. Net-losing / era-fail (best long-rr2 PF 1.107, WF 8 sit-outs + Calmar 0.13); short/reversal cuts breach the DC corr gate (\u22120.33\u2026\u22120.66). Cross-asset-divergence edge absent \u2014 consistent\u2026",
+            "pattern": "Fails Calmar"
           }
         ]
       },
@@ -6113,7 +6128,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 73,
+    "n_rejected": 76,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
