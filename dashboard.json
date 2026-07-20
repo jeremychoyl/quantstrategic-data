@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T14:55:06+00:00",
+  "generated_at": "2026-07-20T15:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1410,9 +1410,19 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 28966.5,
-      "current_px": 28912.5,
-      "pnl_pts": 54.0,
-      "pnl_usd": 108.0,
+      "current_px": 28891.75,
+      "pnl_pts": 74.75,
+      "pnl_usd": 149.5,
+      "direction": "Short"
+    },
+    {
+      "strategy": "EMA Cross 5m",
+      "size": "1 MNQ",
+      "entry_date": "2026-07-20",
+      "entry_px": 28902.25,
+      "current_px": 28891.75,
+      "pnl_pts": 10.5,
+      "pnl_usd": 21.0,
       "direction": "Short"
     },
     {
@@ -1420,9 +1430,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 29050.0,
-      "current_px": 28912.5,
-      "pnl_pts": -137.5,
-      "pnl_usd": -275.0,
+      "current_px": 28891.75,
+      "pnl_pts": -158.25,
+      "pnl_usd": -316.5,
       "direction": "Long"
     }
   ],
