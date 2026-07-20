@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T00:55:06+00:00",
+  "generated_at": "2026-07-20T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6112,10 +6112,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-19T01:00:05+00:00",
+    "as_of": "2026-07-20T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No\u2014not yet. The three-week live track record is a $1,092 loss on just 21 trades, which directly contradicts the backtest's 33.7% annualized return; that gap is too wide and too early to distinguish between luck, slippage reality, or genuine model decay. A single-market fund concentrated entirely on MNQ with zero uncorrelated diversification compounds the risk\u2014if Nasdaq mean-reversion or volatility regimes shift, all three strategies suffer together, and there's no portfolio cushion.\n\nYour one concrete next step: Run 6 months of live trading (minimum 200+ trades across normal and stressed market regimes), document exactly where live slippage, fills, and volatility differ from backtest assumptions, and identify *at least one* uncorrelated secondary market or asset class where your edge holds. Only then will I see the operational discipline and true edge necessary to allocate.",
+    "verdict": "No allocation today\u2014not remotely close. You have 21 live trades showing a $1,092 loss in 4 months against a backtest claiming $3,610/year Sharpe 1.14; that's not noise, that's a red flag that your model either overfit to 16 years of historical Nasdaq microstructure or your live execution (slippage, commissions, regime shift) is breaking the edge. Single-market concentration on MNQ alone is acceptable *only* if live results validate the backtest within 6\u20139 months of volume; they don't yet, and you haven't generated enough trades to distinguish luck from skill.\n\nOne concrete thing to earn the check: Run a forward walk or Monte Carlo bootstrap on your 16-year backtest to quantify overfitting bias and confidence intervals around your Sharpe/Calmar assumptions, then commit to 200+ live trades (4\u20136 months minimum) with a written performance gate: if you hit +$2,500 net P&L and a Sharpe \u2265 0.9 by Q3 2026, I'll listen. Right now you're asking me to believe the backtest over the live record\u2014that's backwards.",
     "scorecard": [
       {
         "criterion": "Live track record",
