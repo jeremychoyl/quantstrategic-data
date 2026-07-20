@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T14:10:06+00:00",
+  "generated_at": "2026-07-20T14:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1406,13 +1406,23 @@
   },
   "active_positions": [
     {
+      "strategy": "ORB 30m",
+      "size": "1 MNQ",
+      "entry_date": "2026-07-20",
+      "entry_px": 28966.5,
+      "current_px": 28973.5,
+      "pnl_pts": -7.0,
+      "pnl_usd": -14.0,
+      "direction": "Short"
+    },
+    {
       "strategy": "DC MeanRev",
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 29050.0,
-      "current_px": 29008.25,
-      "pnl_pts": -41.75,
-      "pnl_usd": -83.5,
+      "current_px": 28973.5,
+      "pnl_pts": -76.5,
+      "pnl_usd": -153.0,
       "direction": "Long"
     }
   ],
