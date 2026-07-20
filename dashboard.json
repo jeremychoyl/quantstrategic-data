@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:55:06+00:00",
+  "generated_at": "2026-07-20T20:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1396,8 +1396,8 @@
     },
     {
       "date": "2026-07-20",
-      "pnl_pts": -215.0,
-      "pnl_usd": -430.0
+      "pnl_pts": 119.5,
+      "pnl_usd": 239.0
     }
   ],
   "portfolio_stats": {
@@ -1411,43 +1411,23 @@
   },
   "active_positions": [
     {
-      "strategy": "ORB 30m",
-      "size": "1 MNQ",
-      "entry_date": "2026-07-20",
-      "entry_px": 28966.5,
-      "current_px": 28804.75,
-      "pnl_pts": -161.75,
-      "pnl_usd": -323.5,
-      "direction": "Long"
-    },
-    {
-      "strategy": "EMA Cross 5m",
-      "size": "1 MNQ",
-      "entry_date": "2026-07-20",
-      "entry_px": 28918.0,
-      "current_px": 28804.75,
-      "pnl_pts": 113.25,
-      "pnl_usd": 226.5,
-      "direction": "Short"
-    },
-    {
       "strategy": "DC MeanRev",
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 29050.0,
-      "current_px": 28804.75,
-      "pnl_pts": -245.25,
-      "pnl_usd": -490.5,
+      "current_px": 28785.75,
+      "pnl_pts": -264.25,
+      "pnl_usd": -528.5,
       "direction": "Long"
     }
   ],
   "net_returns": {
-    "5d_pts": -524.75,
-    "5d_usd": -1049.5,
-    "5d_pct": -4.198,
-    "ytd_pts": -889.25,
-    "ytd_usd": -1778.5,
-    "ytd_pct": -7.114
+    "5d_pts": -190.25,
+    "5d_usd": -380.5,
+    "5d_pct": -1.522,
+    "ytd_pts": -740.75,
+    "ytd_usd": -1481.5,
+    "ytd_pct": -5.926
   },
   "strategies": {
     "orb_30m": {
