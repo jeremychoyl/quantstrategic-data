@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:25:06+00:00",
+  "generated_at": "2026-07-20T19:30:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1415,9 +1415,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 28966.5,
-      "current_px": 28825.0,
-      "pnl_pts": 141.5,
-      "pnl_usd": 283.0,
+      "current_px": 28855.0,
+      "pnl_pts": 111.5,
+      "pnl_usd": 223.0,
       "direction": "Short"
     },
     {
@@ -1425,9 +1425,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 28918.0,
-      "current_px": 28825.0,
-      "pnl_pts": 93.0,
-      "pnl_usd": 186.0,
+      "current_px": 28855.0,
+      "pnl_pts": 63.0,
+      "pnl_usd": 126.0,
       "direction": "Short"
     },
     {
@@ -1435,9 +1435,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 29050.0,
-      "current_px": 28825.0,
-      "pnl_pts": -225.0,
-      "pnl_usd": -450.0,
+      "current_px": 28855.0,
+      "pnl_pts": -195.0,
+      "pnl_usd": -390.0,
       "direction": "Long"
     }
   ],
