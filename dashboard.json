@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T22:10:06+00:00",
+  "generated_at": "2026-07-21T22:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -735,9 +735,16 @@
     {
       "date": "2026-07-20",
       "ema": 3817.0,
-      "orb": 37.0,
+      "orb": 407.0,
       "dc": 813.0,
-      "combined": 3854.0
+      "combined": 4225.0
+    },
+    {
+      "date": "2026-07-21",
+      "ema": 3817.0,
+      "orb": 405.0,
+      "dc": 813.0,
+      "combined": 4222.0
     }
   ],
   "benchmarks": {
@@ -1370,20 +1377,26 @@
       },
       {
         "date": "2026-07-20",
-        "book": 3854.0,
+        "book": 4225.0,
         "bh_nq": 6086,
         "tbill": 439
+      },
+      {
+        "date": "2026-07-21",
+        "book": 4222.0,
+        "bh_nq": 6086,
+        "tbill": 441
       }
     ],
     "summary": {
-      "book_usd": 3854.0,
-      "book_pct": 17.5,
+      "book_usd": 4222.0,
+      "book_pct": 19.2,
       "book_maxdd_usd": 6602,
       "bh_usd": 6086,
       "bh_pct": 27.7,
       "bh_maxdd_usd": 6317,
-      "tbill_usd": 439,
-      "alpha_vs_bh_usd": -2232
+      "tbill_usd": 441,
+      "alpha_vs_bh_usd": -1864
     }
   },
   "last_7_days": [
@@ -1519,13 +1532,13 @@
       "trade_days": 70
     },
     "orb": {
-      "pf": 1.0,
-      "sharpe": 0.02,
+      "pf": 1.04,
+      "sharpe": 0.25,
       "max_dd_usd": 5259.0,
-      "win_pct": 50.7,
-      "total_pts": 18.3,
-      "total_usd": 37.0,
-      "trade_days": 69
+      "win_pct": 51.4,
+      "total_pts": 202.3,
+      "total_usd": 405.0,
+      "trade_days": 70
     },
     "dc": {
       "pf": 1.59,
@@ -1537,22 +1550,22 @@
       "trade_days": 5
     },
     "ema+orb": {
-      "pf": 1.19,
-      "sharpe": 1.06,
+      "pf": 1.22,
+      "sharpe": 1.15,
       "max_dd_usd": 6602.0,
-      "win_pct": 53.3,
-      "total_pts": 1926.9,
-      "total_usd": 3854.0,
-      "trade_days": 105
+      "win_pct": 52.8,
+      "total_pts": 2110.9,
+      "total_usd": 4222.0,
+      "trade_days": 106
     },
     "ema+orb+dc": {
-      "pf": 1.23,
-      "sharpe": 1.23,
+      "pf": 1.25,
+      "sharpe": 1.32,
       "max_dd_usd": 6602.0,
-      "win_pct": 53.3,
-      "total_pts": 2333.2,
-      "total_usd": 4666.0,
-      "trade_days": 105
+      "win_pct": 52.8,
+      "total_pts": 2517.2,
+      "total_usd": 5034.0,
+      "trade_days": 106
     }
   },
   "strategy_backtest_stats": {
@@ -1591,35 +1604,35 @@
       "max_consec_losses": 13
     },
     "orb": {
-      "expectancy_pts": 1.03,
-      "expectancy_usd": 2.06,
+      "expectancy_pts": 1.12,
+      "expectancy_usd": 2.24,
       "max_dd_usd": 12682.0,
       "profit_factor": 1.04,
-      "n_trades": 2080,
-      "win_pct": 45.6,
-      "sharpe": 0.14,
-      "sortino": 0.21,
+      "n_trades": 2081,
+      "win_pct": 45.7,
+      "sharpe": 0.15,
+      "sortino": 0.23,
       "calmar": 0.02,
-      "cagr_pct": 1.1,
-      "monthly_mean_usd": 22,
-      "monthly_std_usd": 567,
+      "cagr_pct": 1.2,
+      "monthly_mean_usd": 24,
+      "monthly_std_usd": 557,
       "monthly_win_rate": 43.5,
       "payoff_ratio": 1.24,
       "max_consec_losses": 9
     },
     "portfolio": {
-      "expectancy_pts": 9.91,
-      "expectancy_usd": 19.82,
+      "expectancy_pts": 9.97,
+      "expectancy_usd": 19.94,
       "max_dd_usd": 6602.0,
       "profit_factor": 1.33,
-      "n_trades": 2848,
+      "n_trades": 2849,
       "win_pct": 48.2,
-      "sharpe": 0.98,
-      "sortino": 1.71,
-      "calmar": 0.27,
-      "cagr_pct": 8.2,
-      "monthly_mean_usd": 291,
-      "monthly_std_usd": 1199,
+      "sharpe": 0.99,
+      "sortino": 1.72,
+      "calmar": 0.28,
+      "cagr_pct": 8.3,
+      "monthly_mean_usd": 293,
+      "monthly_std_usd": 1194,
       "monthly_win_rate": 53.1,
       "payoff_ratio": 1.43,
       "max_consec_losses": 12
@@ -3565,16 +3578,16 @@
       ]
     },
     "orb": {
-      "n_winners": 949,
+      "n_winners": 950,
       "n_losers": 1131,
       "n_breakeven": 0,
-      "total_net_usd": 4304,
+      "total_net_usd": 4672,
       "avg_win_usd": 120,
       "avg_loss_usd": -97,
       "largest_win_usd": 1139,
       "largest_loss_usd": -711,
-      "gross_profit_usd": 113720,
-      "gross_loss_usd": -109416,
+      "gross_profit_usd": 114090,
+      "gross_loss_usd": -109418,
       "monthly": [
         {
           "month": "2010-07",
@@ -4538,8 +4551,8 @@
         },
         {
           "month": "2026-07",
-          "pnl": -3084,
-          "equity": 4304
+          "pnl": -2716,
+          "equity": 4672
         }
       ]
     }
@@ -4560,10 +4573,10 @@
         "contracts": 1,
         "actual_pnl_pts": -350.25,
         "actual_pnl_usd": -700.5,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": -351.28,
-        "vs_expectancy_usd": -702.56,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": -351.37,
+        "vs_expectancy_usd": -702.74,
         "week": "W1 (Jun 22)",
         "trade_date": "2026-06-23"
       },
@@ -4644,10 +4657,10 @@
         "contracts": 1,
         "actual_pnl_pts": -299.0,
         "actual_pnl_usd": -598.0,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": -300.03,
-        "vs_expectancy_usd": -600.06,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": -300.12,
+        "vs_expectancy_usd": -600.24,
         "week": "W1 (Jun 29)",
         "trade_date": "2026-06-29"
       },
@@ -4707,10 +4720,10 @@
         "contracts": 1,
         "actual_pnl_pts": -209.5,
         "actual_pnl_usd": -419.0,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": -210.53,
-        "vs_expectancy_usd": -421.06,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": -210.62,
+        "vs_expectancy_usd": -421.24,
         "week": "W2 (Jun 29)",
         "trade_date": "2026-07-01"
       },
@@ -4812,10 +4825,10 @@
         "contracts": 1,
         "actual_pnl_pts": -225.75,
         "actual_pnl_usd": -451.5,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": -226.78,
-        "vs_expectancy_usd": -453.56,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": -226.87,
+        "vs_expectancy_usd": -453.74,
         "week": "W3 (Jul 06)",
         "trade_date": "2026-07-08"
       },
@@ -4875,10 +4888,10 @@
         "contracts": 1,
         "actual_pnl_pts": -151.75,
         "actual_pnl_usd": -303.5,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": -152.78,
-        "vs_expectancy_usd": -305.56,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": -152.87,
+        "vs_expectancy_usd": -305.74,
         "week": "W4 (Jul 13)",
         "trade_date": "2026-07-14"
       },
@@ -4896,10 +4909,10 @@
         "contracts": 1,
         "actual_pnl_pts": -23.5,
         "actual_pnl_usd": -47.0,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": -24.53,
-        "vs_expectancy_usd": -49.06,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": -24.62,
+        "vs_expectancy_usd": -49.24,
         "week": "W4 (Jul 13)",
         "trade_date": "2026-07-15"
       },
@@ -4938,10 +4951,10 @@
         "contracts": 1,
         "actual_pnl_pts": 37.0,
         "actual_pnl_usd": 74.0,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": 35.97,
-        "vs_expectancy_usd": 71.94,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": 35.88,
+        "vs_expectancy_usd": 71.76,
         "week": "W4 (Jul 13)",
         "trade_date": "2026-07-16"
       },
@@ -5043,10 +5056,10 @@
         "contracts": 1,
         "actual_pnl_pts": 186.0,
         "actual_pnl_usd": 372.0,
-        "backtest_exp_pts": 1.03,
-        "backtest_exp_usd": 2.06,
-        "vs_expectancy_pts": 184.97,
-        "vs_expectancy_usd": 369.94,
+        "backtest_exp_pts": 1.12,
+        "backtest_exp_usd": 2.24,
+        "vs_expectancy_pts": 184.88,
+        "vs_expectancy_usd": 369.76,
         "week": "W4 (Jul 20)",
         "trade_date": "2026-07-20"
       },
