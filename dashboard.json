@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T00:55:05+00:00",
+  "generated_at": "2026-07-21T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1428,9 +1428,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-20",
       "entry_px": 29050.0,
-      "current_px": 28881.75,
-      "pnl_pts": -168.25,
-      "pnl_usd": -336.5,
+      "current_px": 28858.25,
+      "pnl_pts": -191.75,
+      "pnl_usd": -383.5,
       "direction": "Long"
     }
   ],
@@ -6259,21 +6259,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-20T01:00:07+00:00",
+    "as_of": "2026-07-21T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today\u2014not remotely close. You have 21 live trades showing a $1,092 loss in 4 months against a backtest claiming $3,610/year Sharpe 1.14; that's not noise, that's a red flag that your model either overfit to 16 years of historical Nasdaq microstructure or your live execution (slippage, commissions, regime shift) is breaking the edge. Single-market concentration on MNQ alone is acceptable *only* if live results validate the backtest within 6\u20139 months of volume; they don't yet, and you haven't generated enough trades to distinguish luck from skill.\n\nOne concrete thing to earn the check: Run a forward walk or Monte Carlo bootstrap on your 16-year backtest to quantify overfitting bias and confidence intervals around your Sharpe/Calmar assumptions, then commit to 200+ live trades (4\u20136 months minimum) with a written performance gate: if you hit +$2,500 net P&L and a Sharpe \u2265 0.9 by Q3 2026, I'll listen. Right now you're asking me to believe the backtest over the live record\u2014that's backwards.",
+    "verdict": "No allocation today. The live P&L of -$852 on 25 trades directly contradicts the backtest promise of $3,581/yr Sharpe 1.13\u2014that's not noise, that's signal that either model risk, execution leakage, or regime change has broken the edge in real markets, and you need 6\u201312 months of live data (minimum 200+ trades) to know which. Single-market concentration on MNQ alone is a secondary concern if the core signal works; it isn't working yet.\n\nNext concrete step to earn the check: Run 200+ live trades (roughly 4\u20136 months at current velocity), document every slippage delta vs backtest assumption and regime marker (vol regime, overnight gaps, liquidity cycles), and show me that live Sharpe converges back toward 1.0+. Until then, this is pre-product.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "21 trades",
+        "now": "25 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-1,092",
+        "now": "$-852",
         "pass": false
       },
       {
@@ -6291,7 +6291,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "21 trades \u2014 too early",
+        "now": "25 trades \u2014 too early",
         "pass": false
       }
     ]
