@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T01:00:06+00:00",
+  "generated_at": "2026-07-22T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5324,9 +5324,17 @@
     "total_tested": 20,
     "total_pass": 5,
     "total_fail": 15,
-    "total_skip": 19,
+    "total_skip": 20,
     "pass_rate": 25.0,
     "recent": [
+      {
+        "hyp_id": 41,
+        "at": "2026-07-22T01:04:34.414562+00:00",
+        "verdict": "SKIP",
+        "reason": "Architecture veto: 'adaptive' detected \u2014 real-time param tuning prohibited by SOP.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 39,
         "at": "2026-07-19T01:04:15.782893+00:00",
@@ -5406,14 +5414,6 @@
         "reason": "Strategy shape requires manual backtest implementation",
         "stats": {},
         "routing": "custom"
-      },
-      {
-        "hyp_id": 29,
-        "at": "2026-07-04T07:19:21.360088+00:00",
-        "verdict": "FAIL",
-        "reason": "OVERRIDE of the 2026-07-04 01:04 PASS \u2014 engine artifact, not an edge: all 1,005 closed trades exited at 'target' (win 100%, PF inf, maxDD $0); the stop branch never fired for this param set and trades whose target never hit stayed OPEN and were excluded = closed-trade survivorship. Degeneracy guard added to auto_backtest (_is_degenerate) so impossible perfection auto-FAILs before any gate.",
-        "routing": "reversion",
-        "override_of": "2026-07-04T01:04:17"
       }
     ],
     "queue": [
@@ -5736,6 +5736,14 @@
         "source": "r/algotrading",
         "created": "2026-07-19",
         "verdict": null
+      },
+      {
+        "id": 41,
+        "status": "skip",
+        "summary": "ATR-scaled breakout entries on 5m bars, using prior-bar high + (ATR(14) \u00d7 1.5) a",
+        "source": "X/timeline",
+        "created": "2026-07-22",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Architecture veto: 'adaptive' detected \\u2014 real-time param tuning prohibited by SOP.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
