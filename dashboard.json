@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T00:55:06+00:00",
+  "generated_at": "2026-07-22T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6289,21 +6289,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-21T01:00:06+00:00",
+    "as_of": "2026-07-22T01:00:05+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live P&L of -$852 on 25 trades directly contradicts the backtest promise of $3,581/yr Sharpe 1.13\u2014that's not noise, that's signal that either model risk, execution leakage, or regime change has broken the edge in real markets, and you need 6\u201312 months of live data (minimum 200+ trades) to know which. Single-market concentration on MNQ alone is a secondary concern if the core signal works; it isn't working yet.\n\nNext concrete step to earn the check: Run 200+ live trades (roughly 4\u20136 months at current velocity), document every slippage delta vs backtest assumption and regime marker (vol regime, overnight gaps, liquidity cycles), and show me that live Sharpe converges back toward 1.0+. Until then, this is pre-product.",
+    "verdict": "No allocation today. You have a theoretically sound backtest (Sharpe 1.13, reasonable Calmar) undermined by three disqualifying facts: 26 live trades is statistically noise, live P&L is negative, and your entire edge lives in a single market (MNQ) with zero diversification validation\u2014this is concentration risk dressed as systematic trading, not a fund. The gap between $3,573/yr backtest profit and the live drawdown is the real number that matters.\n\nTo earn the check: Run your three strategies live on ES (S&P 500 e-mini) in parallel under the same risk rules for 60+ live trades across both instruments. If MNQ + ES show consistent positive monthly P&L and your Sharpe holds above 0.9 across both markets over 3\u20134 months, you've moved from \"interesting backtest on one market\" to \"genuine edge with real diversification.\" Until then, this is pre-seed research, not fundable capital.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "25 trades",
+        "now": "26 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-852",
+        "now": "$-350",
         "pass": false
       },
       {
@@ -6315,13 +6315,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,700",
+        "now": "micro \u00b7 ~$10,800",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "25 trades \u2014 too early",
+        "now": "26 trades \u2014 too early",
         "pass": false
       }
     ]
