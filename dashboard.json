@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T23:55:05+00:00",
+  "generated_at": "2026-07-22T00:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1378,13 +1378,13 @@
       {
         "date": "2026-07-20",
         "book": 4324.0,
-        "bh_nq": 6086,
+        "bh_nq": 5730,
         "tbill": 439
       },
       {
         "date": "2026-07-21",
         "book": 4101.0,
-        "bh_nq": 6086,
+        "bh_nq": 6322,
         "tbill": 441
       }
     ],
@@ -1392,19 +1392,14 @@
       "book_usd": 4101.0,
       "book_pct": 18.6,
       "book_maxdd_usd": 6602,
-      "bh_usd": 6086,
-      "bh_pct": 27.7,
+      "bh_usd": 6322,
+      "bh_pct": 28.7,
       "bh_maxdd_usd": 6317,
       "tbill_usd": 441,
-      "alpha_vs_bh_usd": -1985
+      "alpha_vs_bh_usd": -2221
     }
   },
   "last_7_days": [
-    {
-      "date": "2026-07-14",
-      "pnl_pts": -151.75,
-      "pnl_usd": -303.5
-    },
     {
       "date": "2026-07-15",
       "pnl_pts": 106.75,
@@ -5302,6 +5297,13 @@
       },
       {
         "date": "2026-07-21",
+        "day_pnl_pts": 0.0,
+        "day_pnl_usd": 0.0,
+        "cum_pts": -174.75,
+        "cum_usd": -349.5
+      },
+      {
+        "date": "2026-07-22",
         "day_pnl_pts": 0.0,
         "day_pnl_usd": 0.0,
         "cum_pts": -174.75,
