@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T19:50:06+00:00",
+  "generated_at": "2026-07-23T19:55:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1430,25 +1430,14 @@
     "total_usd": 5604.0,
     "trade_days": 106
   },
-  "active_positions": [
-    {
-      "strategy": "ORB 30m",
-      "size": "1 MNQ",
-      "entry_date": "2026-07-23",
-      "entry_px": 28628.75,
-      "current_px": 28499.25,
-      "pnl_pts": 129.5,
-      "pnl_usd": 259.0,
-      "direction": "Short"
-    }
-  ],
+  "active_positions": [],
   "net_returns": {
     "5d_pts": 106.25,
     "5d_usd": 212.5,
     "5d_pct": 0.85,
-    "ytd_pts": -489.25,
-    "ytd_usd": -978.5,
-    "ytd_pct": -3.914
+    "ytd_pts": -415.0,
+    "ytd_usd": -830.0,
+    "ytd_pct": -3.32
   },
   "strategies": {
     "orb_30m": {
@@ -5110,6 +5099,27 @@
         "vs_expectancy_usd": 415.7,
         "week": "W4 (Jul 20)",
         "trade_date": "2026-07-20"
+      },
+      {
+        "strategy": "ORB 30m",
+        "strategy_key": "orb",
+        "direction": "Short",
+        "entry_time_sgt": "2026-07-23 22:46",
+        "entry_signal_ref": 28644.75,
+        "entry_fill": 28628.75,
+        "entry_slippage_pts": 16.0,
+        "exit_time_sgt": "2026-07-24 03:55",
+        "exit_fill": 28554.5,
+        "exit_type": "eod",
+        "contracts": 1,
+        "actual_pnl_pts": 74.25,
+        "actual_pnl_usd": 148.5,
+        "backtest_exp_pts": 1.04,
+        "backtest_exp_usd": 2.08,
+        "vs_expectancy_pts": 73.21,
+        "vs_expectancy_usd": 146.42,
+        "week": "W5 (Jul 20)",
+        "trade_date": "2026-07-23"
       }
     ],
     "weeks": [
@@ -5154,6 +5164,12 @@
         "trades_count": 5,
         "total_pnl_pts": 371.0,
         "total_pnl_usd": 742.0
+      },
+      {
+        "week": "W5 (Jul 20)",
+        "trades_count": 1,
+        "total_pnl_pts": 74.25,
+        "total_pnl_usd": 148.5
       }
     ],
     "week_list": [
@@ -5163,7 +5179,8 @@
       "W2 (Jun 29)",
       "W3 (Jul 06)",
       "W4 (Jul 13)",
-      "W4 (Jul 20)"
+      "W4 (Jul 20)",
+      "W5 (Jul 20)"
     ],
     "daily_curve": [
       {
@@ -5322,18 +5339,18 @@
       },
       {
         "date": "2026-07-23",
-        "day_pnl_pts": 0.0,
-        "day_pnl_usd": 0.0,
-        "cum_pts": -174.75,
-        "cum_usd": -349.5
+        "day_pnl_pts": 74.25,
+        "day_pnl_usd": 148.5,
+        "cum_pts": -100.5,
+        "cum_usd": -201.0
       }
     ],
     "summary": {
-      "total_trades": 26,
-      "total_pnl_pts": -174.75,
-      "total_pnl_usd": -349.5,
-      "win_rate": 42.3,
-      "avg_slippage_pts": 0.01,
+      "total_trades": 27,
+      "total_pnl_pts": -100.5,
+      "total_pnl_usd": -201.0,
+      "win_rate": 44.4,
+      "avg_slippage_pts": 0.6,
       "live_since": "2026-06-23",
       "manual_interventions_excluded": 1
     }
