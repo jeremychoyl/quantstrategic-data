@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T01:00:06+00:00",
+  "generated_at": "2026-07-23T01:05:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5331,9 +5331,17 @@
     "total_tested": 20,
     "total_pass": 5,
     "total_fail": 15,
-    "total_skip": 20,
+    "total_skip": 21,
     "pass_rate": 25.0,
     "recent": [
+      {
+        "hyp_id": 42,
+        "at": "2026-07-23T01:04:20.012983+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires multi-timeframe state (pre-market regime classification via gap/volume/first-30m return metrics) AND stateful position management (conditional sizing/exit timing per regime type). Backtest architecture cannot maintain cross-session state, rolling percentile lookups, or regime-dependent exit logic across 5m bar resolution.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 41,
         "at": "2026-07-22T01:04:34.414562+00:00",
@@ -5413,14 +5421,6 @@
         "reason": "Adaptive trailing stop (swing low update logic) violates deterministic backtest architecture; stop price is path-dependent and requires real-time swing detection across 240-bar lookback, not computable from fixed OHLCV bar data alone. VIX real-time dependency also incompatible with standard bar-replay engine.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 27,
-        "at": "2026-07-04T07:25:38.987776+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy shape requires manual backtest implementation",
-        "stats": {},
-        "routing": "custom"
       }
     ],
     "queue": [
@@ -5751,6 +5751,14 @@
         "source": "X/timeline",
         "created": "2026-07-22",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Architecture veto: 'adaptive' detected \\u2014 real-time param tuning prohibited by SOP.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 42,
+        "status": "skip",
+        "summary": "Pre-market VVG regime classification (gap magnitude, first-30m return, volume ra",
+        "source": "arXiv q-fin (API)",
+        "created": "2026-07-23",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires multi-timeframe state (pre-market regime classification via gap/volume/first-30m return metrics) AND stateful position management (conditional sizing/exit timing per regime type). Backtest architecture cannot maintain cross-session state, rolling percentile lookups, or regime-dependent exit logic across 5m bar resolution.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
