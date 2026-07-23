@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T00:55:06+00:00",
+  "generated_at": "2026-07-23T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6304,10 +6304,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-22T01:00:05+00:00",
+    "as_of": "2026-07-23T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. You have a theoretically sound backtest (Sharpe 1.13, reasonable Calmar) undermined by three disqualifying facts: 26 live trades is statistically noise, live P&L is negative, and your entire edge lives in a single market (MNQ) with zero diversification validation\u2014this is concentration risk dressed as systematic trading, not a fund. The gap between $3,573/yr backtest profit and the live drawdown is the real number that matters.\n\nTo earn the check: Run your three strategies live on ES (S&P 500 e-mini) in parallel under the same risk rules for 60+ live trades across both instruments. If MNQ + ES show consistent positive monthly P&L and your Sharpe holds above 0.9 across both markets over 3\u20134 months, you've moved from \"interesting backtest on one market\" to \"genuine edge with real diversification.\" Until then, this is pre-seed research, not fundable capital.",
+    "verdict": "No allocation today. You have 26 live trades showing -$350 against a backtest promising 34% ROC\u2014that's a red flag, not noise. More critically: you've built a single-market systematic fund with zero demonstrated uncorrelated diversification; micro-futures capacity and live losses mean I cannot distinguish between execution slippage, regime change, or model degradation. The backtest's 1.15 Sharpe and 0.58 Calmar are respectable but not exceptional enough to justify this much early-stage risk.\n\nSingle most important reason: Live performance contradicts backtest promise *and* you have no diversification moat\u2014if MNQ rolls over or correlations shift, there's nothing else in the boat.\n\nConcrete next step: Run a live-vs-backtest attribution analysis on those 26 trades (entry timing, slippage, commission, win/loss distribution vs. expected) and then *add one genuinely uncorrelated market* (ES, ZB, CL, or ZWZ\u2014your own search said none were found, so search harder or redesign the signal set) before asking again at 200+ live trades with positive cumulative P&L. Come back with a diversified playbook and I'll listen.",
     "scorecard": [
       {
         "criterion": "Live track record",
@@ -6330,7 +6330,7 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,800",
+        "now": "micro \u00b7 ~$10,700",
         "pass": false
       },
       {
