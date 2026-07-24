@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T00:55:06+00:00",
+  "generated_at": "2026-07-24T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6360,21 +6360,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-23T01:00:07+00:00",
+    "as_of": "2026-07-24T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. You have 26 live trades showing -$350 against a backtest promising 34% ROC\u2014that's a red flag, not noise. More critically: you've built a single-market systematic fund with zero demonstrated uncorrelated diversification; micro-futures capacity and live losses mean I cannot distinguish between execution slippage, regime change, or model degradation. The backtest's 1.15 Sharpe and 0.58 Calmar are respectable but not exceptional enough to justify this much early-stage risk.\n\nSingle most important reason: Live performance contradicts backtest promise *and* you have no diversification moat\u2014if MNQ rolls over or correlations shift, there's nothing else in the boat.\n\nConcrete next step: Run a live-vs-backtest attribution analysis on those 26 trades (entry timing, slippage, commission, win/loss distribution vs. expected) and then *add one genuinely uncorrelated market* (ES, ZB, CL, or ZWZ\u2014your own search said none were found, so search harder or redesign the signal set) before asking again at 200+ live trades with positive cumulative P&L. Come back with a diversified playbook and I'll listen.",
+    "verdict": "No allocation today. The live track record is too thin (27 trades, -$201 P&L, all in one market) to validate the backtest's Sharpe 1.15 and 33.9% ROC, and a single-instrument systematic fund concentrates idiosyncratic risk in a way that institutional capital cannot justify\u2014no matter how rigorous the 16-year backtest was. The gap between a $3,627/yr projected draw and micro-contract reality is also concerning for operational and psychological sustainability.\n\nNext step to earn the check: Run live for a minimum of 250\u2013300 trades across *at least two uncorrelated futures markets* (e.g., add ES, GC, or ZB) while maintaining >Sharpe 0.8 and positive cumulative P&L; resubmit with that live proof and a realistic AUM ramp plan. Until then, this is a compelling trading system, not yet an allocable fund.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "26 trades",
+        "now": "27 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-350",
+        "now": "$-201",
         "pass": false
       },
       {
@@ -6392,7 +6392,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "26 trades \u2014 too early",
+        "now": "27 trades \u2014 too early",
         "pass": false
       }
     ]
