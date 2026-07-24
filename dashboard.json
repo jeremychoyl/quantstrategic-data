@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T01:00:06+00:00",
+  "generated_at": "2026-07-24T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5376,12 +5376,28 @@
     }
   },
   "research": {
-    "total_tested": 20,
+    "total_tested": 21,
     "total_pass": 5,
-    "total_fail": 15,
+    "total_fail": 16,
     "total_skip": 21,
-    "pass_rate": 25.0,
+    "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 43,
+        "at": "2026-07-24T01:04:48.666601+00:00",
+        "verdict": "FAIL",
+        "reason": "Era gate FAIL (2010-2020 PF 0.56 | 2021-2026 PF 0.85); WF 16/16 sit-outs; Calmar -0.06 < 0.5 (maxDD $-7,203 too deep vs return \u2014 undeployable)",
+        "stats": {
+          "n": 2784,
+          "pf": 0.753,
+          "sharpe": -1.589,
+          "win_pct": 49.0,
+          "total_usd": -7063.0,
+          "max_dd": -7203.0,
+          "calmar": -0.061
+        },
+        "routing": "breakout"
+      },
       {
         "hyp_id": 42,
         "at": "2026-07-23T01:04:20.012983+00:00",
@@ -5459,14 +5475,6 @@
         "at": "2026-07-07T15:59:39.200522+00:00",
         "verdict": "SKIP",
         "reason": "Strategy requires tick-level order-flow data (buy/sell tick counts per 5m bar) aggregated from real-time tick feeds, which exceeds stateless template architecture. Entry logic depends on tick imbalance ratio (buy_ticks / total_ticks > 0.58) as a real-time signal; exit depends on RSI(14) mean-reversion state machine (monitoring continuous RSI trajectory to 50\u00b13 band). This is a path-dependent, stateful strategy requiring live tick-disaggregation and multi-indicator state tracking across position lifecycle. The edge hypothesis (order-flow decoupling from momentum in high-velocity regimes) is coherent and potentially valid, but the mechanics cannot be expressed as a deterministic, stateless entry/exit rule set in any of the provided templates.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 30,
-        "at": "2026-07-06T06:38:29.992202+00:00",
-        "verdict": "SKIP",
-        "reason": "Adaptive trailing stop (swing low update logic) violates deterministic backtest architecture; stop price is path-dependent and requires real-time swing detection across 240-bar lookback, not computable from fixed OHLCV bar data alone. VIX real-time dependency also incompatible with standard bar-replay engine.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -5807,6 +5815,14 @@
         "source": "arXiv q-fin (API)",
         "created": "2026-07-23",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires multi-timeframe state (pre-market regime classification via gap/volume/first-30m return metrics) AND stateful position management (conditional sizing/exit timing per regime type). Backtest architecture cannot maintain cross-session state, rolling percentile lookups, or regime-dependent exit logic across 5m bar resolution.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 43,
+        "status": "failed",
+        "summary": "30m opening range unidirectional breakout occurs more frequently in the first ho",
+        "source": "X/bookmarks",
+        "created": "2026-07-24",
+        "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"Era gate FAIL (2010-2020 PF 0.56 | 2021-2026 PF 0.85); WF 16/16 sit-outs; Calmar -0.06 < 0.5 (maxDD $-7,203 too deep vs return \\u2014 undeployable)\", \"stats\": {\"n\": 2784, \"pf\": 0.753, \"sharpe\": -1.589, \"win_pct\": 49.0, \"total_usd\": -7063.0, \"max_dd\": -7203.0, \"calmar\": -0.061}, \"routing\": \"breakout\"}"
       }
     ]
   },
