@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T22:10:06+00:00",
+  "generated_at": "2026-07-25T22:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -3600,15 +3600,15 @@
     },
     "orb": {
       "n_winners": 951,
-      "n_losers": 1131,
+      "n_losers": 1132,
       "n_breakeven": 0,
-      "total_net_usd": 4459,
+      "total_net_usd": 3808,
       "avg_win_usd": 120,
-      "avg_loss_usd": -97,
+      "avg_loss_usd": -98,
       "largest_win_usd": 1139,
       "largest_loss_usd": -711,
       "gross_profit_usd": 114230,
-      "gross_loss_usd": -109771,
+      "gross_loss_usd": -110422,
       "monthly": [
         {
           "month": "2010-07",
@@ -4572,8 +4572,8 @@
         },
         {
           "month": "2026-07",
-          "pnl": -2929,
-          "equity": 4459
+          "pnl": -3580,
+          "equity": 3808
         }
       ]
     }
