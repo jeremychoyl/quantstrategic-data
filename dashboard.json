@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T00:55:06+00:00",
+  "generated_at": "2026-07-25T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6431,21 +6431,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-24T01:00:06+00:00",
+    "as_of": "2026-07-25T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live track record is too thin (27 trades, -$201 P&L, all in one market) to validate the backtest's Sharpe 1.15 and 33.9% ROC, and a single-instrument systematic fund concentrates idiosyncratic risk in a way that institutional capital cannot justify\u2014no matter how rigorous the 16-year backtest was. The gap between a $3,627/yr projected draw and micro-contract reality is also concerning for operational and psychological sustainability.\n\nNext step to earn the check: Run live for a minimum of 250\u2013300 trades across *at least two uncorrelated futures markets* (e.g., add ES, GC, or ZB) while maintaining >Sharpe 0.8 and positive cumulative P&L; resubmit with that live proof and a realistic AUM ramp plan. Until then, this is a compelling trading system, not yet an allocable fund.",
+    "verdict": "No allocation today. A $184 live loss on 29 trades is noise, but the real disqualifier is concentration risk: three strategies all mining the same market (MNQ) with no demonstrated edge elsewhere\u2014this is a single bet masquerading as a fund, and backtests on one instrument over 16 years don't survive real correlation breakdowns. The Sharpe of 1.15 is respectable on paper, but a $10.7k account with sub-$200 live P&L tells me you're either not risking enough to prove signal or the slippage environment (-0.45 pts live) is eating alpha faster than the strategy generates it.\n\nOne concrete step to earn the check: Run a rigorous out-of-sample walk-forward on a *second* uncorrelated micro contract (ES, RTY, or ZB) for 60\u201390 live days at the same micro-lot risk per trade. If that second instrument shows even half the backtest Sharpe, you've proven the edge is systematic, not MNQ-specific. Without that, this is a one-legged stool.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "27 trades",
+        "now": "29 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-201",
+        "now": "$-184",
         "pass": false
       },
       {
@@ -6463,7 +6463,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "27 trades \u2014 too early",
+        "now": "29 trades \u2014 too early",
         "pass": false
       }
     ]
