@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T23:55:06+00:00",
+  "generated_at": "2026-07-26T00:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1423,7 +1423,7 @@
       {
         "date": "2026-07-24",
         "book": 3616.0,
-        "bh_nq": 5002,
+        "bh_nq": 4726,
         "tbill": 448
       }
     ],
@@ -1431,11 +1431,11 @@
       "book_usd": 3616.0,
       "book_pct": 16.4,
       "book_maxdd_usd": 6656,
-      "bh_usd": 5002,
-      "bh_pct": 22.7,
+      "bh_usd": 4726,
+      "bh_pct": 21.5,
       "bh_maxdd_usd": 6317,
       "tbill_usd": 448,
-      "alpha_vs_bh_usd": -1386
+      "alpha_vs_bh_usd": -1110
     }
   },
   "last_7_days": [
