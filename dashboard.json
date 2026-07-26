@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T01:00:06+00:00",
+  "generated_at": "2026-07-26T01:05:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5447,9 +5447,17 @@
     "total_tested": 21,
     "total_pass": 5,
     "total_fail": 16,
-    "total_skip": 21,
+    "total_skip": 22,
     "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 44,
+        "at": "2026-07-26T01:05:08.752669+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful volatility regime tracking (rolling StdDev percentile rank vs. 60-bar history, RSI state machine, conditional entry gates) and path-dependent position management (P&L-triggered exits with 0.5*ATR and 0.75*ATR thresholds). These exceed stateless template mechanics. Additionally, VIX daily filter is acknowledged as 'logically contradictory' in the spec itself (\u00a76 reference). The regime compression detector is not a standalone price pattern (breakout/reversion) but a computed microstructure state requiring continuous state carryforward across bars.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 43,
         "at": "2026-07-24T01:04:48.666601+00:00",
@@ -5535,14 +5543,6 @@
         "at": "2026-07-14T01:04:59.095075+00:00",
         "verdict": "SKIP",
         "reason": "Strategy requires stateful, path-dependent logic (calendar day gating, session-reset SMA/RSI, multi-bar prior-state lookback, time-of-day exit coordination) that exceeds stateless template mechanics. Entry conditions depend on prior bar state AND calendar position AND indicator values AND warm-up cutoff time; exit depends on indicator crossover OR overbought trigger OR wall-clock time. This is a coherent, potentially valid strategy but its state-dependent architecture (session reset, calendar gating, time gates, prior-bar memory) cannot be decomposed into a single atomic breakout, reversion, ma_cross, session_momentum, or calendar template without losing the conditional logic.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 31,
-        "at": "2026-07-07T15:59:39.200522+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires tick-level order-flow data (buy/sell tick counts per 5m bar) aggregated from real-time tick feeds, which exceeds stateless template architecture. Entry logic depends on tick imbalance ratio (buy_ticks / total_ticks > 0.58) as a real-time signal; exit depends on RSI(14) mean-reversion state machine (monitoring continuous RSI trajectory to 50\u00b13 band). This is a path-dependent, stateful strategy requiring live tick-disaggregation and multi-indicator state tracking across position lifecycle. The edge hypothesis (order-flow decoupling from momentum in high-velocity regimes) is coherent and potentially valid, but the mechanics cannot be expressed as a deterministic, stateless entry/exit rule set in any of the provided templates.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -5891,6 +5891,14 @@
         "source": "X/bookmarks",
         "created": "2026-07-24",
         "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"Era gate FAIL (2010-2020 PF 0.56 | 2021-2026 PF 0.85); WF 16/16 sit-outs; Calmar -0.06 < 0.5 (maxDD $-7,203 too deep vs return \\u2014 undeployable)\", \"stats\": {\"n\": 2784, \"pf\": 0.753, \"sharpe\": -1.589, \"win_pct\": 49.0, \"total_usd\": -7063.0, \"max_dd\": -7203.0, \"calmar\": -0.061}, \"routing\": \"breakout\"}"
+      },
+      {
+        "id": 44,
+        "status": "skip",
+        "summary": "Detect market microstructure regime via intrabar volatility clustering (rolling ",
+        "source": "r/algotrading",
+        "created": "2026-07-26",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful volatility regime tracking (rolling StdDev percentile rank vs. 60-bar history, RSI state machine, conditional entry gates) and path-dependent position management (P&L-triggered exits with 0.5*ATR and 0.75*ATR thresholds). These exceed stateless template mechanics. Additionally, VIX daily filter is acknowledged as 'logically contradictory' in the spec itself (\\u00a76 reference). The regime compression detector is not a standalone price pattern (breakout/reversion) but a computed microstructure state requiring continuous state carryforward across bars.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
