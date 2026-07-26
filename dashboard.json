@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T00:55:06+00:00",
+  "generated_at": "2026-07-26T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6444,10 +6444,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-25T01:00:06+00:00",
+    "as_of": "2026-07-26T01:00:05+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. A $184 live loss on 29 trades is noise, but the real disqualifier is concentration risk: three strategies all mining the same market (MNQ) with no demonstrated edge elsewhere\u2014this is a single bet masquerading as a fund, and backtests on one instrument over 16 years don't survive real correlation breakdowns. The Sharpe of 1.15 is respectable on paper, but a $10.7k account with sub-$200 live P&L tells me you're either not risking enough to prove signal or the slippage environment (-0.45 pts live) is eating alpha faster than the strategy generates it.\n\nOne concrete step to earn the check: Run a rigorous out-of-sample walk-forward on a *second* uncorrelated micro contract (ES, RTY, or ZB) for 60\u201390 live days at the same micro-lot risk per trade. If that second instrument shows even half the backtest Sharpe, you've proven the edge is systematic, not MNQ-specific. Without that, this is a one-legged stool.",
+    "verdict": "No allocation today. The live track record is statistically meaningless (29 trades, negative P&L, no edge signal), and the 16-year backtest\u2014while methodologically sound\u2014collapses entirely under real market friction: your live slippage (-0.45 pts) would consume ~40% of the backtest's modest $3,627 annual edge on a single contract. Single-market concentration (MNQ-only) is acceptable only once live profitability is proven and repeated, which you have not achieved.\n\nTo earn the check: Run the live strategy for a full 500+ trades (or 12 months, whichever comes first) on current market conditions with *zero curve-fitting*, document slippage and commissions separately, and show cumulative live P&L >$5K with Sharpe >0.8. Only then will you have evidence that the backtest translates to real execution. Until then, you're asking LPs to fund a hypothesis, not a business.",
     "scorecard": [
       {
         "criterion": "Live track record",
