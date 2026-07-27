@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T16:40:06+00:00",
+  "generated_at": "2026-07-27T16:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5465,9 +5465,25 @@
     "total_tested": 21,
     "total_pass": 5,
     "total_fail": 16,
-    "total_skip": 24,
+    "total_skip": 26,
     "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 47,
+        "at": "2026-07-27T16:45:10.442424+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy mechanics are stateful and path-dependent: entry requires detecting whether condition (2) 'was false at open' (a state query on the current bar mid-formation), and exit depends on price closing below 'entry bar's low' (a stored reference dependent on which specific bar triggered entry). These require multi-bar state tracking and adaptive position memory incompatible with stateless backtesting templates. The core hypothesis conflates correct causal coding (a practice, not an alpha source) with genuine edge; the actual momentum claim (close > SMA(20) + breakout above prior high) is testable, but the state-dependent entry confirmation and the explicit path-dependent exit construct exceed template scope.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
+      {
+        "hyp_id": 48,
+        "at": "2026-07-27T16:45:09.037815+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful position tracking (current_open_contracts vs max_concurrent_contracts ceiling), multi-timeframe state synchronization (30m ORB rejection detection + 5m SMA confirmation), external data feed (VIX real-time gating), and path-dependent failure classification. These exceed stateless template capabilities. Additionally, the core edge (mean reversion into trapped long unwinding) is mechanistically dependent on order-flow inference and stop-hunt sequencing, which cannot be verified from OHLCV alone.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 46,
         "at": "2026-07-27T01:05:53.236977+00:00",
@@ -5539,22 +5555,6 @@
         "reason": "No trades generated \u2014 conditions too restrictive",
         "stats": {},
         "routing": "reversion"
-      },
-      {
-        "hyp_id": 37,
-        "at": "2026-07-17T01:04:56.667493+00:00",
-        "verdict": "SKIP",
-        "reason": "Stateful volatility-percentile trailing logic with multi-timeframe state (5m realized vol percentile rank + daily ATR/VIX context) exceeds stateless backtest architecture. Exit trigger (percentile crosses below 40) is path-dependent; position state must track realized vol since entry, not available in event-driven entry-signal framework. Trailing stop (1.8\u00d7 ATR from 5m high since entry) requires continuous position state and historical intra-trade high tracking.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 36,
-        "at": "2026-07-15T01:04:19.716343+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires real-time NASDAQ advance/decline tick data (TRIN calculation) as a live external microstructure feed synchronized with 5m price bars. This stateful, feed-dependent architecture exceeds stateless backtesting templates: TRIN values are not derivable from OHLCV alone, require continuous tick synchronization, and introduce path-dependent state (tick timing relative to bar close). The edge mechanism (breadth confirmation gate) is coherent but mechanics are untestable in a stateless bar-replay environment.",
-        "stats": {},
-        "routing": "pre_reject"
       }
     ],
     "queue": [
@@ -5925,6 +5925,22 @@
         "source": "r/algotrading",
         "created": "2026-07-27",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Gaussian-scaled trailing stop with path-dependent, time-based exponential decay function is stateful and adaptive. Stop geometry depends on accumulated MaxFavorableExcursion and elapsed time_bars_held, requiring continuous position state tracking across bars. This exceeds stateless breakout template mechanics (fixed ATR multiples, time stops). Additionally, the core edge claim \\u2014 that Gaussian decay matches observed momentum decay \\u2014 is a parameterization hypothesis that cannot be tested without the adaptive trailing logic itself, making it untestable within rigid breakout framework.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 47,
+        "status": "skip",
+        "summary": "Causal signal timing: Enter only when a signal condition becomes true *during* b",
+        "source": "Manual paste",
+        "created": "2026-07-27",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy mechanics are stateful and path-dependent: entry requires detecting whether condition (2) 'was false at open' (a state query on the current bar mid-formation), and exit depends on price closing below 'entry bar's low' (a stored reference dependent on which specific bar triggered entry). These require multi-bar state tracking and adaptive position memory incompatible with stateless backtesting templates. The core hypothesis conflates correct causal coding (a practice, not an alpha source) with genuine edge; the actual momentum claim (close > SMA(20) + breakout above prior high) is testable, but the state-dependent entry confirmation and the explicit path-dependent exit construct exceed template scope.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 48,
+        "status": "skip",
+        "summary": "A risk-ceiling-aware entry filter that routes all failed breakout attempts (ORB ",
+        "source": "Manual paste",
+        "created": "2026-07-27",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful position tracking (current_open_contracts vs max_concurrent_contracts ceiling), multi-timeframe state synchronization (30m ORB rejection detection + 5m SMA confirmation), external data feed (VIX real-time gating), and path-dependent failure classification. These exceed stateless template capabilities. Additionally, the core edge (mean reversion into trapped long unwinding) is mechanistically dependent on order-flow inference and stop-hunt sequencing, which cannot be verified from OHLCV alone.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
