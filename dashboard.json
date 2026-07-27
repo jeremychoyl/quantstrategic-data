@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T01:00:07+00:00",
+  "generated_at": "2026-07-27T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5454,9 +5454,17 @@
     "total_tested": 21,
     "total_pass": 5,
     "total_fail": 16,
-    "total_skip": 22,
+    "total_skip": 23,
     "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 45,
+        "at": "2026-07-27T01:05:08.536304+00:00",
+        "verdict": "SKIP",
+        "reason": "Stateful autocorrelation-gating architecture with path-dependent regime detection and adaptive exit thresholds exceeds stateless backtest templates. Requires continuous rolling AC5_VN computation with look-ahead bias risk in discrete bar estimation; AC threshold calibration (+0.18) is instrument/regime-specific and non-portable across backtest runs.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 44,
         "at": "2026-07-26T01:05:08.752669+00:00",
@@ -5544,14 +5552,6 @@
           "calmar": 0.144
         },
         "routing": "reversion"
-      },
-      {
-        "hyp_id": 33,
-        "at": "2026-07-14T01:04:59.095075+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires stateful, path-dependent logic (calendar day gating, session-reset SMA/RSI, multi-bar prior-state lookback, time-of-day exit coordination) that exceeds stateless template mechanics. Entry conditions depend on prior bar state AND calendar position AND indicator values AND warm-up cutoff time; exit depends on indicator crossover OR overbought trigger OR wall-clock time. This is a coherent, potentially valid strategy but its state-dependent architecture (session reset, calendar gating, time gates, prior-bar memory) cannot be decomposed into a single atomic breakout, reversion, ma_cross, session_momentum, or calendar template without losing the conditional logic.",
-        "stats": {},
-        "routing": "pre_reject"
       }
     ],
     "queue": [
@@ -5906,6 +5906,22 @@
         "source": "r/algotrading",
         "created": "2026-07-26",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful volatility regime tracking (rolling StdDev percentile rank vs. 60-bar history, RSI state machine, conditional entry gates) and path-dependent position management (P&L-triggered exits with 0.5*ATR and 0.75*ATR thresholds). These exceed stateless template mechanics. Additionally, VIX daily filter is acknowledged as 'logically contradictory' in the spec itself (\\u00a76 reference). The regime compression detector is not a standalone price pattern (breakout/reversion) but a computed microstructure state requiring continuous state carryforward across bars.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 45,
+        "status": "skip",
+        "summary": "ARFIMA-gated trend-following on 5m MNQ: enter long when 5-bar autocorrelation of",
+        "source": "OpenAlex (Academic Papers)",
+        "created": "2026-07-27",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Stateful autocorrelation-gating architecture with path-dependent regime detection and adaptive exit thresholds exceeds stateless backtest templates. Requires continuous rolling AC5_VN computation with look-ahead bias risk in discrete bar estimation; AC threshold calibration (+0.18) is instrument/regime-specific and non-portable across backtest runs.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 46,
+        "status": "pending",
+        "summary": "5m MNQ long entries on breakout of 20-bar high with Gaussian-scaled trailing sto",
+        "source": "r/algotrading",
+        "created": "2026-07-27",
+        "verdict": null
       }
     ]
   },
