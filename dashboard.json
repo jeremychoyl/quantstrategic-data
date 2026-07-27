@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T01:05:06+00:00",
+  "generated_at": "2026-07-27T01:10:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5454,9 +5454,17 @@
     "total_tested": 21,
     "total_pass": 5,
     "total_fail": 16,
-    "total_skip": 23,
+    "total_skip": 24,
     "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 46,
+        "at": "2026-07-27T01:05:53.236977+00:00",
+        "verdict": "SKIP",
+        "reason": "Gaussian-scaled trailing stop with path-dependent, time-based exponential decay function is stateful and adaptive. Stop geometry depends on accumulated MaxFavorableExcursion and elapsed time_bars_held, requiring continuous position state tracking across bars. This exceeds stateless breakout template mechanics (fixed ATR multiples, time stops). Additionally, the core edge claim \u2014 that Gaussian decay matches observed momentum decay \u2014 is a parameterization hypothesis that cannot be tested without the adaptive trailing logic itself, making it untestable within rigid breakout framework.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 45,
         "at": "2026-07-27T01:05:08.536304+00:00",
@@ -5536,22 +5544,6 @@
         "reason": "Strategy requires real-time NASDAQ advance/decline tick data (TRIN calculation) as a live external microstructure feed synchronized with 5m price bars. This stateful, feed-dependent architecture exceeds stateless backtesting templates: TRIN values are not derivable from OHLCV alone, require continuous tick synchronization, and introduce path-dependent state (tick timing relative to bar close). The edge mechanism (breadth confirmation gate) is coherent but mechanics are untestable in a stateless bar-replay environment.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 35,
-        "at": "2026-07-14T01:24:29.328493+00:00",
-        "verdict": "FAIL",
-        "reason": "WF 4/16 sit-outs; Corr vs DC: 0.383 \u2265 0.3; Calmar 0.14 < 0.5 (maxDD $-5,572 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 635,
-          "pf": 1.24,
-          "sharpe": 0.884,
-          "win_pct": 40.3,
-          "total_usd": 12819.0,
-          "max_dd": -5572.0,
-          "calmar": 0.144
-        },
-        "routing": "reversion"
       }
     ],
     "queue": [
@@ -5917,11 +5909,11 @@
       },
       {
         "id": 46,
-        "status": "pending",
+        "status": "skip",
         "summary": "5m MNQ long entries on breakout of 20-bar high with Gaussian-scaled trailing sto",
         "source": "r/algotrading",
         "created": "2026-07-27",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Gaussian-scaled trailing stop with path-dependent, time-based exponential decay function is stateful and adaptive. Stop geometry depends on accumulated MaxFavorableExcursion and elapsed time_bars_held, requiring continuous position state tracking across bars. This exceeds stateless breakout template mechanics (fixed ATR multiples, time stops). Additionally, the core edge claim \\u2014 that Gaussian decay matches observed momentum decay \\u2014 is a parameterization hypothesis that cannot be tested without the adaptive trailing logic itself, making it untestable within rigid breakout framework.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
