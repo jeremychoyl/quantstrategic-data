@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T01:00:06+00:00",
+  "generated_at": "2026-07-28T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1483,9 +1483,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 28071.0,
-      "pnl_pts": -518.25,
-      "pnl_usd": -1036.5,
+      "current_px": 28042.25,
+      "pnl_pts": -547.0,
+      "pnl_usd": -1094.0,
       "direction": "Long"
     }
   ],
@@ -5956,6 +5956,14 @@
         "source": "Manual paste",
         "created": "2026-07-27",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful position tracking (current_open_contracts vs max_concurrent_contracts ceiling), multi-timeframe state synchronization (30m ORB rejection detection + 5m SMA confirmation), external data feed (VIX real-time gating), and path-dependent failure classification. These exceed stateless template capabilities. Additionally, the core edge (mean reversion into trapped long unwinding) is mechanistically dependent on order-flow inference and stop-hunt sequencing, which cannot be verified from OHLCV alone.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 49,
+        "status": "pending",
+        "summary": "Restrict mean-reversion entries to regimes classified as choppy (low trend stren",
+        "source": "r/algotrading",
+        "created": "2026-07-28",
+        "verdict": null
       }
     ]
   },
