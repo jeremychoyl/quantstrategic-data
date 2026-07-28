@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T00:55:06+00:00",
+  "generated_at": "2026-07-28T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1483,9 +1483,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 28071.75,
-      "pnl_pts": -517.5,
-      "pnl_usd": -1035.0,
+      "current_px": 28071.0,
+      "pnl_pts": -518.25,
+      "pnl_usd": -1036.5,
       "direction": "Long"
     }
   ],
@@ -6509,10 +6509,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-27T01:00:07+00:00",
+    "as_of": "2026-07-28T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live account is functionally pre-launch (29 trades over ~7 months is insufficient signal; -$184 P&L with 4480% win rate is statistical noise masking a likely outlier or data error); more critically, you've built a single-market systematic fund with zero instrument diversification despite 16 years of backtest data\u2014that's a structural red flag, not a feature. The backtest Sharpe (1.15) and Calmar (0.58) are respectable but maxDD of $6,286 on $10,700 capital means a 59% drawdown; one correlation shock in Nasdaq micro futures invalidates the entire fund thesis.\n\nDo this next: Run a rigorous out-of-sample walk-forward test on your three strategies across at least two uncorrelated markets (ES, GC, CL, or ZB) using the same 16-year window and 1-contract sizing. If edge doesn't port, you have a Nasdaq-specific regime bet, not a systematic fund\u2014and you'll know whether to rebrand or rebuild before taking LP capital.",
+    "verdict": "Not yet. The live P&L is negative despite a 4480% win rate\u2014a red flag that either execution, position sizing, or slippage assumptions are materially different from backtest conditions, and 29 trades across three strategies is statistically silent noise. The bigger structural problem is single-market concentration: backtest Sharpe of 1.15 on MNQ-only means you've optimized for one regime; the moment Nasdaq structure shifts or correlation with your edge-driving signal breaks, the entire portfolio collapses with no hedge.\n\nOne concrete thing: Run a live walk-forward validation over the next 60\u201390 days with at least 150+ trades at current position size, publish weekly P&L / slippage / win-rate splits by strategy, and simultaneously backtest your three strategies on ES, CL, and GC using identical entry/exit logic to prove the edge is *strategy-portable*, not regime-lucky. Show me that diversification is real, not just an untested hypothesis.",
     "scorecard": [
       {
         "criterion": "Live track record",
