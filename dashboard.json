@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T01:05:06+00:00",
+  "generated_at": "2026-07-28T01:10:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1483,9 +1483,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 28042.25,
-      "pnl_pts": -547.0,
-      "pnl_usd": -1094.0,
+      "current_px": 28006.25,
+      "pnl_pts": -583.0,
+      "pnl_usd": -1166.0,
       "direction": "Long"
     }
   ],
@@ -5480,9 +5480,17 @@
     "total_tested": 21,
     "total_pass": 5,
     "total_fail": 16,
-    "total_skip": 26,
+    "total_skip": 27,
     "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 49,
+        "at": "2026-07-28T01:05:15.598781+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires real-time multi-feed external state (VIX term structure daily slopes, COT weekly percentiles, realized volatility regime classification, trend line breaks) integrated into stateful regime gates that adaptively switch between two distinct sub-strategies (mean-reversion vs. momentum). This exceeds stateless template architecture: (1) COT data is weekly-released, creating asynchronous external state; (2) regime classification is path-dependent and multi-timeframe (5m signals + daily regime + weekly COT); (3) exit logic includes 'regime flip' detection requiring continuous monitoring of external feeds; (4) dual-mode strategy switching requires maintaining position-state and strategy-mode context across bars. No single template captures the conditional logic flow or the adaptive mode-switching mechanics.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 47,
         "at": "2026-07-27T16:45:10.442424+00:00",
@@ -5562,14 +5570,6 @@
         "reason": "Trailing stop mechanics (highest high since entry, path-dependent state) and adaptive RSI/SMA crossover with external VIX gate exceed stateless template architecture. Strategy requires persistent position state, swing-tracking logic, and conditional re-evaluation across bars\u2014not supported by breakout, reversion, ma_cross, session_momentum, or calendar templates.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 38,
-        "at": "2026-07-18T01:04:24.651421+00:00",
-        "verdict": "FAIL",
-        "reason": "No trades generated \u2014 conditions too restrictive",
-        "stats": {},
-        "routing": "reversion"
       }
     ],
     "queue": [
@@ -5959,11 +5959,11 @@
       },
       {
         "id": 49,
-        "status": "pending",
+        "status": "skip",
         "summary": "Restrict mean-reversion entries to regimes classified as choppy (low trend stren",
         "source": "r/algotrading",
         "created": "2026-07-28",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time multi-feed external state (VIX term structure daily slopes, COT weekly percentiles, realized volatility regime classification, trend line breaks) integrated into stateful regime gates that adaptively switch between two distinct sub-strategies (mean-reversion vs. momentum). This exceeds stateless template architecture: (1) COT data is weekly-released, creating asynchronous external state; (2) regime classification is path-dependent and multi-timeframe (5m signals + daily regime + weekly COT); (3) exit logic includes 'regime flip' detection requiring continuous monitoring of external feeds; (4) dual-mode strategy switching requires maintaining position-state and strategy-mode context across bars. No single template captures the conditional logic flow or the adaptive mode-switching mechanics.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
