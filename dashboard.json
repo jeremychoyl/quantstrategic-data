@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T04:15:06+00:00",
+  "generated_at": "2026-07-29T04:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1478,9 +1478,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 27693.0,
-      "pnl_pts": -896.25,
-      "pnl_usd": -1792.5,
+      "current_px": 27675.25,
+      "pnl_pts": -914.0,
+      "pnl_usd": -1828.0,
       "direction": "Long"
     }
   ],
@@ -5970,7 +5970,7 @@
     ]
   },
   "research_discipline": {
-    "as_of": "2026-07-03",
+    "as_of": "2026-07-29",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
     "summary": "The territory is mapped \u2014 and as of 2026-07-03 the frontier is FULLY explored: every lever in the frontier memo (US-Treasury carry, multi-pair RV basket, ag seasonality, the ML/method frontier, global gov-bond carry, and the alt-data free tier) has been run to a pre-committed verdict, almost all for $0-to-pennies. ORB\u2026",
     "book": [
@@ -6394,6 +6394,31 @@
             "idea": "SMT divergence (ES lower-high while NQ higher-high \u2192 short, and mirror)",
             "reason": "0/7. Net-losing / era-fail (best long-rr2 PF 1.107, WF 8 sit-outs + Calmar 0.13); short/reversal cuts breach the DC corr gate (\u22120.33\u2026\u22120.66). Cross-asset-divergence edge absent \u2014 consistent\u2026",
             "pattern": "Fails Calmar"
+          },
+          {
+            "idea": "Sweep",
+            "reason": "Scope",
+            "pattern": null
+          },
+          {
+            "idea": "FVG 5m\u219260m (fvg_timeframe_sweep.py)",
+            "reason": "4 TF \u00d7 7 instr \u00d7 dir \u00d7 style + NQ reversal",
+            "pattern": null
+          },
+          {
+            "idea": "FVG / IFVG / OB / breaker / OTE / liquidity-sweep / MSS / CISD / consequent-encroachment / Power-of-3 / BPR / SMT on 4h+daily",
+            "reason": "12 ICT mechanics \u00d7 7 instr",
+            "pattern": null
+          },
+          {
+            "idea": "Supply/demand-base + Volume-Profile (breakout+reversion) on 4h+daily",
+            "reason": "3 non-ICT templates \u00d7 7 instr",
+            "pattern": null
+          },
+          {
+            "idea": "NQ RTH-daily basis re-run (nq_rth_daily_rerun.py)",
+            "reason": "all 10 mechanics, NQ on RTH-daily not 24h",
+            "pattern": null
           }
         ]
       },
@@ -6515,7 +6540,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 76,
+    "n_rejected": 81,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
