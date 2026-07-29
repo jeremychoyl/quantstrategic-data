@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T05:40:06+00:00",
+  "generated_at": "2026-07-29T05:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1478,9 +1478,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 27844.25,
-      "pnl_pts": -745.0,
-      "pnl_usd": -1490.0,
+      "current_px": 27827.5,
+      "pnl_pts": -761.75,
+      "pnl_usd": -1523.5,
       "direction": "Long"
     }
   ],
@@ -6456,8 +6456,28 @@
             "pattern": null
           },
           {
+            "idea": "euro \u2194 yen",
+            "reason": "FX, moderate (anti-USD)",
+            "pattern": null
+          },
+          {
+            "idea": "bitcoin \u2194 nasdaq",
+            "reason": "crypto\u2194equity, risk-on",
+            "pattern": null
+          },
+          {
+            "idea": "bitcoin \u2194 ES",
+            "reason": "crypto\u2194equity, risk-on",
+            "pattern": null
+          },
+          {
             "idea": "gold \u2194 platinum",
             "reason": "precious, tight",
+            "pattern": null
+          },
+          {
+            "idea": "nasdaq \u2194 dow",
+            "reason": "equity cousin, tight (corr 0.8\u20130.95)",
             "pattern": null
           }
         ]
@@ -6580,7 +6600,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 89,
+    "n_rejected": 93,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
