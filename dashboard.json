@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:55:06+00:00",
+  "generated_at": "2026-07-29T00:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1436,7 +1436,7 @@
       {
         "date": "2026-07-27",
         "book": 3872.0,
-        "bh_nq": 4700,
+        "bh_nq": 4544,
         "tbill": 454
       }
     ],
@@ -1444,19 +1444,14 @@
       "book_usd": 3872.0,
       "book_pct": 17.6,
       "book_maxdd_usd": 6656,
-      "bh_usd": 4700,
-      "bh_pct": 21.4,
+      "bh_usd": 4544,
+      "bh_pct": 20.7,
       "bh_maxdd_usd": 6317,
       "tbill_usd": 454,
-      "alpha_vs_bh_usd": -828
+      "alpha_vs_bh_usd": -672
     }
   },
   "last_7_days": [
-    {
-      "date": "2026-07-21",
-      "pnl_pts": 251.5,
-      "pnl_usd": 503.0
-    },
     {
       "date": "2026-07-23",
       "pnl_pts": 74.25,
@@ -1483,16 +1478,16 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 28080.5,
-      "pnl_pts": -508.75,
-      "pnl_usd": -1017.5,
+      "current_px": 28102.75,
+      "pnl_pts": -486.5,
+      "pnl_usd": -973.0,
       "direction": "Long"
     }
   ],
   "net_returns": {
-    "5d_pts": 334.25,
-    "5d_usd": 668.5,
-    "5d_pct": 2.674,
+    "5d_pts": 82.75,
+    "5d_usd": 165.5,
+    "5d_pct": 0.662,
     "ytd_pts": -406.5,
     "ytd_usd": -813.0,
     "ytd_pct": -3.252
@@ -5460,6 +5455,13 @@
       },
       {
         "date": "2026-07-28",
+        "day_pnl_pts": 0.0,
+        "day_pnl_usd": 0.0,
+        "cum_pts": -92.0,
+        "cum_usd": -184.0
+      },
+      {
+        "date": "2026-07-29",
         "day_pnl_pts": 0.0,
         "day_pnl_usd": 0.0,
         "cum_pts": -92.0,
