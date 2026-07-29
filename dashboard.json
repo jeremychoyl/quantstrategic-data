@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T19:40:05+00:00",
+  "generated_at": "2026-07-29T19:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1474,13 +1474,23 @@
   },
   "active_positions": [
     {
+      "strategy": "EMA Cross 5m",
+      "size": "1 MNQ",
+      "entry_date": "2026-07-29",
+      "entry_px": 27524.5,
+      "current_px": 27473.75,
+      "pnl_pts": 50.75,
+      "pnl_usd": 101.5,
+      "direction": "Short"
+    },
+    {
       "strategy": "DC MeanRev",
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 27610.25,
-      "pnl_pts": -979.0,
-      "pnl_usd": -1958.0,
+      "current_px": 27473.75,
+      "pnl_pts": -1115.5,
+      "pnl_usd": -2231.0,
       "direction": "Long"
     }
   ],
