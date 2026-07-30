@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T17:30:06+00:00",
+  "generated_at": "2026-07-30T17:35:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1509,9 +1509,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-30",
       "entry_px": 28064.5,
-      "current_px": 28188.75,
-      "pnl_pts": 124.25,
-      "pnl_usd": 248.5,
+      "current_px": 28163.0,
+      "pnl_pts": 98.5,
+      "pnl_usd": 197.0,
       "direction": "Long"
     },
     {
@@ -1519,9 +1519,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 28188.75,
-      "pnl_pts": -400.5,
-      "pnl_usd": -801.0,
+      "current_px": 28163.0,
+      "pnl_pts": -426.25,
+      "pnl_usd": -852.5,
       "direction": "Long"
     }
   ],
