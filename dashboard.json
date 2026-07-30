@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T00:55:05+00:00",
+  "generated_at": "2026-07-30T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1496,9 +1496,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 27537.0,
-      "pnl_pts": -1052.25,
-      "pnl_usd": -2104.5,
+      "current_px": 27546.5,
+      "pnl_pts": -1042.75,
+      "pnl_usd": -2085.5,
       "direction": "Long"
     }
   ],
@@ -6657,22 +6657,22 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-29T01:00:06+00:00",
+    "as_of": "2026-07-30T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live P&L is negative (\u2013$184 on 29 trades), which alone doesn't disqualify early-stage micro funds, but the real blocker is that you've found zero edge outside MNQ despite a deliberate search\u2014that single-market concentration is a structural risk no LP accepts at $10k AUM, and the 16-year backtest (Sharpe 1.15, Calmar 0.58) doesn't survive the \"too few live trades\" test or prove the live slippage environment (-0.45 pts) was modeled correctly. You're not wrong; you're just too early and too concentrated.\n\nYour one concrete next step to earn the check: Run 200\u2013300 live trades across MNQ over the next 90\u2013120 days, document that you hit a positive Sharpe (\u22650.8) live *and* hit win rate / PnL parity with backtest assumptions; *then* show one non-correlated instrument (TY, ES, CL, or commodity vol) where you've found repeatable edge on 5+ years of OOS data. Walk in with that, and we talk seriously.",
+    "verdict": "No. Not yet.\n\nYour backtest is sound (Sharpe 1.11, Calmar 0.52 on 16 years is credible), but live is 30 trades in ~8 months on a single market with +$104 total P&L \u2014 that's noise masking as track record. Single-instrument concentration plus zero live correlation data plus micro scale means I cannot price tail risk or whether your edge survives real market friction. You need 18\u201324 months of live trading (minimum 200\u2013300 trades) on MNQ alone to separate signal from luck before I'd seriously consider capital.\n\nOne concrete next step: Run a prospective second strategy on a different short-duration futures market (ES, YM, RTY, or a commodity) using the same systematic framework\u2014not to chase returns, but to prove your edge is *market-independent* and generate live diversification proof. If that second instrument shows comparable Sharpe on live data within 6 months, you move from \"interesting backtest + one anecdote\" to \"systematic trader with genuine edge.\" That's when we talk.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "29 trades",
+        "now": "30 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-184",
-        "pass": false
+        "now": "$104",
+        "pass": true
       },
       {
         "criterion": "Diversification",
@@ -6683,13 +6683,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$10,700",
+        "now": "micro \u00b7 ~$11,200",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "29 trades \u2014 too early",
+        "now": "30 trades \u2014 too early",
         "pass": false
       }
     ]
