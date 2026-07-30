@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T01:00:07+00:00",
+  "generated_at": "2026-07-30T01:05:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1496,9 +1496,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-27",
       "entry_px": 28589.25,
-      "current_px": 27546.5,
-      "pnl_pts": -1042.75,
-      "pnl_usd": -2085.5,
+      "current_px": 27591.0,
+      "pnl_pts": -998.25,
+      "pnl_usd": -1996.5,
       "direction": "Long"
     }
   ],
@@ -5535,9 +5535,17 @@
     "total_tested": 21,
     "total_pass": 5,
     "total_fail": 16,
-    "total_skip": 27,
+    "total_skip": 28,
     "pass_rate": 23.8,
     "recent": [
+      {
+        "hyp_id": 50,
+        "at": "2026-07-30T01:04:37.046403+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires multi-indicator state machine (RSI extremes + SMA filter + ATR gate + volume MA confirmation + primary/fallback exit logic with RSI crosses). This is path-dependent position state across multiple indicator regimes with stateful exit conditions (RSI crossing levels during hold). Architecture exceeds stateless reversion template \u2014 no simple entry/exit signal pair. Also requires external VIX daily close and 5m volume MA computed separately from 1m bar logic, introducing multi-timeframe state dependency.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 49,
         "at": "2026-07-28T01:05:15.598781+00:00",
@@ -5615,14 +5623,6 @@
         "at": "2026-07-22T01:04:34.414562+00:00",
         "verdict": "SKIP",
         "reason": "Architecture veto: 'adaptive' detected \u2014 real-time param tuning prohibited by SOP.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 39,
-        "at": "2026-07-19T01:04:15.782893+00:00",
-        "verdict": "SKIP",
-        "reason": "Trailing stop mechanics (highest high since entry, path-dependent state) and adaptive RSI/SMA crossover with external VIX gate exceed stateless template architecture. Strategy requires persistent position state, swing-tracking logic, and conditional re-evaluation across bars\u2014not supported by breakout, reversion, ma_cross, session_momentum, or calendar templates.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6019,6 +6019,22 @@
         "source": "r/algotrading",
         "created": "2026-07-28",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time multi-feed external state (VIX term structure daily slopes, COT weekly percentiles, realized volatility regime classification, trend line breaks) integrated into stateful regime gates that adaptively switch between two distinct sub-strategies (mean-reversion vs. momentum). This exceeds stateless template architecture: (1) COT data is weekly-released, creating asynchronous external state; (2) regime classification is path-dependent and multi-timeframe (5m signals + daily regime + weekly COT); (3) exit logic includes 'regime flip' detection requiring continuous monitoring of external feeds; (4) dual-mode strategy switching requires maintaining position-state and strategy-mode context across bars. No single template captures the conditional logic flow or the adaptive mode-switching mechanics.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 50,
+        "status": "skip",
+        "summary": "MNQ's small-tick microstructure (post-2008) invalidates classical trend-followin",
+        "source": "Quantpedia",
+        "created": "2026-07-30",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires multi-indicator state machine (RSI extremes + SMA filter + ATR gate + volume MA confirmation + primary/fallback exit logic with RSI crosses). This is path-dependent position state across multiple indicator regimes with stateful exit conditions (RSI crossing levels during hold). Architecture exceeds stateless reversion template \\u2014 no simple entry/exit signal pair. Also requires external VIX daily close and 5m volume MA computed separately from 1m bar logic, introducing multi-timeframe state dependency.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 51,
+        "status": "pending",
+        "summary": "RSI(2) mean-reversion in uptrends identifies short-term weakness in MNQ; enter l",
+        "source": "X/timeline",
+        "created": "2026-07-30",
+        "verdict": null
       }
     ]
   },
