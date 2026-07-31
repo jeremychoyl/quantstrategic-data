@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T11:50:06+00:00",
+  "generated_at": "2026-07-31T11:55:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -19678,5 +19678,35 @@
     ],
     "most_volatile": "Mar",
     "note": "Descriptive context, NOT a tradeable signal (calendar seasonality is corr-redundant with the EMA long-drift factor + Calmar-undeployable; see REJECTED_IDEAS.md)."
+  },
+  "shadows": {
+    "note": "Paper forward-validation of candidate tweaks \u2014 NOT live. Verdicts are evaluated only at quarterly reviews; a red/green week is noise.",
+    "items": [
+      {
+        "title": "ORB size-down sizing \u2014 7/40 trades (since 07-02)",
+        "details": [
+          "flat-3ct -1,988 vs sized -662 $"
+        ]
+      },
+      {
+        "title": "DC 2\u00d7-thrust sizing \u2014 2 trades, 1/5 hi-state (since 07-08)",
+        "details": [
+          "flat -22.2 vs sized +229.2 pts"
+        ]
+      },
+      {
+        "title": "DC 24h evening entry \u2014 1/20 closed (since 07-10), 1 open",
+        "details": [
+          "18:00-arm +540.8 pts (PF None) vs 09:30-arm +264.5 (PF None)",
+          "paired evening-vs-morning advantage: +276.2 pts/signal (n=1)"
+        ]
+      },
+      {
+        "title": "RSI2 overlay (light, multi-ct) \u2014 1/20 closed (since 07-17)",
+        "details": [
+          "RSI2 leg -508.0 pts (PF 0.0), corr\u2192DC None"
+        ]
+      }
+    ]
   }
 }
