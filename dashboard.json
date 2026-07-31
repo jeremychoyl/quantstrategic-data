@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T00:55:06+00:00",
+  "generated_at": "2026-07-31T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6752,22 +6752,22 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-30T01:00:07+00:00",
+    "as_of": "2026-07-31T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No. Not yet.\n\nYour backtest is sound (Sharpe 1.11, Calmar 0.52 on 16 years is credible), but live is 30 trades in ~8 months on a single market with +$104 total P&L \u2014 that's noise masking as track record. Single-instrument concentration plus zero live correlation data plus micro scale means I cannot price tail risk or whether your edge survives real market friction. You need 18\u201324 months of live trading (minimum 200\u2013300 trades) on MNQ alone to separate signal from luck before I'd seriously consider capital.\n\nOne concrete next step: Run a prospective second strategy on a different short-duration futures market (ES, YM, RTY, or a commodity) using the same systematic framework\u2014not to chase returns, but to prove your edge is *market-independent* and generate live diversification proof. If that second instrument shows comparable Sharpe on live data within 6 months, you move from \"interesting backtest + one anecdote\" to \"systematic trader with genuine edge.\" That's when we talk.",
+    "verdict": "No allocation today. The live P&L is underwater by $146 on just 32 trades\u2014statistically meaningless noise, but paired with single-market concentration on MNQ and a backtest Sharpe of 1.08 (respectable but not exceptional for systematic micro), you're asking for capital before you've demonstrated live consistency or shown the strategy survives regime shifts outside Nasdaq strength. The 16-year backtest doesn't matter yet; what matters is the next 200+ live trades need to cluster near breakeven or better, and you need evidence *one* of your three strategies outperforms the others live\u2014because running all three on one market is a hedge, not a portfolio.\n\nTo earn my check: accumulate 150+ more live trades (next 3\u20134 months minimum), show live Sharpe \u22650.80 in that window, and present a credible path to either (a) uncorrelated edge in ES/YM or (b) a written rationale for why MNQ-only concentration is durable\u2014not aspirational. Right now you're a sharp trader with a working backtest; you're not yet a fund.",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "30 trades",
+        "now": "32 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$104",
-        "pass": true
+        "now": "$-146",
+        "pass": false
       },
       {
         "criterion": "Diversification",
@@ -6778,13 +6778,13 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$11,200",
+        "now": "micro \u00b7 ~$12,400",
         "pass": false
       },
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "30 trades \u2014 too early",
+        "now": "32 trades \u2014 too early",
         "pass": false
       }
     ]
