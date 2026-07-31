@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T12:10:06+00:00",
+  "generated_at": "2026-07-31T12:15:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -19687,26 +19687,38 @@
         "title": "ORB size-down sizing \u2014 7/40 trades (since 07-02)",
         "details": [
           "flat-3ct -1,988 vs sized -662 $"
-        ]
-      },
-      {
-        "title": "DC 2\u00d7-thrust sizing \u2014 2 trades, 1/5 hi-state (since 07-08)",
-        "details": [
-          "flat -22.2 vs sized +229.2 pts"
-        ]
+        ],
+        "rank": 1,
+        "medal": "\ud83e\udd47",
+        "read": "Lead \u2014 tail-loss cut is doing its job; backtest rigor-confirmed"
       },
       {
         "title": "DC 24h evening entry \u2014 1/20 closed (since 07-10), 1 open",
         "details": [
           "18:00-arm +540.8 pts (PF None) vs 09:30-arm +264.5 (PF None)",
           "paired evening-vs-morning advantage: +276.2 pts/signal (n=1)"
-        ]
+        ],
+        "rank": 2,
+        "medal": "\ud83e\udd48",
+        "read": "Highest upside \u2014 beats incumbent, but needs an 18:00 exec build"
+      },
+      {
+        "title": "DC 2\u00d7-thrust sizing \u2014 2 trades, 1/5 hi-state (since 07-08)",
+        "details": [
+          "flat -22.2 vs sized +229.2 pts"
+        ],
+        "rank": 3,
+        "medal": "\ud83e\udd49",
+        "read": "Real but glacial \u2014 ~1.7 qualifying trades/yr"
       },
       {
         "title": "RSI2 overlay (light, multi-ct) \u2014 1/20 closed (since 07-17)",
         "details": [
           "RSI2 leg -508.0 pts (PF 0.0), corr\u2192DC None"
-        ]
+        ],
+        "rank": 4,
+        "medal": "4\ufe0f\u20e3",
+        "read": "Weakest \u2014 borderline standalone; its 1 closed trade lost"
       }
     ]
   }
