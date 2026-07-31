@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T13:35:06+00:00",
+  "generated_at": "2026-07-31T13:40:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1522,9 +1522,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-31",
       "entry_px": 28551.0,
-      "current_px": 28682.0,
-      "pnl_pts": 131.0,
-      "pnl_usd": 262.0,
+      "current_px": 28562.25,
+      "pnl_pts": 11.25,
+      "pnl_usd": 22.5,
       "direction": "Long"
     }
   ],
@@ -5617,9 +5617,17 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 29,
+    "total_skip": 30,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 53,
+        "at": "2026-07-31T13:36:07.648700+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful multi-timeframe logic: daily Donchian computation \u2192 prior-day RTH close trigger confirmation \u2192 intraday 5m bar monitoring for midline touch with real-time position state management. Entry depends on exact prior-day close time (16:00 ET) and current open (09:30 ET) comparison; exit is path-dependent (midline touch detection across intraday bars). This exceeds stateless template capability \u2014 the system must track whether a trigger fired yesterday, hold that state into today's session, then monitor intraday progression. Additionally, the VIX daily close filter and overnight gap confirmation introduce external state not recoverable from bar timestamps alone.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 52,
         "at": "2026-07-31T01:04:45.728928+00:00",
@@ -5699,22 +5707,6 @@
         "reason": "Strategy requires stateful volatility regime tracking (rolling StdDev percentile rank vs. 60-bar history, RSI state machine, conditional entry gates) and path-dependent position management (P&L-triggered exits with 0.5*ATR and 0.75*ATR thresholds). These exceed stateless template mechanics. Additionally, VIX daily filter is acknowledged as 'logically contradictory' in the spec itself (\u00a76 reference). The regime compression detector is not a standalone price pattern (breakout/reversion) but a computed microstructure state requiring continuous state carryforward across bars.",
         "stats": {},
         "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 43,
-        "at": "2026-07-24T01:04:48.666601+00:00",
-        "verdict": "FAIL",
-        "reason": "Era gate FAIL (2010-2020 PF 0.56 | 2021-2026 PF 0.85); WF 16/16 sit-outs; Calmar -0.06 < 0.5 (maxDD $-7,203 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 2784,
-          "pf": 0.753,
-          "sharpe": -1.589,
-          "win_pct": 49.0,
-          "total_usd": -7063.0,
-          "max_dd": -7203.0,
-          "calmar": -0.061
-        },
-        "routing": "breakout"
       }
     ],
     "queue": [
@@ -6133,6 +6125,14 @@
         "source": "X/timeline",
         "created": "2026-07-31",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy mechanics require stateful tracking of intraday price momentum peaks, multi-indicator confirmation sequencing (RSI > 70 AND price > SMA(20)), and path-dependent exit logic (RSI reversal below 50 vs. hard time stop vs. ATR loss-cut). Stateless templates cannot encode the temporal ordering of confirmation conditions or maintain position state across indicator transitions. Additionally, the 'momentum exhaustion' edge is asserted but not yet empirically validated \\u2014 honest prior explicitly states 'not demonstrated, exists to test the claim.'\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 53,
+        "status": "skip",
+        "summary": "DC exit signal fired at RTH close (16:00 ET) on prior day indicates mean reversi",
+        "source": "Manual paste",
+        "created": "2026-07-31",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful multi-timeframe logic: daily Donchian computation \\u2192 prior-day RTH close trigger confirmation \\u2192 intraday 5m bar monitoring for midline touch with real-time position state management. Entry depends on exact prior-day close time (16:00 ET) and current open (09:30 ET) comparison; exit is path-dependent (midline touch detection across intraday bars). This exceeds stateless template capability \\u2014 the system must track whether a trigger fired yesterday, hold that state into today's session, then monitor intraday progression. Additionally, the VIX daily close filter and overnight gap confirmation introduce external state not recoverable from bar timestamps alone.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
