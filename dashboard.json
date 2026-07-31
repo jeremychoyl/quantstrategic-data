@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T12:50:06+00:00",
+  "generated_at": "2026-07-31T12:55:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -19690,7 +19690,9 @@
         ],
         "rank": 1,
         "medal": "\ud83e\udd47",
-        "read": "Lead \u2014 tail-loss cut is doing its job; backtest rigor-confirmed"
+        "read": "lead \u2014 tail-loss cut working; rigor-confirmed",
+        "short": "ORB size-down",
+        "prog": "7/40"
       },
       {
         "title": "DC 24h evening entry \u2014 1/20 closed (since 07-10), 1 open",
@@ -19700,7 +19702,9 @@
         ],
         "rank": 2,
         "medal": "\ud83e\udd48",
-        "read": "Highest upside \u2014 beats incumbent, but needs an 18:00 exec build"
+        "read": "highest upside \u2014 beats incumbent; needs exec build",
+        "short": "DC 24h evening",
+        "prog": "1/20"
       },
       {
         "title": "DC 2\u00d7-thrust sizing \u2014 2 trades, 1/5 hi-state (since 07-08)",
@@ -19709,7 +19713,9 @@
         ],
         "rank": 3,
         "medal": "\ud83e\udd49",
-        "read": "Real but glacial \u2014 ~1.7 qualifying trades/yr"
+        "read": "real but glacial (~1.7 trades/yr)",
+        "short": "DC 2x-thrust",
+        "prog": "1/5"
       },
       {
         "title": "RSI2 overlay (light, multi-ct) \u2014 1/20 closed (since 07-17)",
@@ -19718,7 +19724,9 @@
         ],
         "rank": 4,
         "medal": "4\ufe0f\u20e3",
-        "read": "Weakest \u2014 borderline standalone; its 1 closed trade lost"
+        "read": "weakest \u2014 borderline; its 1 trade lost",
+        "short": "RSI2 overlay",
+        "prog": "1/20"
       }
     ]
   }
