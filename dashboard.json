@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T01:00:06+00:00",
+  "generated_at": "2026-07-31T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5606,9 +5606,17 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 28,
+    "total_skip": 29,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 52,
+        "at": "2026-07-31T01:04:45.728928+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy mechanics require stateful tracking of intraday price momentum peaks, multi-indicator confirmation sequencing (RSI > 70 AND price > SMA(20)), and path-dependent exit logic (RSI reversal below 50 vs. hard time stop vs. ATR loss-cut). Stateless templates cannot encode the temporal ordering of confirmation conditions or maintain position state across indicator transitions. Additionally, the 'momentum exhaustion' edge is asserted but not yet empirically validated \u2014 honest prior explicitly states 'not demonstrated, exists to test the claim.'",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 51,
         "at": "2026-07-30T01:05:24.550113+00:00",
@@ -5696,14 +5704,6 @@
           "calmar": -0.061
         },
         "routing": "breakout"
-      },
-      {
-        "hyp_id": 42,
-        "at": "2026-07-23T01:04:20.012983+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires multi-timeframe state (pre-market regime classification via gap/volume/first-30m return metrics) AND stateful position management (conditional sizing/exit timing per regime type). Backtest architecture cannot maintain cross-session state, rolling percentile lookups, or regime-dependent exit logic across 5m bar resolution.",
-        "stats": {},
-        "routing": "pre_reject"
       }
     ],
     "queue": [
@@ -6114,6 +6114,14 @@
         "source": "X/timeline",
         "created": "2026-07-30",
         "verdict": "{\"verdict\": \"FAIL\", \"reason\": \"WF 4/15 sit-outs; Corr vs EMA: 0.412 \\u2265 0.3; Calmar 0.11 < 0.5 (maxDD $-7,208 too deep vs return \\u2014 undeployable)\", \"stats\": {\"n\": 166, \"pf\": 1.405, \"sharpe\": 1.855, \"win_pct\": 65.1, \"total_usd\": 12669.0, \"max_dd\": -7208.0, \"calmar\": 0.11}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 52,
+        "status": "skip",
+        "summary": "MNQ exhibits statistically significant momentum exhaustion and reversal on Thurs",
+        "source": "X/timeline",
+        "created": "2026-07-31",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy mechanics require stateful tracking of intraday price momentum peaks, multi-indicator confirmation sequencing (RSI > 70 AND price > SMA(20)), and path-dependent exit logic (RSI reversal below 50 vs. hard time stop vs. ATR loss-cut). Stateless templates cannot encode the temporal ordering of confirmation conditions or maintain position state across indicator transitions. Additionally, the 'momentum exhaustion' edge is asserted but not yet empirically validated \\u2014 honest prior explicitly states 'not demonstrated, exists to test the claim.'\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
