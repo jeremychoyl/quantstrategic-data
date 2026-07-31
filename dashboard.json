@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T13:30:05+00:00",
+  "generated_at": "2026-07-31T13:35:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1522,9 +1522,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-31",
       "entry_px": 28551.0,
-      "current_px": 28576.75,
-      "pnl_pts": 25.75,
-      "pnl_usd": 51.5,
+      "current_px": 28682.0,
+      "pnl_pts": 131.0,
+      "pnl_usd": 262.0,
       "direction": "Long"
     }
   ],
@@ -19697,7 +19697,7 @@
       {
         "title": "ORB size-down sizing \u2014 7/40 trades (since 07-02)",
         "details": [
-          "flat-3ct -1,988 vs sized -662 $"
+          "flat 3ct ($1,988) vs sized ($662)"
         ],
         "rank": 1,
         "medal": "\ud83e\udd47",
@@ -19720,7 +19720,7 @@
       {
         "title": "DC 2\u00d7-thrust sizing \u2014 2 trades, 1/5 hi-state (since 07-08)",
         "details": [
-          "flat -22.2 vs sized +229.2 pts"
+          "flat (22.2) vs sized +229.2 pts"
         ],
         "rank": 3,
         "medal": "\ud83e\udd49",
@@ -19731,7 +19731,7 @@
       {
         "title": "RSI2 overlay (light, multi-ct) \u2014 1/20 closed (since 07-17)",
         "details": [
-          "RSI2 leg -508.0 pts (PF 0.0), corr\u2192DC None"
+          "RSI2 leg (508.0) pts (PF 0.0), corr\u2192DC None"
         ],
         "rank": 4,
         "medal": "4\ufe0f\u20e3",
