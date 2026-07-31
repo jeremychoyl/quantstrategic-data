@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T04:25:06+00:00",
+  "generated_at": "2026-07-31T04:30:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6765,10 +6765,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-31T01:00:06+00:00",
+    "as_of": "2026-07-31T04:27:53+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live P&L is underwater by $146 on just 32 trades\u2014statistically meaningless noise, but paired with single-market concentration on MNQ and a backtest Sharpe of 1.08 (respectable but not exceptional for systematic micro), you're asking for capital before you've demonstrated live consistency or shown the strategy survives regime shifts outside Nasdaq strength. The 16-year backtest doesn't matter yet; what matters is the next 200+ live trades need to cluster near breakeven or better, and you need evidence *one* of your three strategies outperforms the others live\u2014because running all three on one market is a hedge, not a portfolio.\n\nTo earn my check: accumulate 150+ more live trades (next 3\u20134 months minimum), show live Sharpe \u22650.80 in that window, and present a credible path to either (a) uncorrelated edge in ES/YM or (b) a written rationale for why MNQ-only concentration is durable\u2014not aspirational. Right now you're a sharp trader with a working backtest; you're not yet a fund.",
+    "verdict": "TEST VERDICT",
     "scorecard": [
       {
         "criterion": "Live track record",
