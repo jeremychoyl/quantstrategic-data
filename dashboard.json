@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T01:40:06+00:00",
+  "generated_at": "2026-07-31T01:45:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6645,6 +6645,11 @@
             "idea": "Trailing swing-low momentum 5m (HYP-30, \"4H Momentum Ride\" FTMO tweet)",
             "reason": "Decisive reject \u2014 gross edge negative BEFORE cost. 5m close>prior-high + daily-EMA200 + ADX>20, stop trailed to each confirmed higher fractal low, EOD flat. PF 0.85 (both eras <1.0)\u2026",
             "pattern": "In-sample mirage"
+          },
+          {
+            "idea": "Momentum exhaustion \u2014 RSI(14) extreme + SMA20 confirm, stateful intraday (HYP-52)",
+            "reason": "0/7 configs \u2014 decisive, split EXACTLY along the two priors. 5m RTH NQ, RSI(14 Wilder)+SMA20 on the RTH-continuous close, entry on an RSI cross of the 70/30 band with price the confirming\u2026",
+            "pattern": "Fill-fragile"
           }
         ]
       },
@@ -6756,7 +6761,7 @@
         "reason": "DEAD AT GROSS \u2014 the signal doesn't exist in large caps on our sample. Frictionless ann +1.1%, Sharpe 0.02 over 27y; era-split e1 \u22122.9%/yr (\u22120.05) / e2 +17.1%/yr (+0.42) \u2192 both-era fails\u2026"
       }
     ],
-    "n_rejected": 93,
+    "n_rejected": 94,
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
