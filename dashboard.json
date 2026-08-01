@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T00:55:06+00:00",
+  "generated_at": "2026-08-01T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6771,10 +6771,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-07-31T04:27:53+00:00",
+    "as_of": "2026-08-01T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "TEST VERDICT",
+    "verdict": "No allocation today. The live track record is functionally nonexistent (32 trades, -$146 P&L, 1.4% of annual backtest expectation), and you've built a single-instrument portfolio with zero geographic or asset-class diversification\u2014exactly the fragility that kills small funds. The honest backtest (Sharpe 1.15, Calmar 0.58) is respectable but not exceptional, and you haven't yet proved it survives live market regimes, volatility shocks, or slippage at real scale.\n\nNext concrete step to earn the check: Run 500+ live trades (\u22486\u20139 months of forward performance) on your existing MNQ strategies with documented daily P&L, then\u2014simultaneously\u2014develop and backtest a genuine uncorrelated second instrument or asset class using the same rigor you applied to the ORB/EMA/DC sweep, so you can credibly claim decorrelation. You'll then have both proof-of-concept and a road to risk diversification; show me *that* and we talk.",
     "scorecard": [
       {
         "criterion": "Live track record",
@@ -6797,7 +6797,7 @@
       {
         "criterion": "Scale / capacity",
         "target": "meaningful AUM",
-        "now": "micro \u00b7 ~$12,400",
+        "now": "micro \u00b7 ~$10,700",
         "pass": false
       },
       {
