@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T01:00:06+00:00",
+  "generated_at": "2026-08-02T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5629,6 +5629,14 @@
     "pass_rate": 22.7,
     "recent": [
       {
+        "hyp_id": 54,
+        "at": "2026-08-02T01:04:35.451444+00:00",
+        "verdict": "ERROR",
+        "reason": "Backtest exception: min_periods 3 must be <= window 1\non3.12/site-packages/pandas/core/window/rolling.py\", line 1869, in _validate\n    super()._validate()\n  File \"/Users/gordongekko/gekko-research/venv/lib/python3.12/site-packages/pandas/core/window/rolling.py\", line 181, in _validate\n    raise ValueError(\nValueError: min_periods 3 must be <= window 1\n",
+        "stats": {},
+        "routing": "reversion"
+      },
+      {
         "hyp_id": 53,
         "at": "2026-07-31T13:36:07.648700+00:00",
         "verdict": "SKIP",
@@ -5705,14 +5713,6 @@
         "at": "2026-07-27T01:05:08.536304+00:00",
         "verdict": "SKIP",
         "reason": "Stateful autocorrelation-gating architecture with path-dependent regime detection and adaptive exit thresholds exceeds stateless backtest templates. Requires continuous rolling AC5_VN computation with look-ahead bias risk in discrete bar estimation; AC threshold calibration (+0.18) is instrument/regime-specific and non-portable across backtest runs.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 44,
-        "at": "2026-07-26T01:05:08.752669+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires stateful volatility regime tracking (rolling StdDev percentile rank vs. 60-bar history, RSI state machine, conditional entry gates) and path-dependent position management (P&L-triggered exits with 0.5*ATR and 0.75*ATR thresholds). These exceed stateless template mechanics. Additionally, VIX daily filter is acknowledged as 'logically contradictory' in the spec itself (\u00a76 reference). The regime compression detector is not a standalone price pattern (breakout/reversion) but a computed microstructure state requiring continuous state carryforward across bars.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6141,6 +6141,22 @@
         "source": "Manual paste",
         "created": "2026-07-31",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful multi-timeframe logic: daily Donchian computation \\u2192 prior-day RTH close trigger confirmation \\u2192 intraday 5m bar monitoring for midline touch with real-time position state management. Entry depends on exact prior-day close time (16:00 ET) and current open (09:30 ET) comparison; exit is path-dependent (midline touch detection across intraday bars). This exceeds stateless template capability \\u2014 the system must track whether a trigger fired yesterday, hold that state into today's session, then monitor intraday progression. Additionally, the VIX daily close filter and overnight gap confirmation introduce external state not recoverable from bar timestamps alone.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 54,
+        "status": "failed",
+        "summary": "Short-only intraday setup targeting rejections of overnight extremes using yeste",
+        "source": "X/timeline",
+        "created": "2026-08-02",
+        "verdict": "{\"verdict\": \"ERROR\", \"reason\": \"Backtest exception: min_periods 3 must be <= window 1\\non3.12/site-packages/pandas/core/window/rolling.py\\\", line 1869, in _validate\\n    super()._validate()\\n  File \\\"/Users/gordongekko/gekko-research/venv/lib/python3.12/site-packages/pandas/core/window/rolling.py\\\", line 181, in _validate\\n    raise ValueError(\\nValueError: min_periods 3 must be <= window 1\\n\", \"stats\": {}, \"routing\": \"reversion\"}"
+      },
+      {
+        "id": 55,
+        "status": "pending",
+        "summary": "A 3-factor entry gate combining momentum regime (6mo/12mo weighted trend vs risk",
+        "source": "r/algotrading",
+        "created": "2026-08-02",
+        "verdict": null
       }
     ]
   },
