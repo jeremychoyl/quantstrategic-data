@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:55:05+00:00",
+  "generated_at": "2026-08-02T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6784,10 +6784,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-08-01T01:00:06+00:00",
+    "as_of": "2026-08-02T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live track record is functionally nonexistent (32 trades, -$146 P&L, 1.4% of annual backtest expectation), and you've built a single-instrument portfolio with zero geographic or asset-class diversification\u2014exactly the fragility that kills small funds. The honest backtest (Sharpe 1.15, Calmar 0.58) is respectable but not exceptional, and you haven't yet proved it survives live market regimes, volatility shocks, or slippage at real scale.\n\nNext concrete step to earn the check: Run 500+ live trades (\u22486\u20139 months of forward performance) on your existing MNQ strategies with documented daily P&L, then\u2014simultaneously\u2014develop and backtest a genuine uncorrelated second instrument or asset class using the same rigor you applied to the ORB/EMA/DC sweep, so you can credibly claim decorrelation. You'll then have both proof-of-concept and a road to risk diversification; show me *that* and we talk.",
+    "verdict": "No allocation today. The live track record is statistically meaningless (32 trades, $146 P&L, ~2% win rate reported as \"4690%\" \u2014 a red flag on either calculation or communication clarity), and the entire strategy portfolio is concentrated in a single micro-contract on a single market, which means correlation risk, capacity limits, and zero proof-of-concept under real capital constraints. The backtest is solid work (Sharpe 1.15, reasonable Calmar), but 16 years of in-sample optimization on three highly correlated MNQ strategies with no cross-market validation is a classic overfitting trap \u2014 especially with zero live edge detected so far.\n\nOne concrete next step: Run a live forward test on *at least two uncorrelated futures markets* (ES or ZB, for example) with the same three strategies under identical rules for a minimum of 200 live trades *before* asking again. If edge is real, it should port. If it doesn't, you've learned something invaluable. That's the only path to fundability.",
     "scorecard": [
       {
         "criterion": "Live track record",
@@ -6798,7 +6798,7 @@
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "$-146",
+        "now": "($146)",
         "pass": false
       },
       {
