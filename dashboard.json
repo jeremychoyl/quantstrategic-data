@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T00:55:06+00:00",
+  "generated_at": "2026-08-03T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -1530,9 +1530,9 @@
       "size": "1 MNQ",
       "entry_date": "2026-07-31",
       "entry_px": 28551.0,
-      "current_px": 28613.5,
-      "pnl_pts": 62.5,
-      "pnl_usd": 125.0,
+      "current_px": 28622.25,
+      "pnl_pts": 71.25,
+      "pnl_usd": 142.5,
       "direction": "Long"
     }
   ],
@@ -6807,10 +6807,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-08-02T01:00:06+00:00",
+    "as_of": "2026-08-03T01:00:06+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live track record is statistically meaningless (32 trades, $146 P&L, ~2% win rate reported as \"4690%\" \u2014 a red flag on either calculation or communication clarity), and the entire strategy portfolio is concentrated in a single micro-contract on a single market, which means correlation risk, capacity limits, and zero proof-of-concept under real capital constraints. The backtest is solid work (Sharpe 1.15, reasonable Calmar), but 16 years of in-sample optimization on three highly correlated MNQ strategies with no cross-market validation is a classic overfitting trap \u2014 especially with zero live edge detected so far.\n\nOne concrete next step: Run a live forward test on *at least two uncorrelated futures markets* (ES or ZB, for example) with the same three strategies under identical rules for a minimum of 200 live trades *before* asking again. If edge is real, it should port. If it doesn't, you've learned something invaluable. That's the only path to fundability.",
+    "verdict": "Verdict: Not yet\u2014come back with 200+ live trades and demonstrated risk discipline.\n\nThe backtest is solid (Sharpe 1.15, 33.9% ROC) and shows real edge-finding rigor, but 32 live trades returning $146 on a $10.7k baseline is statistical noise\u2014you're barely ahead of slippage and fees. More critical: you've concentrated all three strategies into a *single instrument* (MNQ) because \"no uncorrelated edge elsewhere\"; that's not conviction, that's constraint. You need either genuine diversification or honest acceptance that this is a single-market bet, not a fund.\n\nOne concrete thing: Run 200+ more live trades *while simultaneously* doing a disciplined, documented search for a second tradeable market (ES, CL, ZB, GC\u2014any liquid contract)\u2014then show me that edge holds out-of-sample with meaningful correlation data. Only then do we have a fundable signal, not a prototype.",
     "scorecard": [
       {
         "criterion": "Live track record",
