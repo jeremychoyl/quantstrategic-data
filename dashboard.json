@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:00:06+00:00",
+  "generated_at": "2026-08-04T01:05:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6186,6 +6186,14 @@
         "source": "r/algotrading",
         "created": "2026-08-02",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires external macro feeds (T-Bill yield, NYSE advance/decline, VIX percentile rank, 6mo/12mo returns) and multi-state entry gates that depend on daily-level regime calculations applied to intraday 5m entries. The core mechanic is a stateful, external-data-dependent regime filter\\u2014not a self-contained price-pattern or time-based trigger. The backtest engine cannot ingest live macro feeds or maintain rolling regime state across sessions for the gate logic. Additionally, the exit condition (momentum gate drops below risk-free rate, checked daily at 15:55) is path-dependent: position survival depends on daily regime state, not bar-level price action or fixed time/target rules.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 56,
+        "status": "pending",
+        "summary": "Turn-of-month seasonal bias compounds with intraday 5m pullback confirmation on ",
+        "source": "X/timeline",
+        "created": "2026-08-04",
+        "verdict": null
       }
     ]
   },
