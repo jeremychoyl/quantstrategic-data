@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T23:55:06+00:00",
+  "generated_at": "2026-08-04T00:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -805,7 +805,7 @@
   ],
   "benchmarks": {
     "capital_base": 22000,
-    "tbill_rate_pct": 3.66,
+    "tbill_rate_pct": 3.73,
     "curve": [
       {
         "date": "2026-01-02",
@@ -841,655 +841,655 @@
         "date": "2026-01-21",
         "book": 16.0,
         "bh_nq": 172,
-        "tbill": 42
+        "tbill": 43
       },
       {
         "date": "2026-01-22",
         "book": -184.0,
         "bh_nq": 553,
-        "tbill": 44
+        "tbill": 45
       },
       {
         "date": "2026-01-26",
         "book": -200.0,
         "bh_nq": 919,
-        "tbill": 53
+        "tbill": 54
       },
       {
         "date": "2026-01-27",
         "book": -163.0,
         "bh_nq": 1381,
-        "tbill": 55
+        "tbill": 56
       },
       {
         "date": "2026-01-29",
         "book": -79.0,
         "bh_nq": 1212,
-        "tbill": 60
+        "tbill": 61
       },
       {
         "date": "2026-01-30",
         "book": 239.0,
         "bh_nq": 580,
-        "tbill": 62
+        "tbill": 63
       },
       {
         "date": "2026-02-02",
         "book": 182.0,
         "bh_nq": 942,
-        "tbill": 68
+        "tbill": 70
       },
       {
         "date": "2026-02-03",
         "book": 972.0,
         "bh_nq": 120,
-        "tbill": 71
+        "tbill": 72
       },
       {
         "date": "2026-02-04",
         "book": 1270.0,
         "bh_nq": -782,
-        "tbill": 73
+        "tbill": 74
       },
       {
         "date": "2026-02-05",
         "book": 1281.0,
         "bh_nq": -1494,
-        "tbill": 75
+        "tbill": 76
       },
       {
         "date": "2026-02-06",
         "book": 411.0,
         "bh_nq": -478,
-        "tbill": 77
+        "tbill": 79
       },
       {
         "date": "2026-02-11",
         "book": -352.0,
         "bh_nq": -214,
-        "tbill": 88
+        "tbill": 90
       },
       {
         "date": "2026-02-12",
         "book": 1294.0,
         "bh_nq": -1244,
-        "tbill": 90
+        "tbill": 92
       },
       {
         "date": "2026-02-13",
         "book": 1492.0,
         "bh_nq": -1167,
-        "tbill": 93
+        "tbill": 94
       },
       {
         "date": "2026-02-17",
         "book": 481.0,
         "bh_nq": -1217,
-        "tbill": 101
+        "tbill": 103
       },
       {
         "date": "2026-02-18",
         "book": 313.0,
         "bh_nq": -856,
-        "tbill": 104
+        "tbill": 106
       },
       {
         "date": "2026-02-20",
         "book": 661.0,
         "bh_nq": -622,
-        "tbill": 108
+        "tbill": 110
       },
       {
         "date": "2026-02-23",
         "book": 1258.0,
         "bh_nq": -1235,
-        "tbill": 115
+        "tbill": 117
       },
       {
         "date": "2026-02-24",
         "book": 1475.0,
         "bh_nq": -711,
-        "tbill": 117
+        "tbill": 119
       },
       {
         "date": "2026-03-02",
         "book": 1526.0,
         "bh_nq": -724,
-        "tbill": 130
+        "tbill": 133
       },
       {
         "date": "2026-03-03",
         "book": 1077.0,
         "bh_nq": -1256,
-        "tbill": 132
+        "tbill": 135
       },
       {
         "date": "2026-03-05",
         "book": 463.0,
         "bh_nq": -676,
-        "tbill": 137
+        "tbill": 139
       },
       {
         "date": "2026-03-06",
         "book": 338.0,
         "bh_nq": -1436,
-        "tbill": 139
+        "tbill": 142
       },
       {
         "date": "2026-03-09",
         "book": 357.0,
         "bh_nq": -786,
-        "tbill": 146
+        "tbill": 148
       },
       {
         "date": "2026-03-11",
         "book": -375.0,
         "bh_nq": -803,
-        "tbill": 150
+        "tbill": 153
       },
       {
         "date": "2026-03-13",
         "book": 60.0,
         "bh_nq": -1975,
-        "tbill": 154
+        "tbill": 157
       },
       {
         "date": "2026-03-16",
         "book": 22.0,
         "bh_nq": -1430,
-        "tbill": 161
+        "tbill": 164
       },
       {
         "date": "2026-03-17",
         "book": -83.0,
         "bh_nq": -1188,
-        "tbill": 163
+        "tbill": 166
       },
       {
         "date": "2026-03-18",
         "book": 905.0,
         "bh_nq": -1904,
-        "tbill": 165
+        "tbill": 169
       },
       {
         "date": "2026-03-20",
         "book": 1942.0,
         "bh_nq": -2980,
-        "tbill": 170
+        "tbill": 173
       },
       {
         "date": "2026-03-23",
         "book": 1376.0,
         "bh_nq": -2410,
-        "tbill": 176
+        "tbill": 180
       },
       {
         "date": "2026-03-24",
         "book": 1382.0,
         "bh_nq": -2769,
-        "tbill": 179
+        "tbill": 182
       },
       {
         "date": "2026-03-25",
         "book": 951.0,
         "bh_nq": -2464,
-        "tbill": 181
+        "tbill": 184
       },
       {
         "date": "2026-03-26",
         "book": 1469.0,
         "bh_nq": -3634,
-        "tbill": 183
+        "tbill": 187
       },
       {
         "date": "2026-03-27",
         "book": 1717.0,
         "bh_nq": -4590,
-        "tbill": 185
+        "tbill": 189
       },
       {
         "date": "2026-03-30",
         "book": 1982.0,
         "bh_nq": -4936,
-        "tbill": 192
+        "tbill": 196
       },
       {
         "date": "2026-03-31",
         "book": 2738.0,
         "bh_nq": -3388,
-        "tbill": 194
+        "tbill": 198
       },
       {
         "date": "2026-04-02",
         "book": 1959.0,
         "bh_nq": -2766,
-        "tbill": 199
+        "tbill": 202
       },
       {
         "date": "2026-04-06",
         "book": 1723.0,
         "bh_nq": -2480,
-        "tbill": 207
+        "tbill": 211
       },
       {
         "date": "2026-04-07",
         "book": 1129.0,
         "bh_nq": -2468,
-        "tbill": 210
+        "tbill": 214
       },
       {
         "date": "2026-04-13",
         "book": 2044.0,
         "bh_nq": -131,
-        "tbill": 223
+        "tbill": 227
       },
       {
         "date": "2026-04-14",
         "book": 2472.0,
         "bh_nq": 794,
-        "tbill": 225
+        "tbill": 229
       },
       {
         "date": "2026-04-15",
         "book": 3051.0,
         "bh_nq": 1521,
-        "tbill": 227
+        "tbill": 232
       },
       {
         "date": "2026-04-16",
         "book": 3101.0,
         "bh_nq": 1762,
-        "tbill": 229
+        "tbill": 234
       },
       {
         "date": "2026-04-17",
         "book": 3240.0,
         "bh_nq": 2447,
-        "tbill": 232
+        "tbill": 236
       },
       {
         "date": "2026-04-20",
         "book": 3248.0,
         "bh_nq": 2284,
-        "tbill": 238
+        "tbill": 243
       },
       {
         "date": "2026-04-21",
         "book": 2574.0,
         "bh_nq": 2077,
-        "tbill": 240
+        "tbill": 245
       },
       {
         "date": "2026-04-22",
         "book": 3428.0,
         "bh_nq": 2952,
-        "tbill": 243
+        "tbill": 247
       },
       {
         "date": "2026-04-23",
         "book": 3077.0,
         "bh_nq": 2645,
-        "tbill": 245
+        "tbill": 250
       },
       {
         "date": "2026-04-24",
         "book": 3802.0,
         "bh_nq": 3660,
-        "tbill": 247
+        "tbill": 252
       },
       {
         "date": "2026-04-27",
         "book": 3808.0,
         "bh_nq": 3682,
-        "tbill": 254
+        "tbill": 259
       },
       {
         "date": "2026-04-28",
         "book": 3589.0,
         "bh_nq": 3131,
-        "tbill": 256
+        "tbill": 261
       },
       {
         "date": "2026-04-29",
         "book": 3391.0,
         "bh_nq": 3467,
-        "tbill": 258
+        "tbill": 263
       },
       {
         "date": "2026-04-30",
         "book": 3806.0,
         "bh_nq": 3948,
-        "tbill": 260
+        "tbill": 265
       },
       {
         "date": "2026-05-01",
         "book": 3697.0,
         "bh_nq": 4467,
-        "tbill": 263
+        "tbill": 268
       },
       {
         "date": "2026-05-04",
         "book": 4065.0,
         "bh_nq": 4353,
-        "tbill": 269
+        "tbill": 274
       },
       {
         "date": "2026-05-05",
         "book": 4044.0,
         "bh_nq": 5064,
-        "tbill": 271
+        "tbill": 277
       },
       {
         "date": "2026-05-06",
         "book": 4415.0,
         "bh_nq": 6213,
-        "tbill": 274
+        "tbill": 279
       },
       {
         "date": "2026-05-07",
         "book": 4161.0,
         "bh_nq": 6161,
-        "tbill": 276
+        "tbill": 281
       },
       {
         "date": "2026-05-08",
         "book": 5268.0,
         "bh_nq": 7472,
-        "tbill": 278
+        "tbill": 283
       },
       {
         "date": "2026-05-12",
         "book": 5329.0,
         "bh_nq": 7141,
-        "tbill": 287
+        "tbill": 292
       },
       {
         "date": "2026-05-13",
         "book": 5691.0,
         "bh_nq": 7744,
-        "tbill": 289
+        "tbill": 295
       },
       {
         "date": "2026-05-14",
         "book": 5708.0,
         "bh_nq": 8166,
-        "tbill": 291
+        "tbill": 297
       },
       {
         "date": "2026-05-15",
         "book": 5218.0,
         "bh_nq": 7255,
-        "tbill": 293
+        "tbill": 299
       },
       {
         "date": "2026-05-19",
         "book": 5389.0,
         "bh_nq": 6642,
-        "tbill": 302
+        "tbill": 308
       },
       {
         "date": "2026-05-20",
         "book": 6274.0,
         "bh_nq": 7585,
-        "tbill": 304
+        "tbill": 310
       },
       {
         "date": "2026-05-21",
         "book": 5985.0,
         "bh_nq": 7685,
-        "tbill": 307
+        "tbill": 313
       },
       {
         "date": "2026-05-25",
         "book": 5998.0,
         "bh_nq": 8718,
-        "tbill": 315
+        "tbill": 321
       },
       {
         "date": "2026-05-26",
         "book": 6125.0,
         "bh_nq": 8952,
-        "tbill": 318
+        "tbill": 324
       },
       {
         "date": "2026-05-27",
         "book": 6218.0,
         "bh_nq": 8887,
-        "tbill": 320
+        "tbill": 326
       },
       {
         "date": "2026-05-28",
         "book": 7040.0,
         "bh_nq": 9405,
-        "tbill": 322
+        "tbill": 328
       },
       {
         "date": "2026-05-29",
         "book": 6684.0,
         "bh_nq": 9588,
-        "tbill": 324
+        "tbill": 330
       },
       {
         "date": "2026-06-02",
         "book": 6859.0,
         "bh_nq": 10207,
-        "tbill": 333
+        "tbill": 339
       },
       {
         "date": "2026-06-03",
         "book": 6878.0,
         "bh_nq": 10064,
-        "tbill": 335
+        "tbill": 342
       },
       {
         "date": "2026-06-04",
         "book": 6472.0,
         "bh_nq": 9764,
-        "tbill": 338
+        "tbill": 344
       },
       {
         "date": "2026-06-05",
         "book": 8301.0,
         "bh_nq": 6824,
-        "tbill": 340
+        "tbill": 346
       },
       {
         "date": "2026-06-08",
         "book": 8516.0,
         "bh_nq": 7698,
-        "tbill": 346
+        "tbill": 353
       },
       {
         "date": "2026-06-09",
         "book": 9703.0,
         "bh_nq": 7023,
-        "tbill": 349
+        "tbill": 355
       },
       {
         "date": "2026-06-10",
         "book": 10272.0,
         "bh_nq": 5844,
-        "tbill": 351
+        "tbill": 357
       },
       {
         "date": "2026-06-11",
         "book": 9392.0,
         "bh_nq": 7706,
-        "tbill": 353
+        "tbill": 360
       },
       {
         "date": "2026-06-18",
         "book": 9859.0,
         "bh_nq": 9546,
-        "tbill": 368
+        "tbill": 375
       },
       {
         "date": "2026-06-19",
         "book": 9592.0,
         "bh_nq": 9454,
-        "tbill": 371
+        "tbill": 378
       },
       {
         "date": "2026-06-22",
         "book": 9206.0,
         "bh_nq": 9468,
-        "tbill": 377
+        "tbill": 384
       },
       {
         "date": "2026-06-23",
         "book": 8495.0,
         "bh_nq": 7461,
-        "tbill": 379
+        "tbill": 387
       },
       {
         "date": "2026-06-25",
         "book": 7951.0,
         "bh_nq": 7659,
-        "tbill": 384
+        "tbill": 391
       },
       {
         "date": "2026-06-26",
         "book": 8237.0,
         "bh_nq": 6792,
-        "tbill": 386
+        "tbill": 393
       },
       {
         "date": "2026-06-29",
         "book": 6802.0,
         "bh_nq": 8252,
-        "tbill": 393
+        "tbill": 400
       },
       {
         "date": "2026-07-01",
         "book": 6428.0,
         "bh_nq": 8322,
-        "tbill": 397
+        "tbill": 405
       },
       {
         "date": "2026-07-02",
         "book": 5793.0,
         "bh_nq": 7236,
-        "tbill": 399
+        "tbill": 407
       },
       {
         "date": "2026-07-03",
         "book": 5733.0,
         "bh_nq": 7964,
-        "tbill": 401
+        "tbill": 409
       },
       {
         "date": "2026-07-06",
         "book": 5651.0,
         "bh_nq": 8064,
-        "tbill": 408
+        "tbill": 416
       },
       {
         "date": "2026-07-07",
         "book": 6037.0,
         "bh_nq": 6949,
-        "tbill": 410
+        "tbill": 418
       },
       {
         "date": "2026-07-08",
         "book": 5605.0,
         "bh_nq": 7075,
-        "tbill": 413
+        "tbill": 420
       },
       {
         "date": "2026-07-09",
         "book": 5011.0,
         "bh_nq": 8058,
-        "tbill": 415
+        "tbill": 423
       },
       {
         "date": "2026-07-10",
         "book": 4575.0,
         "bh_nq": 8235,
-        "tbill": 417
+        "tbill": 425
       },
       {
         "date": "2026-07-13",
         "book": 4414.0,
         "bh_nq": 7094,
-        "tbill": 424
+        "tbill": 432
       },
       {
         "date": "2026-07-14",
         "book": 3817.0,
         "bh_nq": 7458,
-        "tbill": 426
+        "tbill": 434
       },
       {
         "date": "2026-07-15",
         "book": 3670.0,
         "bh_nq": 7562,
-        "tbill": 428
+        "tbill": 436
       },
       {
         "date": "2026-07-16",
         "book": 4287.0,
         "bh_nq": 6594,
-        "tbill": 430
+        "tbill": 438
       },
       {
         "date": "2026-07-20",
         "book": 4324.0,
         "bh_nq": 5730,
-        "tbill": 439
+        "tbill": 447
       },
       {
         "date": "2026-07-21",
         "book": 4263.0,
         "bh_nq": 6782,
-        "tbill": 441
+        "tbill": 450
       },
       {
         "date": "2026-07-22",
         "book": 4127.0,
         "bh_nq": 6481,
-        "tbill": 443
+        "tbill": 452
       },
       {
         "date": "2026-07-23",
         "book": 4267.0,
         "bh_nq": 5390,
-        "tbill": 446
+        "tbill": 454
       },
       {
         "date": "2026-07-24",
         "book": 3616.0,
         "bh_nq": 4726,
-        "tbill": 448
+        "tbill": 456
       },
       {
         "date": "2026-07-27",
         "book": 3872.0,
         "bh_nq": 4544,
-        "tbill": 454
+        "tbill": 463
       },
       {
         "date": "2026-07-28",
         "book": 3130.0,
         "bh_nq": 3997,
-        "tbill": 457
+        "tbill": 465
       },
       {
         "date": "2026-07-29",
         "book": 2596.0,
         "bh_nq": 2830,
-        "tbill": 459
+        "tbill": 468
       },
       {
         "date": "2026-07-30",
         "book": 2910.0,
         "bh_nq": 4618,
-        "tbill": 461
+        "tbill": 470
       },
       {
         "date": "2026-07-31",
         "book": 2541.0,
         "bh_nq": 4966,
-        "tbill": 463
+        "tbill": 472
       }
     ],
     "summary": {
@@ -1499,7 +1499,7 @@
       "bh_usd": 4966,
       "bh_pct": 22.6,
       "bh_maxdd_usd": 7377,
-      "tbill_usd": 463,
+      "tbill_usd": 472,
       "alpha_vs_bh_usd": -2425
     }
   },
@@ -5627,6 +5627,13 @@
       },
       {
         "date": "2026-08-03",
+        "day_pnl_pts": 0.0,
+        "day_pnl_usd": 0.0,
+        "cum_pts": 289.5,
+        "cum_usd": 579.0
+      },
+      {
+        "date": "2026-08-04",
         "day_pnl_pts": 0.0,
         "day_pnl_usd": 0.0,
         "cum_pts": 289.5,
