@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:05:05+00:00",
+  "generated_at": "2026-08-04T01:10:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5654,9 +5654,17 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 31,
+    "total_skip": 32,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 56,
+        "at": "2026-08-04T01:05:24.173458+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy combines calendar seasonality with intraday 5m pullback structure using multi-timeframe state (SMA(5), SMA(20), prior bar comparisons, high/low swing tracking across 5-bar window). Entry and exit logic are path-dependent and stateful (requires tracking \"5 bars without higher high\", comparison of close vs prior bar close vs SMA levels, intraday session boundaries). This exceeds stateless template architecture. Additionally, the core calendar edge (turn-of-month institutional flows) was already identified and rejected in the provided list: \"MNQ exhibits positive drift during the first 3 trading days of each calendar month due to institutional rebalancing; enter long on the open\" \u2014 this hypothesis is a near-duplicate with added intraday pullback filtering, but the base seasonal claim and multi-timeframe state requirements make it untestable within the provided templates.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 55,
         "at": "2026-08-02T01:05:20.548852+00:00",
@@ -5734,14 +5742,6 @@
         "at": "2026-07-27T16:45:09.037815+00:00",
         "verdict": "SKIP",
         "reason": "Strategy requires stateful position tracking (current_open_contracts vs max_concurrent_contracts ceiling), multi-timeframe state synchronization (30m ORB rejection detection + 5m SMA confirmation), external data feed (VIX real-time gating), and path-dependent failure classification. These exceed stateless template capabilities. Additionally, the core edge (mean reversion into trapped long unwinding) is mechanistically dependent on order-flow inference and stop-hunt sequencing, which cannot be verified from OHLCV alone.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 46,
-        "at": "2026-07-27T01:05:53.236977+00:00",
-        "verdict": "SKIP",
-        "reason": "Gaussian-scaled trailing stop with path-dependent, time-based exponential decay function is stateful and adaptive. Stop geometry depends on accumulated MaxFavorableExcursion and elapsed time_bars_held, requiring continuous position state tracking across bars. This exceeds stateless breakout template mechanics (fixed ATR multiples, time stops). Additionally, the core edge claim \u2014 that Gaussian decay matches observed momentum decay \u2014 is a parameterization hypothesis that cannot be tested without the adaptive trailing logic itself, making it untestable within rigid breakout framework.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6189,11 +6189,11 @@
       },
       {
         "id": 56,
-        "status": "pending",
+        "status": "skip",
         "summary": "Turn-of-month seasonal bias compounds with intraday 5m pullback confirmation on ",
         "source": "X/timeline",
         "created": "2026-08-04",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy combines calendar seasonality with intraday 5m pullback structure using multi-timeframe state (SMA(5), SMA(20), prior bar comparisons, high/low swing tracking across 5-bar window). Entry and exit logic are path-dependent and stateful (requires tracking \\\"5 bars without higher high\\\", comparison of close vs prior bar close vs SMA levels, intraday session boundaries). This exceeds stateless template architecture. Additionally, the core calendar edge (turn-of-month institutional flows) was already identified and rejected in the provided list: \\\"MNQ exhibits positive drift during the first 3 trading days of each calendar month due to institutional rebalancing; enter long on the open\\\" \\u2014 this hypothesis is a near-duplicate with added intraday pullback filtering, but the base seasonal claim and multi-timeframe state requirements make it untestable within the provided templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
