@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T11:45:06+00:00",
+  "generated_at": "2026-08-04T11:50:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5654,9 +5654,17 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 32,
+    "total_skip": 33,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 57,
+        "at": "2026-08-04T11:49:28.251951+00:00",
+        "verdict": "SKIP",
+        "reason": "Duplicate of already-rejected idea: 'MNQ exhibits exploitable microstructure during the first 60 minutes post-NY open (9:30\u201310:30 ET) when initial momentum breaks a tight intraday\u2026' This strategy is structurally identical: same session window, same mean-reversion mechanic off overnight extrema, same short-only directional bias, same first-hour RTH timeframe.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 56,
         "at": "2026-08-04T01:05:24.173458+00:00",
@@ -5734,14 +5742,6 @@
         "at": "2026-07-27T16:45:10.442424+00:00",
         "verdict": "SKIP",
         "reason": "Strategy mechanics are stateful and path-dependent: entry requires detecting whether condition (2) 'was false at open' (a state query on the current bar mid-formation), and exit depends on price closing below 'entry bar's low' (a stored reference dependent on which specific bar triggered entry). These require multi-bar state tracking and adaptive position memory incompatible with stateless backtesting templates. The core hypothesis conflates correct causal coding (a practice, not an alpha source) with genuine edge; the actual momentum claim (close > SMA(20) + breakout above prior high) is testable, but the state-dependent entry confirmation and the explicit path-dependent exit construct exceed template scope.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 48,
-        "at": "2026-07-27T16:45:09.037815+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires stateful position tracking (current_open_contracts vs max_concurrent_contracts ceiling), multi-timeframe state synchronization (30m ORB rejection detection + 5m SMA confirmation), external data feed (VIX real-time gating), and path-dependent failure classification. These exceed stateless template capabilities. Additionally, the core edge (mean reversion into trapped long unwinding) is mechanistically dependent on order-flow inference and stop-hunt sequencing, which cannot be verified from OHLCV alone.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6194,6 +6194,14 @@
         "source": "X/timeline",
         "created": "2026-08-04",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy combines calendar seasonality with intraday 5m pullback structure using multi-timeframe state (SMA(5), SMA(20), prior bar comparisons, high/low swing tracking across 5-bar window). Entry and exit logic are path-dependent and stateful (requires tracking \\\"5 bars without higher high\\\", comparison of close vs prior bar close vs SMA levels, intraday session boundaries). This exceeds stateless template architecture. Additionally, the core calendar edge (turn-of-month institutional flows) was already identified and rejected in the provided list: \\\"MNQ exhibits positive drift during the first 3 trading days of each calendar month due to institutional rebalancing; enter long on the open\\\" \\u2014 this hypothesis is a near-duplicate with added intraday pullback filtering, but the base seasonal claim and multi-timeframe state requirements make it untestable within the provided templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 57,
+        "status": "skip",
+        "summary": "MNQ exhibits asymmetric mean reversion during the first 60 minutes post-RTH open",
+        "source": "Manual paste",
+        "created": "2026-08-04",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Duplicate of already-rejected idea: 'MNQ exhibits exploitable microstructure during the first 60 minutes post-NY open (9:30\\u201310:30 ET) when initial momentum breaks a tight intraday\\u2026' This strategy is structurally identical: same session window, same mean-reversion mechanic off overnight extrema, same short-only directional bias, same first-hour RTH timeframe.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
