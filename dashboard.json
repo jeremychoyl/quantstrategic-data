@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:15:06+00:00",
+  "generated_at": "2026-08-05T22:20:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -19314,42 +19314,42 @@
     }
   },
   "swing": {
-    "as_of": "2026-08-04",
-    "state": "tdn_eabv_vhigh",
-    "close": 29521.0,
-    "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
-    "n": 425,
+    "as_of": "2026-08-05",
+    "state": "tup_eabv_vhigh",
+    "close": 30016.75,
+    "state_human": "trend20 up \u00b7 above EMA200 \u00b7 vol high",
+    "n": 518,
     "horizons": {
       "3d": {
-        "mfe_p60": 129.1,
-        "mae_p80": 381.9,
-        "fwd_med": 24.5,
-        "fwd_win_pct": 58.4
+        "mfe_p60": 100.8,
+        "mae_p80": 248.25,
+        "fwd_med": 19.12,
+        "fwd_win_pct": 58.1
       },
       "5d": {
-        "mfe_p60": 180.8,
-        "mae_p80": 504.0,
-        "fwd_med": 41.0,
-        "fwd_win_pct": 57.2
+        "mfe_p60": 136.25,
+        "mae_p80": 349.9,
+        "fwd_med": 31.12,
+        "fwd_win_pct": 60.6
       }
     },
     "all_states": [
       {
         "state": "tdn_eabv_vhigh",
         "state_human": "trend20 down \u00b7 above EMA200 \u00b7 vol high",
-        "n": 425,
+        "n": 426,
         "horizons": {
           "3d": {
-            "mfe_p60": 129.1,
-            "mae_p80": 381.9,
-            "fwd_med": 24.5,
-            "fwd_win_pct": 58.4
+            "mfe_p60": 129.25,
+            "mae_p80": 381.75,
+            "fwd_med": 25.38,
+            "fwd_win_pct": 58.5
           },
           "5d": {
-            "mfe_p60": 180.8,
-            "mae_p80": 504.0,
-            "fwd_med": 41.0,
-            "fwd_win_pct": 57.2
+            "mfe_p60": 182.0,
+            "mae_p80": 502.25,
+            "fwd_med": 41.88,
+            "fwd_win_pct": 57.3
           }
         }
       },
@@ -19544,7 +19544,7 @@
         }
       }
     ],
-    "generated_at": "2026-08-04T22:18:50+00:00"
+    "generated_at": "2026-08-05T22:18:25+00:00"
   },
   "seasonality": {
     "generated_at": "2026-07-29T16:35:23+00:00",
