@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T00:55:05+00:00",
+  "generated_at": "2026-08-05T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6852,10 +6852,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-08-04T01:00:06+00:00",
+    "as_of": "2026-08-05T01:00:08+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. The live P&L of +$579 on 33 trades is statistically noise\u2014even at 1.15 Sharpe in backtest, you need 200\u2013300 live trades minimum to distinguish skill from luck, and the single-market concentration on MNQ only compounds that risk. The backtest metrics look solid in isolation, but you're asking me to write a check based entirely on 16 years of hindsight on one correlated instrument; live data doesn't yet validate that edge holds in real slippage, order flow, and regime change.\n\nOne concrete next step to earn my check: Run 200+ live trades (minimum 4\u20136 months of live data at your current velocity) across *at least two* uncorrelated micro contracts (e.g., MNQ + MES or MNQ + 6E) to prove (1) the edge survives live conditions, and (2) you've genuinely searched for and found diversifiable alpha\u2014not just optimized one market to death. When you return with that, I'll take the backtest seriously.",
+    "verdict": "Pass for now. Thirty-three live trades across a single instrument (MNQ) over ~8 months is not yet statistical evidence of skill\u2014especially when backtest Sharpe 1.15 and Calmar 0.58 are modest and the live sample is too small to confirm the model survives regime change or your own execution discipline. The +$579 on micros is noise; I need to see 200+ live trades or 18+ months of consistent live P&L before deploying LP capital to a one-person shop with zero instrument diversification and zero institutional infrastructure.\n\nMost critical issue: You've built three strategies on *one* market because you \"found no uncorrelated edge elsewhere\"\u2014but that's a cap on AUM and a single point of failure, not a feature. A fundable systematic program needs at least two uncorrelated market pairs (e.g., MNQ + crude, or equities + bonds) to credibly scale beyond $50k and survive crowding or regime shifts in your primary edge.\n\nOne concrete step: Run a disciplined 12-month live track record on a second market (ES, GC, or CL) using the same three strategies, reporting monthly Sharpe and drawdown. If you hit Sharpe >1.0 and <20% max DD on *both* instruments by mid-2027, you'll have the diversification and resilience story I need to commit check.",
     "scorecard": [
       {
         "criterion": "Live track record",
