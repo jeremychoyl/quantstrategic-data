@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T00:55:06+00:00",
+  "generated_at": "2026-08-07T01:00:07+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6874,10 +6874,10 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-08-06T01:00:06+00:00",
+    "as_of": "2026-08-07T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No, not today. Your backtest is solid (Sharpe 1.15, Calmar 0.58, reasonable maxDD discipline), but 33 live trades over ~6 months is statistically meaningless\u2014you need 200+ live rounds minimum before any serious LP can separate signal from noise. The harder blocker: a single-market strategy (MNQ only) on a micro-futures fund that already trades at tiny scale creates compounding risk\u2014if Nasdaq volatility, structure, or your edge there shifts, you have zero hedges and zero diversification. You've done the honest backtest work; now you need real time in the water.\n\nConcrete next step to earn serious capital: Spend the next 6\u20139 months building live edge and track record on at least one uncorrelated secondary market (ES, GC, or rate futures) *with the same three strategies applied systematically*. Don't retrofit; publish the rationale up front, then prove the new market works live at micro scale before approaching LPs again. That moves you from a single-edge bet to a repeatable, portable system\u2014the only story that justifies outside capital.",
+    "verdict": "No allocation today. You have a theoretically sound system (Sharpe 1.15, Calmar 0.58 backtest) and disciplined execution (0.85 pt slippage), but 33 live trades over ~8 months is insufficient signal\u2014you're still inside the noise band where luck and regime fit are indistinguishable from edge. More critically, your entire fund is a single-market concentrated bet on MNQ with no genuine diversification despite a thorough search; that's not a systematic fund, it's a leveraged Nasdaq trade.\n\nOne concrete next step to earn my check: Run live for 18 months minimum (target 200+ trades across a full market cycle or two), and in parallel spend the next 60 days rigorously documenting *why* you found zero edge in equities, bonds, or other futures markets\u2014show me the search methodology and the threshold analysis. If your true edge is MNQ-specific, prove it. If it's not, find it. Come back when you have either (a) >150 live trades with backtest correlation \u22650.80, or (b) two uncorrelated strategy streams across different markets. I want to see durability and genuine risk diversification, not just a clean backtest.",
     "scorecard": [
       {
         "criterion": "Live track record",
