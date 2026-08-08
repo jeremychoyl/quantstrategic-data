@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T01:00:06+00:00",
+  "generated_at": "2026-08-08T01:05:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5734,9 +5734,17 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 33,
+    "total_skip": 34,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 58,
+        "at": "2026-08-08T01:04:58.743495+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful 2-bar trailing stop loss with path-dependent position management, rolling VIX percentile adaptive gate, and intraday microstructure detection (09:30\u201310:00 bar-sequence validation) that exceed stateless template architecture. Edge is coherent but mechanics are untestable in provided templates.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 57,
         "at": "2026-08-04T11:49:28.251951+00:00",
@@ -5814,14 +5822,6 @@
         "at": "2026-07-28T01:05:15.598781+00:00",
         "verdict": "SKIP",
         "reason": "Strategy requires real-time multi-feed external state (VIX term structure daily slopes, COT weekly percentiles, realized volatility regime classification, trend line breaks) integrated into stateful regime gates that adaptively switch between two distinct sub-strategies (mean-reversion vs. momentum). This exceeds stateless template architecture: (1) COT data is weekly-released, creating asynchronous external state; (2) regime classification is path-dependent and multi-timeframe (5m signals + daily regime + weekly COT); (3) exit logic includes 'regime flip' detection requiring continuous monitoring of external feeds; (4) dual-mode strategy switching requires maintaining position-state and strategy-mode context across bars. No single template captures the conditional logic flow or the adaptive mode-switching mechanics.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 47,
-        "at": "2026-07-27T16:45:10.442424+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy mechanics are stateful and path-dependent: entry requires detecting whether condition (2) 'was false at open' (a state query on the current bar mid-formation), and exit depends on price closing below 'entry bar's low' (a stored reference dependent on which specific bar triggered entry). These require multi-bar state tracking and adaptive position memory incompatible with stateless backtesting templates. The core hypothesis conflates correct causal coding (a practice, not an alpha source) with genuine edge; the actual momentum claim (close > SMA(20) + breakout above prior high) is testable, but the state-dependent entry confirmation and the explicit path-dependent exit construct exceed template scope.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6282,6 +6282,14 @@
         "source": "Manual paste",
         "created": "2026-08-04",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Duplicate of already-rejected idea: 'MNQ exhibits exploitable microstructure during the first 60 minutes post-NY open (9:30\\u201310:30 ET) when initial momentum breaks a tight intraday\\u2026' This strategy is structurally identical: same session window, same mean-reversion mechanic off overnight extrema, same short-only directional bias, same first-hour RTH timeframe.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 58,
+        "status": "skip",
+        "summary": "The raw 10am entry signal lacks edge due to asymmetric loss sizing, but adding a",
+        "source": "r/algotrading",
+        "created": "2026-08-08",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful 2-bar trailing stop loss with path-dependent position management, rolling VIX percentile adaptive gate, and intraday microstructure detection (09:30\\u201310:00 bar-sequence validation) that exceed stateless template architecture. Edge is coherent but mechanics are untestable in provided templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
