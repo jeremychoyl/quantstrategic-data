@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T06:40:06+00:00",
+  "generated_at": "2026-08-08T06:45:05+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5734,9 +5734,17 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 34,
+    "total_skip": 35,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 59,
+        "at": "2026-08-08T06:44:54.683365+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires real-time rolling 20-bar volume profile percentile computation with per-bar HVN/LVN zone identification and dynamic volume clustering detection. This is a stateful, path-dependent microstructure architecture that exceeds stateless template mechanics. Entry and exit signals depend on computed volume profile state that must persist across bars and adapt to order flow clustering\u2014not a static level, band, or moving average. The edge mechanics (order clustering at institutional nodes) are coherent but the implementation is incompatible with template execution model.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 58,
         "at": "2026-08-08T01:04:58.743495+00:00",
@@ -5814,14 +5822,6 @@
         "at": "2026-07-30T01:04:37.046403+00:00",
         "verdict": "SKIP",
         "reason": "Strategy requires multi-indicator state machine (RSI extremes + SMA filter + ATR gate + volume MA confirmation + primary/fallback exit logic with RSI crosses). This is path-dependent position state across multiple indicator regimes with stateful exit conditions (RSI crossing levels during hold). Architecture exceeds stateless reversion template \u2014 no simple entry/exit signal pair. Also requires external VIX daily close and 5m volume MA computed separately from 1m bar logic, introducing multi-timeframe state dependency.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 49,
-        "at": "2026-07-28T01:05:15.598781+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires real-time multi-feed external state (VIX term structure daily slopes, COT weekly percentiles, realized volatility regime classification, trend line breaks) integrated into stateful regime gates that adaptively switch between two distinct sub-strategies (mean-reversion vs. momentum). This exceeds stateless template architecture: (1) COT data is weekly-released, creating asynchronous external state; (2) regime classification is path-dependent and multi-timeframe (5m signals + daily regime + weekly COT); (3) exit logic includes 'regime flip' detection requiring continuous monitoring of external feeds; (4) dual-mode strategy switching requires maintaining position-state and strategy-mode context across bars. No single template captures the conditional logic flow or the adaptive mode-switching mechanics.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6290,6 +6290,38 @@
         "source": "r/algotrading",
         "created": "2026-08-08",
         "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful 2-bar trailing stop loss with path-dependent position management, rolling VIX percentile adaptive gate, and intraday microstructure detection (09:30\\u201310:00 bar-sequence validation) that exceed stateless template architecture. Edge is coherent but mechanics are untestable in provided templates.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 59,
+        "status": "skip",
+        "summary": "MNQ intraday mean reversion trades enter when price pulls back into High Volume ",
+        "source": "r/OrderFlow_Trading",
+        "created": "2026-08-08",
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time rolling 20-bar volume profile percentile computation with per-bar HVN/LVN zone identification and dynamic volume clustering detection. This is a stateful, path-dependent microstructure architecture that exceeds stateless template mechanics. Entry and exit signals depend on computed volume profile state that must persist across bars and adapt to order flow clustering\\u2014not a static level, band, or moving average. The edge mechanics (order clustering at institutional nodes) are coherent but the implementation is incompatible with template execution model.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
+      },
+      {
+        "id": 60,
+        "status": "pending",
+        "summary": "CVD divergence from price momentum on 5m bars filters high-probability continuat",
+        "source": "r/OrderFlow_Trading",
+        "created": "2026-08-08",
+        "verdict": null
+      },
+      {
+        "id": 61,
+        "status": "pending",
+        "summary": "Iceberg order probe failure\u2014detected via rapid order-book depth collapse followe",
+        "source": "r/OrderFlow_Trading",
+        "created": "2026-08-08",
+        "verdict": null
+      },
+      {
+        "id": 62,
+        "status": "pending",
+        "summary": "Exhaustion patterns (high volume bars with narrow range or opposite-direction cl",
+        "source": "r/OrderFlow_Trading",
+        "created": "2026-08-08",
+        "verdict": null
       }
     ]
   },
