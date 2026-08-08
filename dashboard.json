@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T06:45:05+00:00",
+  "generated_at": "2026-08-08T06:50:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -5734,9 +5734,33 @@
     "total_tested": 22,
     "total_pass": 5,
     "total_fail": 17,
-    "total_skip": 35,
+    "total_skip": 38,
     "pass_rate": 22.7,
     "recent": [
+      {
+        "hyp_id": 62,
+        "at": "2026-08-08T06:47:12.103249+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful order-flow microstructure mechanics (absorption confirmation, bid/ask clustering detection, trapped-position unwind sequencing) that exceed stateless template capacity. Entry depends on multi-bar path state (prior 2-bar direction reversal + next-bar t+1 open confirmation within 0.3*ATR), exit on volume-collapse condition across 3-bar memory, and swing high/low stop placement tied to recent swing state\u2014all path-dependent. No static price-pattern or calendar rule can capture the core edge.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
+      {
+        "hyp_id": 61,
+        "at": "2026-08-08T06:46:26.188885+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires stateful order-book microstructure detection (iceberg probe identification via depth collapse), multi-condition sequential state tracking across 3+ bars (wick detection \u2192 retest confirmation), and external macro data (VIX, COT) not available in stateless bar-only backtest framework. Probe-failure inference from price/volume alone is path-dependent and cannot be reliably reconstructed from OHLCV bars without live order-book state.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
+      {
+        "hyp_id": 60,
+        "at": "2026-08-08T06:45:40.291901+00:00",
+        "verdict": "SKIP",
+        "reason": "Strategy requires real-time CVD calculation from tick-by-tick bid/ask data with aggressor-side classification, combined with multi-timeframe state tracking (ORB high from 30m window, 5m bar slopes, rolling statistics). This exceeds stateless template capabilities: CVD is path-dependent, requires external tick feed not in standard OHLCV backtest harness, and the filtering logic depends on maintaining session-reset state and comparing cross-timeframe reference levels. No template can systematically backtest this without custom tick-handling infrastructure.",
+        "stats": {},
+        "routing": "pre_reject"
+      },
       {
         "hyp_id": 59,
         "at": "2026-08-08T06:44:54.683365+00:00",
@@ -5790,38 +5814,6 @@
         "at": "2026-07-31T13:36:07.648700+00:00",
         "verdict": "SKIP",
         "reason": "Strategy requires stateful multi-timeframe logic: daily Donchian computation \u2192 prior-day RTH close trigger confirmation \u2192 intraday 5m bar monitoring for midline touch with real-time position state management. Entry depends on exact prior-day close time (16:00 ET) and current open (09:30 ET) comparison; exit is path-dependent (midline touch detection across intraday bars). This exceeds stateless template capability \u2014 the system must track whether a trigger fired yesterday, hold that state into today's session, then monitor intraday progression. Additionally, the VIX daily close filter and overnight gap confirmation introduce external state not recoverable from bar timestamps alone.",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 52,
-        "at": "2026-07-31T01:04:45.728928+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy mechanics require stateful tracking of intraday price momentum peaks, multi-indicator confirmation sequencing (RSI > 70 AND price > SMA(20)), and path-dependent exit logic (RSI reversal below 50 vs. hard time stop vs. ATR loss-cut). Stateless templates cannot encode the temporal ordering of confirmation conditions or maintain position state across indicator transitions. Additionally, the 'momentum exhaustion' edge is asserted but not yet empirically validated \u2014 honest prior explicitly states 'not demonstrated, exists to test the claim.'",
-        "stats": {},
-        "routing": "pre_reject"
-      },
-      {
-        "hyp_id": 51,
-        "at": "2026-07-30T01:05:24.550113+00:00",
-        "verdict": "FAIL",
-        "reason": "WF 4/15 sit-outs; Corr vs EMA: 0.412 \u2265 0.3; Calmar 0.11 < 0.5 (maxDD $-7,208 too deep vs return \u2014 undeployable)",
-        "stats": {
-          "n": 166,
-          "pf": 1.405,
-          "sharpe": 1.855,
-          "win_pct": 65.1,
-          "total_usd": 12669.0,
-          "max_dd": -7208.0,
-          "calmar": 0.11
-        },
-        "routing": "reversion"
-      },
-      {
-        "hyp_id": 50,
-        "at": "2026-07-30T01:04:37.046403+00:00",
-        "verdict": "SKIP",
-        "reason": "Strategy requires multi-indicator state machine (RSI extremes + SMA filter + ATR gate + volume MA confirmation + primary/fallback exit logic with RSI crosses). This is path-dependent position state across multiple indicator regimes with stateful exit conditions (RSI crossing levels during hold). Architecture exceeds stateless reversion template \u2014 no simple entry/exit signal pair. Also requires external VIX daily close and 5m volume MA computed separately from 1m bar logic, introducing multi-timeframe state dependency.",
         "stats": {},
         "routing": "pre_reject"
       }
@@ -6301,27 +6293,27 @@
       },
       {
         "id": 60,
-        "status": "pending",
+        "status": "skip",
         "summary": "CVD divergence from price momentum on 5m bars filters high-probability continuat",
         "source": "r/OrderFlow_Trading",
         "created": "2026-08-08",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires real-time CVD calculation from tick-by-tick bid/ask data with aggressor-side classification, combined with multi-timeframe state tracking (ORB high from 30m window, 5m bar slopes, rolling statistics). This exceeds stateless template capabilities: CVD is path-dependent, requires external tick feed not in standard OHLCV backtest harness, and the filtering logic depends on maintaining session-reset state and comparing cross-timeframe reference levels. No template can systematically backtest this without custom tick-handling infrastructure.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       },
       {
         "id": 61,
-        "status": "pending",
+        "status": "skip",
         "summary": "Iceberg order probe failure\u2014detected via rapid order-book depth collapse followe",
         "source": "r/OrderFlow_Trading",
         "created": "2026-08-08",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful order-book microstructure detection (iceberg probe identification via depth collapse), multi-condition sequential state tracking across 3+ bars (wick detection \\u2192 retest confirmation), and external macro data (VIX, COT) not available in stateless bar-only backtest framework. Probe-failure inference from price/volume alone is path-dependent and cannot be reliably reconstructed from OHLCV bars without live order-book state.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       },
       {
         "id": 62,
-        "status": "pending",
+        "status": "skip",
         "summary": "Exhaustion patterns (high volume bars with narrow range or opposite-direction cl",
         "source": "r/OrderFlow_Trading",
         "created": "2026-08-08",
-        "verdict": null
+        "verdict": "{\"verdict\": \"SKIP\", \"reason\": \"Strategy requires stateful order-flow microstructure mechanics (absorption confirmation, bid/ask clustering detection, trapped-position unwind sequencing) that exceed stateless template capacity. Entry depends on multi-bar path state (prior 2-bar direction reversal + next-bar t+1 open confirmation within 0.3*ATR), exit on volume-collapse condition across 3-bar memory, and swing high/low stop placement tied to recent swing state\\u2014all path-dependent. No static price-pattern or calendar rule can capture the core edge.\", \"stats\": {}, \"routing\": \"pre_reject\"}"
       }
     ]
   },
