@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T12:30:06+00:00",
+  "generated_at": "2026-08-08T12:35:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6318,7 +6318,7 @@
     ]
   },
   "research_discipline": {
-    "as_of": "2026-07-29",
+    "as_of": "2026-08-08",
     "headline": "Alpha frontier explored & exhausted \u2014 ORB + EMA + DC on MNQ is the edge set.",
     "summary": "The territory is mapped \u2014 and as of 2026-07-03 the frontier is FULLY explored: every lever in the frontier memo (US-Treasury carry, multi-pair RV basket, ag seasonality, the ML/method frontier, global gov-bond carry, and the alt-data free tier) has been run to a pre-committed verdict, almost all for $0-to-pennies. ORB\u2026",
     "book": [
@@ -6954,7 +6954,7 @@
       }
     ],
     "n_rejected": 94,
-    "source": "REJECTED_IDEAS.md"
+    "source": "REJECTED_LEDGER.md"
   },
   "investor_verdict": {
     "as_of": "2026-08-08T01:00:07+00:00",
