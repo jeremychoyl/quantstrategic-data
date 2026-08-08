@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T00:55:06+00:00",
+  "generated_at": "2026-08-08T01:00:06+00:00",
   "bridge_mode": "live",
   "live_since": "2026-06-23",
   "demo_since": "2026-06-13",
@@ -6925,21 +6925,21 @@
     "source": "REJECTED_IDEAS.md"
   },
   "investor_verdict": {
-    "as_of": "2026-08-07T01:00:07+00:00",
+    "as_of": "2026-08-08T01:00:07+00:00",
     "would_invest": false,
     "stance": "WOULD NOT ALLOCATE \u2014 yet",
-    "verdict": "No allocation today. You have a theoretically sound system (Sharpe 1.15, Calmar 0.58 backtest) and disciplined execution (0.85 pt slippage), but 33 live trades over ~8 months is insufficient signal\u2014you're still inside the noise band where luck and regime fit are indistinguishable from edge. More critically, your entire fund is a single-market concentrated bet on MNQ with no genuine diversification despite a thorough search; that's not a systematic fund, it's a leveraged Nasdaq trade.\n\nOne concrete next step to earn my check: Run live for 18 months minimum (target 200+ trades across a full market cycle or two), and in parallel spend the next 60 days rigorously documenting *why* you found zero edge in equities, bonds, or other futures markets\u2014show me the search methodology and the threshold analysis. If your true edge is MNQ-specific, prove it. If it's not, find it. Come back when you have either (a) >150 live trades with backtest correlation \u22650.80, or (b) two uncorrelated strategy streams across different markets. I want to see durability and genuine risk diversification, not just a clean backtest.",
+    "verdict": "Verdict: Do not allocate today.\n\nThe single blocking issue is that 34 live trades over ~7 months is statistically insufficient to validate a 16-year backtest that itself shows modest Sharpe (1.14) and weak Calmar (0.57)\u2014the live P&L of $790 on micro contracts tells me almost nothing about edge durability, and the +5000% \"win rate\" metric is a red flag that suggests either cherry-picked trades, misreported data, or severe sample-size noise. More fundamentally, the entire portfolio is one instrument (MNQ), which means you've built a systematic fund that is a leveraged Nasdaq bet, not a market-neutral or diversified micro-futures strategy; that concentration risk, combined with no live proof of the claimed edge, makes this pre-seed, not fundable.\n\nConcrete next step to earn my check: Run live for 18 months minimum (300\u2013400 trades across at least one full market regime change), document all slippage and trade logistics in a real brokerage statement I can audit, and run a rigorous walk-forward test on the backtest data\u2014splitting it chronologically, training on the first 12 years and validating on years 13\u201316 in-sample. Only after that, revisit the diversification ban: prove via rigorous cross-market analysis (not \"we searched and found nothing\") that exactly three other liquid micro-contract pairs",
     "scorecard": [
       {
         "criterion": "Live track record",
         "target": "100+ trades",
-        "now": "33 trades",
+        "now": "34 trades",
         "pass": false
       },
       {
         "criterion": "Live P&L positive",
         "target": "> $0",
-        "now": "+$579",
+        "now": "+$790",
         "pass": true
       },
       {
@@ -6957,7 +6957,7 @@
       {
         "criterion": "Backtest = live",
         "target": "live tracks backtest",
-        "now": "33 trades \u2014 too early",
+        "now": "34 trades \u2014 too early",
         "pass": false
       }
     ]
